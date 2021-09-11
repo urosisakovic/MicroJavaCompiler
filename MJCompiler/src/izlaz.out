@@ -1,0 +1,8 @@
+------- ast extension v0.8 summary -------
+  Generated 48 base classes
+  Generated 129 derived classes
+  Generated 6 record classes
+  Generated interface SyntaxNode
+  Generated interface Visitor
+  Generated adapter class VisitorAdaptor
+-----------------------------------------------

@@ -2,3 +2,6 @@
 /mjlexer.flex
 /mjparser.cup
 /mjparser_astbuild.cup
+/rs/
+/izlaz.err
+/izlaz.out
