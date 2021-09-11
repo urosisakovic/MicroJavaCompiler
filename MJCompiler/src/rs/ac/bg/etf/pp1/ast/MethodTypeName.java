@@ -1,23 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/8/2021 19:22:8
+// 11/8/2021 20:9:50
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MethodTypeName implements SyntaxNode {
-
-    private SyntaxNode parent;
-    private int line;
-    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+public class MethodTypeName extends MethTypeName {
 
     private Type Type;
-    private String methName;
+    private String methodName;
 
-    public MethodTypeName (Type Type, String methName) {
+    public MethodTypeName (Type Type, String methodName) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.methName=methName;
+        this.methodName=methodName;
     }
 
     public Type getType() {
@@ -28,28 +24,12 @@ public class MethodTypeName implements SyntaxNode {
         this.Type=Type;
     }
 
-    public String getMethName() {
-        return methName;
+    public String getMethodName() {
+        return methodName;
     }
 
-    public void setMethName(String methName) {
-        this.methName=methName;
-    }
-
-    public SyntaxNode getParent() {
-        return parent;
-    }
-
-    public void setParent(SyntaxNode parent) {
-        this.parent=parent;
-    }
-
-    public int getLine() {
-        return line;
-    }
-
-    public void setLine(int line) {
-        this.line=line;
+    public void setMethodName(String methodName) {
+        this.methodName=methodName;
     }
 
     public void accept(Visitor visitor) {
@@ -81,7 +61,7 @@ public class MethodTypeName implements SyntaxNode {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+methName);
+        buffer.append(" "+tab+methodName);
         buffer.append("\n");
 
         buffer.append(tab);
