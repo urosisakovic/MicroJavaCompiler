@@ -8,6 +8,8 @@
 				<exclude name="util/Log4JUtils.java"/>
 				<exclude name="Yylex.java"/>
 				<exclude name="Compiler.java"/>
+				<exclude name="MJCompiler.java"/>
+				<exclude name="CompilerError.java"/>
 				<exclude name="SemanticAnalyzer.java"/>
 				<exclude name="Variable.java"/>
 				<exclude name="Method.java"/>
