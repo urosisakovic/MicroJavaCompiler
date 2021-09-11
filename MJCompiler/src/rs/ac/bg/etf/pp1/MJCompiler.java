@@ -2,8 +2,10 @@ package rs.ac.bg.etf.pp1;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 import org.apache.log4j.FileAppender;
@@ -36,16 +38,12 @@ public class MJCompiler implements Compiler {
 		logError.addAppender(fileAppenderError);
 	}
 	
-	public static void main(String[] args) throws Exception {
-		if (args.length < 2) {
-			log.error("Nema dovoljno argumenata! ( Ocekivani ulaz: <ulaz>.mj <izlaz>.obj )");
-			return;
-		}
-		
-		File sourceCode = new File(args[0]);
+	@Override
+	public List<CompilerError> compile(String sourceFilePath, String outputFilePath) {
+		File sourceCode = new File(sourceFilePath);
 		if (!sourceCode.exists()) {
 			log.error("Ulazni fajl [" + sourceCode.getAbsolutePath() + "] nije pronadjen!");
-			return;
+			return null;
 		}
 			
 		log.info("Kompajliranje ulaznog fajla " + sourceCode.getAbsolutePath());
@@ -56,10 +54,11 @@ public class MJCompiler implements Compiler {
 			
 	        if (p.isErrorDetected()) {
 				log.info("Ulazni fajl ima sintaksnih gresaka!");
-				return;
+				return null;
 	        }
 	        
-	        Symbol s = p.parse(); 
+	        Symbol s;
+	        s = p.parse();
 			Program prog = (Program)(s.value); 
 
 			log.info("\n\n================SINTAKSNO STABLO====================\n\n");
@@ -75,7 +74,7 @@ public class MJCompiler implements Compiler {
 			log.info("===================================");
 			
 			if (!semanticAnalyzer.isErrorDetected()) {
-	        	File objFile = new File(args[1]);
+	        	File objFile = new File(outputFilePath);
 	        	log.info("Generisanje MJ bajtkoda: " + objFile.getAbsolutePath());
 	        	if (objFile.exists())
 	        		objFile.delete();
@@ -86,24 +85,57 @@ public class MJCompiler implements Compiler {
                 Code.dataSize = semanticAnalyzer.getnVars();
                 Code.mainPc = codeGenerator.getMainPc();
                 
-	        	Code.write(new FileOutputStream(objFile));
+	        	try {
+					Code.write(new FileOutputStream(objFile));
+				} catch (FileNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 	        	log.info("Parsiranje uspesno zavrseno!");
 	        }
 	        else {
 	        	log.error("Parsiranje nije uspesno zavrseno!");
 	        }
+		} catch (FileNotFoundException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (IOException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
 		}
+		return null;
+	}
+	
+	public static void main(String[] args) throws Exception {
+		if (args.length < 2) {
+			log.error("Nema dovoljno argumenata! ( Ocekivani ulaz: <ulaz>.mj <izlaz>.obj )");
+			return;
+		}
+		
+		MJCompiler mjCompiler = new MJCompiler();
+		List<CompilerError> compilerErrorList = mjCompiler.compile(args[0], args[1]);
+		
+		if (compilerErrorList == null) {
+			
+		}
+		else if (compilerErrorList.size() == 0) {
+			
+		}
+		else {
+			for (var compilerError: compilerErrorList) {
+				log.error(compilerError.toString());
+			}
+		}
+		
+		
 	}
 	
 	public static void tsdump() {
 		SymbolTableVisitor stv = new MySymbolTableVisitor();
         Tab.dump(stv);
-	}
-
-	@Override
-	public List<CompilerError> compile(String sourceFilePath, String outputFilePath) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	
 }
