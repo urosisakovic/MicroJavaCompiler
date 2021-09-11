@@ -1,8 +1,4 @@
+/log4j.xml
+/mjlexer.flex
+/mjparser.cup
 /mjparser_astbuild.cup
-/rs/
-/error.err
-/info.out
-/semantic.mj
-/syntax.mj
-/test301.mj
-/test302.mj

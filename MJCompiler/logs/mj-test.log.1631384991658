@@ -1,0 +1,1879 @@
+INFO  20:29:32,164 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  20:29:32,191 - #2 program
+INFO  20:29:32,191 - #20 test302
+INFO  20:29:32,191 - #7 const
+INFO  20:29:32,192 - #20 int
+INFO  20:29:32,192 - #20 jedan
+INFO  20:29:32,192 - #37 =
+INFO  20:29:32,192 - #21 1
+INFO  20:29:32,192 - #40 ;
+INFO  20:29:32,192 - #20 int
+INFO  20:29:32,193 - #20 i
+INFO  20:29:32,193 - #40 ;
+INFO  20:29:32,193 - #20 bool
+INFO  20:29:32,193 - #20 ibool
+INFO  20:29:32,193 - #40 ;
+INFO  20:29:32,193 - #20 int
+INFO  20:29:32,193 - #20 niz
+INFO  20:29:32,193 - #45 [
+INFO  20:29:32,193 - #46 ]
+INFO  20:29:32,193 - #40 ;
+INFO  20:29:32,193 - #47 {
+INFO  20:29:32,193 - #20 int
+INFO  20:29:32,194 - #20 sum
+INFO  20:29:32,194 - #43 (
+INFO  20:29:32,194 - #20 int
+INFO  20:29:32,194 - #20 z
+INFO  20:29:32,194 - #41 ,
+INFO  20:29:32,194 - #20 int
+INFO  20:29:32,194 - #20 d
+INFO  20:29:32,194 - #44 )
+INFO  20:29:32,194 - #47 {
+INFO  20:29:32,194 - #15 return
+INFO  20:29:32,194 - #20 z
+INFO  20:29:32,194 - #24 +
+INFO  20:29:32,194 - #20 d
+INFO  20:29:32,195 - #40 ;
+INFO  20:29:32,195 - #48 }
+INFO  20:29:32,195 - #20 int
+INFO  20:29:32,195 - #20 inkrement
+INFO  20:29:32,195 - #43 (
+INFO  20:29:32,195 - #20 int
+INFO  20:29:32,195 - #20 a
+INFO  20:29:32,195 - #41 ,
+INFO  20:29:32,195 - #20 int
+INFO  20:29:32,195 - #20 inc
+INFO  20:29:32,195 - #44 )
+INFO  20:29:32,195 - #20 int
+INFO  20:29:32,196 - #20 pom
+INFO  20:29:32,196 - #40 ;
+INFO  20:29:32,196 - #47 {
+INFO  20:29:32,196 - #8 if
+INFO  20:29:32,196 - #43 (
+INFO  20:29:32,196 - #20 inc
+INFO  20:29:32,196 - #29 ==
+INFO  20:29:32,196 - #20 jedan
+INFO  20:29:32,197 - #44 )
+INFO  20:29:32,197 - #20 pom
+INFO  20:29:32,197 - #37 =
+INFO  20:29:32,197 - #21 1
+INFO  20:29:32,197 - #40 ;
+INFO  20:29:32,197 - #6 else
+INFO  20:29:32,197 - #8 if
+INFO  20:29:32,197 - #43 (
+INFO  20:29:32,197 - #20 inc
+INFO  20:29:32,197 - #29 ==
+INFO  20:29:32,197 - #21 2
+INFO  20:29:32,197 - #44 )
+INFO  20:29:32,197 - #20 pom
+INFO  20:29:32,197 - #37 =
+INFO  20:29:32,197 - #20 a
+INFO  20:29:32,197 - #40 ;
+INFO  20:29:32,198 - #15 return
+INFO  20:29:32,198 - #20 sum
+INFO  20:29:32,198 - #43 (
+INFO  20:29:32,198 - #20 a
+INFO  20:29:32,198 - #41 ,
+INFO  20:29:32,198 - #20 pom
+INFO  20:29:32,198 - #44 )
+INFO  20:29:32,198 - #40 ;
+INFO  20:29:32,198 - #48 }
+INFO  20:29:32,198 - #20 bool
+INFO  20:29:32,198 - #20 verify
+INFO  20:29:32,198 - #43 (
+INFO  20:29:32,198 - #44 )
+INFO  20:29:32,198 - #47 {
+INFO  20:29:32,198 - #13 print
+INFO  20:29:32,198 - #43 (
+INFO  20:29:32,198 - #22 v
+INFO  20:29:32,198 - #44 )
+INFO  20:29:32,198 - #40 ;
+INFO  20:29:32,198 - #15 return
+INFO  20:29:32,199 - #23 false
+INFO  20:29:32,199 - #40 ;
+INFO  20:29:32,199 - #48 }
+INFO  20:29:32,199 - #16 void
+INFO  20:29:32,199 - #20 main
+INFO  20:29:32,199 - #43 (
+INFO  20:29:32,199 - #44 )
+INFO  20:29:32,199 - #47 {
+INFO  20:29:32,199 - #8 if
+INFO  20:29:32,199 - #43 (
+INFO  20:29:32,199 - #21 1
+INFO  20:29:32,199 - #30 !=
+INFO  20:29:32,199 - #21 1
+INFO  20:29:32,200 - #44 )
+INFO  20:29:32,200 - #13 print
+INFO  20:29:32,200 - #43 (
+INFO  20:29:32,200 - #25 -
+INFO  20:29:32,200 - #21 6
+INFO  20:29:32,200 - #44 )
+INFO  20:29:32,200 - #40 ;
+INFO  20:29:32,200 - #6 else
+INFO  20:29:32,200 - #13 print
+INFO  20:29:32,200 - #43 (
+INFO  20:29:32,200 - #21 0
+INFO  20:29:32,200 - #44 )
+INFO  20:29:32,200 - #40 ;
+INFO  20:29:32,200 - #20 ibool
+INFO  20:29:32,200 - #37 =
+INFO  20:29:32,200 - #23 false
+INFO  20:29:32,200 - #40 ;
+INFO  20:29:32,200 - #20 i
+INFO  20:29:32,200 - #37 =
+INFO  20:29:32,200 - #21 0
+INFO  20:29:32,200 - #40 ;
+INFO  20:29:32,200 - #10 do
+INFO  20:29:32,200 - #47 {
+INFO  20:29:32,201 - #8 if
+INFO  20:29:32,201 - #43 (
+INFO  20:29:32,201 - #20 i
+INFO  20:29:32,201 - #29 ==
+INFO  20:29:32,201 - #21 2
+INFO  20:29:32,201 - #44 )
+INFO  20:29:32,201 - #20 ibool
+INFO  20:29:32,201 - #37 =
+INFO  20:29:32,201 - #23 true
+INFO  20:29:32,201 - #40 ;
+INFO  20:29:32,201 - #20 i
+INFO  20:29:32,201 - #38 ++
+INFO  20:29:32,201 - #40 ;
+INFO  20:29:32,201 - #48 }
+INFO  20:29:32,201 - #11 while
+INFO  20:29:32,201 - #43 (
+INFO  20:29:32,201 - #20 i
+INFO  20:29:32,202 - #33 <
+INFO  20:29:32,202 - #21 5
+INFO  20:29:32,202 - #44 )
+INFO  20:29:32,202 - #40 ;
+INFO  20:29:32,202 - #8 if
+INFO  20:29:32,202 - #43 (
+INFO  20:29:32,202 - #20 ibool
+INFO  20:29:32,202 - #44 )
+INFO  20:29:32,202 - #8 if
+INFO  20:29:32,202 - #43 (
+INFO  20:29:32,202 - #20 i
+INFO  20:29:32,202 - #29 ==
+INFO  20:29:32,202 - #21 5
+INFO  20:29:32,202 - #44 )
+INFO  20:29:32,202 - #13 print
+INFO  20:29:32,202 - #43 (
+INFO  20:29:32,202 - #21 1
+INFO  20:29:32,202 - #44 )
+INFO  20:29:32,202 - #40 ;
+INFO  20:29:32,202 - #6 else
+INFO  20:29:32,202 - #13 print
+INFO  20:29:32,202 - #43 (
+INFO  20:29:32,202 - #25 -
+INFO  20:29:32,202 - #21 1
+INFO  20:29:32,202 - #44 )
+INFO  20:29:32,202 - #40 ;
+INFO  20:29:32,202 - #20 niz
+INFO  20:29:32,202 - #37 =
+INFO  20:29:32,202 - #12 new
+INFO  20:29:32,202 - #20 int
+INFO  20:29:32,202 - #45 [
+INFO  20:29:32,203 - #21 3
+INFO  20:29:32,203 - #46 ]
+INFO  20:29:32,203 - #40 ;
+INFO  20:29:32,203 - #20 niz
+INFO  20:29:32,203 - #45 [
+INFO  20:29:32,203 - #21 0
+INFO  20:29:32,203 - #46 ]
+INFO  20:29:32,203 - #37 =
+INFO  20:29:32,203 - #21 1
+INFO  20:29:32,203 - #40 ;
+INFO  20:29:32,203 - #20 niz
+INFO  20:29:32,203 - #45 [
+INFO  20:29:32,203 - #21 1
+INFO  20:29:32,203 - #46 ]
+INFO  20:29:32,203 - #37 =
+INFO  20:29:32,203 - #21 2
+INFO  20:29:32,203 - #40 ;
+INFO  20:29:32,203 - #20 niz
+INFO  20:29:32,203 - #45 [
+INFO  20:29:32,203 - #21 2
+INFO  20:29:32,203 - #46 ]
+INFO  20:29:32,203 - #37 =
+INFO  20:29:32,203 - #20 sum
+INFO  20:29:32,203 - #43 (
+INFO  20:29:32,203 - #20 niz
+INFO  20:29:32,203 - #45 [
+INFO  20:29:32,203 - #21 1
+INFO  20:29:32,203 - #46 ]
+INFO  20:29:32,203 - #41 ,
+INFO  20:29:32,203 - #20 niz
+INFO  20:29:32,203 - #45 [
+INFO  20:29:32,203 - #21 0
+INFO  20:29:32,203 - #46 ]
+INFO  20:29:32,203 - #44 )
+INFO  20:29:32,203 - #24 +
+INFO  20:29:32,203 - #21 1
+INFO  20:29:32,203 - #40 ;
+INFO  20:29:32,203 - #8 if
+INFO  20:29:32,203 - #43 (
+INFO  20:29:32,203 - #20 verify
+INFO  20:29:32,203 - #43 (
+INFO  20:29:32,203 - #44 )
+INFO  20:29:32,204 - #36 ||
+INFO  20:29:32,204 - #20 niz
+INFO  20:29:32,204 - #45 [
+INFO  20:29:32,204 - #21 2
+INFO  20:29:32,204 - #46 ]
+INFO  20:29:32,204 - #29 ==
+INFO  20:29:32,204 - #21 4
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,204 - #13 print
+INFO  20:29:32,204 - #43 (
+INFO  20:29:32,204 - #20 ord
+INFO  20:29:32,204 - #43 (
+INFO  20:29:32,204 - #22 A
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,204 - #40 ;
+INFO  20:29:32,204 - #6 else
+INFO  20:29:32,204 - #13 print
+INFO  20:29:32,204 - #43 (
+INFO  20:29:32,204 - #20 ord
+INFO  20:29:32,204 - #43 (
+INFO  20:29:32,204 - #22 a
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,204 - #40 ;
+INFO  20:29:32,204 - #13 print
+INFO  20:29:32,204 - #43 (
+INFO  20:29:32,204 - #20 eol
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,204 - #40 ;
+INFO  20:29:32,204 - #20 i
+INFO  20:29:32,204 - #37 =
+INFO  20:29:32,204 - #21 0
+INFO  20:29:32,204 - #40 ;
+INFO  20:29:32,204 - #10 do
+INFO  20:29:32,204 - #47 {
+INFO  20:29:32,204 - #8 if
+INFO  20:29:32,204 - #43 (
+INFO  20:29:32,204 - #20 i
+INFO  20:29:32,204 - #29 ==
+INFO  20:29:32,204 - #21 3
+INFO  20:29:32,204 - #44 )
+INFO  20:29:32,205 - #47 {
+INFO  20:29:32,205 - #20 i
+INFO  20:29:32,205 - #38 ++
+INFO  20:29:32,205 - #40 ;
+INFO  20:29:32,205 - #18 continue
+INFO  20:29:32,205 - #40 ;
+INFO  20:29:32,205 - #48 }
+INFO  20:29:32,205 - #8 if
+INFO  20:29:32,205 - #43 (
+INFO  20:29:32,205 - #20 i
+INFO  20:29:32,205 - #29 ==
+INFO  20:29:32,205 - #21 4
+INFO  20:29:32,205 - #44 )
+INFO  20:29:32,205 - #3 break
+INFO  20:29:32,205 - #40 ;
+INFO  20:29:32,205 - #20 i
+INFO  20:29:32,205 - #37 =
+INFO  20:29:32,205 - #20 inkrement
+INFO  20:29:32,205 - #43 (
+INFO  20:29:32,205 - #20 i
+INFO  20:29:32,205 - #41 ,
+INFO  20:29:32,205 - #21 1
+INFO  20:29:32,205 - #44 )
+INFO  20:29:32,205 - #40 ;
+INFO  20:29:32,205 - #48 }
+INFO  20:29:32,205 - #11 while
+INFO  20:29:32,205 - #43 (
+INFO  20:29:32,205 - #20 i
+INFO  20:29:32,205 - #33 <
+INFO  20:29:32,205 - #21 10
+INFO  20:29:32,205 - #44 )
+INFO  20:29:32,205 - #40 ;
+INFO  20:29:32,205 - #8 if
+INFO  20:29:32,205 - #43 (
+INFO  20:29:32,206 - #20 i
+INFO  20:29:32,206 - #29 ==
+INFO  20:29:32,206 - #21 3
+INFO  20:29:32,206 - #35 &&
+INFO  20:29:32,206 - #20 verify
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #13 print
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #25 -
+INFO  20:29:32,206 - #21 4
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #40 ;
+INFO  20:29:32,206 - #6 else
+INFO  20:29:32,206 - #13 print
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #21 4
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #40 ;
+INFO  20:29:32,206 - #14 read
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 niz
+INFO  20:29:32,206 - #45 [
+INFO  20:29:32,206 - #21 0
+INFO  20:29:32,206 - #46 ]
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #40 ;
+INFO  20:29:32,206 - #14 read
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 niz
+INFO  20:29:32,206 - #45 [
+INFO  20:29:32,206 - #21 1
+INFO  20:29:32,206 - #46 ]
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #40 ;
+INFO  20:29:32,206 - #14 read
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 niz
+INFO  20:29:32,206 - #45 [
+INFO  20:29:32,206 - #21 2
+INFO  20:29:32,206 - #46 ]
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #40 ;
+INFO  20:29:32,206 - #13 print
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 eol
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,206 - #40 ;
+INFO  20:29:32,206 - #13 print
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 sum
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 sum
+INFO  20:29:32,206 - #43 (
+INFO  20:29:32,206 - #20 niz
+INFO  20:29:32,206 - #45 [
+INFO  20:29:32,206 - #21 0
+INFO  20:29:32,206 - #46 ]
+INFO  20:29:32,206 - #41 ,
+INFO  20:29:32,206 - #20 niz
+INFO  20:29:32,206 - #45 [
+INFO  20:29:32,206 - #21 1
+INFO  20:29:32,206 - #46 ]
+INFO  20:29:32,206 - #44 )
+INFO  20:29:32,207 - #41 ,
+INFO  20:29:32,207 - #20 niz
+INFO  20:29:32,207 - #45 [
+INFO  20:29:32,207 - #21 2
+INFO  20:29:32,207 - #46 ]
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #40 ;
+INFO  20:29:32,207 - #13 print
+INFO  20:29:32,207 - #43 (
+INFO  20:29:32,207 - #20 eol
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #40 ;
+INFO  20:29:32,207 - #13 print
+INFO  20:29:32,207 - #43 (
+INFO  20:29:32,207 - #20 inkrement
+INFO  20:29:32,207 - #43 (
+INFO  20:29:32,207 - #20 niz
+INFO  20:29:32,207 - #45 [
+INFO  20:29:32,207 - #21 2
+INFO  20:29:32,207 - #46 ]
+INFO  20:29:32,207 - #41 ,
+INFO  20:29:32,207 - #21 2
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #40 ;
+INFO  20:29:32,207 - #13 print
+INFO  20:29:32,207 - #43 (
+INFO  20:29:32,207 - #20 verify
+INFO  20:29:32,207 - #43 (
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #49 ?
+INFO  20:29:32,207 - #22 t
+INFO  20:29:32,207 - #50 :
+INFO  20:29:32,207 - #22 f
+INFO  20:29:32,207 - #44 )
+INFO  20:29:32,207 - #40 ;
+INFO  20:29:32,207 - #48 }
+INFO  20:29:32,207 - #48 }
+INFO  20:29:32,210 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclMulti(
+      ProgramDeclMulti(
+        ProgramDeclMulti(
+          ProgramDeclEps(
+          ) [ProgramDeclEps]
+          PartConstDeclaration(
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstSingle(
+                ConstPart(
+                 jedan
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [ConstPart]
+              ) [ConstSingle]
+            ) [ConstDeclaration]
+          ) [PartConstDeclaration]
+        ) [ProgramDeclMulti]
+        PartVarDeclaration(
+          GlobalVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 i
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+          ) [GlobalVarDeclaration]
+        ) [PartVarDeclaration]
+      ) [ProgramDeclMulti]
+      PartVarDeclaration(
+        GlobalVarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          GlobalVarSingle(
+            GlobalVar(
+              VarNormal(
+               ibool
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarSingle]
+        ) [GlobalVarDeclaration]
+      ) [PartVarDeclaration]
+    ) [ProgramDeclMulti]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarSingle(
+          GlobalVar(
+            VarArray(
+             niz
+            ) [VarArray]
+          ) [GlobalVar]
+        ) [GlobalVarSingle]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDecMulti(
+    MethodDecMulti(
+      MethodDecMulti(
+        MethodDeclSingle(
+          MethodTypeDeclaration(
+            MethodType2(
+              MethodTypeName(
+                Type(
+                 int
+                ) [Type]
+               sum
+              ) [MethodTypeName]
+              ParamMulti(
+                ParamSingle(
+                  ParamNormal(
+                    Type(
+                     int
+                    ) [Type]
+                   z
+                  ) [ParamNormal]
+                ) [ParamSingle]
+                ParamNormal(
+                  Type(
+                   int
+                  ) [Type]
+                 d
+                ) [ParamNormal]
+              ) [ParamMulti]
+              StatementSingle(
+                StmtReturnExpr(
+                  ExprOne(
+                    ExprAddop(
+                      ExprSingle(
+                        TermSingle(
+                          FactorDesignator(
+                            DesignatorSimple(
+                             z
+                            ) [DesignatorSimple]
+                          ) [FactorDesignator]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                      AddopPlus(
+                      ) [AddopPlus]
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           d
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                    ) [ExprAddop]
+                  ) [ExprOne]
+                ) [StmtReturnExpr]
+              ) [StatementSingle]
+            ) [MethodType2]
+          ) [MethodTypeDeclaration]
+        ) [MethodDeclSingle]
+        MethodTypeDeclaration(
+          MethodType0(
+            MethodTypeName(
+              Type(
+               int
+              ) [Type]
+             inkrement
+            ) [MethodTypeName]
+            ParamMulti(
+              ParamSingle(
+                ParamNormal(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [ParamNormal]
+              ) [ParamSingle]
+              ParamNormal(
+                Type(
+                 int
+                ) [Type]
+               inc
+              ) [ParamNormal]
+            ) [ParamMulti]
+            VarDeclSingle(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                VarSingle(
+                  VarNormal(
+                   pom
+                  ) [VarNormal]
+                ) [VarSingle]
+              ) [VarDeclaration]
+            ) [VarDeclSingle]
+            StatementMulti(
+              StatementSingle(
+                StmtIfElse(
+                  IfKeyword(
+                  ) [IfKeyword]
+                  StmtIfBody(
+                    IfCond(
+                      CondSingle(
+                        CondTermSingle(
+                          CondFactRelop(
+                            ExprOne(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorDesignator(
+                                    DesignatorSimple(
+                                     inc
+                                    ) [DesignatorSimple]
+                                  ) [FactorDesignator]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [ExprOne]
+                            RelopEQ(
+                            ) [RelopEQ]
+                            ExprOne(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorDesignator(
+                                    DesignatorSimple(
+                                     jedan
+                                    ) [DesignatorSimple]
+                                  ) [FactorDesignator]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [ExprOne]
+                          ) [CondFactRelop]
+                        ) [CondTermSingle]
+                      ) [CondSingle]
+                    ) [IfCond]
+                    StmtDesign(
+                      DesignatorAssignment(
+                        DesignatorSimple(
+                         pom
+                        ) [DesignatorSimple]
+                        AssignmentExpr(
+                          ExprOne(
+                            ExprSingle(
+                              TermSingle(
+                                FactorNumConst(
+                                 1
+                                ) [FactorNumConst]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [ExprOne]
+                        ) [AssignmentExpr]
+                      ) [DesignatorAssignment]
+                    ) [StmtDesign]
+                  ) [StmtIfBody]
+                  StmtIf(
+                    IfKeyword(
+                    ) [IfKeyword]
+                    StmtIfBody(
+                      IfCond(
+                        CondSingle(
+                          CondTermSingle(
+                            CondFactRelop(
+                              ExprOne(
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorDesignator(
+                                      DesignatorSimple(
+                                       inc
+                                      ) [DesignatorSimple]
+                                    ) [FactorDesignator]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [ExprOne]
+                              RelopEQ(
+                              ) [RelopEQ]
+                              ExprOne(
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorNumConst(
+                                     2
+                                    ) [FactorNumConst]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [ExprOne]
+                            ) [CondFactRelop]
+                          ) [CondTermSingle]
+                        ) [CondSingle]
+                      ) [IfCond]
+                      StmtDesign(
+                        DesignatorAssignment(
+                          DesignatorSimple(
+                           pom
+                          ) [DesignatorSimple]
+                          AssignmentExpr(
+                            ExprOne(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorDesignator(
+                                    DesignatorSimple(
+                                     a
+                                    ) [DesignatorSimple]
+                                  ) [FactorDesignator]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [ExprOne]
+                          ) [AssignmentExpr]
+                        ) [DesignatorAssignment]
+                      ) [StmtDesign]
+                    ) [StmtIfBody]
+                  ) [StmtIf]
+                ) [StmtIfElse]
+              ) [StatementSingle]
+              StmtReturnExpr(
+                ExprOne(
+                  ExprSingle(
+                    TermSingle(
+                      FuncCallParams(
+                        DesignatorSimple(
+                         sum
+                        ) [DesignatorSimple]
+                        ActParsMulti(
+                          ActParsSingle(
+                            ExprOne(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorDesignator(
+                                    DesignatorSimple(
+                                     a
+                                    ) [DesignatorSimple]
+                                  ) [FactorDesignator]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [ExprOne]
+                          ) [ActParsSingle]
+                          ExprOne(
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorSimple(
+                                   pom
+                                  ) [DesignatorSimple]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [ExprOne]
+                        ) [ActParsMulti]
+                      ) [FuncCallParams]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [ExprOne]
+              ) [StmtReturnExpr]
+            ) [StatementMulti]
+          ) [MethodType0]
+        ) [MethodTypeDeclaration]
+      ) [MethodDecMulti]
+      MethodTypeDeclaration(
+        MethodType6(
+          MethodTypeName(
+            Type(
+             bool
+            ) [Type]
+           verify
+          ) [MethodTypeName]
+          StatementMulti(
+            StatementSingle(
+              StmtPrint(
+                ExprOne(
+                  ExprSingle(
+                    TermSingle(
+                      FactorCharConst(
+                       v
+                      ) [FactorCharConst]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [ExprOne]
+              ) [StmtPrint]
+            ) [StatementSingle]
+            StmtReturnExpr(
+              ExprOne(
+                ExprSingle(
+                  TermSingle(
+                    FactorBoolConst(
+                     false
+                    ) [FactorBoolConst]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [ExprOne]
+            ) [StmtReturnExpr]
+          ) [StatementMulti]
+        ) [MethodType6]
+      ) [MethodTypeDeclaration]
+    ) [MethodDecMulti]
+    MethodVoidDeclaration(
+      MethodVoid6(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementMulti(
+                StatementMulti(
+                  StatementMulti(
+                    StatementMulti(
+                      StatementMulti(
+                        StatementMulti(
+                          StatementMulti(
+                            StatementMulti(
+                              StatementMulti(
+                                StatementMulti(
+                                  StatementMulti(
+                                    StatementMulti(
+                                      StatementMulti(
+                                        StatementMulti(
+                                          StatementMulti(
+                                            StatementMulti(
+                                              StatementMulti(
+                                                StatementMulti(
+                                                  StatementSingle(
+                                                    StmtIfElse(
+                                                      IfKeyword(
+                                                      ) [IfKeyword]
+                                                      StmtIfBody(
+                                                        IfCond(
+                                                          CondSingle(
+                                                            CondTermSingle(
+                                                              CondFactRelop(
+                                                                ExprOne(
+                                                                  ExprSingle(
+                                                                    TermSingle(
+                                                                      FactorNumConst(
+                                                                       1
+                                                                      ) [FactorNumConst]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprSingle]
+                                                                ) [ExprOne]
+                                                                RelopNE(
+                                                                ) [RelopNE]
+                                                                ExprOne(
+                                                                  ExprSingle(
+                                                                    TermSingle(
+                                                                      FactorNumConst(
+                                                                       1
+                                                                      ) [FactorNumConst]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprSingle]
+                                                                ) [ExprOne]
+                                                              ) [CondFactRelop]
+                                                            ) [CondTermSingle]
+                                                          ) [CondSingle]
+                                                        ) [IfCond]
+                                                        StmtPrint(
+                                                          ExprOne(
+                                                            ExprNeg(
+                                                              TermSingle(
+                                                                FactorNumConst(
+                                                                 6
+                                                                ) [FactorNumConst]
+                                                              ) [TermSingle]
+                                                            ) [ExprNeg]
+                                                          ) [ExprOne]
+                                                        ) [StmtPrint]
+                                                      ) [StmtIfBody]
+                                                      StmtPrint(
+                                                        ExprOne(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorNumConst(
+                                                               0
+                                                              ) [FactorNumConst]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [ExprOne]
+                                                      ) [StmtPrint]
+                                                    ) [StmtIfElse]
+                                                  ) [StatementSingle]
+                                                  StmtDesign(
+                                                    DesignatorAssignment(
+                                                      DesignatorSimple(
+                                                       ibool
+                                                      ) [DesignatorSimple]
+                                                      AssignmentExpr(
+                                                        ExprOne(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorBoolConst(
+                                                               false
+                                                              ) [FactorBoolConst]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [ExprOne]
+                                                      ) [AssignmentExpr]
+                                                    ) [DesignatorAssignment]
+                                                  ) [StmtDesign]
+                                                ) [StatementMulti]
+                                                StmtDesign(
+                                                  DesignatorAssignment(
+                                                    DesignatorSimple(
+                                                     i
+                                                    ) [DesignatorSimple]
+                                                    AssignmentExpr(
+                                                      ExprOne(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorNumConst(
+                                                             0
+                                                            ) [FactorNumConst]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [ExprOne]
+                                                    ) [AssignmentExpr]
+                                                  ) [DesignatorAssignment]
+                                                ) [StmtDesign]
+                                              ) [StatementMulti]
+                                              StmtDoWhile(
+                                                DoKeyword(
+                                                ) [DoKeyword]
+                                                StmtWhileBody(
+                                                  Stmt(
+                                                    StatementMulti(
+                                                      StatementSingle(
+                                                        StmtIf(
+                                                          IfKeyword(
+                                                          ) [IfKeyword]
+                                                          StmtIfBody(
+                                                            IfCond(
+                                                              CondSingle(
+                                                                CondTermSingle(
+                                                                  CondFactRelop(
+                                                                    ExprOne(
+                                                                      ExprSingle(
+                                                                        TermSingle(
+                                                                          FactorDesignator(
+                                                                            DesignatorSimple(
+                                                                             i
+                                                                            ) [DesignatorSimple]
+                                                                          ) [FactorDesignator]
+                                                                        ) [TermSingle]
+                                                                      ) [ExprSingle]
+                                                                    ) [ExprOne]
+                                                                    RelopEQ(
+                                                                    ) [RelopEQ]
+                                                                    ExprOne(
+                                                                      ExprSingle(
+                                                                        TermSingle(
+                                                                          FactorNumConst(
+                                                                           2
+                                                                          ) [FactorNumConst]
+                                                                        ) [TermSingle]
+                                                                      ) [ExprSingle]
+                                                                    ) [ExprOne]
+                                                                  ) [CondFactRelop]
+                                                                ) [CondTermSingle]
+                                                              ) [CondSingle]
+                                                            ) [IfCond]
+                                                            StmtDesign(
+                                                              DesignatorAssignment(
+                                                                DesignatorSimple(
+                                                                 ibool
+                                                                ) [DesignatorSimple]
+                                                                AssignmentExpr(
+                                                                  ExprOne(
+                                                                    ExprSingle(
+                                                                      TermSingle(
+                                                                        FactorBoolConst(
+                                                                         true
+                                                                        ) [FactorBoolConst]
+                                                                      ) [TermSingle]
+                                                                    ) [ExprSingle]
+                                                                  ) [ExprOne]
+                                                                ) [AssignmentExpr]
+                                                              ) [DesignatorAssignment]
+                                                            ) [StmtDesign]
+                                                          ) [StmtIfBody]
+                                                        ) [StmtIf]
+                                                      ) [StatementSingle]
+                                                      StmtDesign(
+                                                        DesignatorIncrement(
+                                                          DesignatorSimple(
+                                                           i
+                                                          ) [DesignatorSimple]
+                                                        ) [DesignatorIncrement]
+                                                      ) [StmtDesign]
+                                                    ) [StatementMulti]
+                                                  ) [Stmt]
+                                                ) [StmtWhileBody]
+                                                CondSingle(
+                                                  CondTermSingle(
+                                                    CondFactRelop(
+                                                      ExprOne(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorDesignator(
+                                                              DesignatorSimple(
+                                                               i
+                                                              ) [DesignatorSimple]
+                                                            ) [FactorDesignator]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [ExprOne]
+                                                      RelopLT(
+                                                      ) [RelopLT]
+                                                      ExprOne(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorNumConst(
+                                                             5
+                                                            ) [FactorNumConst]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [ExprOne]
+                                                    ) [CondFactRelop]
+                                                  ) [CondTermSingle]
+                                                ) [CondSingle]
+                                              ) [StmtDoWhile]
+                                            ) [StatementMulti]
+                                            StmtIf(
+                                              IfKeyword(
+                                              ) [IfKeyword]
+                                              StmtIfBody(
+                                                IfCond(
+                                                  CondSingle(
+                                                    CondTermSingle(
+                                                      CondFactSingle(
+                                                        ExprOne(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorDesignator(
+                                                                DesignatorSimple(
+                                                                 ibool
+                                                                ) [DesignatorSimple]
+                                                              ) [FactorDesignator]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [ExprOne]
+                                                      ) [CondFactSingle]
+                                                    ) [CondTermSingle]
+                                                  ) [CondSingle]
+                                                ) [IfCond]
+                                                StmtIfElse(
+                                                  IfKeyword(
+                                                  ) [IfKeyword]
+                                                  StmtIfBody(
+                                                    IfCond(
+                                                      CondSingle(
+                                                        CondTermSingle(
+                                                          CondFactRelop(
+                                                            ExprOne(
+                                                              ExprSingle(
+                                                                TermSingle(
+                                                                  FactorDesignator(
+                                                                    DesignatorSimple(
+                                                                     i
+                                                                    ) [DesignatorSimple]
+                                                                  ) [FactorDesignator]
+                                                                ) [TermSingle]
+                                                              ) [ExprSingle]
+                                                            ) [ExprOne]
+                                                            RelopEQ(
+                                                            ) [RelopEQ]
+                                                            ExprOne(
+                                                              ExprSingle(
+                                                                TermSingle(
+                                                                  FactorNumConst(
+                                                                   5
+                                                                  ) [FactorNumConst]
+                                                                ) [TermSingle]
+                                                              ) [ExprSingle]
+                                                            ) [ExprOne]
+                                                          ) [CondFactRelop]
+                                                        ) [CondTermSingle]
+                                                      ) [CondSingle]
+                                                    ) [IfCond]
+                                                    StmtPrint(
+                                                      ExprOne(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorNumConst(
+                                                             1
+                                                            ) [FactorNumConst]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [ExprOne]
+                                                    ) [StmtPrint]
+                                                  ) [StmtIfBody]
+                                                  StmtPrint(
+                                                    ExprOne(
+                                                      ExprNeg(
+                                                        TermSingle(
+                                                          FactorNumConst(
+                                                           1
+                                                          ) [FactorNumConst]
+                                                        ) [TermSingle]
+                                                      ) [ExprNeg]
+                                                    ) [ExprOne]
+                                                  ) [StmtPrint]
+                                                ) [StmtIfElse]
+                                              ) [StmtIfBody]
+                                            ) [StmtIf]
+                                          ) [StatementMulti]
+                                          StmtDesign(
+                                            DesignatorAssignment(
+                                              DesignatorSimple(
+                                               niz
+                                              ) [DesignatorSimple]
+                                              AssignmentExpr(
+                                                ExprOne(
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorNewArray(
+                                                        Type(
+                                                         int
+                                                        ) [Type]
+                                                        ExprOne(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorNumConst(
+                                                               3
+                                                              ) [FactorNumConst]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [ExprOne]
+                                                      ) [FactorNewArray]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [ExprOne]
+                                              ) [AssignmentExpr]
+                                            ) [DesignatorAssignment]
+                                          ) [StmtDesign]
+                                        ) [StatementMulti]
+                                        StmtDesign(
+                                          DesignatorAssignment(
+                                            DesignatorArray(
+                                             niz
+                                              ExprOne(
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorNumConst(
+                                                     0
+                                                    ) [FactorNumConst]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [ExprOne]
+                                            ) [DesignatorArray]
+                                            AssignmentExpr(
+                                              ExprOne(
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorNumConst(
+                                                     1
+                                                    ) [FactorNumConst]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [ExprOne]
+                                            ) [AssignmentExpr]
+                                          ) [DesignatorAssignment]
+                                        ) [StmtDesign]
+                                      ) [StatementMulti]
+                                      StmtDesign(
+                                        DesignatorAssignment(
+                                          DesignatorArray(
+                                           niz
+                                            ExprOne(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorNumConst(
+                                                   1
+                                                  ) [FactorNumConst]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [ExprOne]
+                                          ) [DesignatorArray]
+                                          AssignmentExpr(
+                                            ExprOne(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorNumConst(
+                                                   2
+                                                  ) [FactorNumConst]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [ExprOne]
+                                          ) [AssignmentExpr]
+                                        ) [DesignatorAssignment]
+                                      ) [StmtDesign]
+                                    ) [StatementMulti]
+                                    StmtDesign(
+                                      DesignatorAssignment(
+                                        DesignatorArray(
+                                         niz
+                                          ExprOne(
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNumConst(
+                                                 2
+                                                ) [FactorNumConst]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [ExprOne]
+                                        ) [DesignatorArray]
+                                        AssignmentExpr(
+                                          ExprOne(
+                                            ExprAddop(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FuncCallParams(
+                                                    DesignatorSimple(
+                                                     sum
+                                                    ) [DesignatorSimple]
+                                                    ActParsMulti(
+                                                      ActParsSingle(
+                                                        ExprOne(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorDesignator(
+                                                                DesignatorArray(
+                                                                 niz
+                                                                  ExprOne(
+                                                                    ExprSingle(
+                                                                      TermSingle(
+                                                                        FactorNumConst(
+                                                                         1
+                                                                        ) [FactorNumConst]
+                                                                      ) [TermSingle]
+                                                                    ) [ExprSingle]
+                                                                  ) [ExprOne]
+                                                                ) [DesignatorArray]
+                                                              ) [FactorDesignator]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [ExprOne]
+                                                      ) [ActParsSingle]
+                                                      ExprOne(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorDesignator(
+                                                              DesignatorArray(
+                                                               niz
+                                                                ExprOne(
+                                                                  ExprSingle(
+                                                                    TermSingle(
+                                                                      FactorNumConst(
+                                                                       0
+                                                                      ) [FactorNumConst]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprSingle]
+                                                                ) [ExprOne]
+                                                              ) [DesignatorArray]
+                                                            ) [FactorDesignator]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [ExprOne]
+                                                    ) [ActParsMulti]
+                                                  ) [FuncCallParams]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                              AddopPlus(
+                                              ) [AddopPlus]
+                                              TermSingle(
+                                                FactorNumConst(
+                                                 1
+                                                ) [FactorNumConst]
+                                              ) [TermSingle]
+                                            ) [ExprAddop]
+                                          ) [ExprOne]
+                                        ) [AssignmentExpr]
+                                      ) [DesignatorAssignment]
+                                    ) [StmtDesign]
+                                  ) [StatementMulti]
+                                  StmtIfElse(
+                                    IfKeyword(
+                                    ) [IfKeyword]
+                                    StmtIfBody(
+                                      IfCond(
+                                        CondOr(
+                                          CondSingle(
+                                            CondTermSingle(
+                                              CondFactSingle(
+                                                ExprOne(
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FuncCall(
+                                                        DesignatorSimple(
+                                                         verify
+                                                        ) [DesignatorSimple]
+                                                      ) [FuncCall]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [ExprOne]
+                                              ) [CondFactSingle]
+                                            ) [CondTermSingle]
+                                          ) [CondSingle]
+                                          CondTermSingle(
+                                            CondFactRelop(
+                                              ExprOne(
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorDesignator(
+                                                      DesignatorArray(
+                                                       niz
+                                                        ExprOne(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorNumConst(
+                                                               2
+                                                              ) [FactorNumConst]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [ExprOne]
+                                                      ) [DesignatorArray]
+                                                    ) [FactorDesignator]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [ExprOne]
+                                              RelopEQ(
+                                              ) [RelopEQ]
+                                              ExprOne(
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorNumConst(
+                                                     4
+                                                    ) [FactorNumConst]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [ExprOne]
+                                            ) [CondFactRelop]
+                                          ) [CondTermSingle]
+                                        ) [CondOr]
+                                      ) [IfCond]
+                                      StmtPrint(
+                                        ExprOne(
+                                          ExprSingle(
+                                            TermSingle(
+                                              FuncCallParams(
+                                                DesignatorSimple(
+                                                 ord
+                                                ) [DesignatorSimple]
+                                                ActParsSingle(
+                                                  ExprOne(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorCharConst(
+                                                         A
+                                                        ) [FactorCharConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [ExprOne]
+                                                ) [ActParsSingle]
+                                              ) [FuncCallParams]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [ExprOne]
+                                      ) [StmtPrint]
+                                    ) [StmtIfBody]
+                                    StmtPrint(
+                                      ExprOne(
+                                        ExprSingle(
+                                          TermSingle(
+                                            FuncCallParams(
+                                              DesignatorSimple(
+                                               ord
+                                              ) [DesignatorSimple]
+                                              ActParsSingle(
+                                                ExprOne(
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorCharConst(
+                                                       a
+                                                      ) [FactorCharConst]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [ExprOne]
+                                              ) [ActParsSingle]
+                                            ) [FuncCallParams]
+                                          ) [TermSingle]
+                                        ) [ExprSingle]
+                                      ) [ExprOne]
+                                    ) [StmtPrint]
+                                  ) [StmtIfElse]
+                                ) [StatementMulti]
+                                StmtPrint(
+                                  ExprOne(
+                                    ExprSingle(
+                                      TermSingle(
+                                        FactorDesignator(
+                                          DesignatorSimple(
+                                           eol
+                                          ) [DesignatorSimple]
+                                        ) [FactorDesignator]
+                                      ) [TermSingle]
+                                    ) [ExprSingle]
+                                  ) [ExprOne]
+                                ) [StmtPrint]
+                              ) [StatementMulti]
+                              StmtDesign(
+                                DesignatorAssignment(
+                                  DesignatorSimple(
+                                   i
+                                  ) [DesignatorSimple]
+                                  AssignmentExpr(
+                                    ExprOne(
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorNumConst(
+                                           0
+                                          ) [FactorNumConst]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [ExprOne]
+                                  ) [AssignmentExpr]
+                                ) [DesignatorAssignment]
+                              ) [StmtDesign]
+                            ) [StatementMulti]
+                            StmtDoWhile(
+                              DoKeyword(
+                              ) [DoKeyword]
+                              StmtWhileBody(
+                                Stmt(
+                                  StatementMulti(
+                                    StatementMulti(
+                                      StatementSingle(
+                                        StmtIf(
+                                          IfKeyword(
+                                          ) [IfKeyword]
+                                          StmtIfBody(
+                                            IfCond(
+                                              CondSingle(
+                                                CondTermSingle(
+                                                  CondFactRelop(
+                                                    ExprOne(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorDesignator(
+                                                            DesignatorSimple(
+                                                             i
+                                                            ) [DesignatorSimple]
+                                                          ) [FactorDesignator]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [ExprOne]
+                                                    RelopEQ(
+                                                    ) [RelopEQ]
+                                                    ExprOne(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorNumConst(
+                                                           3
+                                                          ) [FactorNumConst]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [ExprOne]
+                                                  ) [CondFactRelop]
+                                                ) [CondTermSingle]
+                                              ) [CondSingle]
+                                            ) [IfCond]
+                                            Stmt(
+                                              StatementMulti(
+                                                StatementSingle(
+                                                  StmtDesign(
+                                                    DesignatorIncrement(
+                                                      DesignatorSimple(
+                                                       i
+                                                      ) [DesignatorSimple]
+                                                    ) [DesignatorIncrement]
+                                                  ) [StmtDesign]
+                                                ) [StatementSingle]
+                                                StmtContinue(
+                                                ) [StmtContinue]
+                                              ) [StatementMulti]
+                                            ) [Stmt]
+                                          ) [StmtIfBody]
+                                        ) [StmtIf]
+                                      ) [StatementSingle]
+                                      StmtIf(
+                                        IfKeyword(
+                                        ) [IfKeyword]
+                                        StmtIfBody(
+                                          IfCond(
+                                            CondSingle(
+                                              CondTermSingle(
+                                                CondFactRelop(
+                                                  ExprOne(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorDesignator(
+                                                          DesignatorSimple(
+                                                           i
+                                                          ) [DesignatorSimple]
+                                                        ) [FactorDesignator]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [ExprOne]
+                                                  RelopEQ(
+                                                  ) [RelopEQ]
+                                                  ExprOne(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         4
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [ExprOne]
+                                                ) [CondFactRelop]
+                                              ) [CondTermSingle]
+                                            ) [CondSingle]
+                                          ) [IfCond]
+                                          StmtBreak(
+                                          ) [StmtBreak]
+                                        ) [StmtIfBody]
+                                      ) [StmtIf]
+                                    ) [StatementMulti]
+                                    StmtDesign(
+                                      DesignatorAssignment(
+                                        DesignatorSimple(
+                                         i
+                                        ) [DesignatorSimple]
+                                        AssignmentExpr(
+                                          ExprOne(
+                                            ExprSingle(
+                                              TermSingle(
+                                                FuncCallParams(
+                                                  DesignatorSimple(
+                                                   inkrement
+                                                  ) [DesignatorSimple]
+                                                  ActParsMulti(
+                                                    ActParsSingle(
+                                                      ExprOne(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorDesignator(
+                                                              DesignatorSimple(
+                                                               i
+                                                              ) [DesignatorSimple]
+                                                            ) [FactorDesignator]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [ExprOne]
+                                                    ) [ActParsSingle]
+                                                    ExprOne(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorNumConst(
+                                                           1
+                                                          ) [FactorNumConst]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [ExprOne]
+                                                  ) [ActParsMulti]
+                                                ) [FuncCallParams]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [ExprOne]
+                                        ) [AssignmentExpr]
+                                      ) [DesignatorAssignment]
+                                    ) [StmtDesign]
+                                  ) [StatementMulti]
+                                ) [Stmt]
+                              ) [StmtWhileBody]
+                              CondSingle(
+                                CondTermSingle(
+                                  CondFactRelop(
+                                    ExprOne(
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorDesignator(
+                                            DesignatorSimple(
+                                             i
+                                            ) [DesignatorSimple]
+                                          ) [FactorDesignator]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [ExprOne]
+                                    RelopLT(
+                                    ) [RelopLT]
+                                    ExprOne(
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorNumConst(
+                                           10
+                                          ) [FactorNumConst]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [ExprOne]
+                                  ) [CondFactRelop]
+                                ) [CondTermSingle]
+                              ) [CondSingle]
+                            ) [StmtDoWhile]
+                          ) [StatementMulti]
+                          StmtIfElse(
+                            IfKeyword(
+                            ) [IfKeyword]
+                            StmtIfBody(
+                              IfCond(
+                                CondSingle(
+                                  CondTermAnd(
+                                    CondTermSingle(
+                                      CondFactRelop(
+                                        ExprOne(
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorDesignator(
+                                                DesignatorSimple(
+                                                 i
+                                                ) [DesignatorSimple]
+                                              ) [FactorDesignator]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [ExprOne]
+                                        RelopEQ(
+                                        ) [RelopEQ]
+                                        ExprOne(
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorNumConst(
+                                               3
+                                              ) [FactorNumConst]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [ExprOne]
+                                      ) [CondFactRelop]
+                                    ) [CondTermSingle]
+                                    CondFactSingle(
+                                      ExprOne(
+                                        ExprSingle(
+                                          TermSingle(
+                                            FuncCall(
+                                              DesignatorSimple(
+                                               verify
+                                              ) [DesignatorSimple]
+                                            ) [FuncCall]
+                                          ) [TermSingle]
+                                        ) [ExprSingle]
+                                      ) [ExprOne]
+                                    ) [CondFactSingle]
+                                  ) [CondTermAnd]
+                                ) [CondSingle]
+                              ) [IfCond]
+                              StmtPrint(
+                                ExprOne(
+                                  ExprNeg(
+                                    TermSingle(
+                                      FactorNumConst(
+                                       4
+                                      ) [FactorNumConst]
+                                    ) [TermSingle]
+                                  ) [ExprNeg]
+                                ) [ExprOne]
+                              ) [StmtPrint]
+                            ) [StmtIfBody]
+                            StmtPrint(
+                              ExprOne(
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorNumConst(
+                                     4
+                                    ) [FactorNumConst]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [ExprOne]
+                            ) [StmtPrint]
+                          ) [StmtIfElse]
+                        ) [StatementMulti]
+                        StmtRead(
+                          DesignatorArray(
+                           niz
+                            ExprOne(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorNumConst(
+                                   0
+                                  ) [FactorNumConst]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [ExprOne]
+                          ) [DesignatorArray]
+                        ) [StmtRead]
+                      ) [StatementMulti]
+                      StmtRead(
+                        DesignatorArray(
+                         niz
+                          ExprOne(
+                            ExprSingle(
+                              TermSingle(
+                                FactorNumConst(
+                                 1
+                                ) [FactorNumConst]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [ExprOne]
+                        ) [DesignatorArray]
+                      ) [StmtRead]
+                    ) [StatementMulti]
+                    StmtRead(
+                      DesignatorArray(
+                       niz
+                        ExprOne(
+                          ExprSingle(
+                            TermSingle(
+                              FactorNumConst(
+                               2
+                              ) [FactorNumConst]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [ExprOne]
+                      ) [DesignatorArray]
+                    ) [StmtRead]
+                  ) [StatementMulti]
+                  StmtPrint(
+                    ExprOne(
+                      ExprSingle(
+                        TermSingle(
+                          FactorDesignator(
+                            DesignatorSimple(
+                             eol
+                            ) [DesignatorSimple]
+                          ) [FactorDesignator]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [ExprOne]
+                  ) [StmtPrint]
+                ) [StatementMulti]
+                StmtPrint(
+                  ExprOne(
+                    ExprSingle(
+                      TermSingle(
+                        FuncCallParams(
+                          DesignatorSimple(
+                           sum
+                          ) [DesignatorSimple]
+                          ActParsMulti(
+                            ActParsSingle(
+                              ExprOne(
+                                ExprSingle(
+                                  TermSingle(
+                                    FuncCallParams(
+                                      DesignatorSimple(
+                                       sum
+                                      ) [DesignatorSimple]
+                                      ActParsMulti(
+                                        ActParsSingle(
+                                          ExprOne(
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorDesignator(
+                                                  DesignatorArray(
+                                                   niz
+                                                    ExprOne(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorNumConst(
+                                                           0
+                                                          ) [FactorNumConst]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [ExprOne]
+                                                  ) [DesignatorArray]
+                                                ) [FactorDesignator]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [ExprOne]
+                                        ) [ActParsSingle]
+                                        ExprOne(
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorDesignator(
+                                                DesignatorArray(
+                                                 niz
+                                                  ExprOne(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         1
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [ExprOne]
+                                                ) [DesignatorArray]
+                                              ) [FactorDesignator]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [ExprOne]
+                                      ) [ActParsMulti]
+                                    ) [FuncCallParams]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [ExprOne]
+                            ) [ActParsSingle]
+                            ExprOne(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorDesignator(
+                                    DesignatorArray(
+                                     niz
+                                      ExprOne(
+                                        ExprSingle(
+                                          TermSingle(
+                                            FactorNumConst(
+                                             2
+                                            ) [FactorNumConst]
+                                          ) [TermSingle]
+                                        ) [ExprSingle]
+                                      ) [ExprOne]
+                                    ) [DesignatorArray]
+                                  ) [FactorDesignator]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [ExprOne]
+                          ) [ActParsMulti]
+                        ) [FuncCallParams]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [ExprOne]
+                ) [StmtPrint]
+              ) [StatementMulti]
+              StmtPrint(
+                ExprOne(
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         eol
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [ExprOne]
+              ) [StmtPrint]
+            ) [StatementMulti]
+            StmtPrint(
+              ExprOne(
+                ExprSingle(
+                  TermSingle(
+                    FuncCallParams(
+                      DesignatorSimple(
+                       inkrement
+                      ) [DesignatorSimple]
+                      ActParsMulti(
+                        ActParsSingle(
+                          ExprOne(
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorArray(
+                                   niz
+                                    ExprOne(
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorNumConst(
+                                           2
+                                          ) [FactorNumConst]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [ExprOne]
+                                  ) [DesignatorArray]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [ExprOne]
+                        ) [ActParsSingle]
+                        ExprOne(
+                          ExprSingle(
+                            TermSingle(
+                              FactorNumConst(
+                               2
+                              ) [FactorNumConst]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [ExprOne]
+                      ) [ActParsMulti]
+                    ) [FuncCallParams]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [ExprOne]
+            ) [StmtPrint]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprTernary(
+              TernaryCond(
+                ExprSingle(
+                  TermSingle(
+                    FuncCall(
+                      DesignatorSimple(
+                       verify
+                      ) [DesignatorSimple]
+                    ) [FuncCall]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [TernaryCond]
+              TerExpr1(
+                ExprSingle(
+                  TermSingle(
+                    FactorCharConst(
+                     t
+                    ) [FactorCharConst]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [TerExpr1]
+              TerExpr2(
+                ExprSingle(
+                  TermSingle(
+                    FactorCharConst(
+                     f
+                    ) [FactorCharConst]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [TerExpr2]
+            ) [ExprTernary]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoid6]
+    ) [MethodVoidDeclaration]
+  ) [MethodDecMulti]
+) [Program]
+INFO  20:29:32,212 - ===================================

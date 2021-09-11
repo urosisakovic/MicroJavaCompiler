@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/8/2021 20:25:56
+// 11/8/2021 20:29:59
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,7 +11,6 @@ public class FactorBoolConst extends Factor {
 
     public FactorBoolConst (Boolean B1) {
         this.B1=B1;
-        if(B1!=null) B1.setParent(this);
     }
 
     public Boolean getB1() {
@@ -27,16 +26,13 @@ public class FactorBoolConst extends Factor {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(B1!=null) B1.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(B1!=null) B1.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(B1!=null) B1.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,10 +41,7 @@ public class FactorBoolConst extends Factor {
         buffer.append(tab);
         buffer.append("FactorBoolConst(\n");
 
-        if(B1!=null)
-            buffer.append(B1.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
+        buffer.append(" "+tab+B1);
         buffer.append("\n");
 
         buffer.append(tab);
