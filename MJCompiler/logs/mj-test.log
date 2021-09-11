@@ -1,326 +1,397 @@
-INFO  20:01:48,098 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
-INFO  20:01:48,107 - #2 program
-INFO  20:01:48,107 - #15 MJProgram
-INFO  20:01:48,107 - #15 int
-INFO  20:01:48,108 - #15 x
-INFO  20:01:48,108 - #5 ;
-INFO  20:01:48,108 - #15 int
-INFO  20:01:48,108 - #15 y
-INFO  20:01:48,108 - #5 ;
-INFO  20:01:48,109 - #3 {
-INFO  20:01:48,109 - #15 int
-INFO  20:01:48,109 - #15 k
-INFO  20:01:48,109 - #6 (
-INFO  20:01:48,109 - #7 )
-INFO  20:01:48,109 - #15 int
-INFO  20:01:48,110 - #15 c
-INFO  20:01:48,110 - #5 ;
-INFO  20:01:48,110 - #3 {
-INFO  20:01:48,110 - #15 c
-INFO  20:01:48,110 - #8 =
-INFO  20:01:48,110 - #14 2
-INFO  20:01:48,110 - #5 ;
-INFO  20:01:48,111 - #12 print
-INFO  20:01:48,125 - #6 (
-INFO  20:01:48,125 - #14 0
-INFO  20:01:48,125 - #7 )
-INFO  20:01:48,125 - #5 ;
-INFO  20:01:48,125 - #9 return
-INFO  20:01:48,125 - #15 c
-INFO  20:01:48,125 - #10 +
-INFO  20:01:48,125 - #14 2
-INFO  20:01:48,125 - #5 ;
-INFO  20:01:48,126 - #4 }
-INFO  20:01:48,126 - #15 int
-INFO  20:01:48,126 - #15 main
-INFO  20:01:48,126 - #6 (
-INFO  20:01:48,126 - #7 )
-INFO  20:01:48,126 - #3 {
-INFO  20:01:48,126 - #15 x
-INFO  20:01:48,126 - #8 =
-INFO  20:01:48,126 - #14 3
-INFO  20:01:48,126 - #5 ;
-INFO  20:01:48,126 - #12 print
-INFO  20:01:48,126 - #6 (
-INFO  20:01:48,126 - #14 1
-INFO  20:01:48,127 - #7 )
-INFO  20:01:48,127 - #5 ;
-INFO  20:01:48,127 - #15 y
-INFO  20:01:48,127 - #8 =
-INFO  20:01:48,127 - #14 4
-INFO  20:01:48,127 - #10 +
-INFO  20:01:48,127 - #14 9
-INFO  20:01:48,127 - #10 +
-INFO  20:01:48,127 - #15 k
-INFO  20:01:48,127 - #6 (
-INFO  20:01:48,127 - #7 )
-INFO  20:01:48,127 - #5 ;
-INFO  20:01:48,127 - #12 print
-INFO  20:01:48,127 - #6 (
-INFO  20:01:48,127 - #15 x
-INFO  20:01:48,127 - #7 )
-INFO  20:01:48,127 - #5 ;
-INFO  20:01:48,127 - #15 k
-INFO  20:01:48,127 - #6 (
-INFO  20:01:48,128 - #7 )
-INFO  20:01:48,128 - #5 ;
-INFO  20:01:48,128 - #12 print
-INFO  20:01:48,128 - #6 (
-INFO  20:01:48,128 - #15 y
-INFO  20:01:48,128 - #7 )
-INFO  20:01:48,128 - #5 ;
-INFO  20:01:48,128 - #9 return
-INFO  20:01:48,128 - #14 1
-INFO  20:01:48,128 - #5 ;
-INFO  20:01:48,128 - #4 }
-INFO  20:01:48,128 - #4 }
-INFO  20:01:48,131 - Program(
-  ProgName(
-   MJProgram
-  ) [ProgName]
-  VarDeclarations(
-    VarDeclarations(
-      NoVarDecl(
-      ) [NoVarDecl]
-      VarDecl(
-        Type(
-         int
-        ) [Type]
-       x
-      ) [VarDecl]
-    ) [VarDeclarations]
-    VarDecl(
-      Type(
-       int
-      ) [Type]
-     y
-    ) [VarDecl]
-  ) [VarDeclarations]
-  MethodDeclarations(
-    MethodDeclarations(
-      NoMethodDecl(
-      ) [NoMethodDecl]
-      MethodDecl(
-        MethodTypeName(
-          Type(
-           int
-          ) [Type]
-         k
-        ) [MethodTypeName]
-        NoFormParam(
-        ) [NoFormParam]
-        VarDeclarations(
-          NoVarDecl(
-          ) [NoVarDecl]
-          VarDecl(
-            Type(
-             int
-            ) [Type]
-           c
-          ) [VarDecl]
-        ) [VarDeclarations]
-        Statements(
-          Statements(
-            Statements(
-              NoStmt(
-              ) [NoStmt]
-              MatchedStmt(
-                Assignment(
-                  Designator(
-                   c
-                  ) [Designator]
-                  TermExpr(
-                    Term(
-                      Const(
-                       2
-                      ) [Const]
-                    ) [Term]
-                  ) [TermExpr]
-                ) [Assignment]
-              ) [MatchedStmt]
-            ) [Statements]
-            MatchedStmt(
-              PrintStmt(
-                TermExpr(
-                  Term(
-                    Const(
-                     0
-                    ) [Const]
-                  ) [Term]
-                ) [TermExpr]
-              ) [PrintStmt]
-            ) [MatchedStmt]
-          ) [Statements]
-          MatchedStmt(
-            ReturnExpr(
-              AddExpr(
-                TermExpr(
-                  Term(
-                    Var(
-                      Designator(
-                       c
-                      ) [Designator]
-                    ) [Var]
-                  ) [Term]
-                ) [TermExpr]
-                Addop(
-                ) [Addop]
-                Term(
-                  Const(
-                   2
-                  ) [Const]
-                ) [Term]
-              ) [AddExpr]
-            ) [ReturnExpr]
-          ) [MatchedStmt]
-        ) [Statements]
-      ) [MethodDecl]
-    ) [MethodDeclarations]
-    MethodDecl(
-      MethodTypeName(
-        Type(
-         int
-        ) [Type]
-       main
-      ) [MethodTypeName]
-      NoFormParam(
-      ) [NoFormParam]
-      NoVarDecl(
-      ) [NoVarDecl]
-      Statements(
-        Statements(
-          Statements(
-            Statements(
-              Statements(
-                Statements(
-                  Statements(
-                    NoStmt(
-                    ) [NoStmt]
-                    MatchedStmt(
-                      Assignment(
-                        Designator(
-                         x
-                        ) [Designator]
-                        TermExpr(
-                          Term(
-                            Const(
-                             3
-                            ) [Const]
-                          ) [Term]
-                        ) [TermExpr]
-                      ) [Assignment]
-                    ) [MatchedStmt]
-                  ) [Statements]
-                  MatchedStmt(
-                    PrintStmt(
-                      TermExpr(
-                        Term(
-                          Const(
-                           1
-                          ) [Const]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [PrintStmt]
-                  ) [MatchedStmt]
-                ) [Statements]
-                MatchedStmt(
-                  Assignment(
-                    Designator(
-                     y
-                    ) [Designator]
-                    AddExpr(
-                      AddExpr(
-                        TermExpr(
-                          Term(
-                            Const(
-                             4
-                            ) [Const]
-                          ) [Term]
-                        ) [TermExpr]
-                        Addop(
-                        ) [Addop]
-                        Term(
-                          Const(
-                           9
-                          ) [Const]
-                        ) [Term]
-                      ) [AddExpr]
-                      Addop(
-                      ) [Addop]
-                      Term(
-                        FuncCall(
-                          Designator(
-                           k
-                          ) [Designator]
-                          NoActuals(
-                          ) [NoActuals]
-                        ) [FuncCall]
-                      ) [Term]
-                    ) [AddExpr]
-                  ) [Assignment]
-                ) [MatchedStmt]
-              ) [Statements]
-              MatchedStmt(
-                PrintStmt(
-                  TermExpr(
-                    Term(
-                      Var(
-                        Designator(
-                         x
-                        ) [Designator]
-                      ) [Var]
-                    ) [Term]
-                  ) [TermExpr]
-                ) [PrintStmt]
-              ) [MatchedStmt]
-            ) [Statements]
-            MatchedStmt(
-              ProcCall(
-                Designator(
-                 k
-                ) [Designator]
-                NoActuals(
-                ) [NoActuals]
-              ) [ProcCall]
-            ) [MatchedStmt]
-          ) [Statements]
-          MatchedStmt(
-            PrintStmt(
-              TermExpr(
-                Term(
-                  Var(
-                    Designator(
-                     y
-                    ) [Designator]
-                  ) [Var]
-                ) [Term]
-              ) [TermExpr]
-            ) [PrintStmt]
-          ) [MatchedStmt]
-        ) [Statements]
-        MatchedStmt(
-          ReturnExpr(
-            TermExpr(
-              Term(
-                Const(
-                 1
-                ) [Const]
-              ) [Term]
-            ) [TermExpr]
-          ) [ReturnExpr]
-        ) [MatchedStmt]
-      ) [Statements]
-    ) [MethodDecl]
-  ) [MethodDeclarations]
-) [Program]
-INFO  20:01:48,131 - ===================================
-INFO  20:01:48,131 - Deklarisana promenljiva x na liniji 2
-INFO  20:01:48,131 - Deklarisana promenljiva y na liniji 2
-INFO  20:01:48,132 - Obradjuje se funkcija k na liniji 5
-INFO  20:01:48,132 - Deklarisana promenljiva c na liniji 5
-INFO  20:01:48,132 - Obradjuje se funkcija main na liniji 13
-INFO  20:01:48,132 - Pronadjen poziv funkcije k na liniji 18
-INFO  20:01:48,132 -  Print count calls = 4
-INFO  20:01:48,132 -  Deklarisanih promenljivih ima = 3
-INFO  20:01:48,132 - ===================================
-INFO  20:01:48,134 - Parsiranje uspesno zavrseno!
+INFO  20:24:24,018 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  20:24:24,021 - #2 program
+INFO  20:24:24,021 - #20 test302
+INFO  20:24:24,021 - #7 const
+INFO  20:24:24,021 - #20 int
+INFO  20:24:24,021 - #20 jedan
+INFO  20:24:24,021 - #37 =
+INFO  20:24:24,021 - #21 1
+INFO  20:24:24,021 - #40 ;
+INFO  20:24:24,021 - #20 int
+INFO  20:24:24,021 - #20 i
+INFO  20:24:24,021 - #40 ;
+INFO  20:24:24,021 - #20 bool
+INFO  20:24:24,021 - #20 ibool
+INFO  20:24:24,021 - #40 ;
+INFO  20:24:24,021 - #20 int
+INFO  20:24:24,021 - #20 niz
+INFO  20:24:24,021 - #45 [
+INFO  20:24:24,021 - #46 ]
+INFO  20:24:24,021 - #40 ;
+INFO  20:24:24,021 - #47 {
+INFO  20:24:24,021 - #20 int
+INFO  20:24:24,023 - #20 sum
+INFO  20:24:24,023 - #43 (
+INFO  20:24:24,023 - #20 int
+INFO  20:24:24,023 - #20 z
+INFO  20:24:24,023 - #41 ,
+INFO  20:24:24,023 - #20 int
+INFO  20:24:24,023 - #20 d
+INFO  20:24:24,023 - #44 )
+INFO  20:24:24,023 - #47 {
+INFO  20:24:24,023 - #15 return
+INFO  20:24:24,023 - #20 z
+INFO  20:24:24,023 - #24 +
+INFO  20:24:24,023 - #20 d
+INFO  20:24:24,023 - #40 ;
+INFO  20:24:24,023 - #48 }
+INFO  20:24:24,023 - #20 int
+INFO  20:24:24,023 - #20 inkrement
+INFO  20:24:24,023 - #43 (
+INFO  20:24:24,023 - #20 int
+INFO  20:24:24,023 - #20 a
+INFO  20:24:24,023 - #41 ,
+INFO  20:24:24,023 - #20 int
+INFO  20:24:24,023 - #20 inc
+INFO  20:24:24,023 - #44 )
+INFO  20:24:24,023 - #20 int
+INFO  20:24:24,024 - #20 pom
+INFO  20:24:24,024 - #40 ;
+INFO  20:24:24,024 - #47 {
+INFO  20:24:24,024 - #8 if
+INFO  20:24:24,024 - #43 (
+INFO  20:24:24,024 - #20 inc
+INFO  20:24:24,024 - #29 ==
+INFO  20:24:24,024 - #20 jedan
+INFO  20:24:24,024 - #44 )
+INFO  20:24:24,024 - #20 pom
+INFO  20:24:24,024 - #37 =
+INFO  20:24:24,024 - #21 1
+INFO  20:24:24,024 - #40 ;
+INFO  20:24:24,024 - #6 else
+INFO  20:24:24,024 - #8 if
+INFO  20:24:24,024 - #43 (
+INFO  20:24:24,024 - #20 inc
+INFO  20:24:24,024 - #29 ==
+INFO  20:24:24,024 - #21 2
+INFO  20:24:24,024 - #44 )
+INFO  20:24:24,024 - #20 pom
+INFO  20:24:24,024 - #37 =
+INFO  20:24:24,024 - #20 a
+INFO  20:24:24,024 - #40 ;
+INFO  20:24:24,024 - #15 return
+INFO  20:24:24,024 - #20 sum
+INFO  20:24:24,024 - #43 (
+INFO  20:24:24,024 - #20 a
+INFO  20:24:24,024 - #41 ,
+INFO  20:24:24,024 - #20 pom
+INFO  20:24:24,025 - #44 )
+INFO  20:24:24,025 - #40 ;
+INFO  20:24:24,025 - #48 }
+INFO  20:24:24,025 - #20 bool
+INFO  20:24:24,025 - #20 verify
+INFO  20:24:24,025 - #43 (
+INFO  20:24:24,025 - #44 )
+INFO  20:24:24,025 - #47 {
+INFO  20:24:24,025 - #13 print
+INFO  20:24:24,025 - #43 (
+INFO  20:24:24,025 - #22 v
+INFO  20:24:24,025 - #44 )
+INFO  20:24:24,025 - #40 ;
+INFO  20:24:24,025 - #15 return
+INFO  20:24:24,025 - #23 false
+INFO  20:24:24,025 - #40 ;
+INFO  20:24:24,025 - #48 }
+INFO  20:24:24,025 - #16 void
+INFO  20:24:24,025 - #20 main
+INFO  20:24:24,025 - #43 (
+INFO  20:24:24,025 - #44 )
+INFO  20:24:24,025 - #47 {
+INFO  20:24:24,025 - #8 if
+INFO  20:24:24,025 - #43 (
+INFO  20:24:24,025 - #21 1
+INFO  20:24:24,026 - #30 !=
+INFO  20:24:24,026 - #21 1
+INFO  20:24:24,026 - #44 )
+INFO  20:24:24,026 - #13 print
+INFO  20:24:24,026 - #43 (
+INFO  20:24:24,026 - #25 -
+INFO  20:24:24,026 - #21 6
+INFO  20:24:24,026 - #44 )
+INFO  20:24:24,026 - #40 ;
+INFO  20:24:24,026 - #6 else
+INFO  20:24:24,026 - #13 print
+INFO  20:24:24,026 - #43 (
+INFO  20:24:24,026 - #21 0
+INFO  20:24:24,026 - #44 )
+INFO  20:24:24,026 - #40 ;
+INFO  20:24:24,026 - #20 ibool
+INFO  20:24:24,026 - #37 =
+INFO  20:24:24,026 - #23 false
+INFO  20:24:24,026 - #40 ;
+INFO  20:24:24,026 - #20 i
+INFO  20:24:24,026 - #37 =
+INFO  20:24:24,026 - #21 0
+INFO  20:24:24,026 - #40 ;
+INFO  20:24:24,026 - #10 do
+INFO  20:24:24,026 - #47 {
+INFO  20:24:24,026 - #8 if
+INFO  20:24:24,026 - #43 (
+INFO  20:24:24,026 - #20 i
+INFO  20:24:24,026 - #29 ==
+INFO  20:24:24,026 - #21 2
+INFO  20:24:24,026 - #44 )
+INFO  20:24:24,026 - #20 ibool
+INFO  20:24:24,026 - #37 =
+INFO  20:24:24,027 - #23 true
+INFO  20:24:24,027 - #40 ;
+INFO  20:24:24,027 - #20 i
+INFO  20:24:24,027 - #38 ++
+INFO  20:24:24,027 - #40 ;
+INFO  20:24:24,027 - #48 }
+INFO  20:24:24,027 - #11 while
+INFO  20:24:24,027 - #43 (
+INFO  20:24:24,027 - #20 i
+INFO  20:24:24,027 - #33 <
+INFO  20:24:24,027 - #21 5
+INFO  20:24:24,027 - #44 )
+INFO  20:24:24,027 - #40 ;
+INFO  20:24:24,027 - #8 if
+INFO  20:24:24,027 - #43 (
+INFO  20:24:24,027 - #20 ibool
+INFO  20:24:24,027 - #44 )
+INFO  20:24:24,027 - #8 if
+INFO  20:24:24,027 - #43 (
+INFO  20:24:24,027 - #20 i
+INFO  20:24:24,027 - #29 ==
+INFO  20:24:24,027 - #21 5
+INFO  20:24:24,027 - #44 )
+INFO  20:24:24,027 - #13 print
+INFO  20:24:24,027 - #43 (
+INFO  20:24:24,027 - #21 1
+INFO  20:24:24,027 - #44 )
+INFO  20:24:24,027 - #40 ;
+INFO  20:24:24,027 - #6 else
+INFO  20:24:24,027 - #13 print
+INFO  20:24:24,027 - #43 (
+INFO  20:24:24,027 - #25 -
+INFO  20:24:24,027 - #21 1
+INFO  20:24:24,027 - #44 )
+INFO  20:24:24,027 - #40 ;
+INFO  20:24:24,027 - #20 niz
+INFO  20:24:24,027 - #37 =
+INFO  20:24:24,027 - #12 new
+INFO  20:24:24,027 - #20 int
+INFO  20:24:24,027 - #45 [
+INFO  20:24:24,027 - #21 3
+INFO  20:24:24,027 - #46 ]
+INFO  20:24:24,027 - #40 ;
+INFO  20:24:24,028 - #20 niz
+INFO  20:24:24,028 - #45 [
+INFO  20:24:24,028 - #21 0
+INFO  20:24:24,028 - #46 ]
+INFO  20:24:24,028 - #37 =
+INFO  20:24:24,028 - #21 1
+INFO  20:24:24,028 - #40 ;
+INFO  20:24:24,028 - #20 niz
+INFO  20:24:24,028 - #45 [
+INFO  20:24:24,028 - #21 1
+INFO  20:24:24,028 - #46 ]
+INFO  20:24:24,028 - #37 =
+INFO  20:24:24,028 - #21 2
+INFO  20:24:24,028 - #40 ;
+INFO  20:24:24,028 - #20 niz
+INFO  20:24:24,028 - #45 [
+INFO  20:24:24,028 - #21 2
+INFO  20:24:24,028 - #46 ]
+INFO  20:24:24,028 - #37 =
+INFO  20:24:24,028 - #20 sum
+INFO  20:24:24,028 - #43 (
+INFO  20:24:24,028 - #20 niz
+INFO  20:24:24,028 - #45 [
+INFO  20:24:24,028 - #21 1
+INFO  20:24:24,028 - #46 ]
+INFO  20:24:24,028 - #41 ,
+INFO  20:24:24,028 - #20 niz
+INFO  20:24:24,028 - #45 [
+INFO  20:24:24,028 - #21 0
+INFO  20:24:24,028 - #46 ]
+INFO  20:24:24,028 - #44 )
+INFO  20:24:24,028 - #24 +
+INFO  20:24:24,028 - #21 1
+INFO  20:24:24,028 - #40 ;
+INFO  20:24:24,028 - #8 if
+INFO  20:24:24,028 - #43 (
+INFO  20:24:24,028 - #20 verify
+INFO  20:24:24,028 - #43 (
+INFO  20:24:24,028 - #44 )
+INFO  20:24:24,028 - #36 ||
+INFO  20:24:24,028 - #20 niz
+INFO  20:24:24,028 - #45 [
+INFO  20:24:24,028 - #21 2
+INFO  20:24:24,028 - #46 ]
+INFO  20:24:24,029 - #29 ==
+INFO  20:24:24,029 - #21 4
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #13 print
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #20 ord
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #22 A
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #6 else
+INFO  20:24:24,029 - #13 print
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #20 ord
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #22 a
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #13 print
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #20 eol
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #20 i
+INFO  20:24:24,029 - #37 =
+INFO  20:24:24,029 - #21 0
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #10 do
+INFO  20:24:24,029 - #47 {
+INFO  20:24:24,029 - #8 if
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #20 i
+INFO  20:24:24,029 - #29 ==
+INFO  20:24:24,029 - #21 3
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #47 {
+INFO  20:24:24,029 - #20 i
+INFO  20:24:24,029 - #38 ++
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #18 continue
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #48 }
+INFO  20:24:24,029 - #8 if
+INFO  20:24:24,029 - #43 (
+INFO  20:24:24,029 - #20 i
+INFO  20:24:24,029 - #29 ==
+INFO  20:24:24,029 - #21 4
+INFO  20:24:24,029 - #44 )
+INFO  20:24:24,029 - #3 break
+INFO  20:24:24,029 - #40 ;
+INFO  20:24:24,029 - #20 i
+INFO  20:24:24,029 - #37 =
+INFO  20:24:24,029 - #20 inkrement
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 i
+INFO  20:24:24,030 - #41 ,
+INFO  20:24:24,030 - #21 1
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #48 }
+INFO  20:24:24,030 - #11 while
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 i
+INFO  20:24:24,030 - #33 <
+INFO  20:24:24,030 - #21 10
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #8 if
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 i
+INFO  20:24:24,030 - #29 ==
+INFO  20:24:24,030 - #21 3
+INFO  20:24:24,030 - #35 &&
+INFO  20:24:24,030 - #20 verify
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #13 print
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #25 -
+INFO  20:24:24,030 - #21 4
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #6 else
+INFO  20:24:24,030 - #13 print
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #21 4
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #14 read
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 niz
+INFO  20:24:24,030 - #45 [
+INFO  20:24:24,030 - #21 0
+INFO  20:24:24,030 - #46 ]
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #14 read
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 niz
+INFO  20:24:24,030 - #45 [
+INFO  20:24:24,030 - #21 1
+INFO  20:24:24,030 - #46 ]
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #14 read
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 niz
+INFO  20:24:24,030 - #45 [
+INFO  20:24:24,030 - #21 2
+INFO  20:24:24,030 - #46 ]
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #13 print
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 eol
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #40 ;
+INFO  20:24:24,030 - #13 print
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 sum
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 sum
+INFO  20:24:24,030 - #43 (
+INFO  20:24:24,030 - #20 niz
+INFO  20:24:24,030 - #45 [
+INFO  20:24:24,030 - #21 0
+INFO  20:24:24,030 - #46 ]
+INFO  20:24:24,030 - #41 ,
+INFO  20:24:24,030 - #20 niz
+INFO  20:24:24,030 - #45 [
+INFO  20:24:24,030 - #21 1
+INFO  20:24:24,030 - #46 ]
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #41 ,
+INFO  20:24:24,030 - #20 niz
+INFO  20:24:24,030 - #45 [
+INFO  20:24:24,030 - #21 2
+INFO  20:24:24,030 - #46 ]
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,030 - #44 )
+INFO  20:24:24,031 - #40 ;
+INFO  20:24:24,031 - #13 print
+INFO  20:24:24,031 - #43 (
+INFO  20:24:24,031 - #20 eol
+INFO  20:24:24,031 - #44 )
+INFO  20:24:24,031 - #40 ;
+INFO  20:24:24,031 - #13 print
+INFO  20:24:24,031 - #43 (
+INFO  20:24:24,031 - #20 inkrement
+INFO  20:24:24,031 - #43 (
+INFO  20:24:24,031 - #20 niz
+INFO  20:24:24,031 - #45 [
+INFO  20:24:24,031 - #21 2
+INFO  20:24:24,031 - #46 ]
+INFO  20:24:24,031 - #41 ,
+INFO  20:24:24,031 - #21 2
+INFO  20:24:24,031 - #44 )
+INFO  20:24:24,031 - #44 )
+INFO  20:24:24,031 - #40 ;
+INFO  20:24:24,031 - #13 print
+INFO  20:24:24,031 - #43 (
+INFO  20:24:24,031 - #20 verify
+INFO  20:24:24,031 - #43 (
+INFO  20:24:24,031 - #44 )
+INFO  20:24:24,031 - #49 ?
+INFO  20:24:24,031 - #22 t
+INFO  20:24:24,031 - #50 :
+INFO  20:24:24,031 - #22 f
+INFO  20:24:24,031 - #44 )
+INFO  20:24:24,031 - #40 ;
+INFO  20:24:24,031 - #48 }
+INFO  20:24:24,031 - #48 }
