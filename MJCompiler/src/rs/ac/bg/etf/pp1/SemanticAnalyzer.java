@@ -35,6 +35,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (line != 0)
 			msg.append (" na liniji ").append(line);
 		logError.error(msg.toString());
+		
+		MJCompiler.getInstance().reportError(new CompilerError(
+			line,
+        	msg.toString(),
+        	CompilerError.CompilerErrorType.SEMANTIC_ERROR));
 	}
 
 	public void report_info(String message, SyntaxNode info) {

@@ -29,6 +29,7 @@ parser code {:
 		}
         logError.error(msg.toString());
         
+        System.out.println("-----------------------------------Tokom prijavljivanja greske--------------------------------------");
         MJCompiler.getInstance().reportError(new CompilerError(
         	errorSymbol.left,
         	msg.toString(),
