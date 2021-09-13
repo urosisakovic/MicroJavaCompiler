@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.FileAppender;
@@ -24,6 +25,8 @@ public class MJCompiler implements Compiler {
 	private static Logger logError = Logger.getLogger("error");
 	private static FileAppender fileAppender, fileAppenderError;
 	
+	private List<CompilerError> errorList;
+	
 	private static MJCompiler instance = null;
 	
 	public static MJCompiler getInstance() {
@@ -32,6 +35,19 @@ public class MJCompiler implements Compiler {
 		}
 		
 		return instance;
+	}
+	
+	private MJCompiler() {
+		errorList = new ArrayList<>();
+	}
+	
+	public void clearErrors() {
+		errorList = new ArrayList<>();
+	}
+	
+	public void reportError(CompilerError compilerError) {
+		System.err.println("----------Dodavanje greske----------");
+		errorList.add(compilerError);
 	}
 	
 	static {
@@ -107,19 +123,16 @@ public class MJCompiler implements Compiler {
 	        	log.error("Parsiranje nije uspesno zavrseno!");
 	        }
 		} catch (FileNotFoundException e2) {
-			// TODO Auto-generated catch block
 			e2.printStackTrace();
 		} catch (IOException e2) {
-			// TODO Auto-generated catch block
 			e2.printStackTrace();
 		} catch (Exception e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		return null;
+
+		System.out.println("Broj gresaka: " + this.errorList.size());
+		return this.errorList;
 	}
-	
-	private MJCompiler() {}
 	
 	public static void tsdump() {
 		SymbolTableVisitor stv = new MySymbolTableVisitor();

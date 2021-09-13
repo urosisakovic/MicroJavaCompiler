@@ -31,10 +31,13 @@ public class Main {
 			log.error("Nema dovoljno argumenata! ( Ocekivani ulaz: <ulaz>.mj <izlaz>.obj )");
 			return;
 		}
-		
+
 		MJCompiler mjCompiler = MJCompiler.getInstance();
+		mjCompiler.clearErrors();
+		
 		List<CompilerError> compilerErrorList = mjCompiler.compile(args[0], args[1]);
 		
+		System.out.println("########### Ispis kompajlerovih gresaka! ##############");
 		if (compilerErrorList == null) {
 			
 		}

@@ -15,19 +15,6 @@ parser code {:
    
     // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
-    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
-      done_parsing();
-      report_error(message, info);
-    }
-  
-    public void syntax_error(Symbol cur_token) {
-        report_error("\nSintaksna greska", cur_token);
-    }
-  
-    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
-        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
-    }
-
     public void report_error(String message, Object info) {
     	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
@@ -41,6 +28,24 @@ parser code {:
 			msg.append("!");
 		}
         logError.error(msg.toString());
+        
+        MJCompiler.getInstance().reportError(new CompilerError(
+        	errorSymbol.left,
+        	msg.toString(),
+        	CompilerError.CompilerErrorType.SYNTAX_ERROR));
+    }
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
     }
     
     public void report_info(String message, Object info) {

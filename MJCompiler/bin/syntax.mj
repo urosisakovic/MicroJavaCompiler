@@ -3,6 +3,7 @@
 program MJProgram
 	int ; // Oporavak od greske za globalne promenljive
 	int a;
+	int 4tvfgevre1234;  // Leksicka greska
 	int a +; // Sintaksna greska za simbol "+"
 	int a, b;
 	abc b;

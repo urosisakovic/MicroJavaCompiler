@@ -24,3 +24,279 @@ Semanticka greska - clanovi izraza nisu tipa int na liniji 68
 Semanticka greska - clanovi izraza nisu kompatibilni na liniji 68
 Semanticka greska - clanovi izraza nisu tipa int na liniji 69
 Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+Semanticka greska - 'a' je vec deklarisano na liniji 7
+Semanticka greska - 'a' je vec deklarisano na liniji 7
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - 'b' je vec deklarisano na liniji 8
+Semanticka greska - 'b' je vec deklarisano na liniji 8
+Semanticka greska - 'd' nije deklarisano na liniji 15
+Semanticka greska - 'd' nije deklarisano na liniji 15
+Semanticka greska - clanovi izraza nisu tipa int na liniji 15
+Semanticka greska - clanovi izraza nisu tipa int na liniji 15
+Semanticka greska - clanovi izraza nisu kompatibilni na liniji 15
+Semanticka greska - clanovi izraza nisu kompatibilni na liniji 15
+Semanticka greska - 'a' je vec deklarisano na liniji 19
+Semanticka greska - 'a' je vec deklarisano na liniji 19
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+Semanticka greska - 'a' je vec deklarisano na liniji 7
+Semanticka greska - 'a' je vec deklarisano na liniji 7
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - 'b' je vec deklarisano na liniji 8
+Semanticka greska - 'b' je vec deklarisano na liniji 8
+Semanticka greska - 'd' nije deklarisano na liniji 15
+Semanticka greska - 'd' nije deklarisano na liniji 15
+Semanticka greska - clanovi izraza nisu tipa int na liniji 15
+Semanticka greska - clanovi izraza nisu tipa int na liniji 15
+Semanticka greska - clanovi izraza nisu kompatibilni na liniji 15
+Semanticka greska - clanovi izraza nisu kompatibilni na liniji 15
+Semanticka greska - 'a' je vec deklarisano na liniji 19
+Semanticka greska - 'a' je vec deklarisano na liniji 19
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+Semanticka greska - 'a' je vec deklarisano na liniji 7
+Semanticka greska - 'a' je vec deklarisano na liniji 7
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - 'b' je vec deklarisano na liniji 8
+Semanticka greska - 'b' je vec deklarisano na liniji 8
+Semanticka greska - 'd' nije deklarisano na liniji 15
+Semanticka greska - 'd' nije deklarisano na liniji 15
+Semanticka greska - clanovi izraza nisu tipa int na liniji 15
+Semanticka greska - clanovi izraza nisu tipa int na liniji 15
+Semanticka greska - clanovi izraza nisu kompatibilni na liniji 15
+Semanticka greska - clanovi izraza nisu kompatibilni na liniji 15
+Semanticka greska - 'a' je vec deklarisano na liniji 19
+Semanticka greska - 'a' je vec deklarisano na liniji 19
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
