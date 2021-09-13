@@ -16,6 +16,7 @@
 				<exclude name="CodeGenerator.java"/>
 				<exclude name="CondJcc.java"/>	
 				<exclude name="MySymbolTableVisitor.java"/>
+				<exclude name="Main.java"/>
 			</fileset>
 		</delete>
 		<delete>

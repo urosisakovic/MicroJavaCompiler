@@ -24,6 +24,16 @@ public class MJCompiler implements Compiler {
 	private static Logger logError = Logger.getLogger("error");
 	private static FileAppender fileAppender, fileAppenderError;
 	
+	private static MJCompiler instance = null;
+	
+	public static MJCompiler getInstance() {
+		if (instance == null) {
+			instance = new MJCompiler();
+		}
+		
+		return instance;
+	}
+	
 	static {
 		fileAppender = new FileAppender();
 		fileAppender.setLayout(new PatternLayout(PatternLayout.DEFAULT_CONVERSION_PATTERN));
@@ -109,29 +119,7 @@ public class MJCompiler implements Compiler {
 		return null;
 	}
 	
-	public static void main(String[] args) throws Exception {
-		if (args.length < 2) {
-			log.error("Nema dovoljno argumenata! ( Ocekivani ulaz: <ulaz>.mj <izlaz>.obj )");
-			return;
-		}
-		
-		MJCompiler mjCompiler = new MJCompiler();
-		List<CompilerError> compilerErrorList = mjCompiler.compile(args[0], args[1]);
-		
-		if (compilerErrorList == null) {
-			
-		}
-		else if (compilerErrorList.size() == 0) {
-			
-		}
-		else {
-			for (var compilerError: compilerErrorList) {
-				log.error(compilerError.toString());
-			}
-		}
-		
-		
-	}
+	private MJCompiler() {}
 	
 	public static void tsdump() {
 		SymbolTableVisitor stv = new MySymbolTableVisitor();

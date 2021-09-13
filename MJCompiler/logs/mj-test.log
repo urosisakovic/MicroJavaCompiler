@@ -1,116 +1,116 @@
-INFO  16:42:41,839 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\syntax.mj
-INFO  16:42:41,874 - #2 program
-INFO  16:42:41,874 - #20 MJProgram
-INFO  16:42:41,875 - #20 int
-INFO  16:42:41,875 - #40 ;
-ERROR 16:42:41,875 - 
+INFO  22:49:10,727 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\syntax.mj
+INFO  22:49:10,756 - #2 program
+INFO  22:49:10,756 - #20 MJProgram
+INFO  22:49:10,756 - #20 int
+INFO  22:49:10,757 - #40 ;
+ERROR 22:49:10,757 - 
 Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
-INFO  16:42:41,875 - #20 int
-INFO  16:42:41,875 - #20 a
-INFO  16:42:41,875 - #40 ;
-ERROR 16:42:41,876 - Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
-INFO  16:42:41,876 - #20 int
-INFO  16:42:41,876 - #20 a
-INFO  16:42:41,876 - #24 +
-ERROR 16:42:41,876 - 
+INFO  22:49:10,757 - #20 int
+INFO  22:49:10,757 - #20 a
+INFO  22:49:10,757 - #40 ;
+ERROR 22:49:10,757 - Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+INFO  22:49:10,758 - #20 int
+INFO  22:49:10,758 - #20 a
+INFO  22:49:10,758 - #24 +
+ERROR 22:49:10,758 - 
 Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
-INFO  16:42:41,876 - #40 ;
-INFO  16:42:41,876 - #20 int
-INFO  16:42:41,877 - #20 a
-INFO  16:42:41,877 - #41 ,
-ERROR 16:42:41,877 - Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
-INFO  16:42:41,877 - #20 b
-INFO  16:42:41,877 - #40 ;
-INFO  16:42:41,877 - #20 abc
-INFO  16:42:41,877 - #20 b
-INFO  16:42:41,877 - #40 ;
-INFO  16:42:41,877 - #20 bool
-INFO  16:42:41,877 - #20 b
-INFO  16:42:41,877 - #37 =
-ERROR 16:42:41,877 - 
+INFO  22:49:10,758 - #40 ;
+INFO  22:49:10,758 - #20 int
+INFO  22:49:10,760 - #20 a
+INFO  22:49:10,760 - #41 ,
+ERROR 22:49:10,760 - Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+INFO  22:49:10,760 - #20 b
+INFO  22:49:10,760 - #40 ;
+INFO  22:49:10,760 - #20 abc
+INFO  22:49:10,760 - #20 b
+INFO  22:49:10,760 - #40 ;
+INFO  22:49:10,760 - #20 bool
+INFO  22:49:10,760 - #20 b
+INFO  22:49:10,760 - #37 =
+ERROR 22:49:10,760 - 
 Sintaksna greska na liniji 9, koloni 8 za simbol "="!
-INFO  16:42:41,877 - #23 true
-INFO  16:42:41,877 - #40 ;
-INFO  16:42:41,877 - #20 abc
-INFO  16:42:41,877 - #21 22
-INFO  16:42:41,877 - #40 ;
-INFO  16:42:41,877 - #47 {
-INFO  16:42:41,878 - #20 int
-INFO  16:42:41,878 - #20 sum
-ERROR 16:42:41,878 - Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
-INFO  16:42:41,878 - #43 (
-INFO  16:42:41,878 - #20 int
-INFO  16:42:41,878 - #20 z
-INFO  16:42:41,878 - #41 ,
-INFO  16:42:41,878 - #20 int
-INFO  16:42:41,878 - #20 d
-INFO  16:42:41,878 - #24 +
-ERROR 16:42:41,878 - 
+INFO  22:49:10,760 - #23 true
+INFO  22:49:10,760 - #40 ;
+INFO  22:49:10,761 - #20 abc
+INFO  22:49:10,761 - #21 22
+INFO  22:49:10,761 - #40 ;
+INFO  22:49:10,761 - #47 {
+INFO  22:49:10,761 - #20 int
+INFO  22:49:10,761 - #20 sum
+ERROR 22:49:10,761 - Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+INFO  22:49:10,761 - #43 (
+INFO  22:49:10,761 - #20 int
+INFO  22:49:10,761 - #20 z
+INFO  22:49:10,761 - #41 ,
+INFO  22:49:10,761 - #20 int
+INFO  22:49:10,761 - #20 d
+INFO  22:49:10,761 - #24 +
+ERROR 22:49:10,761 - 
 Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
-INFO  16:42:41,878 - #44 )
-INFO  16:42:41,878 - #47 {
-INFO  16:42:41,878 - #15 return
-INFO  16:42:41,878 - #20 z
-ERROR 16:42:41,878 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
-INFO  16:42:41,879 - #24 +
-INFO  16:42:41,879 - #20 d
-INFO  16:42:41,879 - #40 ;
-INFO  16:42:41,879 - #48 }
-INFO  16:42:41,879 - #16 void
-INFO  16:42:41,880 - #20 main
-INFO  16:42:41,880 - #43 (
-INFO  16:42:41,880 - #44 )
-INFO  16:42:41,880 - #20 int
-INFO  16:42:41,880 - #20 a
-INFO  16:42:41,880 - #40 ;
-INFO  16:42:41,880 - #47 {
-INFO  16:42:41,880 - #20 a
-INFO  16:42:41,880 - #37 =
-INFO  16:42:41,880 - #21 1
-INFO  16:42:41,880 - #24 +
-INFO  16:42:41,880 - #40 ;
-ERROR 16:42:41,880 - 
+INFO  22:49:10,761 - #44 )
+INFO  22:49:10,762 - #47 {
+INFO  22:49:10,762 - #15 return
+INFO  22:49:10,762 - #20 z
+ERROR 22:49:10,762 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+INFO  22:49:10,762 - #24 +
+INFO  22:49:10,762 - #20 d
+INFO  22:49:10,762 - #40 ;
+INFO  22:49:10,763 - #48 }
+INFO  22:49:10,763 - #16 void
+INFO  22:49:10,763 - #20 main
+INFO  22:49:10,763 - #43 (
+INFO  22:49:10,763 - #44 )
+INFO  22:49:10,763 - #20 int
+INFO  22:49:10,763 - #20 a
+INFO  22:49:10,763 - #40 ;
+INFO  22:49:10,763 - #47 {
+INFO  22:49:10,763 - #20 a
+INFO  22:49:10,763 - #37 =
+INFO  22:49:10,763 - #21 1
+INFO  22:49:10,763 - #24 +
+INFO  22:49:10,764 - #40 ;
+ERROR 22:49:10,764 - 
 Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
-INFO  16:42:41,880 - #8 if
-INFO  16:42:41,880 - #43 (
-INFO  16:42:41,880 - #20 a
-ERROR 16:42:41,880 - Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
-INFO  16:42:41,881 - #33 <
-INFO  16:42:41,881 - #20 b
-INFO  16:42:41,881 - #24 +
-INFO  16:42:41,881 - #44 )
-ERROR 16:42:41,881 - 
+INFO  22:49:10,764 - #8 if
+INFO  22:49:10,764 - #43 (
+INFO  22:49:10,764 - #20 a
+ERROR 22:49:10,764 - Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+INFO  22:49:10,764 - #33 <
+INFO  22:49:10,764 - #20 b
+INFO  22:49:10,765 - #24 +
+INFO  22:49:10,765 - #44 )
+ERROR 22:49:10,765 - 
 Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
-INFO  16:42:41,881 - #47 {
-INFO  16:42:41,881 - #20 a
-INFO  16:42:41,881 - #37 =
-ERROR 16:42:41,881 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
-INFO  16:42:41,882 - #21 1
-INFO  16:42:41,882 - #40 ;
-INFO  16:42:41,882 - #48 }
-INFO  16:42:41,882 - #8 if
-INFO  16:42:41,882 - #43 (
-INFO  16:42:41,882 - #20 a
-INFO  16:42:41,882 - #33 <
-INFO  16:42:41,882 - #20 b
-INFO  16:42:41,882 - #24 +
-INFO  16:42:41,882 - #40 ;
-ERROR 16:42:41,882 - 
+INFO  22:49:10,765 - #47 {
+INFO  22:49:10,765 - #20 a
+INFO  22:49:10,765 - #37 =
+ERROR 22:49:10,765 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+INFO  22:49:10,765 - #21 1
+INFO  22:49:10,765 - #40 ;
+INFO  22:49:10,765 - #48 }
+INFO  22:49:10,765 - #8 if
+INFO  22:49:10,766 - #43 (
+INFO  22:49:10,766 - #20 a
+INFO  22:49:10,766 - #33 <
+INFO  22:49:10,766 - #20 b
+INFO  22:49:10,766 - #24 +
+INFO  22:49:10,766 - #40 ;
+ERROR 22:49:10,766 - 
 Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
-INFO  16:42:41,882 - #44 )
-INFO  16:42:41,882 - #20 a
-INFO  16:42:41,882 - #37 =
-INFO  16:42:41,882 - #21 1
-ERROR 16:42:41,882 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
-INFO  16:42:41,882 - #40 ;
-INFO  16:42:41,882 - #6 else
-INFO  16:42:41,882 - #20 a
-INFO  16:42:41,883 - #37 =
-INFO  16:42:41,883 - #21 2
-INFO  16:42:41,883 - #40 ;
-INFO  16:42:41,883 - #48 }
-INFO  16:42:41,883 - #48 }
-INFO  16:42:41,884 - Program(
+INFO  22:49:10,766 - #44 )
+INFO  22:49:10,766 - #20 a
+INFO  22:49:10,766 - #37 =
+INFO  22:49:10,766 - #21 1
+ERROR 22:49:10,766 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+INFO  22:49:10,766 - #40 ;
+INFO  22:49:10,766 - #6 else
+INFO  22:49:10,766 - #20 a
+INFO  22:49:10,766 - #37 =
+INFO  22:49:10,767 - #21 2
+INFO  22:49:10,767 - #40 ;
+INFO  22:49:10,767 - #48 }
+INFO  22:49:10,767 - #48 }
+INFO  22:49:10,768 - Program(
   ProgName(
    MJProgram
   ) [ProgName]
@@ -371,4 +371,4 @@ INFO  16:42:41,884 - Program(
     ) [MethodVoidDeclaration]
   ) [MethodDecMulti]
 ) [Program]
-INFO  16:42:41,884 - ===================================
+INFO  22:49:10,768 - ===================================
