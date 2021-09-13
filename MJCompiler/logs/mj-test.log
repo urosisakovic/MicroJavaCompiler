@@ -1,189 +1,374 @@
-INFO  21:17:44,528 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\semantic.mj
-INFO  21:17:44,530 - #2 program
-INFO  21:17:44,530 - #20 MJProgram
-INFO  21:17:44,530 - #20 abc
-INFO  21:17:44,530 - #20 a
-INFO  21:17:44,530 - #40 ;
-INFO  21:17:44,530 - #7 const
-INFO  21:17:44,530 - #20 int
-INFO  21:17:44,530 - #20 cnst
-INFO  21:17:44,530 - #37 =
-INFO  21:17:44,531 - #21 1
-INFO  21:17:44,531 - #40 ;
-INFO  21:17:44,531 - #47 {
-INFO  21:17:44,531 - #20 int
-INFO  21:17:44,531 - #20 fun
-INFO  21:17:44,531 - #43 (
-INFO  21:17:44,531 - #20 int
-INFO  21:17:44,531 - #20 x
-INFO  21:17:44,531 - #44 )
-INFO  21:17:44,531 - #47 {
-INFO  21:17:44,531 - #48 }
-INFO  21:17:44,531 - #16 void
-INFO  21:17:44,531 - #20 main
-INFO  21:17:44,531 - #43 (
-INFO  21:17:44,531 - #44 )
-INFO  21:17:44,531 - #20 int
-INFO  21:17:44,531 - #20 b
-INFO  21:17:44,531 - #40 ;
-INFO  21:17:44,531 - #20 char
-INFO  21:17:44,531 - #20 b
-INFO  21:17:44,531 - #40 ;
-INFO  21:17:44,531 - #20 int
-INFO  21:17:44,532 - #20 num
-INFO  21:17:44,532 - #40 ;
-INFO  21:17:44,532 - #20 char
-INFO  21:17:44,532 - #20 character
-INFO  21:17:44,532 - #40 ;
-INFO  21:17:44,532 - #20 bool
-INFO  21:17:44,532 - #20 boolean
-INFO  21:17:44,532 - #40 ;
-INFO  21:17:44,532 - #20 int
-INFO  21:17:44,532 - #20 niz
-INFO  21:17:44,532 - #45 [
-INFO  21:17:44,532 - #46 ]
-INFO  21:17:44,532 - #41 ,
-INFO  21:17:44,532 - #20 niz1
-INFO  21:17:44,532 - #45 [
-INFO  21:17:44,532 - #46 ]
-INFO  21:17:44,532 - #40 ;
-INFO  21:17:44,532 - #47 {
-INFO  21:17:44,532 - #20 num
-INFO  21:17:44,532 - #37 =
-INFO  21:17:44,532 - #22 a
-INFO  21:17:44,532 - #40 ;
-INFO  21:17:44,532 - #20 num
-INFO  21:17:44,532 - #37 =
-INFO  21:17:44,532 - #23 true
-INFO  21:17:44,532 - #40 ;
-INFO  21:17:44,533 - #20 character
-INFO  21:17:44,533 - #37 =
-INFO  21:17:44,533 - #21 1
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 character
-INFO  21:17:44,533 - #37 =
-INFO  21:17:44,533 - #23 true
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 boolean
-INFO  21:17:44,533 - #37 =
-INFO  21:17:44,533 - #21 1
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 boolean
-INFO  21:17:44,533 - #37 =
-INFO  21:17:44,533 - #22 a
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 cnst
-INFO  21:17:44,533 - #37 =
-INFO  21:17:44,533 - #21 2
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 character
-INFO  21:17:44,533 - #38 ++
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 boolean
-INFO  21:17:44,533 - #39 --
-INFO  21:17:44,533 - #40 ;
-INFO  21:17:44,533 - #20 fun
-INFO  21:17:44,533 - #43 (
-INFO  21:17:44,533 - #21 1
-INFO  21:17:44,533 - #41 ,
-INFO  21:17:44,533 - #21 2
-INFO  21:17:44,534 - #44 )
-INFO  21:17:44,534 - #40 ;
-INFO  21:17:44,534 - #20 fun
-INFO  21:17:44,534 - #43 (
-INFO  21:17:44,534 - #23 true
-INFO  21:17:44,534 - #44 )
-INFO  21:17:44,534 - #40 ;
-INFO  21:17:44,534 - #20 character
-INFO  21:17:44,534 - #37 =
-INFO  21:17:44,534 - #25 -
-INFO  21:17:44,534 - #22 a
-INFO  21:17:44,534 - #40 ;
-INFO  21:17:44,534 - #20 niz
-INFO  21:17:44,534 - #37 =
-INFO  21:17:44,534 - #12 new
-INFO  21:17:44,534 - #20 int
-INFO  21:17:44,534 - #45 [
-INFO  21:17:44,534 - #22 a
-INFO  21:17:44,534 - #46 ]
-INFO  21:17:44,534 - #40 ;
-INFO  21:17:44,534 - #10 do
-INFO  21:17:44,534 - #47 {
-INFO  21:17:44,534 - #20 num
-INFO  21:17:44,534 - #38 ++
-INFO  21:17:44,534 - #40 ;
-INFO  21:17:44,535 - #3 break
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,535 - #18 continue
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,535 - #48 }
-INFO  21:17:44,535 - #11 while
-INFO  21:17:44,535 - #43 (
-INFO  21:17:44,535 - #20 num
-INFO  21:17:44,535 - #33 <
-INFO  21:17:44,535 - #21 10
-INFO  21:17:44,535 - #44 )
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,535 - #3 break
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,535 - #18 continue
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,535 - #8 if
-INFO  21:17:44,535 - #43 (
-INFO  21:17:44,535 - #20 niz
-INFO  21:17:44,535 - #33 <
-INFO  21:17:44,535 - #20 niz1
-INFO  21:17:44,535 - #44 )
-INFO  21:17:44,535 - #47 {
-INFO  21:17:44,535 - #20 num
-INFO  21:17:44,535 - #37 =
-INFO  21:17:44,535 - #21 1
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,535 - #48 }
-INFO  21:17:44,535 - #8 if
-INFO  21:17:44,535 - #43 (
-INFO  21:17:44,535 - #20 num
-INFO  21:17:44,535 - #44 )
-INFO  21:17:44,535 - #47 {
-INFO  21:17:44,535 - #20 num
-INFO  21:17:44,535 - #37 =
-INFO  21:17:44,535 - #21 2
-INFO  21:17:44,535 - #40 ;
-INFO  21:17:44,536 - #48 }
-INFO  21:17:44,536 - #10 do
-INFO  21:17:44,536 - #47 {
-INFO  21:17:44,536 - #20 niz
-INFO  21:17:44,536 - #45 [
-INFO  21:17:44,536 - #23 true
-INFO  21:17:44,536 - #46 ]
-INFO  21:17:44,536 - #37 =
-INFO  21:17:44,536 - #21 1
-INFO  21:17:44,536 - #40 ;
-INFO  21:17:44,536 - #48 }
-INFO  21:17:44,536 - #11 while
-INFO  21:17:44,536 - #43 (
-INFO  21:17:44,536 - #20 num
-INFO  21:17:44,536 - #44 )
-INFO  21:17:44,536 - #40 ;
-INFO  21:17:44,536 - #20 num
-INFO  21:17:44,536 - #37 =
-INFO  21:17:44,536 - #20 num
-INFO  21:17:44,536 - #24 +
-INFO  21:17:44,536 - #22 a
-INFO  21:17:44,536 - #40 ;
-INFO  21:17:44,536 - #20 num
-INFO  21:17:44,536 - #37 =
-INFO  21:17:44,536 - #20 num
-INFO  21:17:44,536 - #26 *
-INFO  21:17:44,536 - #22 a
-INFO  21:17:44,536 - #40 ;
-INFO  21:17:44,536 - #20 num
-INFO  21:17:44,536 - #37 =
-INFO  21:17:44,536 - #20 boolean
-INFO  21:17:44,536 - #49 ?
-INFO  21:17:44,536 - #21 1
-INFO  21:17:44,536 - #50 :
-INFO  21:17:44,536 - #22 a
-INFO  21:17:44,536 - #40 ;
-INFO  21:17:44,536 - #48 }
-INFO  21:17:44,536 - #48 }
+INFO  16:42:41,839 - Compiling source file: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\syntax.mj
+INFO  16:42:41,874 - #2 program
+INFO  16:42:41,874 - #20 MJProgram
+INFO  16:42:41,875 - #20 int
+INFO  16:42:41,875 - #40 ;
+ERROR 16:42:41,875 - 
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+INFO  16:42:41,875 - #20 int
+INFO  16:42:41,875 - #20 a
+INFO  16:42:41,875 - #40 ;
+ERROR 16:42:41,876 - Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+INFO  16:42:41,876 - #20 int
+INFO  16:42:41,876 - #20 a
+INFO  16:42:41,876 - #24 +
+ERROR 16:42:41,876 - 
+Sintaksna greska na liniji 6, koloni 7 za simbol "+"!
+INFO  16:42:41,876 - #40 ;
+INFO  16:42:41,876 - #20 int
+INFO  16:42:41,877 - #20 a
+INFO  16:42:41,877 - #41 ,
+ERROR 16:42:41,877 - Oporavak od greske u deklaraciji globalne promenljive na liniji 6, koloni 7 za simbol "+"!
+INFO  16:42:41,877 - #20 b
+INFO  16:42:41,877 - #40 ;
+INFO  16:42:41,877 - #20 abc
+INFO  16:42:41,877 - #20 b
+INFO  16:42:41,877 - #40 ;
+INFO  16:42:41,877 - #20 bool
+INFO  16:42:41,877 - #20 b
+INFO  16:42:41,877 - #37 =
+ERROR 16:42:41,877 - 
+Sintaksna greska na liniji 9, koloni 8 za simbol "="!
+INFO  16:42:41,877 - #23 true
+INFO  16:42:41,877 - #40 ;
+INFO  16:42:41,877 - #20 abc
+INFO  16:42:41,877 - #21 22
+INFO  16:42:41,877 - #40 ;
+INFO  16:42:41,877 - #47 {
+INFO  16:42:41,878 - #20 int
+INFO  16:42:41,878 - #20 sum
+ERROR 16:42:41,878 - Oporavak od greske u deklaraciji globalne promenljive na liniji 9, koloni 8 za simbol "="!
+INFO  16:42:41,878 - #43 (
+INFO  16:42:41,878 - #20 int
+INFO  16:42:41,878 - #20 z
+INFO  16:42:41,878 - #41 ,
+INFO  16:42:41,878 - #20 int
+INFO  16:42:41,878 - #20 d
+INFO  16:42:41,878 - #24 +
+ERROR 16:42:41,878 - 
+Sintaksna greska na liniji 13, koloni 22 za simbol "+"!
+INFO  16:42:41,878 - #44 )
+INFO  16:42:41,878 - #47 {
+INFO  16:42:41,878 - #15 return
+INFO  16:42:41,878 - #20 z
+ERROR 16:42:41,878 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 13, koloni 22 za simbol "+"!
+INFO  16:42:41,879 - #24 +
+INFO  16:42:41,879 - #20 d
+INFO  16:42:41,879 - #40 ;
+INFO  16:42:41,879 - #48 }
+INFO  16:42:41,879 - #16 void
+INFO  16:42:41,880 - #20 main
+INFO  16:42:41,880 - #43 (
+INFO  16:42:41,880 - #44 )
+INFO  16:42:41,880 - #20 int
+INFO  16:42:41,880 - #20 a
+INFO  16:42:41,880 - #40 ;
+INFO  16:42:41,880 - #47 {
+INFO  16:42:41,880 - #20 a
+INFO  16:42:41,880 - #37 =
+INFO  16:42:41,880 - #21 1
+INFO  16:42:41,880 - #24 +
+INFO  16:42:41,880 - #40 ;
+ERROR 16:42:41,880 - 
+Sintaksna greska na liniji 21, koloni 10 za simbol ";"!
+INFO  16:42:41,880 - #8 if
+INFO  16:42:41,880 - #43 (
+INFO  16:42:41,880 - #20 a
+ERROR 16:42:41,880 - Oporavak od greske u konstrukciji iskaza dodele na liniji 21, koloni 10 za simbol ";"!
+INFO  16:42:41,881 - #33 <
+INFO  16:42:41,881 - #20 b
+INFO  16:42:41,881 - #24 +
+INFO  16:42:41,881 - #44 )
+ERROR 16:42:41,881 - 
+Sintaksna greska na liniji 23, koloni 14 za simbol ")"!
+INFO  16:42:41,881 - #47 {
+INFO  16:42:41,881 - #20 a
+INFO  16:42:41,881 - #37 =
+ERROR 16:42:41,881 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 14 za simbol ")"!
+INFO  16:42:41,882 - #21 1
+INFO  16:42:41,882 - #40 ;
+INFO  16:42:41,882 - #48 }
+INFO  16:42:41,882 - #8 if
+INFO  16:42:41,882 - #43 (
+INFO  16:42:41,882 - #20 a
+INFO  16:42:41,882 - #33 <
+INFO  16:42:41,882 - #20 b
+INFO  16:42:41,882 - #24 +
+INFO  16:42:41,882 - #40 ;
+ERROR 16:42:41,882 - 
+Sintaksna greska na liniji 27, koloni 13 za simbol ";"!
+INFO  16:42:41,882 - #44 )
+INFO  16:42:41,882 - #20 a
+INFO  16:42:41,882 - #37 =
+INFO  16:42:41,882 - #21 1
+ERROR 16:42:41,882 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 27, koloni 13 za simbol ";"!
+INFO  16:42:41,882 - #40 ;
+INFO  16:42:41,882 - #6 else
+INFO  16:42:41,882 - #20 a
+INFO  16:42:41,883 - #37 =
+INFO  16:42:41,883 - #21 2
+INFO  16:42:41,883 - #40 ;
+INFO  16:42:41,883 - #48 }
+INFO  16:42:41,883 - #48 }
+INFO  16:42:41,884 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclMulti(
+      ProgramDeclMulti(
+        ProgramDeclMulti(
+          ProgramDeclMulti(
+            ProgramDeclMulti(
+              ProgramDeclEps(
+              ) [ProgramDeclEps]
+              PartVarDeclaration(
+                GlobalVarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  GlobalVarSingle(
+                    VarError(
+                    ) [VarError]
+                  ) [GlobalVarSingle]
+                ) [GlobalVarDeclaration]
+              ) [PartVarDeclaration]
+            ) [ProgramDeclMulti]
+            PartVarDeclaration(
+              GlobalVarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                GlobalVarSingle(
+                  GlobalVar(
+                    VarNormal(
+                     a
+                    ) [VarNormal]
+                  ) [GlobalVar]
+                ) [GlobalVarSingle]
+              ) [GlobalVarDeclaration]
+            ) [PartVarDeclaration]
+          ) [ProgramDeclMulti]
+          PartVarDeclaration(
+            GlobalVarDeclaration(
+              Type(
+               int
+              ) [Type]
+              GlobalVarSingle(
+                VarError(
+                ) [VarError]
+              ) [GlobalVarSingle]
+            ) [GlobalVarDeclaration]
+          ) [PartVarDeclaration]
+        ) [ProgramDeclMulti]
+        PartVarDeclaration(
+          GlobalVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            GlobalVarMulti(
+              GlobalVarSingle(
+                GlobalVar(
+                  VarNormal(
+                   a
+                  ) [VarNormal]
+                ) [GlobalVar]
+              ) [GlobalVarSingle]
+              GlobalVar(
+                VarNormal(
+                 b
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarMulti]
+          ) [GlobalVarDeclaration]
+        ) [PartVarDeclaration]
+      ) [ProgramDeclMulti]
+      PartVarDeclaration(
+        GlobalVarDeclaration(
+          Type(
+           abc
+          ) [Type]
+          GlobalVarSingle(
+            GlobalVar(
+              VarNormal(
+               b
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarSingle]
+        ) [GlobalVarDeclaration]
+      ) [PartVarDeclaration]
+    ) [ProgramDeclMulti]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         bool
+        ) [Type]
+        GlobalVarSingle(
+          VarError(
+          ) [VarError]
+        ) [GlobalVarSingle]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDecMulti(
+    MethodDeclSingle(
+      MethodTypeDeclaration(
+        MethodType2(
+          MethodTypeName(
+            Type(
+             int
+            ) [Type]
+           sum
+          ) [MethodTypeName]
+          ParamMulti(
+            ParamSingle(
+              ParamNormal(
+                Type(
+                 int
+                ) [Type]
+               z
+              ) [ParamNormal]
+            ) [ParamSingle]
+            ParamError(
+            ) [ParamError]
+          ) [ParamMulti]
+          StatementSingle(
+            StmtReturnExpr(
+              ExprOne(
+                ExprAddop(
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         z
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                  AddopPlus(
+                  ) [AddopPlus]
+                  TermSingle(
+                    FactorDesignator(
+                      DesignatorSimple(
+                       d
+                      ) [DesignatorSimple]
+                    ) [FactorDesignator]
+                  ) [TermSingle]
+                ) [ExprAddop]
+              ) [ExprOne]
+            ) [StmtReturnExpr]
+          ) [StatementSingle]
+        ) [MethodType2]
+      ) [MethodTypeDeclaration]
+    ) [MethodDeclSingle]
+    MethodVoidDeclaration(
+      MethodVoid4(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        VarDeclSingle(
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarSingle(
+              VarNormal(
+               a
+              ) [VarNormal]
+            ) [VarSingle]
+          ) [VarDeclaration]
+        ) [VarDeclSingle]
+        StatementMulti(
+          StatementMulti(
+            StatementSingle(
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   a
+                  ) [DesignatorSimple]
+                  AssignmentError(
+                  ) [AssignmentError]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementSingle]
+            StmtIf(
+              IfKeyword(
+              ) [IfKeyword]
+              StmtIfBody(
+                IfCondError(
+                ) [IfCondError]
+                Stmt(
+                  StatementSingle(
+                    StmtDesign(
+                      DesignatorAssignment(
+                        DesignatorSimple(
+                         a
+                        ) [DesignatorSimple]
+                        AssignmentExpr(
+                          ExprOne(
+                            ExprSingle(
+                              TermSingle(
+                                FactorNumConst(
+                                 1
+                                ) [FactorNumConst]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [ExprOne]
+                        ) [AssignmentExpr]
+                      ) [DesignatorAssignment]
+                    ) [StmtDesign]
+                  ) [StatementSingle]
+                ) [Stmt]
+              ) [StmtIfBody]
+            ) [StmtIf]
+          ) [StatementMulti]
+          StmtIfElse(
+            IfKeyword(
+            ) [IfKeyword]
+            StmtIfBody(
+              IfCondError(
+              ) [IfCondError]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   a
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprOne(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           1
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [ExprOne]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StmtIfBody]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 a
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprOne(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         2
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [ExprOne]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StmtIfElse]
+        ) [StatementMulti]
+      ) [MethodVoid4]
+    ) [MethodVoidDeclaration]
+  ) [MethodDecMulti]
+) [Program]
+INFO  16:42:41,884 - ===================================
