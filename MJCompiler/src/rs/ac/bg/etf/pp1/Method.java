@@ -6,23 +6,23 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class Method {
 	private String name;
-	private ArrayList<Struct> parameters; 
+	private ArrayList<Struct> arguments; 
 			
 	public Method(String name) {		
 		this.name = name;
-		this.parameters = new ArrayList<Struct>();
+		this.arguments = new ArrayList<Struct>();
 	}				
 	
 	public Method(String name, ArrayList<Struct> parameters) {		
 		this.name = name;
-		this.parameters = parameters;
+		this.arguments = parameters;
 	}				
 
-	public String getMethodName() {
+	public String getName() {
 		return name;
 	}
 	
-	public ArrayList<Struct> getParameters() {
-		return parameters;
+	public ArrayList<Struct> getArguments() {
+		return arguments;
 	}		
 }

@@ -242,7 +242,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (Tab.find(paramNormal.getParamName()) == Tab.noObj || !methodContains(paramNormal.getParamName())) {
 	    	Obj obj = Tab.insert(Obj.Var, paramNormal.getParamName(), paramNormal.getType().struct);
 	    	if (methods.size() > 0) {
-				methods.get(methods.size() - 1).getParameters().add(obj.getType());
+				methods.get(methods.size() - 1).getArguments().add(obj.getType());
 			}	
 	    	if (currentMethod.getName().equals("main")) {
 	    		mainMethodDefined = false;
@@ -258,7 +258,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (Tab.find(paramArray.getParamName()) == Tab.noObj || !methodContains(paramArray.getParamName())) {
 			Obj obj = Tab.insert(Obj.Var, paramArray.getParamName(), new Struct(Struct.Array, paramArray.getType().struct));
 			if (methods.size() > 0) {
-				methods.get(methods.size() - 1).getParameters().add(obj.getType());
+				methods.get(methods.size() - 1).getArguments().add(obj.getType());
 			}			
 			if (currentMethod.getName().equals("main")) {
 	    		mainMethodDefined = false;
@@ -339,10 +339,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_info("Pronadjen poziv funkcije '" + func.getName() + "'", designatorMethodCallParams);
     		Method method = null;
 			for (Method m : methods) {
-				if (m.getMethodName().equals(func.getName()))
+				if (m.getName().equals(func.getName()))
 					method = m;
 			}
-			if (method != null && !method.getParameters().equals(currentMethodParams)) {
+			if (method != null && !method.getArguments().equals(currentMethodParams)) {
 				report_error("Semanticka greska - argumenti funkcije nisu odgovarajuci", designatorMethodCallParams);
 			}
     	} else {
@@ -357,10 +357,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_info("Pronadjen poziv funkcije '" + func.getName() + "'", designatorMethodCall);
 			Method method = null;
 			for (Method m : methods) {
-				if (m.getMethodName().equals(func.getName()))
+				if (m.getName().equals(func.getName()))
 					method = m;
 			}
-			if (method != null && method.getParameters().size() > 0) {
+			if (method != null && method.getArguments().size() > 0) {
 				report_error("Semanticka greska - argumenti funkcije nisu odgovarajuci", designatorMethodCall);
 			}
     	} else {
@@ -496,10 +496,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		funcCallParams.struct = func.getType();
     		Method method = null;
 			for (Method m : methods) {
-				if (m.getMethodName().equals(func.getName()))
+				if (m.getName().equals(func.getName()))
 					method = m;
 			}
-			if (method != null && !method.getParameters().equals(currentMethodParams)) {
+			if (method != null && !method.getArguments().equals(currentMethodParams)) {
 				report_error("Semanticka greska - argumenti funkcije nisu odgovarajuci", funcCallParams);
 			}
     	} else {
@@ -516,10 +516,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			funcCall.struct = func.getType();
 			Method method = null;
 			for (Method m : methods) {
-				if (m.getMethodName().equals(func.getName()))
+				if (m.getName().equals(func.getName()))
 					method = m;
 			}
-			if (method != null && method.getParameters().size() > 0) {
+			if (method != null && method.getArguments().size() > 0) {
 				report_error("Semanticka greska - argumenti funkcije nisu odgovarajuci", funcCall);
 			}
     	} else {

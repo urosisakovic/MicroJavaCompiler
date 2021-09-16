@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/8/2021 23:5:47
+// 16/8/2021 23:18:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -119,6 +119,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StmtDesign StmtDesign) { visit(); }
     public void visit(StatementSingle StatementSingle) { visit(); }
     public void visit(StatementMulti StatementMulti) { visit(); }
+    public void visit(VarDeclSingle VarDeclSingle) { visit(); }
+    public void visit(VarDeclMulti VarDeclMulti) { visit(); }
+    public void visit(VarArray VarArray) { visit(); }
+    public void visit(VarNormal VarNormal) { visit(); }
+    public void visit(VarSingle VarSingle) { visit(); }
+    public void visit(VarMulti VarMulti) { visit(); }
+    public void visit(VarDeclaration VarDeclaration) { visit(); }
     public void visit(Type Type) { visit(); }
     public void visit(ParamError ParamError) { visit(); }
     public void visit(ParamArray ParamArray) { visit(); }
@@ -147,8 +154,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodVoidDeclaration MethodVoidDeclaration) { visit(); }
     public void visit(MethodDeclSingle MethodDeclSingle) { visit(); }
     public void visit(MethodDecMulti MethodDecMulti) { visit(); }
-    public void visit(VarDeclSingle VarDeclSingle) { visit(); }
-    public void visit(VarDeclMulti VarDeclMulti) { visit(); }
     public void visit(ClassDecl3 ClassDecl3) { visit(); }
     public void visit(ClassDecl2 ClassDecl2) { visit(); }
     public void visit(ClassDecl1 ClassDecl1) { visit(); }
@@ -158,11 +163,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(GlobalVarSingle GlobalVarSingle) { visit(); }
     public void visit(GlobalVarMulti GlobalVarMulti) { visit(); }
     public void visit(GlobalVarDeclaration GlobalVarDeclaration) { visit(); }
-    public void visit(VarArray VarArray) { visit(); }
-    public void visit(VarNormal VarNormal) { visit(); }
-    public void visit(VarSingle VarSingle) { visit(); }
-    public void visit(VarMulti VarMulti) { visit(); }
-    public void visit(VarDeclaration VarDeclaration) { visit(); }
     public void visit(CharConst CharConst) { visit(); }
     public void visit(BoolConst BoolConst) { visit(); }
     public void visit(NumConst NumConst) { visit(); }

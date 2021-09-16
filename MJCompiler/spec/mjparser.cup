@@ -111,55 +111,43 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Value, Term, Factor, Ex
 
 precedence left ELSE;
 
+// Struktura programa na najvisem nivou
 Program ::= (Program) PROGRAM ProgName:p ProgramDeclarations LBRACE MethodDeclList RBRACE;
-
 ProgName ::= (ProgName) IDENT:progName;
 
+// Programske deklaracije konstanti, klasa i promenljivih
 ProgramDeclarations ::= (ProgramDeclMulti) ProgramDeclarations ProgramDeclaration
 						|
 						(ProgramDeclEps) /* epsilon */;
-						
 ProgramDeclaration ::= (PartConstDeclaration) ConstDecl
 					   |
 					   (PartVarDeclaration) GlobalVarDecl
 					   |
 					   (PartClassDeclaration) ClassDecl;
 
+// Deklaracije konstanti
 ConstDecl ::= (ConstDeclaration) CONST Type ConstList SEMICOLON;
-
 ConstList ::= (ConstMulti) ConstList COMMA ConstPart
 			  |
 			  (ConstSingle) ConstPart;
-			  
 ConstPart ::= (ConstPart) IDENT:constName ASSIGNMENT Value;
-
 Value ::= (NumConst) NUM_CONST
 		  |
 		  (BoolConst) BOOL_CONST
 		  |
 		  (CharConst) CHAR_CONST;
-				
-VarDecl ::= (VarDeclaration) Type VarList SEMICOLON;
 
-VarList ::= (VarMulti) VarList COMMA VarPart
-			|
-			(VarSingle) VarPart;
-			
-VarPart ::= (VarNormal) IDENT:varName
-			|
-			(VarArray) IDENT:varName LSQUARE RSQUARE;
-			
+// Deklaracija globalnih promenljivih	
 GlobalVarDecl ::= (GlobalVarDeclaration) Type GlobalVarList SEMICOLON;
-
 GlobalVarList ::= (GlobalVarMulti) GlobalVarList COMMA GlobalVarPart
 				  |
 				  (GlobalVarSingle) GlobalVarPart;
-			
 GlobalVarPart ::= (GlobalVar) VarPart 
 				  |
 				  (VarError) error {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive", parser.getErrorSymbol()); :};
 				  /* A1 definicija globalne promenljive */ 
 
+// Deklaracija klasa
 ClassDecl ::= (ClassDecl0) CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
 			  |
 			  (ClassDecl1) CLASS IDENT LBRACE VarDeclList RBRACE
@@ -167,19 +155,14 @@ ClassDecl ::= (ClassDecl0) CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList 
 			  (ClassDecl2) CLASS IDENT LBRACE LBRACE MethodDeclList RBRACE RBRACE
 			  |
 			  (ClassDecl3) CLASS IDENT LBRACE RBRACE;
-			  
-VarDeclList ::= (VarDeclMulti) VarDeclList VarDecl
-				|
-				(VarDeclSingle) VarDecl;
-				
+
+// Deklaracija metoda
 MethodDeclList ::= (MethodDecMulti) MethodDeclList MethodDec
 				   |
 				   (MethodDeclSingle) MethodDec;
-				   
 MethodDec ::= (MethodVoidDeclaration) MethodVoidDecl
 			  |
 			  (MethodTypeDeclaration) MethodTypeDecl;
-
 MethodVoidDecl ::= (MethodVoid0) MethVoidName LPAREN FormParams RPAREN VarDeclList LBRACE StatementList RBRACE
 				   |
 				   (MethodVoid1) MethVoidName LPAREN FormParams RPAREN VarDeclList LBRACE RBRACE
@@ -195,9 +178,7 @@ MethodVoidDecl ::= (MethodVoid0) MethVoidName LPAREN FormParams RPAREN VarDeclLi
 				   (MethodVoid6) MethVoidName LPAREN RPAREN LBRACE StatementList RBRACE
 				   |
 				   (MethodVoid7) MethVoidName LPAREN RPAREN LBRACE RBRACE;
-				   
 MethVoidName ::= (MethodVoidName) VOID IDENT:methodName;
-				   
 MethodTypeDecl ::= (MethodType0) MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE StatementList RBRACE
 				   |
 				   (MethodType1) MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE RBRACE
@@ -213,14 +194,12 @@ MethodTypeDecl ::= (MethodType0) MethTypeName LPAREN FormParams RPAREN VarDeclLi
 				   (MethodType6) MethTypeName LPAREN RPAREN LBRACE StatementList RBRACE
 				   |
 				   (MethodType7) MethTypeName LPAREN RPAREN LBRACE RBRACE;
-		
 MethTypeName ::= (MethodTypeName) Type IDENT:methodName;
 
+// Argumenti metoda
 FormParams ::= (ParamMulti) FormParams COMMA FormParam
 			   |
 			   (ParamSingle) FormParam;
-
-// Ovo je komentar   
 FormParam ::= (ParamNormal) Type IDENT:paramName
 		      |
 		      (ParamArray) Type IDENT:paramName LSQUARE RSQUARE
@@ -228,13 +207,24 @@ FormParam ::= (ParamNormal) Type IDENT:paramName
 		      (ParamError) error 
 		      {: this.parser.report_error("Oporavak od greske u definiciji formalnih parametara funkcije", this.parser.getErrorSymbol()); :};
 		      /* B1 definicija formalnih parametara */
-		      
-Type ::= (Type) IDENT:typeName;				   
+Type ::= (Type) IDENT:typeName;
 
+// Deklaracija lokalnih promenljivih
+VarDecl ::= (VarDeclaration) Type VarList SEMICOLON;
+VarList ::= (VarMulti) VarList COMMA VarPart
+			|
+			(VarSingle) VarPart;
+VarPart ::= (VarNormal) IDENT:varName
+			|
+			(VarArray) IDENT:varName LSQUARE RSQUARE;
+VarDeclList ::= (VarDeclMulti) VarDeclList VarDecl
+				|
+				(VarDeclSingle) VarDecl;
+
+// Programski iskazi
 StatementList ::= (StatementMulti) StatementList Statement
 				  |
 				  (StatementSingle) Statement;
-				  
 Statement ::= (StmtDesign) DesignatorStatement SEMICOLON
 			  |
 			  (StmtSwitchNoCase) SWITCH LPAREN Expr RPAREN LBRACE RBRACE

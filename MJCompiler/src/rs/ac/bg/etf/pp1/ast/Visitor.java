@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/8/2021 23:5:47
+// 16/8/2021 23:18:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -119,6 +119,13 @@ public interface Visitor {
     public void visit(StmtDesign StmtDesign);
     public void visit(StatementSingle StatementSingle);
     public void visit(StatementMulti StatementMulti);
+    public void visit(VarDeclSingle VarDeclSingle);
+    public void visit(VarDeclMulti VarDeclMulti);
+    public void visit(VarArray VarArray);
+    public void visit(VarNormal VarNormal);
+    public void visit(VarSingle VarSingle);
+    public void visit(VarMulti VarMulti);
+    public void visit(VarDeclaration VarDeclaration);
     public void visit(Type Type);
     public void visit(ParamError ParamError);
     public void visit(ParamArray ParamArray);
@@ -147,8 +154,6 @@ public interface Visitor {
     public void visit(MethodVoidDeclaration MethodVoidDeclaration);
     public void visit(MethodDeclSingle MethodDeclSingle);
     public void visit(MethodDecMulti MethodDecMulti);
-    public void visit(VarDeclSingle VarDeclSingle);
-    public void visit(VarDeclMulti VarDeclMulti);
     public void visit(ClassDecl3 ClassDecl3);
     public void visit(ClassDecl2 ClassDecl2);
     public void visit(ClassDecl1 ClassDecl1);
@@ -158,11 +163,6 @@ public interface Visitor {
     public void visit(GlobalVarSingle GlobalVarSingle);
     public void visit(GlobalVarMulti GlobalVarMulti);
     public void visit(GlobalVarDeclaration GlobalVarDeclaration);
-    public void visit(VarArray VarArray);
-    public void visit(VarNormal VarNormal);
-    public void visit(VarSingle VarSingle);
-    public void visit(VarMulti VarMulti);
-    public void visit(VarDeclaration VarDeclaration);
     public void visit(CharConst CharConst);
     public void visit(BoolConst BoolConst);
     public void visit(NumConst NumConst);

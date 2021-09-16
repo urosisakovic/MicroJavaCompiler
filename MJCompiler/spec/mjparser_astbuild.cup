@@ -140,55 +140,43 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Value, Term, Factor, Ex
 
 precedence left ELSE;
 
+// Struktura programa na najvisem nivou
 Program ::= (Program) PROGRAM ProgName:p ProgramDeclarations:P1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, P1, M2); RESULT.setLine(pleft); :};
-
 ProgName ::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :};
 
+// Programske deklaracije konstanti, klasa i promenljivih
 ProgramDeclarations ::= (ProgramDeclMulti) ProgramDeclarations:P1 ProgramDeclaration:P2 {: RESULT=new ProgramDeclMulti(P1, P2); RESULT.setLine(P1left); :}
 						|
 						(ProgramDeclEps) {: RESULT=new ProgramDeclEps(); :} /* epsilon */;
-						
 ProgramDeclaration ::= (PartConstDeclaration) ConstDecl:C1 {: RESULT=new PartConstDeclaration(C1); RESULT.setLine(C1left); :}
 					   |
 					   (PartVarDeclaration) GlobalVarDecl:G1 {: RESULT=new PartVarDeclaration(G1); RESULT.setLine(G1left); :}
 					   |
 					   (PartClassDeclaration) ClassDecl:C1 {: RESULT=new PartClassDeclaration(C1); RESULT.setLine(C1left); :};
 
+// Deklaracije konstanti
 ConstDecl ::= (ConstDeclaration) CONST Type:T1 ConstList:C2 SEMICOLON {: RESULT=new ConstDeclaration(T1, C2); RESULT.setLine(T1left); :};
-
 ConstList ::= (ConstMulti) ConstList:C1 COMMA ConstPart:C2 {: RESULT=new ConstMulti(C1, C2); RESULT.setLine(C1left); :}
 			  |
 			  (ConstSingle) ConstPart:C1 {: RESULT=new ConstSingle(C1); RESULT.setLine(C1left); :};
-			  
 ConstPart ::= (ConstPart) IDENT:constName ASSIGNMENT Value:V1 {: RESULT=new ConstPart(constName, V1); RESULT.setLine(constNameleft); :};
-
 Value ::= (NumConst) NUM_CONST:N1 {: RESULT=new NumConst(N1); RESULT.setLine(N1left); :}
 		  |
 		  (BoolConst) BOOL_CONST:B1 {: RESULT=new BoolConst(B1); RESULT.setLine(B1left); :}
 		  |
 		  (CharConst) CHAR_CONST:C1 {: RESULT=new CharConst(C1); RESULT.setLine(C1left); :};
-				
-VarDecl ::= (VarDeclaration) Type:T1 VarList:V2 SEMICOLON {: RESULT=new VarDeclaration(T1, V2); RESULT.setLine(T1left); :};
 
-VarList ::= (VarMulti) VarList:V1 COMMA VarPart:V2 {: RESULT=new VarMulti(V1, V2); RESULT.setLine(V1left); :}
-			|
-			(VarSingle) VarPart:V1 {: RESULT=new VarSingle(V1); RESULT.setLine(V1left); :};
-			
-VarPart ::= (VarNormal) IDENT:varName {: RESULT=new VarNormal(varName); RESULT.setLine(varNameleft); :}
-			|
-			(VarArray) IDENT:varName LSQUARE RSQUARE {: RESULT=new VarArray(varName); RESULT.setLine(varNameleft); :};
-			
+// Deklaracija globalnih promenljivih	
 GlobalVarDecl ::= (GlobalVarDeclaration) Type:T1 GlobalVarList:G2 SEMICOLON {: RESULT=new GlobalVarDeclaration(T1, G2); RESULT.setLine(T1left); :};
-
 GlobalVarList ::= (GlobalVarMulti) GlobalVarList:G1 COMMA GlobalVarPart:G2 {: RESULT=new GlobalVarMulti(G1, G2); RESULT.setLine(G1left); :}
 				  |
 				  (GlobalVarSingle) GlobalVarPart:G1 {: RESULT=new GlobalVarSingle(G1); RESULT.setLine(G1left); :};
-			
 GlobalVarPart ::= (GlobalVar) VarPart:V1 {: RESULT=new GlobalVar(V1); RESULT.setLine(V1left); :} 
 				  |
 				  (VarError) error {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive", parser.getErrorSymbol()); :} {: RESULT=new VarError(); :};
 				  /* A1 definicija globalne promenljive */ 
 
+// Deklaracija klasa
 ClassDecl ::= (ClassDecl0) CLASS IDENT:I1 LBRACE VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE RBRACE {: RESULT=new ClassDecl0(I1, V2, M3); RESULT.setLine(I1left); :}
 			  |
 			  (ClassDecl1) CLASS IDENT:I1 LBRACE VarDeclList:V2 RBRACE {: RESULT=new ClassDecl1(I1, V2); RESULT.setLine(I1left); :}
@@ -196,19 +184,14 @@ ClassDecl ::= (ClassDecl0) CLASS IDENT:I1 LBRACE VarDeclList:V2 LBRACE MethodDec
 			  (ClassDecl2) CLASS IDENT:I1 LBRACE LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new ClassDecl2(I1, M2); RESULT.setLine(I1left); :}
 			  |
 			  (ClassDecl3) CLASS IDENT:I1 LBRACE RBRACE {: RESULT=new ClassDecl3(I1); RESULT.setLine(I1left); :};
-			  
-VarDeclList ::= (VarDeclMulti) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclMulti(V1, V2); RESULT.setLine(V1left); :}
-				|
-				(VarDeclSingle) VarDecl:V1 {: RESULT=new VarDeclSingle(V1); RESULT.setLine(V1left); :};
-				
+
+// Deklaracija metoda
 MethodDeclList ::= (MethodDecMulti) MethodDeclList:M1 MethodDec:M2 {: RESULT=new MethodDecMulti(M1, M2); RESULT.setLine(M1left); :}
 				   |
 				   (MethodDeclSingle) MethodDec:M1 {: RESULT=new MethodDeclSingle(M1); RESULT.setLine(M1left); :};
-				   
 MethodDec ::= (MethodVoidDeclaration) MethodVoidDecl:M1 {: RESULT=new MethodVoidDeclaration(M1); RESULT.setLine(M1left); :}
 			  |
 			  (MethodTypeDeclaration) MethodTypeDecl:M1 {: RESULT=new MethodTypeDeclaration(M1); RESULT.setLine(M1left); :};
-
 MethodVoidDecl ::= (MethodVoid0) MethVoidName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodVoid0(M1, F2, V3, S4); RESULT.setLine(M1left); :}
 				   |
 				   (MethodVoid1) MethVoidName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE RBRACE {: RESULT=new MethodVoid1(M1, F2, V3); RESULT.setLine(M1left); :}
@@ -224,9 +207,7 @@ MethodVoidDecl ::= (MethodVoid0) MethVoidName:M1 LPAREN FormParams:F2 RPAREN Var
 				   (MethodVoid6) MethVoidName:M1 LPAREN RPAREN LBRACE StatementList:S2 RBRACE {: RESULT=new MethodVoid6(M1, S2); RESULT.setLine(M1left); :}
 				   |
 				   (MethodVoid7) MethVoidName:M1 LPAREN RPAREN LBRACE RBRACE {: RESULT=new MethodVoid7(M1); RESULT.setLine(M1left); :};
-				   
 MethVoidName ::= (MethodVoidName) VOID IDENT:methodName {: RESULT=new MethodVoidName(methodName); RESULT.setLine(methodNameleft); :};
-				   
 MethodTypeDecl ::= (MethodType0) MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodType0(M1, F2, V3, S4); RESULT.setLine(M1left); :}
 				   |
 				   (MethodType1) MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE RBRACE {: RESULT=new MethodType1(M1, F2, V3); RESULT.setLine(M1left); :}
@@ -242,14 +223,12 @@ MethodTypeDecl ::= (MethodType0) MethTypeName:M1 LPAREN FormParams:F2 RPAREN Var
 				   (MethodType6) MethTypeName:M1 LPAREN RPAREN LBRACE StatementList:S2 RBRACE {: RESULT=new MethodType6(M1, S2); RESULT.setLine(M1left); :}
 				   |
 				   (MethodType7) MethTypeName:M1 LPAREN RPAREN LBRACE RBRACE {: RESULT=new MethodType7(M1); RESULT.setLine(M1left); :};
-		
 MethTypeName ::= (MethodTypeName) Type:T1 IDENT:methodName {: RESULT=new MethodTypeName(T1, methodName); RESULT.setLine(T1left); :};
 
+// Argumenti metoda
 FormParams ::= (ParamMulti) FormParams:F1 COMMA FormParam:F2 {: RESULT=new ParamMulti(F1, F2); RESULT.setLine(F1left); :}
 			   |
 			   (ParamSingle) FormParam:F1 {: RESULT=new ParamSingle(F1); RESULT.setLine(F1left); :};
-
-// Ovo je komentar   
 FormParam ::= (ParamNormal) Type:T1 IDENT:paramName {: RESULT=new ParamNormal(T1, paramName); RESULT.setLine(T1left); :}
 		      |
 		      (ParamArray) Type:T1 IDENT:paramName LSQUARE RSQUARE {: RESULT=new ParamArray(T1, paramName); RESULT.setLine(T1left); :}
@@ -257,13 +236,24 @@ FormParam ::= (ParamNormal) Type:T1 IDENT:paramName {: RESULT=new ParamNormal(T1
 		      (ParamError) error 
 		      {: this.parser.report_error("Oporavak od greske u definiciji formalnih parametara funkcije", this.parser.getErrorSymbol()); :} {: RESULT=new ParamError(); :};
 		      /* B1 definicija formalnih parametara */
-		      
-Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};				   
+Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
 
+// Deklaracija lokalnih promenljivih
+VarDecl ::= (VarDeclaration) Type:T1 VarList:V2 SEMICOLON {: RESULT=new VarDeclaration(T1, V2); RESULT.setLine(T1left); :};
+VarList ::= (VarMulti) VarList:V1 COMMA VarPart:V2 {: RESULT=new VarMulti(V1, V2); RESULT.setLine(V1left); :}
+			|
+			(VarSingle) VarPart:V1 {: RESULT=new VarSingle(V1); RESULT.setLine(V1left); :};
+VarPart ::= (VarNormal) IDENT:varName {: RESULT=new VarNormal(varName); RESULT.setLine(varNameleft); :}
+			|
+			(VarArray) IDENT:varName LSQUARE RSQUARE {: RESULT=new VarArray(varName); RESULT.setLine(varNameleft); :};
+VarDeclList ::= (VarDeclMulti) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclMulti(V1, V2); RESULT.setLine(V1left); :}
+				|
+				(VarDeclSingle) VarDecl:V1 {: RESULT=new VarDeclSingle(V1); RESULT.setLine(V1left); :};
+
+// Programski iskazi
 StatementList ::= (StatementMulti) StatementList:S1 Statement:S2 {: RESULT=new StatementMulti(S1, S2); RESULT.setLine(S1left); :}
 				  |
 				  (StatementSingle) Statement:S1 {: RESULT=new StatementSingle(S1); RESULT.setLine(S1left); :};
-				  
 Statement ::= (StmtDesign) DesignatorStatement:D1 SEMICOLON {: RESULT=new StmtDesign(D1); RESULT.setLine(D1left); :}
 			  |
 			  (StmtSwitchNoCase) SWITCH LPAREN Expr:E1 RPAREN LBRACE RBRACE {: RESULT=new StmtSwitchNoCase(E1); RESULT.setLine(E1left); :}
