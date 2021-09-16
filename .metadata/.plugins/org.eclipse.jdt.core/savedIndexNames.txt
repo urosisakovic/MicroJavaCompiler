@@ -3,6 +3,5 @@ INDEX VERSION 1.131+C:\Users\User\src\MicroJavaCompiler\.metadata\.plugins\org.e
 1653997750.index
 570380218.index
 485005741.index
-2063763519.index
 963485355.index
 3024886296.index

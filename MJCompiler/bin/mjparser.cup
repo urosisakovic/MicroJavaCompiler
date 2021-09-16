@@ -84,7 +84,7 @@ scan with {:
 
 terminal PROGRAM, BREAK, CLASS, ENUM, ELSE, CONST, IF;
 terminal SWITCH, DO, WHILE, NEW, PRINT, READ, RETURN;
-terminal VOID, EXTENDS, CONTINUE, CASE;
+terminal VOID, CONTINUE, CASE;
 terminal String IDENT;
 terminal Integer NUM_CONST;
 terminal Character CHAR_CONST;
@@ -93,7 +93,7 @@ terminal PLUS, MINUS, MUL, DIV, MOD;
 terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESSER, LESSER_EQUAL;
 terminal AND, OR, ASSIGNMENT, INC, DEC, SEMICOLON, COMMA, FULL_STOP;
 terminal LPAREN, RPAREN, LSQUARE, RSQUARE, LBRACE, RBRACE;
-terminal QUESTION_MARK, COLON;
+terminal COLON;
 
 nonterminal ProgramDeclarations, ProgramDeclaration;
 nonterminal ConstDecl, ConstList, ConstPart, ClassDecl;
@@ -160,21 +160,13 @@ GlobalVarPart ::= (GlobalVar) VarPart
 				  (VarError) error {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive", parser.getErrorSymbol()); :};
 				  /* A1 definicija globalne promenljive */ 
 
-ClassDecl ::= (ClassDecl0) CLASS IDENT EXTENDS Type LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
+ClassDecl ::= (ClassDecl0) CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
 			  |
-			  (ClassDecl1) CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
+			  (ClassDecl1) CLASS IDENT LBRACE VarDeclList RBRACE
 			  |
-			  (ClassDecl2) CLASS IDENT EXTENDS Type LBRACE VarDeclList RBRACE
+			  (ClassDecl2) CLASS IDENT LBRACE LBRACE MethodDeclList RBRACE RBRACE
 			  |
-			  (ClassDecl3) CLASS IDENT LBRACE VarDeclList RBRACE
-			  |
-			  (ClassDecl4) CLASS IDENT EXTENDS Type LBRACE LBRACE MethodDeclList RBRACE RBRACE
-			  |
-			  (ClassDecl5) CLASS IDENT LBRACE LBRACE MethodDeclList RBRACE RBRACE
-			  |
-			  (ClassDecl6) CLASS IDENT EXTENDS Type LBRACE RBRACE
-			  |
-			  (ClassDecl7) CLASS IDENT LBRACE RBRACE;
+			  (ClassDecl3) CLASS IDENT LBRACE RBRACE;
 			  
 VarDeclList ::= (VarDeclMulti) VarDeclList VarDecl
 				|

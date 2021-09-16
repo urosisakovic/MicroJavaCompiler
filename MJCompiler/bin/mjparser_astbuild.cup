@@ -84,7 +84,7 @@ scan with {:
 
 terminal PROGRAM, BREAK, CLASS, ENUM, ELSE, CONST, IF;
 terminal SWITCH, DO, WHILE, NEW, PRINT, READ, RETURN;
-terminal VOID, EXTENDS, CONTINUE, CASE;
+terminal VOID, CONTINUE, CASE;
 terminal String IDENT;
 terminal Integer NUM_CONST;
 terminal Character CHAR_CONST;
@@ -93,7 +93,7 @@ terminal PLUS, MINUS, MUL, DIV, MOD;
 terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESSER, LESSER_EQUAL;
 terminal AND, OR, ASSIGNMENT, INC, DEC, SEMICOLON, COMMA, FULL_STOP;
 terminal LPAREN, RPAREN, LSQUARE, RSQUARE, LBRACE, RBRACE;
-terminal QUESTION_MARK, COLON;
+terminal COLON;
 
 nonterminal ProgramDeclarations ProgramDeclarations;
 nonterminal ProgramDeclaration ProgramDeclaration;
@@ -189,21 +189,13 @@ GlobalVarPart ::= (GlobalVar) VarPart:V1 {: RESULT=new GlobalVar(V1); RESULT.set
 				  (VarError) error {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive", parser.getErrorSymbol()); :} {: RESULT=new VarError(); :};
 				  /* A1 definicija globalne promenljive */ 
 
-ClassDecl ::= (ClassDecl0) CLASS IDENT:I1 EXTENDS Type:T2 LBRACE VarDeclList:V3 LBRACE MethodDeclList:M4 RBRACE RBRACE {: RESULT=new ClassDecl0(I1, T2, V3, M4); RESULT.setLine(I1left); :}
+ClassDecl ::= (ClassDecl0) CLASS IDENT:I1 LBRACE VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE RBRACE {: RESULT=new ClassDecl0(I1, V2, M3); RESULT.setLine(I1left); :}
 			  |
-			  (ClassDecl1) CLASS IDENT:I1 LBRACE VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE RBRACE {: RESULT=new ClassDecl1(I1, V2, M3); RESULT.setLine(I1left); :}
+			  (ClassDecl1) CLASS IDENT:I1 LBRACE VarDeclList:V2 RBRACE {: RESULT=new ClassDecl1(I1, V2); RESULT.setLine(I1left); :}
 			  |
-			  (ClassDecl2) CLASS IDENT:I1 EXTENDS Type:T2 LBRACE VarDeclList:V3 RBRACE {: RESULT=new ClassDecl2(I1, T2, V3); RESULT.setLine(I1left); :}
+			  (ClassDecl2) CLASS IDENT:I1 LBRACE LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new ClassDecl2(I1, M2); RESULT.setLine(I1left); :}
 			  |
-			  (ClassDecl3) CLASS IDENT:I1 LBRACE VarDeclList:V2 RBRACE {: RESULT=new ClassDecl3(I1, V2); RESULT.setLine(I1left); :}
-			  |
-			  (ClassDecl4) CLASS IDENT:I1 EXTENDS Type:T2 LBRACE LBRACE MethodDeclList:M3 RBRACE RBRACE {: RESULT=new ClassDecl4(I1, T2, M3); RESULT.setLine(I1left); :}
-			  |
-			  (ClassDecl5) CLASS IDENT:I1 LBRACE LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new ClassDecl5(I1, M2); RESULT.setLine(I1left); :}
-			  |
-			  (ClassDecl6) CLASS IDENT:I1 EXTENDS Type:T2 LBRACE RBRACE {: RESULT=new ClassDecl6(I1, T2); RESULT.setLine(I1left); :}
-			  |
-			  (ClassDecl7) CLASS IDENT:I1 LBRACE RBRACE {: RESULT=new ClassDecl7(I1); RESULT.setLine(I1left); :};
+			  (ClassDecl3) CLASS IDENT:I1 LBRACE RBRACE {: RESULT=new ClassDecl3(I1); RESULT.setLine(I1left); :};
 			  
 VarDeclList ::= (VarDeclMulti) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclMulti(V1, V2); RESULT.setLine(V1left); :}
 				|

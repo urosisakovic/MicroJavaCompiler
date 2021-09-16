@@ -59,7 +59,6 @@ import java_cup.runtime.Symbol;
 "read"      { return new_symbol(sym.READ, yytext());}
 "return"    { return new_symbol(sym.RETURN, yytext());}
 "void"      { return new_symbol(sym.VOID, yytext());}
-"extends" 	{ return new_symbol(sym.EXTENDS, yytext()); }
 "continue" 	{ return new_symbol(sym.CONTINUE, yytext()); }
 "case" 		{ return new_symbol(sym.CASE, yytext()); }
 
@@ -88,7 +87,6 @@ import java_cup.runtime.Symbol;
 "]" 		{ return new_symbol(sym.RSQUARE, yytext()); }
 "{" 		{ return new_symbol(sym.LBRACE, yytext()); }
 "}" 		{ return new_symbol(sym.RBRACE, yytext()); }
-"?"			{ return new_symbol(sym.QUESTION_MARK, yytext()); }
 ":"			{ return new_symbol(sym.COLON, yytext()); }
 
 
