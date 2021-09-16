@@ -999,3 +999,3881 @@ ERROR 22:07:27,212 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - clanovi izr
 ERROR 22:07:27,212 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu kompatibilni na liniji 68
 ERROR 22:07:27,213 - [Line #69]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu tipa int na liniji 69
 ERROR 22:07:27,213 - [Line #71]  SEMANTIC_ERROR: Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
+INFO  22:41:44,338 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\semantic.mj
+INFO  22:41:44,365 - #2 program
+INFO  22:41:44,365 - #20 MJProgram
+INFO  22:41:44,365 - #20 abc
+INFO  22:41:44,365 - #20 a
+INFO  22:41:44,367 - #40 ;
+INFO  22:41:44,367 - #7 const
+INFO  22:41:44,367 - #20 int
+INFO  22:41:44,367 - #20 cnst
+INFO  22:41:44,367 - #37 =
+INFO  22:41:44,367 - #21 1
+INFO  22:41:44,367 - #40 ;
+INFO  22:41:44,367 - #47 {
+INFO  22:41:44,367 - #20 int
+INFO  22:41:44,367 - #20 fun
+INFO  22:41:44,367 - #43 (
+INFO  22:41:44,367 - #20 int
+INFO  22:41:44,367 - #20 x
+INFO  22:41:44,367 - #44 )
+INFO  22:41:44,367 - #47 {
+INFO  22:41:44,367 - #48 }
+INFO  22:41:44,367 - #16 void
+INFO  22:41:44,368 - #20 main
+INFO  22:41:44,368 - #43 (
+INFO  22:41:44,368 - #44 )
+INFO  22:41:44,368 - #20 int
+INFO  22:41:44,368 - #20 b
+INFO  22:41:44,368 - #40 ;
+INFO  22:41:44,368 - #20 char
+INFO  22:41:44,368 - #20 b
+INFO  22:41:44,368 - #40 ;
+INFO  22:41:44,368 - #20 int
+INFO  22:41:44,368 - #20 num
+INFO  22:41:44,368 - #40 ;
+INFO  22:41:44,368 - #20 char
+INFO  22:41:44,368 - #20 character
+INFO  22:41:44,369 - #40 ;
+INFO  22:41:44,369 - #20 bool
+INFO  22:41:44,369 - #20 boolean
+INFO  22:41:44,369 - #40 ;
+INFO  22:41:44,369 - #20 int
+INFO  22:41:44,369 - #20 niz
+INFO  22:41:44,369 - #45 [
+INFO  22:41:44,369 - #46 ]
+INFO  22:41:44,369 - #41 ,
+INFO  22:41:44,369 - #20 niz1
+INFO  22:41:44,369 - #45 [
+INFO  22:41:44,369 - #46 ]
+INFO  22:41:44,369 - #40 ;
+INFO  22:41:44,369 - #47 {
+INFO  22:41:44,369 - #20 num
+INFO  22:41:44,369 - #37 =
+INFO  22:41:44,370 - #22 a
+ERROR 22:41:44,370 - 
+Sintaksna greska na liniji 23, koloni 8 za simbol "a"!
+INFO  22:41:44,370 - #40 ;
+INFO  22:41:44,370 - #20 num
+INFO  22:41:44,370 - #37 =
+INFO  22:41:44,371 - #23 true
+ERROR 22:41:44,371 - Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 8 za simbol "a"!
+ERROR 22:41:44,371 - 
+Sintaksna greska na liniji 24, koloni 8 za simbol "true"!
+INFO  22:41:44,371 - #40 ;
+INFO  22:41:44,371 - #20 character
+INFO  22:41:44,371 - #37 =
+INFO  22:41:44,371 - #21 1
+ERROR 22:41:44,371 - Oporavak od greske u konstrukciji iskaza dodele na liniji 24, koloni 8 za simbol "true"!
+ERROR 22:41:44,372 - 
+Sintaksna greska na liniji 25, koloni 14 za simbol "1"!
+INFO  22:41:44,372 - #40 ;
+INFO  22:41:44,372 - #20 character
+INFO  22:41:44,372 - #37 =
+INFO  22:41:44,372 - #23 true
+ERROR 22:41:44,372 - Oporavak od greske u konstrukciji iskaza dodele na liniji 25, koloni 14 za simbol "1"!
+ERROR 22:41:44,372 - 
+Sintaksna greska na liniji 26, koloni 14 za simbol "true"!
+INFO  22:41:44,372 - #40 ;
+INFO  22:41:44,372 - #20 boolean
+INFO  22:41:44,372 - #37 =
+INFO  22:41:44,372 - #21 1
+ERROR 22:41:44,372 - Oporavak od greske u konstrukciji iskaza dodele na liniji 26, koloni 14 za simbol "true"!
+ERROR 22:41:44,372 - 
+Sintaksna greska na liniji 27, koloni 12 za simbol "1"!
+INFO  22:41:44,372 - #40 ;
+INFO  22:41:44,372 - #20 boolean
+INFO  22:41:44,372 - #37 =
+INFO  22:41:44,372 - #22 a
+ERROR 22:41:44,372 - Oporavak od greske u konstrukciji iskaza dodele na liniji 27, koloni 12 za simbol "1"!
+ERROR 22:41:44,372 - 
+Sintaksna greska na liniji 28, koloni 12 za simbol "a"!
+INFO  22:41:44,372 - #40 ;
+INFO  22:41:44,373 - #20 cnst
+INFO  22:41:44,373 - #37 =
+INFO  22:41:44,373 - #21 2
+ERROR 22:41:44,373 - Oporavak od greske u konstrukciji iskaza dodele na liniji 28, koloni 12 za simbol "a"!
+ERROR 22:41:44,373 - 
+Sintaksna greska na liniji 31, koloni 9 za simbol "2"!
+INFO  22:41:44,373 - #40 ;
+INFO  22:41:44,373 - #20 character
+INFO  22:41:44,373 - #38 ++
+INFO  22:41:44,373 - #40 ;
+ERROR 22:41:44,373 - Oporavak od greske u konstrukciji iskaza dodele na liniji 31, koloni 9 za simbol "2"!
+INFO  22:41:44,373 - #20 boolean
+INFO  22:41:44,373 - #39 --
+INFO  22:41:44,373 - #40 ;
+INFO  22:41:44,373 - #20 fun
+INFO  22:41:44,373 - #43 (
+INFO  22:41:44,373 - #21 1
+ERROR 22:41:44,374 - 
+Sintaksna greska na liniji 38, koloni 6 za simbol "1"!
+INFO  22:41:44,374 - #41 ,
+INFO  22:41:44,374 - #21 2
+INFO  22:41:44,374 - #44 )
+INFO  22:41:44,374 - #40 ;
+INFO  22:41:44,374 - #20 fun
+INFO  22:41:44,374 - #43 (
+INFO  22:41:44,374 - #23 true
+INFO  22:41:44,374 - #44 )
+INFO  22:41:44,374 - #40 ;
+INFO  22:41:44,374 - #20 character
+INFO  22:41:44,374 - #37 =
+INFO  22:41:44,374 - #25 -
+INFO  22:41:44,374 - #22 a
+INFO  22:41:44,374 - #40 ;
+INFO  22:41:44,374 - #20 niz
+INFO  22:41:44,374 - #37 =
+INFO  22:41:44,374 - #12 new
+INFO  22:41:44,374 - #20 int
+INFO  22:41:44,375 - #45 [
+INFO  22:41:44,375 - #22 a
+INFO  22:41:44,375 - #46 ]
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #10 do
+INFO  22:41:44,375 - #47 {
+INFO  22:41:44,375 - #20 num
+INFO  22:41:44,375 - #38 ++
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #3 break
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #18 continue
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #48 }
+INFO  22:41:44,375 - #11 while
+INFO  22:41:44,375 - #43 (
+INFO  22:41:44,375 - #20 num
+INFO  22:41:44,375 - #33 <
+INFO  22:41:44,375 - #21 10
+INFO  22:41:44,375 - #44 )
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #3 break
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #18 continue
+INFO  22:41:44,375 - #40 ;
+INFO  22:41:44,375 - #8 if
+INFO  22:41:44,375 - #43 (
+INFO  22:41:44,375 - #20 niz
+INFO  22:41:44,375 - #33 <
+INFO  22:41:44,375 - #20 niz1
+INFO  22:41:44,375 - #44 )
+INFO  22:41:44,375 - #47 {
+INFO  22:41:44,375 - #20 num
+INFO  22:41:44,375 - #37 =
+ERROR 22:41:44,375 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 38, koloni 6 za simbol "1"!
+INFO  22:41:44,376 - #21 1
+ERROR 22:41:44,376 - 
+Sintaksna greska na liniji 57, koloni 9 za simbol "1"!
+INFO  22:41:44,376 - #40 ;
+INFO  22:41:44,376 - #48 }
+INFO  22:41:44,376 - #8 if
+INFO  22:41:44,376 - #43 (
+INFO  22:41:44,376 - #20 num
+INFO  22:41:44,376 - #44 )
+INFO  22:41:44,376 - #47 {
+INFO  22:41:44,376 - #20 num
+INFO  22:41:44,376 - #37 =
+INFO  22:41:44,376 - #21 2
+INFO  22:41:44,376 - #40 ;
+INFO  22:41:44,376 - #48 }
+INFO  22:41:44,376 - #10 do
+INFO  22:41:44,376 - #47 {
+INFO  22:41:44,376 - #20 niz
+INFO  22:41:44,376 - #45 [
+INFO  22:41:44,376 - #23 true
+INFO  22:41:44,376 - #46 ]
+INFO  22:41:44,376 - #37 =
+INFO  22:41:44,376 - #21 1
+INFO  22:41:44,376 - #40 ;
+INFO  22:41:44,376 - #48 }
+INFO  22:41:44,376 - #11 while
+INFO  22:41:44,376 - #43 (
+INFO  22:41:44,376 - #20 num
+INFO  22:41:44,377 - #44 )
+INFO  22:41:44,377 - #40 ;
+INFO  22:41:44,377 - #20 num
+INFO  22:41:44,377 - #37 =
+INFO  22:41:44,377 - #20 num
+ERROR 22:41:44,377 - Oporavak od greske u konstrukciji iskaza dodele na liniji 57, koloni 9 za simbol "1"!
+ERROR 22:41:44,377 - 
+Sintaksna greska na liniji 68, koloni 8 za simbol "num"!
+INFO  22:41:44,377 - #24 +
+INFO  22:41:44,377 - #22 a
+INFO  22:41:44,377 - #40 ;
+INFO  22:41:44,377 - #20 num
+INFO  22:41:44,377 - #37 =
+INFO  22:41:44,377 - #20 num
+ERROR 22:41:44,377 - Oporavak od greske u konstrukciji iskaza dodele na liniji 68, koloni 8 za simbol "num"!
+ERROR 22:41:44,377 - 
+Sintaksna greska na liniji 69, koloni 8 za simbol "num"!
+INFO  22:41:44,377 - #26 *
+INFO  22:41:44,377 - #22 a
+INFO  22:41:44,377 - #40 ;
+INFO  22:41:44,377 - #20 num
+INFO  22:41:44,377 - #37 =
+INFO  22:41:44,377 - #20 boolean
+ERROR 22:41:44,377 - Oporavak od greske u konstrukciji iskaza dodele na liniji 69, koloni 8 za simbol "num"!
+ERROR 22:41:44,377 - 
+Sintaksna greska na liniji 71, koloni 8 za simbol "boolean"!
+INFO  22:41:44,377 - #49 ?
+INFO  22:41:44,377 - #21 1
+INFO  22:41:44,377 - #50 :
+INFO  22:41:44,377 - #22 a
+INFO  22:41:44,377 - #40 ;
+INFO  22:41:44,377 - #48 }
+INFO  22:41:44,377 - #48 }
+ERROR 22:41:44,377 - Oporavak od greske u konstrukciji iskaza dodele na liniji 71, koloni 8 za simbol "boolean"!
+INFO  22:41:44,378 - 
+
+================SINTAKSNO STABLO====================
+
+
+INFO  22:41:44,378 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclMulti(
+      ProgramDeclEps(
+      ) [ProgramDeclEps]
+      PartVarDeclaration(
+        GlobalVarDeclaration(
+          Type(
+           abc
+          ) [Type]
+          GlobalVarSingle(
+            GlobalVar(
+              VarNormal(
+               a
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarSingle]
+        ) [GlobalVarDeclaration]
+      ) [PartVarDeclaration]
+    ) [ProgramDeclMulti]
+    PartConstDeclaration(
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        ConstSingle(
+          ConstPart(
+           cnst
+            NumConst(
+             1
+            ) [NumConst]
+          ) [ConstPart]
+        ) [ConstSingle]
+      ) [ConstDeclaration]
+    ) [PartConstDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDecMulti(
+    MethodDeclSingle(
+      MethodTypeDeclaration(
+        MethodType3(
+          MethodTypeName(
+            Type(
+             int
+            ) [Type]
+           fun
+          ) [MethodTypeName]
+          ParamSingle(
+            ParamNormal(
+              Type(
+               int
+              ) [Type]
+             x
+            ) [ParamNormal]
+          ) [ParamSingle]
+        ) [MethodType3]
+      ) [MethodTypeDeclaration]
+    ) [MethodDeclSingle]
+    MethodVoidDeclaration(
+      MethodVoid2(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        ParamSingle(
+          ParamError(
+          ) [ParamError]
+        ) [ParamSingle]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     num
+                    ) [DesignatorSimple]
+                    AssignmentError(
+                    ) [AssignmentError]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   num
+                  ) [DesignatorSimple]
+                  AssignmentError(
+                  ) [AssignmentError]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 num
+                ) [DesignatorSimple]
+                AssignmentError(
+                ) [AssignmentError]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtDesign(
+            DesignatorAssignment(
+              DesignatorSimple(
+               num
+              ) [DesignatorSimple]
+              AssignmentError(
+              ) [AssignmentError]
+            ) [DesignatorAssignment]
+          ) [StmtDesign]
+        ) [StatementMulti]
+      ) [MethodVoid2]
+    ) [MethodVoidDeclaration]
+  ) [MethodDecMulti]
+) [Program]
+INFO  22:41:44,378 - 
+
+================SEMANTICKA OBRADA====================
+
+
+ERROR 22:41:44,381 - Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+INFO  22:41:44,381 - Deklarisana globalna promenljiva 'a' na liniji 4
+INFO  22:41:44,382 - Deklarisana konstanta 'cnst' na liniji 5
+INFO  22:41:44,382 - Formalni parametar funkcije fun: 'x' na liniji 7
+ERROR 22:41:44,382 - Semanticka greska - 'num' nije deklarisano na liniji 57
+ERROR 22:41:44,382 - Semanticka greska - 'num' nije deklarisano na liniji 68
+ERROR 22:41:44,382 - Semanticka greska - 'num' nije deklarisano na liniji 69
+ERROR 22:41:44,382 - Semanticka greska - 'num' nije deklarisano na liniji 71
+INFO  22:41:44,382 - ===================================
+ERROR 22:41:44,382 - Parsiranje nije uspesno zavrseno!
+ERROR 22:41:44,386 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 8 za simbol "a"!
+ERROR 22:41:44,386 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 8 za simbol "a"!
+ERROR 22:41:44,386 - [Line #24]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 24, koloni 8 za simbol "true"!
+ERROR 22:41:44,386 - [Line #24]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 24, koloni 8 za simbol "true"!
+ERROR 22:41:44,387 - [Line #25]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 25, koloni 14 za simbol "1"!
+ERROR 22:41:44,387 - [Line #25]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 25, koloni 14 za simbol "1"!
+ERROR 22:41:44,387 - [Line #26]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 26, koloni 14 za simbol "true"!
+ERROR 22:41:44,387 - [Line #26]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 26, koloni 14 za simbol "true"!
+ERROR 22:41:44,387 - [Line #27]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 27, koloni 12 za simbol "1"!
+ERROR 22:41:44,387 - [Line #27]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 27, koloni 12 za simbol "1"!
+ERROR 22:41:44,387 - [Line #28]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 28, koloni 12 za simbol "a"!
+ERROR 22:41:44,387 - [Line #28]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 28, koloni 12 za simbol "a"!
+ERROR 22:41:44,387 - [Line #31]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 31, koloni 9 za simbol "2"!
+ERROR 22:41:44,387 - [Line #31]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 31, koloni 9 za simbol "2"!
+ERROR 22:41:44,387 - [Line #38]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 38, koloni 6 za simbol "1"!
+ERROR 22:41:44,387 - [Line #38]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 38, koloni 6 za simbol "1"!
+ERROR 22:41:44,387 - [Line #57]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 57, koloni 9 za simbol "1"!
+ERROR 22:41:44,387 - [Line #57]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 57, koloni 9 za simbol "1"!
+ERROR 22:41:44,387 - [Line #68]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 68, koloni 8 za simbol "num"!
+ERROR 22:41:44,387 - [Line #68]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 68, koloni 8 za simbol "num"!
+ERROR 22:41:44,388 - [Line #69]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 69, koloni 8 za simbol "num"!
+ERROR 22:41:44,388 - [Line #69]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 69, koloni 8 za simbol "num"!
+ERROR 22:41:44,388 - [Line #71]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 71, koloni 8 za simbol "boolean"!
+ERROR 22:41:44,388 - [Line #71]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 71, koloni 8 za simbol "boolean"!
+ERROR 22:41:44,388 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+ERROR 22:41:44,388 - [Line #57]  SEMANTIC_ERROR: Semanticka greska - 'num' nije deklarisano na liniji 57
+ERROR 22:41:44,388 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - 'num' nije deklarisano na liniji 68
+ERROR 22:41:44,388 - [Line #69]  SEMANTIC_ERROR: Semanticka greska - 'num' nije deklarisano na liniji 69
+ERROR 22:41:44,388 - [Line #71]  SEMANTIC_ERROR: Semanticka greska - 'num' nije deklarisano na liniji 71
+INFO  22:42:09,528 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  22:42:09,555 - #2 program
+INFO  22:42:09,555 - #20 test302
+INFO  22:42:09,555 - #7 const
+INFO  22:42:09,556 - #20 int
+INFO  22:42:09,556 - #20 jedan
+INFO  22:42:09,556 - #37 =
+INFO  22:42:09,556 - #21 1
+INFO  22:42:09,556 - #40 ;
+INFO  22:42:09,557 - #20 int
+INFO  22:42:09,557 - #20 i
+INFO  22:42:09,557 - #40 ;
+INFO  22:42:09,557 - #20 bool
+INFO  22:42:09,557 - #20 ibool
+INFO  22:42:09,557 - #40 ;
+INFO  22:42:09,557 - #20 int
+INFO  22:42:09,557 - #20 niz
+INFO  22:42:09,557 - #45 [
+INFO  22:42:09,557 - #46 ]
+INFO  22:42:09,557 - #40 ;
+INFO  22:42:09,558 - #47 {
+INFO  22:42:09,558 - #20 int
+INFO  22:42:09,558 - #20 sum
+INFO  22:42:09,558 - #43 (
+INFO  22:42:09,558 - #20 int
+INFO  22:42:09,558 - #20 z
+INFO  22:42:09,558 - #41 ,
+INFO  22:42:09,558 - #20 int
+INFO  22:42:09,558 - #20 d
+INFO  22:42:09,558 - #44 )
+INFO  22:42:09,558 - #47 {
+INFO  22:42:09,558 - #15 return
+INFO  22:42:09,558 - #20 z
+ERROR 22:42:09,558 - 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+INFO  22:42:09,559 - #24 +
+INFO  22:42:09,559 - #20 d
+INFO  22:42:09,559 - #40 ;
+INFO  22:42:09,560 - #48 }
+INFO  22:42:09,560 - #20 int
+INFO  22:42:09,560 - #20 inkrement
+INFO  22:42:09,560 - #43 (
+INFO  22:42:09,560 - #20 int
+INFO  22:42:09,560 - #20 a
+INFO  22:42:09,560 - #41 ,
+INFO  22:42:09,560 - #20 int
+INFO  22:42:09,560 - #20 inc
+INFO  22:42:09,560 - #44 )
+ERROR 22:42:09,560 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+INFO  22:42:09,560 - #20 int
+INFO  22:42:09,560 - #20 pom
+INFO  22:42:09,560 - #40 ;
+INFO  22:42:09,560 - #47 {
+INFO  22:42:09,561 - #8 if
+INFO  22:42:09,561 - #43 (
+INFO  22:42:09,561 - #20 inc
+ERROR 22:42:09,561 - 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+INFO  22:42:09,561 - #29 ==
+INFO  22:42:09,561 - #20 jedan
+INFO  22:42:09,561 - #44 )
+INFO  22:42:09,561 - #20 pom
+INFO  22:42:09,561 - #37 =
+INFO  22:42:09,561 - #21 1
+ERROR 22:42:09,561 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:42:09,562 - 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+INFO  22:42:09,562 - #40 ;
+INFO  22:42:09,562 - #6 else
+INFO  22:42:09,562 - #8 if
+INFO  22:42:09,562 - #43 (
+ERROR 22:42:09,562 - Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+INFO  22:42:09,562 - #20 inc
+ERROR 22:42:09,563 - 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+INFO  22:42:09,563 - #29 ==
+INFO  22:42:09,563 - #21 2
+INFO  22:42:09,563 - #44 )
+INFO  22:42:09,563 - #20 pom
+INFO  22:42:09,563 - #37 =
+INFO  22:42:09,563 - #20 a
+ERROR 22:42:09,563 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:42:09,563 - 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+INFO  22:42:09,563 - #40 ;
+INFO  22:42:09,563 - #15 return
+INFO  22:42:09,563 - #20 sum
+INFO  22:42:09,563 - #43 (
+INFO  22:42:09,563 - #20 a
+INFO  22:42:09,563 - #41 ,
+INFO  22:42:09,563 - #20 pom
+INFO  22:42:09,563 - #44 )
+INFO  22:42:09,563 - #40 ;
+INFO  22:42:09,563 - #48 }
+INFO  22:42:09,563 - #20 bool
+INFO  22:42:09,563 - #20 verify
+ERROR 22:42:09,563 - Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+INFO  22:42:09,564 - #43 (
+INFO  22:42:09,564 - #44 )
+INFO  22:42:09,564 - #47 {
+INFO  22:42:09,564 - #13 print
+INFO  22:42:09,564 - #43 (
+INFO  22:42:09,564 - #22 v
+ERROR 22:42:09,564 - 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+INFO  22:42:09,564 - #44 )
+INFO  22:42:09,564 - #40 ;
+INFO  22:42:09,564 - #15 return
+INFO  22:42:09,564 - #23 false
+INFO  22:42:09,564 - #40 ;
+INFO  22:42:09,564 - #48 }
+INFO  22:42:09,564 - #16 void
+INFO  22:42:09,564 - #20 main
+INFO  22:42:09,564 - #43 (
+INFO  22:42:09,564 - #44 )
+INFO  22:42:09,564 - #47 {
+INFO  22:42:09,565 - #8 if
+INFO  22:42:09,565 - #43 (
+ERROR 22:42:09,565 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+INFO  22:42:09,565 - #21 1
+ERROR 22:42:09,565 - 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+INFO  22:42:09,565 - #30 !=
+INFO  22:42:09,565 - #21 1
+INFO  22:42:09,565 - #44 )
+INFO  22:42:09,565 - #13 print
+INFO  22:42:09,565 - #43 (
+INFO  22:42:09,565 - #25 -
+ERROR 22:42:09,565 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:42:09,565 - 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+INFO  22:42:09,565 - #21 6
+INFO  22:42:09,565 - #44 )
+INFO  22:42:09,565 - #40 ;
+INFO  22:42:09,565 - #6 else
+INFO  22:42:09,565 - #13 print
+INFO  22:42:09,565 - #43 (
+INFO  22:42:09,565 - #21 0
+INFO  22:42:09,565 - #44 )
+INFO  22:42:09,566 - #40 ;
+INFO  22:42:09,566 - #20 ibool
+INFO  22:42:09,566 - #37 =
+INFO  22:42:09,566 - #23 false
+INFO  22:42:09,566 - #40 ;
+INFO  22:42:09,566 - #20 i
+INFO  22:42:09,566 - #37 =
+INFO  22:42:09,566 - #21 0
+INFO  22:42:09,566 - #40 ;
+INFO  22:42:09,566 - #10 do
+INFO  22:42:09,566 - #47 {
+INFO  22:42:09,566 - #8 if
+INFO  22:42:09,566 - #43 (
+INFO  22:42:09,566 - #20 i
+INFO  22:42:09,566 - #29 ==
+INFO  22:42:09,566 - #21 2
+INFO  22:42:09,566 - #44 )
+INFO  22:42:09,566 - #20 ibool
+INFO  22:42:09,566 - #37 =
+INFO  22:42:09,566 - #23 true
+INFO  22:42:09,566 - #40 ;
+INFO  22:42:09,566 - #20 i
+INFO  22:42:09,566 - #38 ++
+INFO  22:42:09,566 - #40 ;
+INFO  22:42:09,566 - #48 }
+INFO  22:42:09,566 - #11 while
+INFO  22:42:09,566 - #43 (
+INFO  22:42:09,566 - #20 i
+INFO  22:42:09,566 - #33 <
+INFO  22:42:09,566 - #21 5
+INFO  22:42:09,566 - #44 )
+INFO  22:42:09,566 - #40 ;
+INFO  22:42:09,566 - #8 if
+INFO  22:42:09,566 - #43 (
+INFO  22:42:09,566 - #20 ibool
+INFO  22:42:09,566 - #44 )
+INFO  22:42:09,566 - #8 if
+INFO  22:42:09,566 - #43 (
+INFO  22:42:09,566 - #20 i
+INFO  22:42:09,566 - #29 ==
+INFO  22:42:09,566 - #21 5
+INFO  22:42:09,566 - #44 )
+INFO  22:42:09,567 - #13 print
+INFO  22:42:09,567 - #43 (
+INFO  22:42:09,567 - #21 1
+INFO  22:42:09,567 - #44 )
+INFO  22:42:09,567 - #40 ;
+INFO  22:42:09,567 - #6 else
+INFO  22:42:09,567 - #13 print
+INFO  22:42:09,567 - #43 (
+INFO  22:42:09,567 - #25 -
+INFO  22:42:09,567 - #21 1
+INFO  22:42:09,567 - #44 )
+INFO  22:42:09,567 - #40 ;
+INFO  22:42:09,567 - #20 niz
+INFO  22:42:09,567 - #37 =
+INFO  22:42:09,567 - #12 new
+INFO  22:42:09,567 - #20 int
+INFO  22:42:09,567 - #45 [
+INFO  22:42:09,567 - #21 3
+INFO  22:42:09,567 - #46 ]
+INFO  22:42:09,567 - #40 ;
+INFO  22:42:09,567 - #20 niz
+INFO  22:42:09,567 - #45 [
+INFO  22:42:09,567 - #21 0
+INFO  22:42:09,567 - #46 ]
+INFO  22:42:09,567 - #37 =
+INFO  22:42:09,567 - #21 1
+INFO  22:42:09,567 - #40 ;
+INFO  22:42:09,567 - #20 niz
+INFO  22:42:09,567 - #45 [
+INFO  22:42:09,567 - #21 1
+INFO  22:42:09,567 - #46 ]
+INFO  22:42:09,567 - #37 =
+INFO  22:42:09,567 - #21 2
+INFO  22:42:09,567 - #40 ;
+INFO  22:42:09,567 - #20 niz
+INFO  22:42:09,567 - #45 [
+INFO  22:42:09,567 - #21 2
+INFO  22:42:09,567 - #46 ]
+INFO  22:42:09,567 - #37 =
+INFO  22:42:09,567 - #20 sum
+INFO  22:42:09,567 - #43 (
+INFO  22:42:09,567 - #20 niz
+INFO  22:42:09,567 - #45 [
+INFO  22:42:09,567 - #21 1
+INFO  22:42:09,567 - #46 ]
+INFO  22:42:09,567 - #41 ,
+INFO  22:42:09,567 - #20 niz
+INFO  22:42:09,567 - #45 [
+INFO  22:42:09,567 - #21 0
+INFO  22:42:09,567 - #46 ]
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #24 +
+INFO  22:42:09,568 - #21 1
+INFO  22:42:09,568 - #40 ;
+INFO  22:42:09,568 - #8 if
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #20 verify
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #36 ||
+INFO  22:42:09,568 - #20 niz
+INFO  22:42:09,568 - #45 [
+INFO  22:42:09,568 - #21 2
+INFO  22:42:09,568 - #46 ]
+INFO  22:42:09,568 - #29 ==
+INFO  22:42:09,568 - #21 4
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #13 print
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #20 ord
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #22 A
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #40 ;
+INFO  22:42:09,568 - #6 else
+INFO  22:42:09,568 - #13 print
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #20 ord
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #22 a
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #40 ;
+INFO  22:42:09,568 - #13 print
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #20 eol
+INFO  22:42:09,568 - #44 )
+INFO  22:42:09,568 - #40 ;
+INFO  22:42:09,568 - #20 i
+INFO  22:42:09,568 - #37 =
+INFO  22:42:09,568 - #21 0
+INFO  22:42:09,568 - #40 ;
+INFO  22:42:09,568 - #10 do
+INFO  22:42:09,568 - #47 {
+INFO  22:42:09,568 - #8 if
+INFO  22:42:09,568 - #43 (
+INFO  22:42:09,568 - #20 i
+INFO  22:42:09,568 - #29 ==
+INFO  22:42:09,569 - #21 3
+INFO  22:42:09,569 - #44 )
+INFO  22:42:09,569 - #47 {
+INFO  22:42:09,569 - #20 i
+INFO  22:42:09,569 - #38 ++
+ERROR 22:42:09,569 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+INFO  22:42:09,569 - #40 ;
+INFO  22:42:09,569 - #18 continue
+INFO  22:42:09,569 - #40 ;
+INFO  22:42:09,569 - #48 }
+INFO  22:42:09,569 - #8 if
+ERROR 22:42:09,569 - 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+INFO  22:42:09,569 - #43 (
+INFO  22:42:09,569 - #20 i
+INFO  22:42:09,569 - #29 ==
+INFO  22:42:09,569 - #21 4
+INFO  22:42:09,569 - #44 )
+INFO  22:42:09,569 - #3 break
+INFO  22:42:09,569 - #40 ;
+INFO  22:42:09,569 - #20 i
+INFO  22:42:09,569 - #37 =
+INFO  22:42:09,569 - #20 inkrement
+INFO  22:42:09,569 - #43 (
+INFO  22:42:09,569 - #20 i
+INFO  22:42:09,569 - #41 ,
+INFO  22:42:09,569 - #21 1
+INFO  22:42:09,569 - #44 )
+INFO  22:42:09,569 - #40 ;
+INFO  22:42:09,569 - #48 }
+INFO  22:42:09,569 - #11 while
+INFO  22:42:09,569 - #43 (
+INFO  22:42:09,569 - #20 i
+INFO  22:42:09,569 - #33 <
+INFO  22:42:09,569 - #21 10
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #8 if
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 i
+INFO  22:42:09,570 - #29 ==
+INFO  22:42:09,570 - #21 3
+INFO  22:42:09,570 - #35 &&
+INFO  22:42:09,570 - #20 verify
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #13 print
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #25 -
+INFO  22:42:09,570 - #21 4
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #6 else
+INFO  22:42:09,570 - #13 print
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #21 4
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #14 read
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 niz
+INFO  22:42:09,570 - #45 [
+INFO  22:42:09,570 - #21 0
+INFO  22:42:09,570 - #46 ]
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #14 read
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 niz
+INFO  22:42:09,570 - #45 [
+INFO  22:42:09,570 - #21 1
+INFO  22:42:09,570 - #46 ]
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #14 read
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 niz
+INFO  22:42:09,570 - #45 [
+INFO  22:42:09,570 - #21 2
+INFO  22:42:09,570 - #46 ]
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #13 print
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 eol
+INFO  22:42:09,570 - #44 )
+INFO  22:42:09,570 - #40 ;
+INFO  22:42:09,570 - #13 print
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 sum
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 sum
+INFO  22:42:09,570 - #43 (
+INFO  22:42:09,570 - #20 niz
+INFO  22:42:09,571 - #45 [
+INFO  22:42:09,571 - #21 0
+INFO  22:42:09,571 - #46 ]
+INFO  22:42:09,571 - #41 ,
+INFO  22:42:09,571 - #20 niz
+INFO  22:42:09,571 - #45 [
+INFO  22:42:09,571 - #21 1
+INFO  22:42:09,571 - #46 ]
+INFO  22:42:09,571 - #44 )
+INFO  22:42:09,571 - #41 ,
+INFO  22:42:09,571 - #20 niz
+INFO  22:42:09,571 - #45 [
+INFO  22:42:09,571 - #21 2
+INFO  22:42:09,571 - #46 ]
+INFO  22:42:09,571 - #44 )
+INFO  22:42:09,571 - #44 )
+INFO  22:42:09,571 - #40 ;
+INFO  22:42:09,571 - #13 print
+INFO  22:42:09,571 - #43 (
+INFO  22:42:09,571 - #20 eol
+INFO  22:42:09,571 - #44 )
+INFO  22:42:09,571 - #40 ;
+INFO  22:42:09,571 - #13 print
+INFO  22:42:09,571 - #43 (
+INFO  22:42:09,571 - #20 inkrement
+INFO  22:42:09,571 - #43 (
+INFO  22:42:09,571 - #20 niz
+INFO  22:42:09,571 - #45 [
+INFO  22:42:09,571 - #21 2
+INFO  22:42:09,571 - #46 ]
+INFO  22:42:09,571 - #41 ,
+INFO  22:42:09,571 - #21 2
+INFO  22:42:09,571 - #44 )
+INFO  22:42:09,571 - #44 )
+INFO  22:42:09,571 - #40 ;
+INFO  22:42:09,571 - #48 }
+INFO  22:42:09,571 - #48 }
+ERROR 22:42:09,571 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+ERROR 22:42:09,576 - [Line #16]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:42:09,576 - [Line #16]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:42:09,576 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:42:09,576 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:42:09,576 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:42:09,576 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:42:09,576 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:42:09,576 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:42:09,576 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:42:09,576 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:42:09,576 - [Line #29]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:42:09,577 - [Line #29]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:42:09,577 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:42:09,577 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:42:09,577 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:42:09,577 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:42:09,577 - [Line #64]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+ERROR 22:42:09,577 - [Line #81]  SYNTAX_ERROR: Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+INFO  22:42:19,149 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  22:42:19,176 - #2 program
+INFO  22:42:19,176 - #20 test302
+INFO  22:42:19,176 - #7 const
+INFO  22:42:19,176 - #20 int
+INFO  22:42:19,176 - #20 jedan
+INFO  22:42:19,176 - #37 =
+INFO  22:42:19,177 - #21 1
+INFO  22:42:19,177 - #40 ;
+INFO  22:42:19,177 - #20 int
+INFO  22:42:19,177 - #20 i
+INFO  22:42:19,177 - #40 ;
+INFO  22:42:19,177 - #20 bool
+INFO  22:42:19,177 - #20 ibool
+INFO  22:42:19,178 - #40 ;
+INFO  22:42:19,178 - #20 int
+INFO  22:42:19,178 - #20 niz
+INFO  22:42:19,178 - #45 [
+INFO  22:42:19,178 - #46 ]
+INFO  22:42:19,178 - #40 ;
+INFO  22:42:19,178 - #47 {
+INFO  22:42:19,178 - #20 int
+INFO  22:42:19,178 - #20 sum
+INFO  22:42:19,178 - #43 (
+INFO  22:42:19,178 - #20 int
+INFO  22:42:19,178 - #20 z
+INFO  22:42:19,178 - #41 ,
+INFO  22:42:19,178 - #20 int
+INFO  22:42:19,178 - #20 d
+INFO  22:42:19,179 - #44 )
+INFO  22:42:19,179 - #47 {
+INFO  22:42:19,179 - #15 return
+INFO  22:42:19,179 - #20 z
+ERROR 22:42:19,179 - 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+INFO  22:42:19,179 - #24 +
+INFO  22:42:19,180 - #20 d
+INFO  22:42:19,180 - #40 ;
+INFO  22:42:19,180 - #48 }
+INFO  22:42:19,180 - #20 int
+INFO  22:42:19,180 - #20 inkrement
+INFO  22:42:19,180 - #43 (
+INFO  22:42:19,180 - #20 int
+INFO  22:42:19,180 - #20 a
+INFO  22:42:19,180 - #41 ,
+INFO  22:42:19,180 - #20 int
+INFO  22:42:19,180 - #20 inc
+INFO  22:42:19,180 - #44 )
+ERROR 22:42:19,180 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+INFO  22:42:19,181 - #20 int
+INFO  22:42:19,181 - #20 pom
+INFO  22:42:19,181 - #40 ;
+INFO  22:42:19,181 - #47 {
+INFO  22:42:19,181 - #8 if
+INFO  22:42:19,181 - #43 (
+INFO  22:42:19,181 - #20 inc
+ERROR 22:42:19,181 - 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+INFO  22:42:19,182 - #29 ==
+INFO  22:42:19,182 - #20 jedan
+INFO  22:42:19,182 - #44 )
+INFO  22:42:19,182 - #20 pom
+INFO  22:42:19,182 - #37 =
+INFO  22:42:19,182 - #21 1
+ERROR 22:42:19,182 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:42:19,182 - 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+INFO  22:42:19,182 - #40 ;
+INFO  22:42:19,182 - #6 else
+INFO  22:42:19,182 - #8 if
+INFO  22:42:19,182 - #43 (
+ERROR 22:42:19,183 - Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+INFO  22:42:19,183 - #20 inc
+ERROR 22:42:19,183 - 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+INFO  22:42:19,183 - #29 ==
+INFO  22:42:19,183 - #21 2
+INFO  22:42:19,183 - #44 )
+INFO  22:42:19,183 - #20 pom
+INFO  22:42:19,183 - #37 =
+INFO  22:42:19,183 - #20 a
+ERROR 22:42:19,183 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:42:19,183 - 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+INFO  22:42:19,183 - #40 ;
+INFO  22:42:19,183 - #15 return
+INFO  22:42:19,183 - #20 sum
+INFO  22:42:19,183 - #43 (
+INFO  22:42:19,183 - #20 a
+INFO  22:42:19,184 - #41 ,
+INFO  22:42:19,184 - #20 pom
+INFO  22:42:19,184 - #44 )
+INFO  22:42:19,184 - #40 ;
+INFO  22:42:19,184 - #48 }
+INFO  22:42:19,184 - #20 bool
+INFO  22:42:19,184 - #20 verify
+ERROR 22:42:19,184 - Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+INFO  22:42:19,184 - #43 (
+INFO  22:42:19,184 - #44 )
+INFO  22:42:19,184 - #47 {
+INFO  22:42:19,184 - #13 print
+INFO  22:42:19,184 - #43 (
+INFO  22:42:19,184 - #22 v
+ERROR 22:42:19,184 - 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+INFO  22:42:19,184 - #44 )
+INFO  22:42:19,184 - #40 ;
+INFO  22:42:19,185 - #15 return
+INFO  22:42:19,185 - #23 false
+INFO  22:42:19,185 - #40 ;
+INFO  22:42:19,185 - #48 }
+INFO  22:42:19,185 - #16 void
+INFO  22:42:19,185 - #20 main
+INFO  22:42:19,185 - #43 (
+INFO  22:42:19,185 - #44 )
+INFO  22:42:19,185 - #47 {
+INFO  22:42:19,185 - #8 if
+INFO  22:42:19,185 - #43 (
+ERROR 22:42:19,185 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+INFO  22:42:19,185 - #21 1
+ERROR 22:42:19,185 - 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+INFO  22:42:19,185 - #30 !=
+INFO  22:42:19,185 - #21 1
+INFO  22:42:19,185 - #44 )
+INFO  22:42:19,185 - #13 print
+INFO  22:42:19,185 - #43 (
+INFO  22:42:19,186 - #25 -
+ERROR 22:42:19,186 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:42:19,186 - 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+INFO  22:42:19,186 - #21 6
+INFO  22:42:19,186 - #44 )
+INFO  22:42:19,186 - #40 ;
+INFO  22:42:19,186 - #6 else
+INFO  22:42:19,186 - #13 print
+INFO  22:42:19,186 - #43 (
+INFO  22:42:19,186 - #21 0
+INFO  22:42:19,186 - #44 )
+INFO  22:42:19,186 - #40 ;
+INFO  22:42:19,186 - #20 ibool
+INFO  22:42:19,186 - #37 =
+INFO  22:42:19,186 - #23 false
+INFO  22:42:19,186 - #40 ;
+INFO  22:42:19,186 - #20 i
+INFO  22:42:19,186 - #37 =
+INFO  22:42:19,186 - #21 0
+INFO  22:42:19,186 - #40 ;
+INFO  22:42:19,186 - #10 do
+INFO  22:42:19,186 - #47 {
+INFO  22:42:19,186 - #8 if
+INFO  22:42:19,186 - #43 (
+INFO  22:42:19,186 - #20 i
+INFO  22:42:19,186 - #29 ==
+INFO  22:42:19,186 - #21 2
+INFO  22:42:19,186 - #44 )
+INFO  22:42:19,186 - #20 ibool
+INFO  22:42:19,186 - #37 =
+INFO  22:42:19,186 - #23 true
+INFO  22:42:19,186 - #40 ;
+INFO  22:42:19,186 - #20 i
+INFO  22:42:19,186 - #38 ++
+INFO  22:42:19,186 - #40 ;
+INFO  22:42:19,186 - #48 }
+INFO  22:42:19,186 - #11 while
+INFO  22:42:19,186 - #43 (
+INFO  22:42:19,186 - #20 i
+INFO  22:42:19,187 - #33 <
+INFO  22:42:19,187 - #21 5
+INFO  22:42:19,187 - #44 )
+INFO  22:42:19,187 - #40 ;
+INFO  22:42:19,187 - #8 if
+INFO  22:42:19,187 - #43 (
+INFO  22:42:19,187 - #20 ibool
+INFO  22:42:19,187 - #44 )
+INFO  22:42:19,187 - #8 if
+INFO  22:42:19,187 - #43 (
+INFO  22:42:19,187 - #20 i
+INFO  22:42:19,187 - #29 ==
+INFO  22:42:19,187 - #21 5
+INFO  22:42:19,187 - #44 )
+INFO  22:42:19,187 - #13 print
+INFO  22:42:19,187 - #43 (
+INFO  22:42:19,187 - #21 1
+INFO  22:42:19,187 - #44 )
+INFO  22:42:19,187 - #40 ;
+INFO  22:42:19,187 - #6 else
+INFO  22:42:19,187 - #13 print
+INFO  22:42:19,187 - #43 (
+INFO  22:42:19,187 - #25 -
+INFO  22:42:19,187 - #21 1
+INFO  22:42:19,187 - #44 )
+INFO  22:42:19,187 - #40 ;
+INFO  22:42:19,187 - #20 niz
+INFO  22:42:19,187 - #37 =
+INFO  22:42:19,187 - #12 new
+INFO  22:42:19,187 - #20 int
+INFO  22:42:19,187 - #45 [
+INFO  22:42:19,187 - #21 3
+INFO  22:42:19,187 - #46 ]
+INFO  22:42:19,187 - #40 ;
+INFO  22:42:19,187 - #20 niz
+INFO  22:42:19,187 - #45 [
+INFO  22:42:19,187 - #21 0
+INFO  22:42:19,187 - #46 ]
+INFO  22:42:19,187 - #37 =
+INFO  22:42:19,187 - #21 1
+INFO  22:42:19,187 - #40 ;
+INFO  22:42:19,187 - #20 niz
+INFO  22:42:19,187 - #45 [
+INFO  22:42:19,187 - #21 1
+INFO  22:42:19,187 - #46 ]
+INFO  22:42:19,187 - #37 =
+INFO  22:42:19,187 - #21 2
+INFO  22:42:19,187 - #40 ;
+INFO  22:42:19,188 - #20 niz
+INFO  22:42:19,188 - #45 [
+INFO  22:42:19,188 - #21 2
+INFO  22:42:19,188 - #46 ]
+INFO  22:42:19,188 - #37 =
+INFO  22:42:19,188 - #20 sum
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #20 niz
+INFO  22:42:19,188 - #45 [
+INFO  22:42:19,188 - #21 1
+INFO  22:42:19,188 - #46 ]
+INFO  22:42:19,188 - #41 ,
+INFO  22:42:19,188 - #20 niz
+INFO  22:42:19,188 - #45 [
+INFO  22:42:19,188 - #21 0
+INFO  22:42:19,188 - #46 ]
+INFO  22:42:19,188 - #44 )
+INFO  22:42:19,188 - #24 +
+INFO  22:42:19,188 - #21 1
+INFO  22:42:19,188 - #40 ;
+INFO  22:42:19,188 - #8 if
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #20 verify
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #44 )
+INFO  22:42:19,188 - #36 ||
+INFO  22:42:19,188 - #20 niz
+INFO  22:42:19,188 - #45 [
+INFO  22:42:19,188 - #21 2
+INFO  22:42:19,188 - #46 ]
+INFO  22:42:19,188 - #29 ==
+INFO  22:42:19,188 - #21 4
+INFO  22:42:19,188 - #44 )
+INFO  22:42:19,188 - #13 print
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #20 ord
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #22 A
+INFO  22:42:19,188 - #44 )
+INFO  22:42:19,188 - #44 )
+INFO  22:42:19,188 - #40 ;
+INFO  22:42:19,188 - #6 else
+INFO  22:42:19,188 - #13 print
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #20 ord
+INFO  22:42:19,188 - #43 (
+INFO  22:42:19,188 - #22 a
+INFO  22:42:19,188 - #44 )
+INFO  22:42:19,189 - #44 )
+INFO  22:42:19,189 - #40 ;
+INFO  22:42:19,189 - #13 print
+INFO  22:42:19,189 - #43 (
+INFO  22:42:19,189 - #20 eol
+INFO  22:42:19,189 - #44 )
+INFO  22:42:19,189 - #40 ;
+INFO  22:42:19,189 - #20 i
+INFO  22:42:19,189 - #37 =
+INFO  22:42:19,189 - #21 0
+INFO  22:42:19,189 - #40 ;
+INFO  22:42:19,189 - #10 do
+INFO  22:42:19,189 - #47 {
+INFO  22:42:19,189 - #8 if
+INFO  22:42:19,189 - #43 (
+INFO  22:42:19,189 - #20 i
+INFO  22:42:19,189 - #29 ==
+INFO  22:42:19,189 - #21 3
+INFO  22:42:19,189 - #44 )
+INFO  22:42:19,189 - #47 {
+INFO  22:42:19,189 - #20 i
+INFO  22:42:19,189 - #38 ++
+ERROR 22:42:19,189 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+INFO  22:42:19,189 - #40 ;
+INFO  22:42:19,189 - #18 continue
+INFO  22:42:19,189 - #40 ;
+INFO  22:42:19,189 - #48 }
+INFO  22:42:19,189 - #8 if
+ERROR 22:42:19,189 - 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #20 i
+INFO  22:42:19,190 - #29 ==
+INFO  22:42:19,190 - #21 4
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #3 break
+INFO  22:42:19,190 - #40 ;
+INFO  22:42:19,190 - #20 i
+INFO  22:42:19,190 - #37 =
+INFO  22:42:19,190 - #20 inkrement
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #20 i
+INFO  22:42:19,190 - #41 ,
+INFO  22:42:19,190 - #21 1
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #40 ;
+INFO  22:42:19,190 - #48 }
+INFO  22:42:19,190 - #11 while
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #20 i
+INFO  22:42:19,190 - #33 <
+INFO  22:42:19,190 - #21 10
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #40 ;
+INFO  22:42:19,190 - #8 if
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #20 i
+INFO  22:42:19,190 - #29 ==
+INFO  22:42:19,190 - #21 3
+INFO  22:42:19,190 - #35 &&
+INFO  22:42:19,190 - #20 verify
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #13 print
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #25 -
+INFO  22:42:19,190 - #21 4
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #40 ;
+INFO  22:42:19,190 - #6 else
+INFO  22:42:19,190 - #13 print
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #21 4
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #40 ;
+INFO  22:42:19,190 - #14 read
+INFO  22:42:19,190 - #43 (
+INFO  22:42:19,190 - #20 niz
+INFO  22:42:19,190 - #45 [
+INFO  22:42:19,190 - #21 0
+INFO  22:42:19,190 - #46 ]
+INFO  22:42:19,190 - #44 )
+INFO  22:42:19,190 - #40 ;
+INFO  22:42:19,190 - #14 read
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 niz
+INFO  22:42:19,191 - #45 [
+INFO  22:42:19,191 - #21 1
+INFO  22:42:19,191 - #46 ]
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #40 ;
+INFO  22:42:19,191 - #14 read
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 niz
+INFO  22:42:19,191 - #45 [
+INFO  22:42:19,191 - #21 2
+INFO  22:42:19,191 - #46 ]
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #40 ;
+INFO  22:42:19,191 - #13 print
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 eol
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #40 ;
+INFO  22:42:19,191 - #13 print
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 sum
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 sum
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 niz
+INFO  22:42:19,191 - #45 [
+INFO  22:42:19,191 - #21 0
+INFO  22:42:19,191 - #46 ]
+INFO  22:42:19,191 - #41 ,
+INFO  22:42:19,191 - #20 niz
+INFO  22:42:19,191 - #45 [
+INFO  22:42:19,191 - #21 1
+INFO  22:42:19,191 - #46 ]
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #41 ,
+INFO  22:42:19,191 - #20 niz
+INFO  22:42:19,191 - #45 [
+INFO  22:42:19,191 - #21 2
+INFO  22:42:19,191 - #46 ]
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #40 ;
+INFO  22:42:19,191 - #13 print
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 eol
+INFO  22:42:19,191 - #44 )
+INFO  22:42:19,191 - #40 ;
+INFO  22:42:19,191 - #13 print
+INFO  22:42:19,191 - #43 (
+INFO  22:42:19,191 - #20 inkrement
+INFO  22:42:19,192 - #43 (
+INFO  22:42:19,192 - #20 niz
+INFO  22:42:19,192 - #45 [
+INFO  22:42:19,192 - #21 2
+INFO  22:42:19,192 - #46 ]
+INFO  22:42:19,192 - #41 ,
+INFO  22:42:19,192 - #21 2
+INFO  22:42:19,192 - #44 )
+INFO  22:42:19,192 - #44 )
+INFO  22:42:19,192 - #40 ;
+INFO  22:42:19,192 - #48 }
+INFO  22:42:19,192 - #48 }
+ERROR 22:42:19,192 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+ERROR 22:42:19,196 - [Line #16]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:42:19,196 - [Line #16]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:42:19,196 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:42:19,196 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:42:19,197 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:42:19,197 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:42:19,197 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:42:19,197 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:42:19,197 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:42:19,197 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:42:19,197 - [Line #29]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:42:19,197 - [Line #29]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:42:19,197 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:42:19,197 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:42:19,197 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:42:19,197 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:42:19,197 - [Line #64]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+ERROR 22:42:19,197 - [Line #81]  SYNTAX_ERROR: Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+INFO  22:43:32,889 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  22:43:32,916 - #2 program
+INFO  22:43:32,917 - #20 test302
+INFO  22:43:32,917 - #7 const
+INFO  22:43:32,917 - #20 int
+INFO  22:43:32,917 - #20 jedan
+INFO  22:43:32,917 - #37 =
+INFO  22:43:32,917 - #21 1
+INFO  22:43:32,918 - #40 ;
+INFO  22:43:32,918 - #20 int
+INFO  22:43:32,918 - #20 i
+INFO  22:43:32,918 - #40 ;
+INFO  22:43:32,918 - #20 bool
+INFO  22:43:32,918 - #20 ibool
+INFO  22:43:32,918 - #40 ;
+INFO  22:43:32,919 - #20 int
+INFO  22:43:32,919 - #20 niz
+INFO  22:43:32,919 - #45 [
+INFO  22:43:32,919 - #46 ]
+INFO  22:43:32,919 - #40 ;
+INFO  22:43:32,919 - #47 {
+INFO  22:43:32,919 - #20 int
+INFO  22:43:32,919 - #20 sum
+INFO  22:43:32,919 - #43 (
+INFO  22:43:32,919 - #20 int
+INFO  22:43:32,919 - #20 z
+INFO  22:43:32,919 - #41 ,
+INFO  22:43:32,919 - #20 int
+INFO  22:43:32,920 - #20 d
+INFO  22:43:32,920 - #44 )
+INFO  22:43:32,920 - #47 {
+INFO  22:43:32,920 - #15 return
+INFO  22:43:32,920 - #20 z
+ERROR 22:43:32,920 - 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+INFO  22:43:32,921 - #24 +
+INFO  22:43:32,921 - #20 d
+INFO  22:43:32,921 - #40 ;
+INFO  22:43:32,921 - #48 }
+INFO  22:43:32,921 - #20 int
+INFO  22:43:32,921 - #20 inkrement
+INFO  22:43:32,921 - #43 (
+INFO  22:43:32,921 - #20 int
+INFO  22:43:32,921 - #20 a
+INFO  22:43:32,921 - #41 ,
+INFO  22:43:32,921 - #20 int
+INFO  22:43:32,921 - #20 inc
+INFO  22:43:32,921 - #44 )
+ERROR 22:43:32,921 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+INFO  22:43:32,922 - #20 int
+INFO  22:43:32,922 - #20 pom
+INFO  22:43:32,922 - #40 ;
+INFO  22:43:32,922 - #47 {
+INFO  22:43:32,922 - #8 if
+INFO  22:43:32,922 - #43 (
+INFO  22:43:32,922 - #20 inc
+ERROR 22:43:32,923 - 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+INFO  22:43:32,923 - #29 ==
+INFO  22:43:32,923 - #20 jedan
+INFO  22:43:32,923 - #44 )
+INFO  22:43:32,923 - #20 pom
+INFO  22:43:32,923 - #37 =
+INFO  22:43:32,923 - #21 1
+ERROR 22:43:32,923 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:43:32,923 - 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+INFO  22:43:32,923 - #40 ;
+INFO  22:43:32,923 - #6 else
+INFO  22:43:32,924 - #8 if
+INFO  22:43:32,924 - #43 (
+ERROR 22:43:32,924 - Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+INFO  22:43:32,924 - #20 inc
+ERROR 22:43:32,924 - 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+INFO  22:43:32,924 - #29 ==
+INFO  22:43:32,924 - #21 2
+INFO  22:43:32,924 - #44 )
+INFO  22:43:32,924 - #20 pom
+INFO  22:43:32,924 - #37 =
+INFO  22:43:32,924 - #20 a
+ERROR 22:43:32,924 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:43:32,924 - 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+INFO  22:43:32,924 - #40 ;
+INFO  22:43:32,924 - #15 return
+INFO  22:43:32,924 - #20 sum
+INFO  22:43:32,925 - #43 (
+INFO  22:43:32,925 - #20 a
+INFO  22:43:32,925 - #41 ,
+INFO  22:43:32,925 - #20 pom
+INFO  22:43:32,925 - #44 )
+INFO  22:43:32,925 - #40 ;
+INFO  22:43:32,925 - #48 }
+INFO  22:43:32,925 - #20 bool
+INFO  22:43:32,925 - #20 verify
+ERROR 22:43:32,925 - Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+INFO  22:43:32,925 - #43 (
+INFO  22:43:32,925 - #44 )
+INFO  22:43:32,925 - #47 {
+INFO  22:43:32,925 - #13 print
+INFO  22:43:32,925 - #43 (
+INFO  22:43:32,925 - #22 v
+ERROR 22:43:32,926 - 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+INFO  22:43:32,926 - #44 )
+INFO  22:43:32,926 - #40 ;
+INFO  22:43:32,926 - #15 return
+INFO  22:43:32,926 - #23 false
+INFO  22:43:32,926 - #40 ;
+INFO  22:43:32,926 - #48 }
+INFO  22:43:32,926 - #16 void
+INFO  22:43:32,926 - #20 main
+INFO  22:43:32,926 - #43 (
+INFO  22:43:32,926 - #44 )
+INFO  22:43:32,926 - #47 {
+INFO  22:43:32,926 - #8 if
+INFO  22:43:32,926 - #43 (
+ERROR 22:43:32,926 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+INFO  22:43:32,926 - #21 1
+ERROR 22:43:32,926 - 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+INFO  22:43:32,926 - #30 !=
+INFO  22:43:32,926 - #21 1
+INFO  22:43:32,926 - #44 )
+INFO  22:43:32,927 - #13 print
+INFO  22:43:32,927 - #43 (
+INFO  22:43:32,927 - #25 -
+ERROR 22:43:32,927 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:43:32,927 - 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+INFO  22:43:32,927 - #21 6
+INFO  22:43:32,927 - #44 )
+INFO  22:43:32,927 - #40 ;
+INFO  22:43:32,927 - #6 else
+INFO  22:43:32,927 - #13 print
+INFO  22:43:32,927 - #43 (
+INFO  22:43:32,927 - #21 0
+INFO  22:43:32,927 - #44 )
+INFO  22:43:32,927 - #40 ;
+INFO  22:43:32,927 - #20 ibool
+INFO  22:43:32,927 - #37 =
+INFO  22:43:32,927 - #23 false
+INFO  22:43:32,927 - #40 ;
+INFO  22:43:32,927 - #20 i
+INFO  22:43:32,927 - #37 =
+INFO  22:43:32,927 - #21 0
+INFO  22:43:32,927 - #40 ;
+INFO  22:43:32,927 - #10 do
+INFO  22:43:32,927 - #47 {
+INFO  22:43:32,927 - #8 if
+INFO  22:43:32,927 - #43 (
+INFO  22:43:32,927 - #20 i
+INFO  22:43:32,927 - #29 ==
+INFO  22:43:32,927 - #21 2
+INFO  22:43:32,927 - #44 )
+INFO  22:43:32,927 - #20 ibool
+INFO  22:43:32,927 - #37 =
+INFO  22:43:32,927 - #23 true
+INFO  22:43:32,927 - #40 ;
+INFO  22:43:32,927 - #20 i
+INFO  22:43:32,927 - #38 ++
+INFO  22:43:32,927 - #40 ;
+INFO  22:43:32,928 - #48 }
+INFO  22:43:32,928 - #11 while
+INFO  22:43:32,928 - #43 (
+INFO  22:43:32,928 - #20 i
+INFO  22:43:32,928 - #33 <
+INFO  22:43:32,928 - #21 5
+INFO  22:43:32,928 - #44 )
+INFO  22:43:32,928 - #40 ;
+INFO  22:43:32,928 - #8 if
+INFO  22:43:32,928 - #43 (
+INFO  22:43:32,928 - #20 ibool
+INFO  22:43:32,928 - #44 )
+INFO  22:43:32,928 - #8 if
+INFO  22:43:32,928 - #43 (
+INFO  22:43:32,928 - #20 i
+INFO  22:43:32,928 - #29 ==
+INFO  22:43:32,928 - #21 5
+INFO  22:43:32,928 - #44 )
+INFO  22:43:32,928 - #13 print
+INFO  22:43:32,928 - #43 (
+INFO  22:43:32,928 - #21 1
+INFO  22:43:32,928 - #44 )
+INFO  22:43:32,928 - #40 ;
+INFO  22:43:32,928 - #6 else
+INFO  22:43:32,928 - #13 print
+INFO  22:43:32,928 - #43 (
+INFO  22:43:32,928 - #25 -
+INFO  22:43:32,928 - #21 1
+INFO  22:43:32,928 - #44 )
+INFO  22:43:32,928 - #40 ;
+INFO  22:43:32,928 - #20 niz
+INFO  22:43:32,928 - #37 =
+INFO  22:43:32,928 - #12 new
+INFO  22:43:32,928 - #20 int
+INFO  22:43:32,928 - #45 [
+INFO  22:43:32,928 - #21 3
+INFO  22:43:32,928 - #46 ]
+INFO  22:43:32,928 - #40 ;
+INFO  22:43:32,928 - #20 niz
+INFO  22:43:32,928 - #45 [
+INFO  22:43:32,928 - #21 0
+INFO  22:43:32,928 - #46 ]
+INFO  22:43:32,928 - #37 =
+INFO  22:43:32,928 - #21 1
+INFO  22:43:32,928 - #40 ;
+INFO  22:43:32,928 - #20 niz
+INFO  22:43:32,928 - #45 [
+INFO  22:43:32,928 - #21 1
+INFO  22:43:32,929 - #46 ]
+INFO  22:43:32,929 - #37 =
+INFO  22:43:32,929 - #21 2
+INFO  22:43:32,929 - #40 ;
+INFO  22:43:32,929 - #20 niz
+INFO  22:43:32,929 - #45 [
+INFO  22:43:32,929 - #21 2
+INFO  22:43:32,929 - #46 ]
+INFO  22:43:32,929 - #37 =
+INFO  22:43:32,929 - #20 sum
+INFO  22:43:32,929 - #43 (
+INFO  22:43:32,929 - #20 niz
+INFO  22:43:32,929 - #45 [
+INFO  22:43:32,929 - #21 1
+INFO  22:43:32,929 - #46 ]
+INFO  22:43:32,929 - #41 ,
+INFO  22:43:32,929 - #20 niz
+INFO  22:43:32,929 - #45 [
+INFO  22:43:32,929 - #21 0
+INFO  22:43:32,929 - #46 ]
+INFO  22:43:32,929 - #44 )
+INFO  22:43:32,929 - #24 +
+INFO  22:43:32,929 - #21 1
+INFO  22:43:32,929 - #40 ;
+INFO  22:43:32,929 - #8 if
+INFO  22:43:32,929 - #43 (
+INFO  22:43:32,929 - #20 verify
+INFO  22:43:32,929 - #43 (
+INFO  22:43:32,929 - #44 )
+INFO  22:43:32,929 - #36 ||
+INFO  22:43:32,929 - #20 niz
+INFO  22:43:32,929 - #45 [
+INFO  22:43:32,929 - #21 2
+INFO  22:43:32,929 - #46 ]
+INFO  22:43:32,929 - #29 ==
+INFO  22:43:32,929 - #21 4
+INFO  22:43:32,929 - #44 )
+INFO  22:43:32,929 - #13 print
+INFO  22:43:32,929 - #43 (
+INFO  22:43:32,929 - #20 ord
+INFO  22:43:32,929 - #43 (
+INFO  22:43:32,929 - #22 A
+INFO  22:43:32,929 - #44 )
+INFO  22:43:32,929 - #44 )
+INFO  22:43:32,929 - #40 ;
+INFO  22:43:32,929 - #6 else
+INFO  22:43:32,929 - #13 print
+INFO  22:43:32,930 - #43 (
+INFO  22:43:32,930 - #20 ord
+INFO  22:43:32,930 - #43 (
+INFO  22:43:32,930 - #22 a
+INFO  22:43:32,930 - #44 )
+INFO  22:43:32,930 - #44 )
+INFO  22:43:32,930 - #40 ;
+INFO  22:43:32,930 - #13 print
+INFO  22:43:32,930 - #43 (
+INFO  22:43:32,930 - #20 eol
+INFO  22:43:32,930 - #44 )
+INFO  22:43:32,930 - #40 ;
+INFO  22:43:32,930 - #20 i
+INFO  22:43:32,930 - #37 =
+INFO  22:43:32,930 - #21 0
+INFO  22:43:32,930 - #40 ;
+INFO  22:43:32,930 - #10 do
+INFO  22:43:32,930 - #47 {
+INFO  22:43:32,930 - #8 if
+INFO  22:43:32,930 - #43 (
+INFO  22:43:32,930 - #20 i
+INFO  22:43:32,930 - #29 ==
+INFO  22:43:32,930 - #21 3
+INFO  22:43:32,930 - #44 )
+INFO  22:43:32,930 - #47 {
+INFO  22:43:32,930 - #20 i
+INFO  22:43:32,930 - #38 ++
+ERROR 22:43:32,930 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+INFO  22:43:32,930 - #40 ;
+INFO  22:43:32,930 - #18 continue
+INFO  22:43:32,930 - #40 ;
+INFO  22:43:32,930 - #48 }
+INFO  22:43:32,931 - #8 if
+ERROR 22:43:32,931 - 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #20 i
+INFO  22:43:32,931 - #29 ==
+INFO  22:43:32,931 - #21 4
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #3 break
+INFO  22:43:32,931 - #40 ;
+INFO  22:43:32,931 - #20 i
+INFO  22:43:32,931 - #37 =
+INFO  22:43:32,931 - #20 inkrement
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #20 i
+INFO  22:43:32,931 - #41 ,
+INFO  22:43:32,931 - #21 1
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #40 ;
+INFO  22:43:32,931 - #48 }
+INFO  22:43:32,931 - #11 while
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #20 i
+INFO  22:43:32,931 - #33 <
+INFO  22:43:32,931 - #21 10
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #40 ;
+INFO  22:43:32,931 - #8 if
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #20 i
+INFO  22:43:32,931 - #29 ==
+INFO  22:43:32,931 - #21 3
+INFO  22:43:32,931 - #35 &&
+INFO  22:43:32,931 - #20 verify
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #13 print
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #25 -
+INFO  22:43:32,931 - #21 4
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #40 ;
+INFO  22:43:32,931 - #6 else
+INFO  22:43:32,931 - #13 print
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #21 4
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #40 ;
+INFO  22:43:32,931 - #14 read
+INFO  22:43:32,931 - #43 (
+INFO  22:43:32,931 - #20 niz
+INFO  22:43:32,931 - #45 [
+INFO  22:43:32,931 - #21 0
+INFO  22:43:32,931 - #46 ]
+INFO  22:43:32,931 - #44 )
+INFO  22:43:32,931 - #40 ;
+INFO  22:43:32,932 - #14 read
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 niz
+INFO  22:43:32,932 - #45 [
+INFO  22:43:32,932 - #21 1
+INFO  22:43:32,932 - #46 ]
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #40 ;
+INFO  22:43:32,932 - #14 read
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 niz
+INFO  22:43:32,932 - #45 [
+INFO  22:43:32,932 - #21 2
+INFO  22:43:32,932 - #46 ]
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #40 ;
+INFO  22:43:32,932 - #13 print
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 eol
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #40 ;
+INFO  22:43:32,932 - #13 print
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 sum
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 sum
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 niz
+INFO  22:43:32,932 - #45 [
+INFO  22:43:32,932 - #21 0
+INFO  22:43:32,932 - #46 ]
+INFO  22:43:32,932 - #41 ,
+INFO  22:43:32,932 - #20 niz
+INFO  22:43:32,932 - #45 [
+INFO  22:43:32,932 - #21 1
+INFO  22:43:32,932 - #46 ]
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #41 ,
+INFO  22:43:32,932 - #20 niz
+INFO  22:43:32,932 - #45 [
+INFO  22:43:32,932 - #21 2
+INFO  22:43:32,932 - #46 ]
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #40 ;
+INFO  22:43:32,932 - #13 print
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 eol
+INFO  22:43:32,932 - #44 )
+INFO  22:43:32,932 - #40 ;
+INFO  22:43:32,932 - #13 print
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 inkrement
+INFO  22:43:32,932 - #43 (
+INFO  22:43:32,932 - #20 niz
+INFO  22:43:32,932 - #45 [
+INFO  22:43:32,933 - #21 2
+INFO  22:43:32,933 - #46 ]
+INFO  22:43:32,933 - #41 ,
+INFO  22:43:32,933 - #21 2
+INFO  22:43:32,933 - #44 )
+INFO  22:43:32,933 - #44 )
+INFO  22:43:32,933 - #40 ;
+INFO  22:43:32,933 - #48 }
+INFO  22:43:32,933 - #48 }
+ERROR 22:43:32,933 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+ERROR 22:43:32,937 - [Line #16]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:43:32,938 - [Line #16]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:43:32,938 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:43:32,938 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:43:32,938 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:43:32,938 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:43:32,938 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:43:32,938 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:43:32,938 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:43:32,938 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:43:32,938 - [Line #29]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:43:32,938 - [Line #29]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:43:32,938 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:43:32,938 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:43:32,938 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:43:32,938 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:43:32,938 - [Line #64]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+ERROR 22:43:32,939 - [Line #81]  SYNTAX_ERROR: Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+INFO  22:45:10,841 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  22:45:10,868 - #2 program
+INFO  22:45:10,868 - #20 test302
+INFO  22:45:10,868 - #7 const
+INFO  22:45:10,869 - #20 int
+INFO  22:45:10,869 - #20 jedan
+INFO  22:45:10,869 - #37 =
+INFO  22:45:10,869 - #21 1
+INFO  22:45:10,869 - #40 ;
+INFO  22:45:10,869 - #20 int
+INFO  22:45:10,870 - #20 i
+INFO  22:45:10,870 - #40 ;
+INFO  22:45:10,870 - #20 bool
+INFO  22:45:10,870 - #20 ibool
+INFO  22:45:10,870 - #40 ;
+INFO  22:45:10,870 - #20 int
+INFO  22:45:10,870 - #20 niz
+INFO  22:45:10,870 - #45 [
+INFO  22:45:10,870 - #46 ]
+INFO  22:45:10,870 - #40 ;
+INFO  22:45:10,870 - #47 {
+INFO  22:45:10,870 - #20 int
+INFO  22:45:10,870 - #20 sum
+INFO  22:45:10,871 - #43 (
+INFO  22:45:10,871 - #20 int
+INFO  22:45:10,871 - #20 z
+INFO  22:45:10,871 - #41 ,
+INFO  22:45:10,871 - #20 int
+INFO  22:45:10,871 - #20 d
+INFO  22:45:10,871 - #44 )
+INFO  22:45:10,871 - #47 {
+INFO  22:45:10,871 - #15 return
+INFO  22:45:10,871 - #20 z
+ERROR 22:45:10,871 - 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+INFO  22:45:10,872 - #24 +
+INFO  22:45:10,872 - #20 d
+INFO  22:45:10,872 - #40 ;
+INFO  22:45:10,872 - #48 }
+INFO  22:45:10,872 - #20 int
+INFO  22:45:10,872 - #20 inkrement
+INFO  22:45:10,873 - #43 (
+INFO  22:45:10,873 - #20 int
+INFO  22:45:10,873 - #20 a
+INFO  22:45:10,873 - #41 ,
+INFO  22:45:10,873 - #20 int
+INFO  22:45:10,873 - #20 inc
+INFO  22:45:10,873 - #44 )
+ERROR 22:45:10,873 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+INFO  22:45:10,873 - #20 int
+INFO  22:45:10,873 - #20 pom
+INFO  22:45:10,873 - #40 ;
+INFO  22:45:10,873 - #47 {
+INFO  22:45:10,873 - #8 if
+INFO  22:45:10,873 - #43 (
+INFO  22:45:10,874 - #20 inc
+ERROR 22:45:10,874 - 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+INFO  22:45:10,874 - #29 ==
+INFO  22:45:10,874 - #20 jedan
+INFO  22:45:10,874 - #44 )
+INFO  22:45:10,874 - #20 pom
+INFO  22:45:10,874 - #37 =
+INFO  22:45:10,874 - #21 1
+ERROR 22:45:10,874 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:45:10,875 - 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+INFO  22:45:10,875 - #40 ;
+INFO  22:45:10,875 - #6 else
+INFO  22:45:10,875 - #8 if
+INFO  22:45:10,875 - #43 (
+ERROR 22:45:10,875 - Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+INFO  22:45:10,876 - #20 inc
+ERROR 22:45:10,876 - 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+INFO  22:45:10,876 - #29 ==
+INFO  22:45:10,876 - #21 2
+INFO  22:45:10,876 - #44 )
+INFO  22:45:10,876 - #20 pom
+INFO  22:45:10,876 - #37 =
+INFO  22:45:10,876 - #20 a
+ERROR 22:45:10,876 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:45:10,876 - 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+INFO  22:45:10,876 - #40 ;
+INFO  22:45:10,876 - #15 return
+INFO  22:45:10,876 - #20 sum
+INFO  22:45:10,876 - #43 (
+INFO  22:45:10,876 - #20 a
+INFO  22:45:10,876 - #41 ,
+INFO  22:45:10,876 - #20 pom
+INFO  22:45:10,876 - #44 )
+INFO  22:45:10,876 - #40 ;
+INFO  22:45:10,876 - #48 }
+INFO  22:45:10,876 - #20 bool
+INFO  22:45:10,876 - #20 verify
+ERROR 22:45:10,876 - Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+INFO  22:45:10,877 - #43 (
+INFO  22:45:10,877 - #44 )
+INFO  22:45:10,877 - #47 {
+INFO  22:45:10,877 - #13 print
+INFO  22:45:10,877 - #43 (
+INFO  22:45:10,877 - #22 v
+ERROR 22:45:10,877 - 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+INFO  22:45:10,877 - #44 )
+INFO  22:45:10,877 - #40 ;
+INFO  22:45:10,877 - #15 return
+INFO  22:45:10,877 - #23 false
+INFO  22:45:10,877 - #40 ;
+INFO  22:45:10,877 - #48 }
+INFO  22:45:10,877 - #16 void
+INFO  22:45:10,877 - #20 main
+INFO  22:45:10,877 - #43 (
+INFO  22:45:10,877 - #44 )
+INFO  22:45:10,877 - #47 {
+INFO  22:45:10,877 - #8 if
+INFO  22:45:10,877 - #43 (
+ERROR 22:45:10,877 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+INFO  22:45:10,878 - #21 1
+ERROR 22:45:10,878 - 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+INFO  22:45:10,878 - #30 !=
+INFO  22:45:10,878 - #21 1
+INFO  22:45:10,878 - #44 )
+INFO  22:45:10,878 - #13 print
+INFO  22:45:10,878 - #43 (
+INFO  22:45:10,878 - #25 -
+ERROR 22:45:10,878 - Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:45:10,878 - 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+INFO  22:45:10,878 - #21 6
+INFO  22:45:10,878 - #44 )
+INFO  22:45:10,878 - #40 ;
+INFO  22:45:10,878 - #6 else
+INFO  22:45:10,878 - #13 print
+INFO  22:45:10,878 - #43 (
+INFO  22:45:10,878 - #21 0
+INFO  22:45:10,878 - #44 )
+INFO  22:45:10,878 - #40 ;
+INFO  22:45:10,878 - #20 ibool
+INFO  22:45:10,878 - #37 =
+INFO  22:45:10,879 - #23 false
+INFO  22:45:10,879 - #40 ;
+INFO  22:45:10,879 - #20 i
+INFO  22:45:10,879 - #37 =
+INFO  22:45:10,879 - #21 0
+INFO  22:45:10,879 - #40 ;
+INFO  22:45:10,879 - #10 do
+INFO  22:45:10,879 - #47 {
+INFO  22:45:10,879 - #8 if
+INFO  22:45:10,879 - #43 (
+INFO  22:45:10,879 - #20 i
+INFO  22:45:10,879 - #29 ==
+INFO  22:45:10,879 - #21 2
+INFO  22:45:10,879 - #44 )
+INFO  22:45:10,879 - #20 ibool
+INFO  22:45:10,879 - #37 =
+INFO  22:45:10,879 - #23 true
+INFO  22:45:10,879 - #40 ;
+INFO  22:45:10,879 - #20 i
+INFO  22:45:10,879 - #38 ++
+INFO  22:45:10,879 - #40 ;
+INFO  22:45:10,879 - #48 }
+INFO  22:45:10,879 - #11 while
+INFO  22:45:10,879 - #43 (
+INFO  22:45:10,879 - #20 i
+INFO  22:45:10,879 - #33 <
+INFO  22:45:10,879 - #21 5
+INFO  22:45:10,879 - #44 )
+INFO  22:45:10,879 - #40 ;
+INFO  22:45:10,879 - #8 if
+INFO  22:45:10,879 - #43 (
+INFO  22:45:10,879 - #20 ibool
+INFO  22:45:10,879 - #44 )
+INFO  22:45:10,879 - #8 if
+INFO  22:45:10,879 - #43 (
+INFO  22:45:10,879 - #20 i
+INFO  22:45:10,879 - #29 ==
+INFO  22:45:10,879 - #21 5
+INFO  22:45:10,879 - #44 )
+INFO  22:45:10,879 - #13 print
+INFO  22:45:10,879 - #43 (
+INFO  22:45:10,879 - #21 1
+INFO  22:45:10,879 - #44 )
+INFO  22:45:10,879 - #40 ;
+INFO  22:45:10,879 - #6 else
+INFO  22:45:10,879 - #13 print
+INFO  22:45:10,880 - #43 (
+INFO  22:45:10,880 - #25 -
+INFO  22:45:10,880 - #21 1
+INFO  22:45:10,880 - #44 )
+INFO  22:45:10,880 - #40 ;
+INFO  22:45:10,880 - #20 niz
+INFO  22:45:10,880 - #37 =
+INFO  22:45:10,880 - #12 new
+INFO  22:45:10,880 - #20 int
+INFO  22:45:10,880 - #45 [
+INFO  22:45:10,880 - #21 3
+INFO  22:45:10,880 - #46 ]
+INFO  22:45:10,880 - #40 ;
+INFO  22:45:10,880 - #20 niz
+INFO  22:45:10,880 - #45 [
+INFO  22:45:10,880 - #21 0
+INFO  22:45:10,880 - #46 ]
+INFO  22:45:10,880 - #37 =
+INFO  22:45:10,880 - #21 1
+INFO  22:45:10,880 - #40 ;
+INFO  22:45:10,880 - #20 niz
+INFO  22:45:10,880 - #45 [
+INFO  22:45:10,880 - #21 1
+INFO  22:45:10,880 - #46 ]
+INFO  22:45:10,880 - #37 =
+INFO  22:45:10,880 - #21 2
+INFO  22:45:10,880 - #40 ;
+INFO  22:45:10,880 - #20 niz
+INFO  22:45:10,880 - #45 [
+INFO  22:45:10,880 - #21 2
+INFO  22:45:10,880 - #46 ]
+INFO  22:45:10,880 - #37 =
+INFO  22:45:10,880 - #20 sum
+INFO  22:45:10,880 - #43 (
+INFO  22:45:10,880 - #20 niz
+INFO  22:45:10,880 - #45 [
+INFO  22:45:10,880 - #21 1
+INFO  22:45:10,880 - #46 ]
+INFO  22:45:10,880 - #41 ,
+INFO  22:45:10,880 - #20 niz
+INFO  22:45:10,880 - #45 [
+INFO  22:45:10,880 - #21 0
+INFO  22:45:10,880 - #46 ]
+INFO  22:45:10,880 - #44 )
+INFO  22:45:10,880 - #24 +
+INFO  22:45:10,880 - #21 1
+INFO  22:45:10,880 - #40 ;
+INFO  22:45:10,880 - #8 if
+INFO  22:45:10,880 - #43 (
+INFO  22:45:10,880 - #20 verify
+INFO  22:45:10,880 - #43 (
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #36 ||
+INFO  22:45:10,881 - #20 niz
+INFO  22:45:10,881 - #45 [
+INFO  22:45:10,881 - #21 2
+INFO  22:45:10,881 - #46 ]
+INFO  22:45:10,881 - #29 ==
+INFO  22:45:10,881 - #21 4
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #13 print
+INFO  22:45:10,881 - #43 (
+INFO  22:45:10,881 - #20 ord
+INFO  22:45:10,881 - #43 (
+INFO  22:45:10,881 - #22 A
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #40 ;
+INFO  22:45:10,881 - #6 else
+INFO  22:45:10,881 - #13 print
+INFO  22:45:10,881 - #43 (
+INFO  22:45:10,881 - #20 ord
+INFO  22:45:10,881 - #43 (
+INFO  22:45:10,881 - #22 a
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #40 ;
+INFO  22:45:10,881 - #13 print
+INFO  22:45:10,881 - #43 (
+INFO  22:45:10,881 - #20 eol
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #40 ;
+INFO  22:45:10,881 - #20 i
+INFO  22:45:10,881 - #37 =
+INFO  22:45:10,881 - #21 0
+INFO  22:45:10,881 - #40 ;
+INFO  22:45:10,881 - #10 do
+INFO  22:45:10,881 - #47 {
+INFO  22:45:10,881 - #8 if
+INFO  22:45:10,881 - #43 (
+INFO  22:45:10,881 - #20 i
+INFO  22:45:10,881 - #29 ==
+INFO  22:45:10,881 - #21 3
+INFO  22:45:10,881 - #44 )
+INFO  22:45:10,881 - #47 {
+INFO  22:45:10,881 - #20 i
+INFO  22:45:10,881 - #38 ++
+ERROR 22:45:10,882 - Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+INFO  22:45:10,882 - #40 ;
+INFO  22:45:10,882 - #18 continue
+INFO  22:45:10,882 - #40 ;
+INFO  22:45:10,882 - #48 }
+INFO  22:45:10,882 - #8 if
+ERROR 22:45:10,882 - 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+INFO  22:45:10,882 - #43 (
+INFO  22:45:10,882 - #20 i
+INFO  22:45:10,882 - #29 ==
+INFO  22:45:10,882 - #21 4
+INFO  22:45:10,882 - #44 )
+INFO  22:45:10,882 - #3 break
+INFO  22:45:10,882 - #40 ;
+INFO  22:45:10,882 - #20 i
+INFO  22:45:10,882 - #37 =
+INFO  22:45:10,882 - #20 inkrement
+INFO  22:45:10,882 - #43 (
+INFO  22:45:10,882 - #20 i
+INFO  22:45:10,882 - #41 ,
+INFO  22:45:10,882 - #21 1
+INFO  22:45:10,882 - #44 )
+INFO  22:45:10,882 - #40 ;
+INFO  22:45:10,882 - #48 }
+INFO  22:45:10,882 - #11 while
+INFO  22:45:10,882 - #43 (
+INFO  22:45:10,882 - #20 i
+INFO  22:45:10,882 - #33 <
+INFO  22:45:10,882 - #21 10
+INFO  22:45:10,882 - #44 )
+INFO  22:45:10,882 - #40 ;
+INFO  22:45:10,882 - #8 if
+INFO  22:45:10,882 - #43 (
+INFO  22:45:10,882 - #20 i
+INFO  22:45:10,882 - #29 ==
+INFO  22:45:10,882 - #21 3
+INFO  22:45:10,883 - #35 &&
+INFO  22:45:10,883 - #20 verify
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #13 print
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #25 -
+INFO  22:45:10,883 - #21 4
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #40 ;
+INFO  22:45:10,883 - #6 else
+INFO  22:45:10,883 - #13 print
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #21 4
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #40 ;
+INFO  22:45:10,883 - #14 read
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 niz
+INFO  22:45:10,883 - #45 [
+INFO  22:45:10,883 - #21 0
+INFO  22:45:10,883 - #46 ]
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #40 ;
+INFO  22:45:10,883 - #14 read
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 niz
+INFO  22:45:10,883 - #45 [
+INFO  22:45:10,883 - #21 1
+INFO  22:45:10,883 - #46 ]
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #40 ;
+INFO  22:45:10,883 - #14 read
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 niz
+INFO  22:45:10,883 - #45 [
+INFO  22:45:10,883 - #21 2
+INFO  22:45:10,883 - #46 ]
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #40 ;
+INFO  22:45:10,883 - #13 print
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 eol
+INFO  22:45:10,883 - #44 )
+INFO  22:45:10,883 - #40 ;
+INFO  22:45:10,883 - #13 print
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 sum
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 sum
+INFO  22:45:10,883 - #43 (
+INFO  22:45:10,883 - #20 niz
+INFO  22:45:10,883 - #45 [
+INFO  22:45:10,883 - #21 0
+INFO  22:45:10,883 - #46 ]
+INFO  22:45:10,884 - #41 ,
+INFO  22:45:10,884 - #20 niz
+INFO  22:45:10,884 - #45 [
+INFO  22:45:10,884 - #21 1
+INFO  22:45:10,884 - #46 ]
+INFO  22:45:10,884 - #44 )
+INFO  22:45:10,884 - #41 ,
+INFO  22:45:10,884 - #20 niz
+INFO  22:45:10,884 - #45 [
+INFO  22:45:10,884 - #21 2
+INFO  22:45:10,884 - #46 ]
+INFO  22:45:10,884 - #44 )
+INFO  22:45:10,884 - #44 )
+INFO  22:45:10,884 - #40 ;
+INFO  22:45:10,884 - #13 print
+INFO  22:45:10,884 - #43 (
+INFO  22:45:10,884 - #20 eol
+INFO  22:45:10,884 - #44 )
+INFO  22:45:10,884 - #40 ;
+INFO  22:45:10,884 - #13 print
+INFO  22:45:10,884 - #43 (
+INFO  22:45:10,884 - #20 inkrement
+INFO  22:45:10,884 - #43 (
+INFO  22:45:10,884 - #20 niz
+INFO  22:45:10,884 - #45 [
+INFO  22:45:10,884 - #21 2
+INFO  22:45:10,884 - #46 ]
+INFO  22:45:10,884 - #41 ,
+INFO  22:45:10,884 - #21 2
+INFO  22:45:10,884 - #44 )
+INFO  22:45:10,884 - #44 )
+INFO  22:45:10,884 - #40 ;
+INFO  22:45:10,884 - #48 }
+INFO  22:45:10,884 - #48 }
+ERROR 22:45:10,884 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+ERROR 22:45:10,889 - [Line #16]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:45:10,889 - [Line #16]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+ERROR 22:45:10,889 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:45:10,889 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+ERROR 22:45:10,889 - [Line #22]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:45:10,889 - [Line #22]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+ERROR 22:45:10,889 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:45:10,889 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+ERROR 22:45:10,889 - [Line #23]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:45:10,889 - [Line #23]  SYNTAX_ERROR: Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+ERROR 22:45:10,889 - [Line #29]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:45:10,889 - [Line #29]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+ERROR 22:45:10,889 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:45:10,889 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+ERROR 22:45:10,890 - [Line #35]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:45:10,890 - [Line #35]  SYNTAX_ERROR: Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+ERROR 22:45:10,890 - [Line #64]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+ERROR 22:45:10,890 - [Line #81]  SYNTAX_ERROR: Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+INFO  22:51:07,604 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  22:51:07,632 - #2 program
+INFO  22:51:07,632 - #20 test302
+INFO  22:51:07,632 - #7 const
+INFO  22:51:07,632 - #20 int
+INFO  22:51:07,632 - #20 jedan
+INFO  22:51:07,633 - #37 =
+INFO  22:51:07,633 - #21 1
+INFO  22:51:07,633 - #40 ;
+INFO  22:51:07,633 - #20 int
+INFO  22:51:07,633 - #20 i
+INFO  22:51:07,633 - #40 ;
+INFO  22:51:07,633 - #20 bool
+INFO  22:51:07,634 - #20 ibool
+INFO  22:51:07,634 - #40 ;
+INFO  22:51:07,634 - #20 int
+INFO  22:51:07,634 - #20 niz
+INFO  22:51:07,634 - #45 [
+INFO  22:51:07,634 - #46 ]
+INFO  22:51:07,634 - #40 ;
+INFO  22:51:07,634 - #47 {
+INFO  22:51:07,634 - #20 int
+INFO  22:51:07,634 - #20 sum
+INFO  22:51:07,634 - #43 (
+INFO  22:51:07,634 - #20 int
+INFO  22:51:07,634 - #20 z
+INFO  22:51:07,634 - #41 ,
+INFO  22:51:07,635 - #20 int
+INFO  22:51:07,635 - #20 d
+INFO  22:51:07,635 - #44 )
+INFO  22:51:07,635 - #47 {
+INFO  22:51:07,635 - #15 return
+INFO  22:51:07,635 - #20 z
+INFO  22:51:07,635 - #24 +
+INFO  22:51:07,635 - #20 d
+INFO  22:51:07,636 - #40 ;
+INFO  22:51:07,636 - #48 }
+INFO  22:51:07,636 - #20 int
+INFO  22:51:07,636 - #20 inkrement
+INFO  22:51:07,636 - #43 (
+INFO  22:51:07,636 - #20 int
+INFO  22:51:07,636 - #20 a
+INFO  22:51:07,636 - #41 ,
+INFO  22:51:07,636 - #20 int
+INFO  22:51:07,636 - #20 inc
+INFO  22:51:07,636 - #44 )
+INFO  22:51:07,636 - #20 int
+INFO  22:51:07,637 - #20 pom
+INFO  22:51:07,637 - #40 ;
+INFO  22:51:07,637 - #47 {
+INFO  22:51:07,637 - #8 if
+INFO  22:51:07,637 - #43 (
+INFO  22:51:07,637 - #20 inc
+INFO  22:51:07,637 - #29 ==
+INFO  22:51:07,637 - #20 jedan
+INFO  22:51:07,638 - #44 )
+INFO  22:51:07,638 - #20 pom
+INFO  22:51:07,638 - #37 =
+INFO  22:51:07,638 - #21 1
+INFO  22:51:07,638 - #40 ;
+INFO  22:51:07,638 - #6 else
+INFO  22:51:07,638 - #8 if
+INFO  22:51:07,638 - #43 (
+INFO  22:51:07,638 - #20 inc
+INFO  22:51:07,638 - #29 ==
+INFO  22:51:07,639 - #21 2
+INFO  22:51:07,639 - #44 )
+INFO  22:51:07,639 - #20 pom
+INFO  22:51:07,639 - #37 =
+INFO  22:51:07,639 - #20 a
+INFO  22:51:07,639 - #40 ;
+INFO  22:51:07,639 - #15 return
+INFO  22:51:07,639 - #20 sum
+INFO  22:51:07,639 - #43 (
+INFO  22:51:07,639 - #20 a
+INFO  22:51:07,639 - #41 ,
+INFO  22:51:07,639 - #20 pom
+INFO  22:51:07,639 - #44 )
+INFO  22:51:07,639 - #40 ;
+INFO  22:51:07,639 - #48 }
+INFO  22:51:07,639 - #20 bool
+INFO  22:51:07,640 - #20 verify
+INFO  22:51:07,640 - #43 (
+INFO  22:51:07,640 - #44 )
+INFO  22:51:07,640 - #47 {
+INFO  22:51:07,640 - #13 print
+INFO  22:51:07,640 - #43 (
+INFO  22:51:07,640 - #22 v
+INFO  22:51:07,640 - #44 )
+INFO  22:51:07,640 - #40 ;
+INFO  22:51:07,640 - #15 return
+INFO  22:51:07,640 - #23 false
+INFO  22:51:07,640 - #40 ;
+INFO  22:51:07,640 - #48 }
+INFO  22:51:07,640 - #16 void
+INFO  22:51:07,640 - #20 main
+INFO  22:51:07,640 - #43 (
+INFO  22:51:07,640 - #44 )
+INFO  22:51:07,641 - #47 {
+INFO  22:51:07,641 - #8 if
+INFO  22:51:07,641 - #43 (
+INFO  22:51:07,641 - #21 1
+INFO  22:51:07,641 - #30 !=
+INFO  22:51:07,641 - #21 1
+INFO  22:51:07,641 - #44 )
+INFO  22:51:07,641 - #13 print
+INFO  22:51:07,641 - #43 (
+INFO  22:51:07,641 - #25 -
+INFO  22:51:07,641 - #21 6
+INFO  22:51:07,641 - #44 )
+INFO  22:51:07,641 - #40 ;
+INFO  22:51:07,641 - #6 else
+INFO  22:51:07,641 - #13 print
+INFO  22:51:07,641 - #43 (
+INFO  22:51:07,641 - #21 0
+INFO  22:51:07,642 - #44 )
+INFO  22:51:07,642 - #40 ;
+INFO  22:51:07,642 - #20 ibool
+INFO  22:51:07,642 - #37 =
+INFO  22:51:07,642 - #23 false
+INFO  22:51:07,642 - #40 ;
+INFO  22:51:07,642 - #20 i
+INFO  22:51:07,642 - #37 =
+INFO  22:51:07,642 - #21 0
+INFO  22:51:07,642 - #40 ;
+INFO  22:51:07,642 - #10 do
+INFO  22:51:07,642 - #47 {
+INFO  22:51:07,643 - #8 if
+INFO  22:51:07,643 - #43 (
+INFO  22:51:07,643 - #20 i
+INFO  22:51:07,643 - #29 ==
+INFO  22:51:07,643 - #21 2
+INFO  22:51:07,643 - #44 )
+INFO  22:51:07,643 - #20 ibool
+INFO  22:51:07,643 - #37 =
+INFO  22:51:07,643 - #23 true
+INFO  22:51:07,643 - #40 ;
+INFO  22:51:07,643 - #20 i
+INFO  22:51:07,643 - #38 ++
+INFO  22:51:07,643 - #40 ;
+INFO  22:51:07,643 - #48 }
+INFO  22:51:07,643 - #11 while
+INFO  22:51:07,643 - #43 (
+INFO  22:51:07,643 - #20 i
+INFO  22:51:07,643 - #33 <
+INFO  22:51:07,643 - #21 5
+INFO  22:51:07,644 - #44 )
+INFO  22:51:07,644 - #40 ;
+INFO  22:51:07,644 - #8 if
+INFO  22:51:07,644 - #43 (
+INFO  22:51:07,644 - #20 ibool
+INFO  22:51:07,644 - #44 )
+INFO  22:51:07,644 - #8 if
+INFO  22:51:07,644 - #43 (
+INFO  22:51:07,644 - #20 i
+INFO  22:51:07,644 - #29 ==
+INFO  22:51:07,644 - #21 5
+INFO  22:51:07,644 - #44 )
+INFO  22:51:07,644 - #13 print
+INFO  22:51:07,644 - #43 (
+INFO  22:51:07,644 - #21 1
+INFO  22:51:07,644 - #44 )
+INFO  22:51:07,644 - #40 ;
+INFO  22:51:07,644 - #6 else
+INFO  22:51:07,644 - #13 print
+INFO  22:51:07,644 - #43 (
+INFO  22:51:07,644 - #25 -
+INFO  22:51:07,644 - #21 1
+INFO  22:51:07,644 - #44 )
+INFO  22:51:07,644 - #40 ;
+INFO  22:51:07,644 - #20 niz
+INFO  22:51:07,644 - #37 =
+INFO  22:51:07,644 - #12 new
+INFO  22:51:07,644 - #20 int
+INFO  22:51:07,644 - #45 [
+INFO  22:51:07,645 - #21 3
+INFO  22:51:07,645 - #46 ]
+INFO  22:51:07,645 - #40 ;
+INFO  22:51:07,645 - #20 niz
+INFO  22:51:07,645 - #45 [
+INFO  22:51:07,645 - #21 0
+INFO  22:51:07,645 - #46 ]
+INFO  22:51:07,645 - #37 =
+INFO  22:51:07,645 - #21 1
+INFO  22:51:07,645 - #40 ;
+INFO  22:51:07,645 - #20 niz
+INFO  22:51:07,645 - #45 [
+INFO  22:51:07,645 - #21 1
+INFO  22:51:07,645 - #46 ]
+INFO  22:51:07,645 - #37 =
+INFO  22:51:07,645 - #21 2
+INFO  22:51:07,645 - #40 ;
+INFO  22:51:07,645 - #20 niz
+INFO  22:51:07,645 - #45 [
+INFO  22:51:07,645 - #21 2
+INFO  22:51:07,645 - #46 ]
+INFO  22:51:07,645 - #37 =
+INFO  22:51:07,645 - #20 sum
+INFO  22:51:07,645 - #43 (
+INFO  22:51:07,645 - #20 niz
+INFO  22:51:07,645 - #45 [
+INFO  22:51:07,645 - #21 1
+INFO  22:51:07,645 - #46 ]
+INFO  22:51:07,645 - #41 ,
+INFO  22:51:07,645 - #20 niz
+INFO  22:51:07,645 - #45 [
+INFO  22:51:07,645 - #21 0
+INFO  22:51:07,645 - #46 ]
+INFO  22:51:07,645 - #44 )
+INFO  22:51:07,645 - #24 +
+INFO  22:51:07,645 - #21 1
+INFO  22:51:07,645 - #40 ;
+INFO  22:51:07,645 - #8 if
+INFO  22:51:07,645 - #43 (
+INFO  22:51:07,645 - #20 verify
+INFO  22:51:07,645 - #43 (
+INFO  22:51:07,645 - #44 )
+INFO  22:51:07,645 - #36 ||
+INFO  22:51:07,646 - #20 niz
+INFO  22:51:07,646 - #45 [
+INFO  22:51:07,646 - #21 2
+INFO  22:51:07,646 - #46 ]
+INFO  22:51:07,646 - #29 ==
+INFO  22:51:07,646 - #21 4
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,646 - #13 print
+INFO  22:51:07,646 - #43 (
+INFO  22:51:07,646 - #20 ord
+INFO  22:51:07,646 - #43 (
+INFO  22:51:07,646 - #22 A
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,646 - #40 ;
+INFO  22:51:07,646 - #6 else
+INFO  22:51:07,646 - #13 print
+INFO  22:51:07,646 - #43 (
+INFO  22:51:07,646 - #20 ord
+INFO  22:51:07,646 - #43 (
+INFO  22:51:07,646 - #22 a
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,646 - #40 ;
+INFO  22:51:07,646 - #13 print
+INFO  22:51:07,646 - #43 (
+INFO  22:51:07,646 - #20 eol
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,646 - #40 ;
+INFO  22:51:07,646 - #20 i
+INFO  22:51:07,646 - #37 =
+INFO  22:51:07,646 - #21 0
+INFO  22:51:07,646 - #40 ;
+INFO  22:51:07,646 - #10 do
+INFO  22:51:07,646 - #47 {
+INFO  22:51:07,646 - #8 if
+INFO  22:51:07,646 - #43 (
+INFO  22:51:07,646 - #20 i
+INFO  22:51:07,646 - #29 ==
+INFO  22:51:07,646 - #21 3
+INFO  22:51:07,646 - #44 )
+INFO  22:51:07,647 - #47 {
+INFO  22:51:07,647 - #20 i
+INFO  22:51:07,647 - #38 ++
+INFO  22:51:07,647 - #40 ;
+INFO  22:51:07,647 - #18 continue
+INFO  22:51:07,647 - #40 ;
+INFO  22:51:07,647 - #48 }
+INFO  22:51:07,647 - #8 if
+INFO  22:51:07,647 - #43 (
+INFO  22:51:07,647 - #20 i
+INFO  22:51:07,647 - #29 ==
+INFO  22:51:07,647 - #21 4
+INFO  22:51:07,647 - #44 )
+INFO  22:51:07,647 - #3 break
+INFO  22:51:07,647 - #40 ;
+INFO  22:51:07,647 - #20 i
+INFO  22:51:07,647 - #37 =
+INFO  22:51:07,647 - #20 inkrement
+INFO  22:51:07,647 - #43 (
+INFO  22:51:07,647 - #20 i
+INFO  22:51:07,647 - #41 ,
+INFO  22:51:07,647 - #21 1
+INFO  22:51:07,647 - #44 )
+INFO  22:51:07,647 - #40 ;
+INFO  22:51:07,647 - #48 }
+INFO  22:51:07,647 - #11 while
+INFO  22:51:07,647 - #43 (
+INFO  22:51:07,647 - #20 i
+INFO  22:51:07,647 - #33 <
+INFO  22:51:07,647 - #21 10
+INFO  22:51:07,647 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,648 - #8 if
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #20 i
+INFO  22:51:07,648 - #29 ==
+INFO  22:51:07,648 - #21 3
+INFO  22:51:07,648 - #35 &&
+INFO  22:51:07,648 - #20 verify
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #13 print
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #25 -
+INFO  22:51:07,648 - #21 4
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,648 - #6 else
+INFO  22:51:07,648 - #13 print
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #21 4
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,648 - #14 read
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #20 niz
+INFO  22:51:07,648 - #45 [
+INFO  22:51:07,648 - #21 0
+INFO  22:51:07,648 - #46 ]
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,648 - #14 read
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #20 niz
+INFO  22:51:07,648 - #45 [
+INFO  22:51:07,648 - #21 1
+INFO  22:51:07,648 - #46 ]
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,648 - #14 read
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #20 niz
+INFO  22:51:07,648 - #45 [
+INFO  22:51:07,648 - #21 2
+INFO  22:51:07,648 - #46 ]
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,648 - #13 print
+INFO  22:51:07,648 - #43 (
+INFO  22:51:07,648 - #20 eol
+INFO  22:51:07,648 - #44 )
+INFO  22:51:07,648 - #40 ;
+INFO  22:51:07,649 - #13 print
+INFO  22:51:07,649 - #43 (
+INFO  22:51:07,649 - #20 sum
+INFO  22:51:07,649 - #43 (
+INFO  22:51:07,649 - #20 sum
+INFO  22:51:07,649 - #43 (
+INFO  22:51:07,649 - #20 niz
+INFO  22:51:07,649 - #45 [
+INFO  22:51:07,649 - #21 0
+INFO  22:51:07,649 - #46 ]
+INFO  22:51:07,649 - #41 ,
+INFO  22:51:07,649 - #20 niz
+INFO  22:51:07,649 - #45 [
+INFO  22:51:07,649 - #21 1
+INFO  22:51:07,649 - #46 ]
+INFO  22:51:07,649 - #44 )
+INFO  22:51:07,649 - #41 ,
+INFO  22:51:07,649 - #20 niz
+INFO  22:51:07,649 - #45 [
+INFO  22:51:07,649 - #21 2
+INFO  22:51:07,649 - #46 ]
+INFO  22:51:07,649 - #44 )
+INFO  22:51:07,649 - #44 )
+INFO  22:51:07,649 - #40 ;
+INFO  22:51:07,649 - #13 print
+INFO  22:51:07,649 - #43 (
+INFO  22:51:07,649 - #20 eol
+INFO  22:51:07,649 - #44 )
+INFO  22:51:07,649 - #40 ;
+INFO  22:51:07,649 - #13 print
+INFO  22:51:07,649 - #43 (
+INFO  22:51:07,649 - #20 inkrement
+INFO  22:51:07,649 - #43 (
+INFO  22:51:07,649 - #20 niz
+INFO  22:51:07,649 - #45 [
+INFO  22:51:07,649 - #21 2
+INFO  22:51:07,649 - #46 ]
+INFO  22:51:07,649 - #41 ,
+INFO  22:51:07,649 - #21 2
+INFO  22:51:07,649 - #44 )
+INFO  22:51:07,649 - #44 )
+INFO  22:51:07,649 - #40 ;
+INFO  22:51:07,649 - #48 }
+INFO  22:51:07,649 - #48 }
+INFO  22:51:07,650 - 
+
+================SINTAKSNO STABLO====================
+
+
+INFO  22:51:07,652 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclMulti(
+      ProgramDeclMulti(
+        ProgramDeclMulti(
+          ProgramDeclEps(
+          ) [ProgramDeclEps]
+          PartConstDeclaration(
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstSingle(
+                ConstPart(
+                 jedan
+                  NumConst(
+                   1
+                  ) [NumConst]
+                ) [ConstPart]
+              ) [ConstSingle]
+            ) [ConstDeclaration]
+          ) [PartConstDeclaration]
+        ) [ProgramDeclMulti]
+        PartVarDeclaration(
+          GlobalVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 i
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+          ) [GlobalVarDeclaration]
+        ) [PartVarDeclaration]
+      ) [ProgramDeclMulti]
+      PartVarDeclaration(
+        GlobalVarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          GlobalVarSingle(
+            GlobalVar(
+              VarNormal(
+               ibool
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarSingle]
+        ) [GlobalVarDeclaration]
+      ) [PartVarDeclaration]
+    ) [ProgramDeclMulti]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarSingle(
+          GlobalVar(
+            VarArray(
+             niz
+            ) [VarArray]
+          ) [GlobalVar]
+        ) [GlobalVarSingle]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDecMulti(
+    MethodDecMulti(
+      MethodDecMulti(
+        MethodDeclSingle(
+          MethodTypeDeclaration(
+            MethodType2(
+              MethodTypeName(
+                Type(
+                 int
+                ) [Type]
+               sum
+              ) [MethodTypeName]
+              ParamMulti(
+                ParamSingle(
+                  ParamNormal(
+                    Type(
+                     int
+                    ) [Type]
+                   z
+                  ) [ParamNormal]
+                ) [ParamSingle]
+                ParamNormal(
+                  Type(
+                   int
+                  ) [Type]
+                 d
+                ) [ParamNormal]
+              ) [ParamMulti]
+              StatementSingle(
+                StmtReturnExpr(
+                  ExprAddop(
+                    ExprSingle(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           z
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                    AddopPlus(
+                    ) [AddopPlus]
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         d
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprAddop]
+                ) [StmtReturnExpr]
+              ) [StatementSingle]
+            ) [MethodType2]
+          ) [MethodTypeDeclaration]
+        ) [MethodDeclSingle]
+        MethodTypeDeclaration(
+          MethodType0(
+            MethodTypeName(
+              Type(
+               int
+              ) [Type]
+             inkrement
+            ) [MethodTypeName]
+            ParamMulti(
+              ParamSingle(
+                ParamNormal(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [ParamNormal]
+              ) [ParamSingle]
+              ParamNormal(
+                Type(
+                 int
+                ) [Type]
+               inc
+              ) [ParamNormal]
+            ) [ParamMulti]
+            VarDeclSingle(
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                VarSingle(
+                  VarNormal(
+                   pom
+                  ) [VarNormal]
+                ) [VarSingle]
+              ) [VarDeclaration]
+            ) [VarDeclSingle]
+            StatementMulti(
+              StatementSingle(
+                StmtIfElse(
+                  IfKeyword(
+                  ) [IfKeyword]
+                  StmtIfBody(
+                    IfCond(
+                      CondSingle(
+                        CondTermSingle(
+                          CondFactRelop(
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorSimple(
+                                   inc
+                                  ) [DesignatorSimple]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                            RelopEQ(
+                            ) [RelopEQ]
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorSimple(
+                                   jedan
+                                  ) [DesignatorSimple]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [CondFactRelop]
+                        ) [CondTermSingle]
+                      ) [CondSingle]
+                    ) [IfCond]
+                    StmtDesign(
+                      DesignatorAssignment(
+                        DesignatorSimple(
+                         pom
+                        ) [DesignatorSimple]
+                        AssignmentExpr(
+                          ExprSingle(
+                            TermSingle(
+                              FactorNumConst(
+                               1
+                              ) [FactorNumConst]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [AssignmentExpr]
+                      ) [DesignatorAssignment]
+                    ) [StmtDesign]
+                  ) [StmtIfBody]
+                  StmtIf(
+                    IfKeyword(
+                    ) [IfKeyword]
+                    StmtIfBody(
+                      IfCond(
+                        CondSingle(
+                          CondTermSingle(
+                            CondFactRelop(
+                              ExprSingle(
+                                TermSingle(
+                                  FactorDesignator(
+                                    DesignatorSimple(
+                                     inc
+                                    ) [DesignatorSimple]
+                                  ) [FactorDesignator]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                              RelopEQ(
+                              ) [RelopEQ]
+                              ExprSingle(
+                                TermSingle(
+                                  FactorNumConst(
+                                   2
+                                  ) [FactorNumConst]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [CondFactRelop]
+                          ) [CondTermSingle]
+                        ) [CondSingle]
+                      ) [IfCond]
+                      StmtDesign(
+                        DesignatorAssignment(
+                          DesignatorSimple(
+                           pom
+                          ) [DesignatorSimple]
+                          AssignmentExpr(
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorSimple(
+                                   a
+                                  ) [DesignatorSimple]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [AssignmentExpr]
+                        ) [DesignatorAssignment]
+                      ) [StmtDesign]
+                    ) [StmtIfBody]
+                  ) [StmtIf]
+                ) [StmtIfElse]
+              ) [StatementSingle]
+              StmtReturnExpr(
+                ExprSingle(
+                  TermSingle(
+                    FuncCallParams(
+                      DesignatorSimple(
+                       sum
+                      ) [DesignatorSimple]
+                      ActParsMulti(
+                        ActParsSingle(
+                          ExprSingle(
+                            TermSingle(
+                              FactorDesignator(
+                                DesignatorSimple(
+                                 a
+                                ) [DesignatorSimple]
+                              ) [FactorDesignator]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [ActParsSingle]
+                        ExprSingle(
+                          TermSingle(
+                            FactorDesignator(
+                              DesignatorSimple(
+                               pom
+                              ) [DesignatorSimple]
+                            ) [FactorDesignator]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [ActParsMulti]
+                    ) [FuncCallParams]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [StmtReturnExpr]
+            ) [StatementMulti]
+          ) [MethodType0]
+        ) [MethodTypeDeclaration]
+      ) [MethodDecMulti]
+      MethodTypeDeclaration(
+        MethodType6(
+          MethodTypeName(
+            Type(
+             bool
+            ) [Type]
+           verify
+          ) [MethodTypeName]
+          StatementMulti(
+            StatementSingle(
+              StmtPrint(
+                ExprSingle(
+                  TermSingle(
+                    FactorCharConst(
+                     v
+                    ) [FactorCharConst]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [StmtPrint]
+            ) [StatementSingle]
+            StmtReturnExpr(
+              ExprSingle(
+                TermSingle(
+                  FactorBoolConst(
+                   false
+                  ) [FactorBoolConst]
+                ) [TermSingle]
+              ) [ExprSingle]
+            ) [StmtReturnExpr]
+          ) [StatementMulti]
+        ) [MethodType6]
+      ) [MethodTypeDeclaration]
+    ) [MethodDecMulti]
+    MethodVoidDeclaration(
+      MethodVoid6(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementMulti(
+                StatementMulti(
+                  StatementMulti(
+                    StatementMulti(
+                      StatementMulti(
+                        StatementMulti(
+                          StatementMulti(
+                            StatementMulti(
+                              StatementMulti(
+                                StatementMulti(
+                                  StatementMulti(
+                                    StatementMulti(
+                                      StatementMulti(
+                                        StatementMulti(
+                                          StatementMulti(
+                                            StatementMulti(
+                                              StatementMulti(
+                                                StatementSingle(
+                                                  StmtIfElse(
+                                                    IfKeyword(
+                                                    ) [IfKeyword]
+                                                    StmtIfBody(
+                                                      IfCond(
+                                                        CondSingle(
+                                                          CondTermSingle(
+                                                            CondFactRelop(
+                                                              ExprSingle(
+                                                                TermSingle(
+                                                                  FactorNumConst(
+                                                                   1
+                                                                  ) [FactorNumConst]
+                                                                ) [TermSingle]
+                                                              ) [ExprSingle]
+                                                              RelopNE(
+                                                              ) [RelopNE]
+                                                              ExprSingle(
+                                                                TermSingle(
+                                                                  FactorNumConst(
+                                                                   1
+                                                                  ) [FactorNumConst]
+                                                                ) [TermSingle]
+                                                              ) [ExprSingle]
+                                                            ) [CondFactRelop]
+                                                          ) [CondTermSingle]
+                                                        ) [CondSingle]
+                                                      ) [IfCond]
+                                                      StmtPrint(
+                                                        ExprNeg(
+                                                          TermSingle(
+                                                            FactorNumConst(
+                                                             6
+                                                            ) [FactorNumConst]
+                                                          ) [TermSingle]
+                                                        ) [ExprNeg]
+                                                      ) [StmtPrint]
+                                                    ) [StmtIfBody]
+                                                    StmtPrint(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorNumConst(
+                                                           0
+                                                          ) [FactorNumConst]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [StmtPrint]
+                                                  ) [StmtIfElse]
+                                                ) [StatementSingle]
+                                                StmtDesign(
+                                                  DesignatorAssignment(
+                                                    DesignatorSimple(
+                                                     ibool
+                                                    ) [DesignatorSimple]
+                                                    AssignmentExpr(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorBoolConst(
+                                                           false
+                                                          ) [FactorBoolConst]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [AssignmentExpr]
+                                                  ) [DesignatorAssignment]
+                                                ) [StmtDesign]
+                                              ) [StatementMulti]
+                                              StmtDesign(
+                                                DesignatorAssignment(
+                                                  DesignatorSimple(
+                                                   i
+                                                  ) [DesignatorSimple]
+                                                  AssignmentExpr(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         0
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [AssignmentExpr]
+                                                ) [DesignatorAssignment]
+                                              ) [StmtDesign]
+                                            ) [StatementMulti]
+                                            StmtDoWhile(
+                                              DoKeyword(
+                                              ) [DoKeyword]
+                                              StmtWhileBody(
+                                                Stmt(
+                                                  StatementMulti(
+                                                    StatementSingle(
+                                                      StmtIf(
+                                                        IfKeyword(
+                                                        ) [IfKeyword]
+                                                        StmtIfBody(
+                                                          IfCond(
+                                                            CondSingle(
+                                                              CondTermSingle(
+                                                                CondFactRelop(
+                                                                  ExprSingle(
+                                                                    TermSingle(
+                                                                      FactorDesignator(
+                                                                        DesignatorSimple(
+                                                                         i
+                                                                        ) [DesignatorSimple]
+                                                                      ) [FactorDesignator]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprSingle]
+                                                                  RelopEQ(
+                                                                  ) [RelopEQ]
+                                                                  ExprSingle(
+                                                                    TermSingle(
+                                                                      FactorNumConst(
+                                                                       2
+                                                                      ) [FactorNumConst]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprSingle]
+                                                                ) [CondFactRelop]
+                                                              ) [CondTermSingle]
+                                                            ) [CondSingle]
+                                                          ) [IfCond]
+                                                          StmtDesign(
+                                                            DesignatorAssignment(
+                                                              DesignatorSimple(
+                                                               ibool
+                                                              ) [DesignatorSimple]
+                                                              AssignmentExpr(
+                                                                ExprSingle(
+                                                                  TermSingle(
+                                                                    FactorBoolConst(
+                                                                     true
+                                                                    ) [FactorBoolConst]
+                                                                  ) [TermSingle]
+                                                                ) [ExprSingle]
+                                                              ) [AssignmentExpr]
+                                                            ) [DesignatorAssignment]
+                                                          ) [StmtDesign]
+                                                        ) [StmtIfBody]
+                                                      ) [StmtIf]
+                                                    ) [StatementSingle]
+                                                    StmtDesign(
+                                                      DesignatorIncrement(
+                                                        DesignatorSimple(
+                                                         i
+                                                        ) [DesignatorSimple]
+                                                      ) [DesignatorIncrement]
+                                                    ) [StmtDesign]
+                                                  ) [StatementMulti]
+                                                ) [Stmt]
+                                              ) [StmtWhileBody]
+                                              CondSingle(
+                                                CondTermSingle(
+                                                  CondFactRelop(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorDesignator(
+                                                          DesignatorSimple(
+                                                           i
+                                                          ) [DesignatorSimple]
+                                                        ) [FactorDesignator]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                    RelopLT(
+                                                    ) [RelopLT]
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         5
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [CondFactRelop]
+                                                ) [CondTermSingle]
+                                              ) [CondSingle]
+                                            ) [StmtDoWhile]
+                                          ) [StatementMulti]
+                                          StmtIf(
+                                            IfKeyword(
+                                            ) [IfKeyword]
+                                            StmtIfBody(
+                                              IfCond(
+                                                CondSingle(
+                                                  CondTermSingle(
+                                                    CondFactSingle(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorDesignator(
+                                                            DesignatorSimple(
+                                                             ibool
+                                                            ) [DesignatorSimple]
+                                                          ) [FactorDesignator]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [CondFactSingle]
+                                                  ) [CondTermSingle]
+                                                ) [CondSingle]
+                                              ) [IfCond]
+                                              StmtIfElse(
+                                                IfKeyword(
+                                                ) [IfKeyword]
+                                                StmtIfBody(
+                                                  IfCond(
+                                                    CondSingle(
+                                                      CondTermSingle(
+                                                        CondFactRelop(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorDesignator(
+                                                                DesignatorSimple(
+                                                                 i
+                                                                ) [DesignatorSimple]
+                                                              ) [FactorDesignator]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                          RelopEQ(
+                                                          ) [RelopEQ]
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorNumConst(
+                                                               5
+                                                              ) [FactorNumConst]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [CondFactRelop]
+                                                      ) [CondTermSingle]
+                                                    ) [CondSingle]
+                                                  ) [IfCond]
+                                                  StmtPrint(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         1
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [StmtPrint]
+                                                ) [StmtIfBody]
+                                                StmtPrint(
+                                                  ExprNeg(
+                                                    TermSingle(
+                                                      FactorNumConst(
+                                                       1
+                                                      ) [FactorNumConst]
+                                                    ) [TermSingle]
+                                                  ) [ExprNeg]
+                                                ) [StmtPrint]
+                                              ) [StmtIfElse]
+                                            ) [StmtIfBody]
+                                          ) [StmtIf]
+                                        ) [StatementMulti]
+                                        StmtDesign(
+                                          DesignatorAssignment(
+                                            DesignatorSimple(
+                                             niz
+                                            ) [DesignatorSimple]
+                                            AssignmentExpr(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorNewArray(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         3
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [FactorNewArray]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [AssignmentExpr]
+                                          ) [DesignatorAssignment]
+                                        ) [StmtDesign]
+                                      ) [StatementMulti]
+                                      StmtDesign(
+                                        DesignatorAssignment(
+                                          DesignatorArray(
+                                           niz
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNumConst(
+                                                 0
+                                                ) [FactorNumConst]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [DesignatorArray]
+                                          AssignmentExpr(
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNumConst(
+                                                 1
+                                                ) [FactorNumConst]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [AssignmentExpr]
+                                        ) [DesignatorAssignment]
+                                      ) [StmtDesign]
+                                    ) [StatementMulti]
+                                    StmtDesign(
+                                      DesignatorAssignment(
+                                        DesignatorArray(
+                                         niz
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorNumConst(
+                                               1
+                                              ) [FactorNumConst]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [DesignatorArray]
+                                        AssignmentExpr(
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorNumConst(
+                                               2
+                                              ) [FactorNumConst]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [AssignmentExpr]
+                                      ) [DesignatorAssignment]
+                                    ) [StmtDesign]
+                                  ) [StatementMulti]
+                                  StmtDesign(
+                                    DesignatorAssignment(
+                                      DesignatorArray(
+                                       niz
+                                        ExprSingle(
+                                          TermSingle(
+                                            FactorNumConst(
+                                             2
+                                            ) [FactorNumConst]
+                                          ) [TermSingle]
+                                        ) [ExprSingle]
+                                      ) [DesignatorArray]
+                                      AssignmentExpr(
+                                        ExprAddop(
+                                          ExprSingle(
+                                            TermSingle(
+                                              FuncCallParams(
+                                                DesignatorSimple(
+                                                 sum
+                                                ) [DesignatorSimple]
+                                                ActParsMulti(
+                                                  ActParsSingle(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorDesignator(
+                                                          DesignatorArray(
+                                                           niz
+                                                            ExprSingle(
+                                                              TermSingle(
+                                                                FactorNumConst(
+                                                                 1
+                                                                ) [FactorNumConst]
+                                                              ) [TermSingle]
+                                                            ) [ExprSingle]
+                                                          ) [DesignatorArray]
+                                                        ) [FactorDesignator]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [ActParsSingle]
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorDesignator(
+                                                        DesignatorArray(
+                                                         niz
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorNumConst(
+                                                               0
+                                                              ) [FactorNumConst]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [DesignatorArray]
+                                                      ) [FactorDesignator]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [ActParsMulti]
+                                              ) [FuncCallParams]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                          AddopPlus(
+                                          ) [AddopPlus]
+                                          TermSingle(
+                                            FactorNumConst(
+                                             1
+                                            ) [FactorNumConst]
+                                          ) [TermSingle]
+                                        ) [ExprAddop]
+                                      ) [AssignmentExpr]
+                                    ) [DesignatorAssignment]
+                                  ) [StmtDesign]
+                                ) [StatementMulti]
+                                StmtIfElse(
+                                  IfKeyword(
+                                  ) [IfKeyword]
+                                  StmtIfBody(
+                                    IfCond(
+                                      CondOr(
+                                        CondSingle(
+                                          CondTermSingle(
+                                            CondFactSingle(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FuncCall(
+                                                    DesignatorSimple(
+                                                     verify
+                                                    ) [DesignatorSimple]
+                                                  ) [FuncCall]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [CondFactSingle]
+                                          ) [CondTermSingle]
+                                        ) [CondSingle]
+                                        CondTermSingle(
+                                          CondFactRelop(
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorDesignator(
+                                                  DesignatorArray(
+                                                   niz
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorNumConst(
+                                                         2
+                                                        ) [FactorNumConst]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [DesignatorArray]
+                                                ) [FactorDesignator]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                            RelopEQ(
+                                            ) [RelopEQ]
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNumConst(
+                                                 4
+                                                ) [FactorNumConst]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [CondFactRelop]
+                                        ) [CondTermSingle]
+                                      ) [CondOr]
+                                    ) [IfCond]
+                                    StmtPrint(
+                                      ExprSingle(
+                                        TermSingle(
+                                          FuncCallParams(
+                                            DesignatorSimple(
+                                             ord
+                                            ) [DesignatorSimple]
+                                            ActParsSingle(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorCharConst(
+                                                   A
+                                                  ) [FactorCharConst]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [ActParsSingle]
+                                          ) [FuncCallParams]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [StmtPrint]
+                                  ) [StmtIfBody]
+                                  StmtPrint(
+                                    ExprSingle(
+                                      TermSingle(
+                                        FuncCallParams(
+                                          DesignatorSimple(
+                                           ord
+                                          ) [DesignatorSimple]
+                                          ActParsSingle(
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorCharConst(
+                                                 a
+                                                ) [FactorCharConst]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [ActParsSingle]
+                                        ) [FuncCallParams]
+                                      ) [TermSingle]
+                                    ) [ExprSingle]
+                                  ) [StmtPrint]
+                                ) [StmtIfElse]
+                              ) [StatementMulti]
+                              StmtPrint(
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorDesignator(
+                                      DesignatorSimple(
+                                       eol
+                                      ) [DesignatorSimple]
+                                    ) [FactorDesignator]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [StmtPrint]
+                            ) [StatementMulti]
+                            StmtDesign(
+                              DesignatorAssignment(
+                                DesignatorSimple(
+                                 i
+                                ) [DesignatorSimple]
+                                AssignmentExpr(
+                                  ExprSingle(
+                                    TermSingle(
+                                      FactorNumConst(
+                                       0
+                                      ) [FactorNumConst]
+                                    ) [TermSingle]
+                                  ) [ExprSingle]
+                                ) [AssignmentExpr]
+                              ) [DesignatorAssignment]
+                            ) [StmtDesign]
+                          ) [StatementMulti]
+                          StmtDoWhile(
+                            DoKeyword(
+                            ) [DoKeyword]
+                            StmtWhileBody(
+                              Stmt(
+                                StatementMulti(
+                                  StatementMulti(
+                                    StatementSingle(
+                                      StmtIf(
+                                        IfKeyword(
+                                        ) [IfKeyword]
+                                        StmtIfBody(
+                                          IfCond(
+                                            CondSingle(
+                                              CondTermSingle(
+                                                CondFactRelop(
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorDesignator(
+                                                        DesignatorSimple(
+                                                         i
+                                                        ) [DesignatorSimple]
+                                                      ) [FactorDesignator]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                  RelopEQ(
+                                                  ) [RelopEQ]
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorNumConst(
+                                                       3
+                                                      ) [FactorNumConst]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [CondFactRelop]
+                                              ) [CondTermSingle]
+                                            ) [CondSingle]
+                                          ) [IfCond]
+                                          Stmt(
+                                            StatementMulti(
+                                              StatementSingle(
+                                                StmtDesign(
+                                                  DesignatorIncrement(
+                                                    DesignatorSimple(
+                                                     i
+                                                    ) [DesignatorSimple]
+                                                  ) [DesignatorIncrement]
+                                                ) [StmtDesign]
+                                              ) [StatementSingle]
+                                              StmtContinue(
+                                              ) [StmtContinue]
+                                            ) [StatementMulti]
+                                          ) [Stmt]
+                                        ) [StmtIfBody]
+                                      ) [StmtIf]
+                                    ) [StatementSingle]
+                                    StmtIf(
+                                      IfKeyword(
+                                      ) [IfKeyword]
+                                      StmtIfBody(
+                                        IfCond(
+                                          CondSingle(
+                                            CondTermSingle(
+                                              CondFactRelop(
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorDesignator(
+                                                      DesignatorSimple(
+                                                       i
+                                                      ) [DesignatorSimple]
+                                                    ) [FactorDesignator]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                                RelopEQ(
+                                                ) [RelopEQ]
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorNumConst(
+                                                     4
+                                                    ) [FactorNumConst]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [CondFactRelop]
+                                            ) [CondTermSingle]
+                                          ) [CondSingle]
+                                        ) [IfCond]
+                                        StmtBreak(
+                                        ) [StmtBreak]
+                                      ) [StmtIfBody]
+                                    ) [StmtIf]
+                                  ) [StatementMulti]
+                                  StmtDesign(
+                                    DesignatorAssignment(
+                                      DesignatorSimple(
+                                       i
+                                      ) [DesignatorSimple]
+                                      AssignmentExpr(
+                                        ExprSingle(
+                                          TermSingle(
+                                            FuncCallParams(
+                                              DesignatorSimple(
+                                               inkrement
+                                              ) [DesignatorSimple]
+                                              ActParsMulti(
+                                                ActParsSingle(
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorDesignator(
+                                                        DesignatorSimple(
+                                                         i
+                                                        ) [DesignatorSimple]
+                                                      ) [FactorDesignator]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [ActParsSingle]
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorNumConst(
+                                                     1
+                                                    ) [FactorNumConst]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [ActParsMulti]
+                                            ) [FuncCallParams]
+                                          ) [TermSingle]
+                                        ) [ExprSingle]
+                                      ) [AssignmentExpr]
+                                    ) [DesignatorAssignment]
+                                  ) [StmtDesign]
+                                ) [StatementMulti]
+                              ) [Stmt]
+                            ) [StmtWhileBody]
+                            CondSingle(
+                              CondTermSingle(
+                                CondFactRelop(
+                                  ExprSingle(
+                                    TermSingle(
+                                      FactorDesignator(
+                                        DesignatorSimple(
+                                         i
+                                        ) [DesignatorSimple]
+                                      ) [FactorDesignator]
+                                    ) [TermSingle]
+                                  ) [ExprSingle]
+                                  RelopLT(
+                                  ) [RelopLT]
+                                  ExprSingle(
+                                    TermSingle(
+                                      FactorNumConst(
+                                       10
+                                      ) [FactorNumConst]
+                                    ) [TermSingle]
+                                  ) [ExprSingle]
+                                ) [CondFactRelop]
+                              ) [CondTermSingle]
+                            ) [CondSingle]
+                          ) [StmtDoWhile]
+                        ) [StatementMulti]
+                        StmtIfElse(
+                          IfKeyword(
+                          ) [IfKeyword]
+                          StmtIfBody(
+                            IfCond(
+                              CondSingle(
+                                CondTermAnd(
+                                  CondTermSingle(
+                                    CondFactRelop(
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorDesignator(
+                                            DesignatorSimple(
+                                             i
+                                            ) [DesignatorSimple]
+                                          ) [FactorDesignator]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                      RelopEQ(
+                                      ) [RelopEQ]
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorNumConst(
+                                           3
+                                          ) [FactorNumConst]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [CondFactRelop]
+                                  ) [CondTermSingle]
+                                  CondFactSingle(
+                                    ExprSingle(
+                                      TermSingle(
+                                        FuncCall(
+                                          DesignatorSimple(
+                                           verify
+                                          ) [DesignatorSimple]
+                                        ) [FuncCall]
+                                      ) [TermSingle]
+                                    ) [ExprSingle]
+                                  ) [CondFactSingle]
+                                ) [CondTermAnd]
+                              ) [CondSingle]
+                            ) [IfCond]
+                            StmtPrint(
+                              ExprNeg(
+                                TermSingle(
+                                  FactorNumConst(
+                                   4
+                                  ) [FactorNumConst]
+                                ) [TermSingle]
+                              ) [ExprNeg]
+                            ) [StmtPrint]
+                          ) [StmtIfBody]
+                          StmtPrint(
+                            ExprSingle(
+                              TermSingle(
+                                FactorNumConst(
+                                 4
+                                ) [FactorNumConst]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [StmtPrint]
+                        ) [StmtIfElse]
+                      ) [StatementMulti]
+                      StmtRead(
+                        DesignatorArray(
+                         niz
+                          ExprSingle(
+                            TermSingle(
+                              FactorNumConst(
+                               0
+                              ) [FactorNumConst]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [DesignatorArray]
+                      ) [StmtRead]
+                    ) [StatementMulti]
+                    StmtRead(
+                      DesignatorArray(
+                       niz
+                        ExprSingle(
+                          TermSingle(
+                            FactorNumConst(
+                             1
+                            ) [FactorNumConst]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [DesignatorArray]
+                    ) [StmtRead]
+                  ) [StatementMulti]
+                  StmtRead(
+                    DesignatorArray(
+                     niz
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           2
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [DesignatorArray]
+                  ) [StmtRead]
+                ) [StatementMulti]
+                StmtPrint(
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         eol
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [StmtPrint]
+              ) [StatementMulti]
+              StmtPrint(
+                ExprSingle(
+                  TermSingle(
+                    FuncCallParams(
+                      DesignatorSimple(
+                       sum
+                      ) [DesignatorSimple]
+                      ActParsMulti(
+                        ActParsSingle(
+                          ExprSingle(
+                            TermSingle(
+                              FuncCallParams(
+                                DesignatorSimple(
+                                 sum
+                                ) [DesignatorSimple]
+                                ActParsMulti(
+                                  ActParsSingle(
+                                    ExprSingle(
+                                      TermSingle(
+                                        FactorDesignator(
+                                          DesignatorArray(
+                                           niz
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNumConst(
+                                                 0
+                                                ) [FactorNumConst]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [DesignatorArray]
+                                        ) [FactorDesignator]
+                                      ) [TermSingle]
+                                    ) [ExprSingle]
+                                  ) [ActParsSingle]
+                                  ExprSingle(
+                                    TermSingle(
+                                      FactorDesignator(
+                                        DesignatorArray(
+                                         niz
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorNumConst(
+                                               1
+                                              ) [FactorNumConst]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [DesignatorArray]
+                                      ) [FactorDesignator]
+                                    ) [TermSingle]
+                                  ) [ExprSingle]
+                                ) [ActParsMulti]
+                              ) [FuncCallParams]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [ActParsSingle]
+                        ExprSingle(
+                          TermSingle(
+                            FactorDesignator(
+                              DesignatorArray(
+                               niz
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorNumConst(
+                                     2
+                                    ) [FactorNumConst]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [DesignatorArray]
+                            ) [FactorDesignator]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [ActParsMulti]
+                    ) [FuncCallParams]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [StmtPrint]
+            ) [StatementMulti]
+            StmtPrint(
+              ExprSingle(
+                TermSingle(
+                  FactorDesignator(
+                    DesignatorSimple(
+                     eol
+                    ) [DesignatorSimple]
+                  ) [FactorDesignator]
+                ) [TermSingle]
+              ) [ExprSingle]
+            ) [StmtPrint]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FuncCallParams(
+                  DesignatorSimple(
+                   inkrement
+                  ) [DesignatorSimple]
+                  ActParsMulti(
+                    ActParsSingle(
+                      ExprSingle(
+                        TermSingle(
+                          FactorDesignator(
+                            DesignatorArray(
+                             niz
+                              ExprSingle(
+                                TermSingle(
+                                  FactorNumConst(
+                                   2
+                                  ) [FactorNumConst]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [DesignatorArray]
+                          ) [FactorDesignator]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [ActParsSingle]
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         2
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [ActParsMulti]
+                ) [FuncCallParams]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoid6]
+    ) [MethodVoidDeclaration]
+  ) [MethodDecMulti]
+) [Program]
+INFO  22:51:07,656 - 
+
+================SEMANTICKA OBRADA====================
+
+
+INFO  22:51:07,659 - Deklarisana konstanta 'jedan' na liniji 5
+INFO  22:51:07,659 - Deklarisana globalna promenljiva 'i' na liniji 7
+INFO  22:51:07,659 - Deklarisana globalna promenljiva 'ibool' na liniji 8
+INFO  22:51:07,659 - Deklarisan globalni niz 'niz' na liniji 10
+INFO  22:51:07,659 - Formalni parametar funkcije sum: 'z' na liniji 14
+INFO  22:51:07,660 - Formalni parametar funkcije sum: 'd' na liniji 14
+INFO  22:51:07,660 - Formalni parametar funkcije inkrement: 'a' na liniji 19
+INFO  22:51:07,660 - Formalni parametar funkcije inkrement: 'inc' na liniji 19
+INFO  22:51:07,660 - Deklarisana promenljiva 'pom' na liniji 20
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'sum' na liniji 25
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 50
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 51
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 52
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 52
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 52
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'sum' na liniji 52
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'verify' na liniji 53
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 53
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'ord' na liniji 53
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'ord' na liniji 54
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'inkrement' na liniji 65
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'verify' na liniji 68
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 71
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 72
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 73
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 76
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 76
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'sum' na liniji 76
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 76
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'sum' na liniji 76
+INFO  22:51:07,660 - Pristup elementu niza 'niz' na liniji 79
+INFO  22:51:07,660 - Pronadjen poziv funkcije 'inkrement' na liniji 79
+INFO  22:51:07,661 - ===================================
+INFO  22:51:07,661 - Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\program.obj
+INFO  22:51:07,663 - Parsiranje uspesno zavrseno!

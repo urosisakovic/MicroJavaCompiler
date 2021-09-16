@@ -76,8 +76,6 @@ int niz[];
 		print(sum (sum(niz[0], niz[1]), niz[2])); 
 			
 		print(eol); 
-		print(inkrement(niz[2], 2));
-		
-		print(verify() ? 't' : 'f');
+		print(inkrement(niz[2], 2));		
 	}
 }

@@ -453,29 +453,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         }
    		condFactRelop.struct = boolType;
    	}
- 	
-    // Expr
-  	public void visit(ExprTernary exprTernary) {
-  		int kind1 = exprTernary.getTernaryExpr1().struct.getKind();
-  		int kind2 = exprTernary.getTernaryExpr2().struct.getKind();
-  		if (kind1 != kind2) {
-  			report_error("Semanticka greska - drugi i treci izraz moraju biti istog tipa", exprTernary);
-  		}
-  		exprTernary.struct = exprTernary.getTernaryExpr1().struct;
-  	}
-  	
-  	public void visit(ExprOne exprOne) {
-  		exprOne.struct = exprOne.getExpr1().struct;
-  	}
-  	
-  	// TernaryExpr
-  	public void visit(TerExpr1 terExpr1) {
-  		terExpr1.struct = terExpr1.getExpr1().struct;
-  	}
-  	
-  	public void visit(TerExpr2 terExpr2) {
-  		terExpr2.struct = terExpr2.getExpr1().struct;
-  	}
 	
 	// Expr1
 	public void visit(ExprNeg exprNeg) { 
@@ -490,13 +467,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(ExprAddop exprAddop) {
-		if (!exprAddop.getExpr1().struct.equals(Tab.intType) || !exprAddop.getTerm().struct.equals(Tab.intType)) {
+		if (!exprAddop.getExpr().struct.equals(Tab.intType) || !exprAddop.getTerm().struct.equals(Tab.intType)) {
             report_error("Semanticka greska - clanovi izraza nisu tipa int", exprAddop);
         }
-		if (!exprAddop.getExpr1().struct.compatibleWith(exprAddop.getTerm().struct)) {
+		if (!exprAddop.getExpr().struct.compatibleWith(exprAddop.getTerm().struct)) {
             report_error("Semanticka greska - clanovi izraza nisu kompatibilni", exprAddop);
         }
-		exprAddop.struct = exprAddop.getExpr1().struct;
+		exprAddop.struct = exprAddop.getExpr().struct;
 	}
 	
 	// Term

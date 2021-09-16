@@ -450,3 +450,301 @@ Semanticka greska - clanovi izraza nisu tipa int na liniji 69
 Semanticka greska - clanovi izraza nisu tipa int na liniji 69
 Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
 Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
+
+Sintaksna greska na liniji 23, koloni 8 za simbol "a"!
+
+Sintaksna greska na liniji 23, koloni 8 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 8 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 8 za simbol "a"!
+
+Sintaksna greska na liniji 24, koloni 8 za simbol "true"!
+
+Sintaksna greska na liniji 24, koloni 8 za simbol "true"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 24, koloni 8 za simbol "true"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 24, koloni 8 za simbol "true"!
+
+Sintaksna greska na liniji 25, koloni 14 za simbol "1"!
+
+Sintaksna greska na liniji 25, koloni 14 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 25, koloni 14 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 25, koloni 14 za simbol "1"!
+
+Sintaksna greska na liniji 26, koloni 14 za simbol "true"!
+
+Sintaksna greska na liniji 26, koloni 14 za simbol "true"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 26, koloni 14 za simbol "true"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 26, koloni 14 za simbol "true"!
+
+Sintaksna greska na liniji 27, koloni 12 za simbol "1"!
+
+Sintaksna greska na liniji 27, koloni 12 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 27, koloni 12 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 27, koloni 12 za simbol "1"!
+
+Sintaksna greska na liniji 28, koloni 12 za simbol "a"!
+
+Sintaksna greska na liniji 28, koloni 12 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 28, koloni 12 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 28, koloni 12 za simbol "a"!
+
+Sintaksna greska na liniji 31, koloni 9 za simbol "2"!
+
+Sintaksna greska na liniji 31, koloni 9 za simbol "2"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 31, koloni 9 za simbol "2"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 31, koloni 9 za simbol "2"!
+
+Sintaksna greska na liniji 38, koloni 6 za simbol "1"!
+
+Sintaksna greska na liniji 38, koloni 6 za simbol "1"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 38, koloni 6 za simbol "1"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 38, koloni 6 za simbol "1"!
+
+Sintaksna greska na liniji 57, koloni 9 za simbol "1"!
+
+Sintaksna greska na liniji 57, koloni 9 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 57, koloni 9 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 57, koloni 9 za simbol "1"!
+
+Sintaksna greska na liniji 68, koloni 8 za simbol "num"!
+
+Sintaksna greska na liniji 68, koloni 8 za simbol "num"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 68, koloni 8 za simbol "num"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 68, koloni 8 za simbol "num"!
+
+Sintaksna greska na liniji 69, koloni 8 za simbol "num"!
+
+Sintaksna greska na liniji 69, koloni 8 za simbol "num"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 69, koloni 8 za simbol "num"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 69, koloni 8 za simbol "num"!
+
+Sintaksna greska na liniji 71, koloni 8 za simbol "boolean"!
+
+Sintaksna greska na liniji 71, koloni 8 za simbol "boolean"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 71, koloni 8 za simbol "boolean"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 71, koloni 8 za simbol "boolean"!
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+Semanticka greska - 'num' nije deklarisano na liniji 57
+Semanticka greska - 'num' nije deklarisano na liniji 57
+Semanticka greska - 'num' nije deklarisano na liniji 68
+Semanticka greska - 'num' nije deklarisano na liniji 68
+Semanticka greska - 'num' nije deklarisano na liniji 69
+Semanticka greska - 'num' nije deklarisano na liniji 69
+Semanticka greska - 'num' nije deklarisano na liniji 71
+Semanticka greska - 'num' nije deklarisano na liniji 71
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 16, koloni 9 za simbol "z"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 22, koloni 5 za simbol "inc"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 22, koloni 25 za simbol "1"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 23, koloni 10 za simbol "inc"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+Oporavak od greske u konstrukciji iskaza dodele na liniji 23, koloni 26 za simbol "a"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 29, koloni 8 za simbol "v"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+Oporavak od greske u logickom izrazu if konstrukcije na liniji 35, koloni 5 za simbol "1"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 35, koloni 17 za simbol "-"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+
+Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!

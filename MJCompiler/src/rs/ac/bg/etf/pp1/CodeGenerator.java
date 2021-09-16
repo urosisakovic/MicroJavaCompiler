@@ -505,24 +505,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		jmpAndSavePc(stmt.getClass() == StmtDoWhile.class, condCnt, -1);
 	}
 	
-	// ExprTernary
-	public void visit(TernaryCond ternaryCond) {		
-		Code.loadConst(1);
-		Code.putFalseJump(Code.eq, 0);
-		jmpAfterExpr1Pc = Code.pc - 2;
-	}
-	
-	// TernaryExpr
-	public void visit(TerExpr1 terExpr1) {
-		Code.putJump(0);
-		jmpAfterExpr2Pc = Code.pc - 2;
-		Code.fixup(jmpAfterExpr1Pc);
-	}
-	
-	public void visit(TerExpr2 terExpr2) {
-		Code.fixup(jmpAfterExpr2Pc);
-	}
-	
 	// Expr1
 	public void visit(ExprAddop exprAddop) {
         Code.put(addopStack.pop());

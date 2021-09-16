@@ -45,8 +45,18 @@ program test301
 		read(bodovi);
 		bt = true;
 		
-		print(bt ? bodovi : bodovi + 10);
-		print(false ? bodovi + 20 : bodovi + 30);
-		print(true ? '+' : '-');
+		if(bt) {
+			print(bodovi);
+		} else {
+			print(bodovi + 10);
+		}
+		
+		if(bodovi > 10) {
+			print('+');
+		} else {
+			print('-');
+		}
 	}
 }
+
+

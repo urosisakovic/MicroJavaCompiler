@@ -107,7 +107,7 @@ nonterminal DesignatorName;
 nonterminal Assignop, Relop, Addop, Mulop;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Value, Term, Factor, Expr, Expr1, TernaryCondition, TernaryExpr1, TernaryExpr2, Condition, CondTerm, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Value, Term, Factor, Expr, Condition, CondTerm, CondFact;
 
 precedence left ELSE;
 
@@ -322,19 +322,9 @@ CondFact ::= (CondFactRelop) Expr Relop Expr
 			 |
 			 (CondFactSingle) Expr;
 			 
-Expr ::= (ExprTernary) TernaryCondition QUESTION_MARK TernaryExpr1 COLON TernaryExpr2
-		 |
-		 (ExprOne) Expr1;
-		 
-TernaryCondition ::= (TernaryCond) Expr1;
-
-TernaryExpr1 ::= (TerExpr1) Expr1;
-
-TernaryExpr2 ::= (TerExpr2) Expr1;
-			 
-Expr1 ::= (ExprNeg) MINUS Term
+Expr ::= (ExprNeg) MINUS Term
 		  |
- 		  (ExprAddop) Expr1 Addop Term
+ 		  (ExprAddop) Expr Addop Term
  		  |
  		  (ExprSingle) Term;
 		 

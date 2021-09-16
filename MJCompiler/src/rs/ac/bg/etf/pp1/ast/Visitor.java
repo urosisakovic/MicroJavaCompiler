@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/8/2021 21:4:4
+// 16/8/2021 22:50:51
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -21,7 +21,6 @@ public interface Visitor {
     public void visit(MethodTypeDecl MethodTypeDecl);
     public void visit(CondTerm CondTerm);
     public void visit(VarList VarList);
-    public void visit(TernaryCondition TernaryCondition);
     public void visit(ConstList ConstList);
     public void visit(GlobalVarDecl GlobalVarDecl);
     public void visit(Designator Designator);
@@ -39,7 +38,6 @@ public interface Visitor {
     public void visit(StatementIfBody StatementIfBody);
     public void visit(VarDeclList VarDeclList);
     public void visit(Expr Expr);
-    public void visit(Expr1 Expr1);
     public void visit(ActPars ActPars);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(Assignment Assignment);
@@ -49,8 +47,6 @@ public interface Visitor {
     public void visit(ClassDecl ClassDecl);
     public void visit(ConstDecl ConstDecl);
     public void visit(CondFact CondFact);
-    public void visit(TernaryExpr2 TernaryExpr2);
-    public void visit(TernaryExpr1 TernaryExpr1);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(GlobalVarList GlobalVarList);
     public void visit(FormParam FormParam);
@@ -83,11 +79,6 @@ public interface Visitor {
     public void visit(ExprSingle ExprSingle);
     public void visit(ExprAddop ExprAddop);
     public void visit(ExprNeg ExprNeg);
-    public void visit(TerExpr2 TerExpr2);
-    public void visit(TerExpr1 TerExpr1);
-    public void visit(TernaryCond TernaryCond);
-    public void visit(ExprOne ExprOne);
-    public void visit(ExprTernary ExprTernary);
     public void visit(CondFactSingle CondFactSingle);
     public void visit(CondFactRelop CondFactRelop);
     public void visit(CondTermSingle CondTermSingle);

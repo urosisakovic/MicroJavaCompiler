@@ -136,7 +136,7 @@ nonterminal Addop Addop;
 nonterminal Mulop Mulop;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Value, Term, Factor, Expr, Expr1, TernaryCondition, TernaryExpr1, TernaryExpr2, Condition, CondTerm, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Value, Term, Factor, Expr, Condition, CondTerm, CondFact;
 
 precedence left ELSE;
 
@@ -351,19 +351,9 @@ CondFact ::= (CondFactRelop) Expr:E1 Relop:R2 Expr:E3 {: RESULT=new CondFactRelo
 			 |
 			 (CondFactSingle) Expr:E1 {: RESULT=new CondFactSingle(E1); RESULT.setLine(E1left); :};
 			 
-Expr ::= (ExprTernary) TernaryCondition:T1 QUESTION_MARK TernaryExpr1:T2 COLON TernaryExpr2:T3 {: RESULT=new ExprTernary(T1, T2, T3); RESULT.setLine(T1left); :}
-		 |
-		 (ExprOne) Expr1:E1 {: RESULT=new ExprOne(E1); RESULT.setLine(E1left); :};
-		 
-TernaryCondition ::= (TernaryCond) Expr1:E1 {: RESULT=new TernaryCond(E1); RESULT.setLine(E1left); :};
-
-TernaryExpr1 ::= (TerExpr1) Expr1:E1 {: RESULT=new TerExpr1(E1); RESULT.setLine(E1left); :};
-
-TernaryExpr2 ::= (TerExpr2) Expr1:E1 {: RESULT=new TerExpr2(E1); RESULT.setLine(E1left); :};
-			 
-Expr1 ::= (ExprNeg) MINUS Term:T1 {: RESULT=new ExprNeg(T1); RESULT.setLine(T1left); :}
+Expr ::= (ExprNeg) MINUS Term:T1 {: RESULT=new ExprNeg(T1); RESULT.setLine(T1left); :}
 		  |
- 		  (ExprAddop) Expr1:E1 Addop:A2 Term:T3 {: RESULT=new ExprAddop(E1, A2, T3); RESULT.setLine(E1left); :}
+ 		  (ExprAddop) Expr:E1 Addop:A2 Term:T3 {: RESULT=new ExprAddop(E1, A2, T3); RESULT.setLine(E1left); :}
  		  |
  		  (ExprSingle) Term:T1 {: RESULT=new ExprSingle(T1); RESULT.setLine(T1left); :};
 		 
