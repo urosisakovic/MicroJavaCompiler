@@ -1,198 +1,236 @@
-INFO  22:07:27,150 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\semantic.mj
-INFO  22:07:27,183 - #2 program
-INFO  22:07:27,183 - #20 MJProgram
-INFO  22:07:27,183 - #20 abc
-INFO  22:07:27,183 - #20 a
-INFO  22:07:27,184 - #40 ;
-INFO  22:07:27,184 - #7 const
-INFO  22:07:27,184 - #20 int
-INFO  22:07:27,184 - #20 cnst
-INFO  22:07:27,184 - #37 =
-INFO  22:07:27,184 - #21 1
-INFO  22:07:27,184 - #40 ;
-INFO  22:07:27,185 - #47 {
-INFO  22:07:27,185 - #20 int
-INFO  22:07:27,185 - #20 fun
-INFO  22:07:27,185 - #43 (
-INFO  22:07:27,185 - #20 int
-INFO  22:07:27,185 - #20 x
-INFO  22:07:27,185 - #44 )
-INFO  22:07:27,185 - #47 {
-INFO  22:07:27,185 - #48 }
-INFO  22:07:27,186 - #16 void
-INFO  22:07:27,186 - #20 main
-INFO  22:07:27,186 - #43 (
-INFO  22:07:27,186 - #44 )
-INFO  22:07:27,186 - #20 int
-INFO  22:07:27,186 - #20 b
-INFO  22:07:27,186 - #40 ;
-INFO  22:07:27,186 - #20 char
-INFO  22:07:27,186 - #20 b
-INFO  22:07:27,186 - #40 ;
-INFO  22:07:27,187 - #20 int
-INFO  22:07:27,187 - #20 num
-INFO  22:07:27,187 - #40 ;
-INFO  22:07:27,187 - #20 char
-INFO  22:07:27,187 - #20 character
-INFO  22:07:27,187 - #40 ;
-INFO  22:07:27,187 - #20 bool
-INFO  22:07:27,187 - #20 boolean
-INFO  22:07:27,187 - #40 ;
-INFO  22:07:27,187 - #20 int
-INFO  22:07:27,187 - #20 niz
-INFO  22:07:27,187 - #45 [
-INFO  22:07:27,187 - #46 ]
-INFO  22:07:27,187 - #41 ,
-INFO  22:07:27,187 - #20 niz1
-INFO  22:07:27,188 - #45 [
-INFO  22:07:27,188 - #46 ]
-INFO  22:07:27,188 - #40 ;
-INFO  22:07:27,188 - #47 {
-INFO  22:07:27,188 - #20 num
-INFO  22:07:27,188 - #37 =
-INFO  22:07:27,188 - #22 a
-INFO  22:07:27,188 - #40 ;
-INFO  22:07:27,188 - #20 num
-INFO  22:07:27,188 - #37 =
-INFO  22:07:27,188 - #23 true
-INFO  22:07:27,188 - #40 ;
-INFO  22:07:27,189 - #20 character
-INFO  22:07:27,189 - #37 =
-INFO  22:07:27,189 - #21 1
-INFO  22:07:27,189 - #40 ;
-INFO  22:07:27,189 - #20 character
-INFO  22:07:27,189 - #37 =
-INFO  22:07:27,189 - #23 true
-INFO  22:07:27,189 - #40 ;
-INFO  22:07:27,189 - #20 boolean
-INFO  22:07:27,189 - #37 =
-INFO  22:07:27,189 - #21 1
-INFO  22:07:27,189 - #40 ;
-INFO  22:07:27,189 - #20 boolean
-INFO  22:07:27,189 - #37 =
-INFO  22:07:27,189 - #22 a
-INFO  22:07:27,189 - #40 ;
-INFO  22:07:27,189 - #20 cnst
-INFO  22:07:27,189 - #37 =
-INFO  22:07:27,190 - #21 2
-INFO  22:07:27,190 - #40 ;
-INFO  22:07:27,190 - #20 character
-INFO  22:07:27,190 - #38 ++
-INFO  22:07:27,190 - #40 ;
-INFO  22:07:27,190 - #20 boolean
-INFO  22:07:27,190 - #39 --
-INFO  22:07:27,190 - #40 ;
-INFO  22:07:27,190 - #20 fun
-INFO  22:07:27,190 - #43 (
-INFO  22:07:27,190 - #21 1
-INFO  22:07:27,190 - #41 ,
-INFO  22:07:27,190 - #21 2
-INFO  22:07:27,190 - #44 )
-INFO  22:07:27,190 - #40 ;
-INFO  22:07:27,190 - #20 fun
-INFO  22:07:27,190 - #43 (
-INFO  22:07:27,190 - #23 true
-INFO  22:07:27,190 - #44 )
-INFO  22:07:27,191 - #40 ;
-INFO  22:07:27,191 - #20 character
-INFO  22:07:27,191 - #37 =
-INFO  22:07:27,191 - #25 -
-INFO  22:07:27,191 - #22 a
-INFO  22:07:27,191 - #40 ;
-INFO  22:07:27,191 - #20 niz
-INFO  22:07:27,191 - #37 =
-INFO  22:07:27,191 - #12 new
-INFO  22:07:27,191 - #20 int
-INFO  22:07:27,191 - #45 [
-INFO  22:07:27,191 - #22 a
-INFO  22:07:27,191 - #46 ]
-INFO  22:07:27,191 - #40 ;
-INFO  22:07:27,191 - #10 do
-INFO  22:07:27,191 - #47 {
-INFO  22:07:27,192 - #20 num
-INFO  22:07:27,192 - #38 ++
-INFO  22:07:27,192 - #40 ;
-INFO  22:07:27,192 - #3 break
-INFO  22:07:27,192 - #40 ;
-INFO  22:07:27,192 - #18 continue
-INFO  22:07:27,193 - #40 ;
-INFO  22:07:27,193 - #48 }
-INFO  22:07:27,193 - #11 while
-INFO  22:07:27,193 - #43 (
-INFO  22:07:27,193 - #20 num
-INFO  22:07:27,193 - #33 <
-INFO  22:07:27,193 - #21 10
-INFO  22:07:27,193 - #44 )
-INFO  22:07:27,194 - #40 ;
-INFO  22:07:27,194 - #3 break
-INFO  22:07:27,194 - #40 ;
-INFO  22:07:27,194 - #18 continue
-INFO  22:07:27,194 - #40 ;
-INFO  22:07:27,194 - #8 if
-INFO  22:07:27,194 - #43 (
-INFO  22:07:27,194 - #20 niz
-INFO  22:07:27,194 - #33 <
-INFO  22:07:27,194 - #20 niz1
-INFO  22:07:27,195 - #44 )
-INFO  22:07:27,195 - #47 {
-INFO  22:07:27,195 - #20 num
-INFO  22:07:27,195 - #37 =
-INFO  22:07:27,195 - #21 1
-INFO  22:07:27,195 - #40 ;
-INFO  22:07:27,195 - #48 }
-INFO  22:07:27,195 - #8 if
-INFO  22:07:27,195 - #43 (
-INFO  22:07:27,195 - #20 num
-INFO  22:07:27,195 - #44 )
-INFO  22:07:27,195 - #47 {
-INFO  22:07:27,195 - #20 num
-INFO  22:07:27,195 - #37 =
-INFO  22:07:27,195 - #21 2
-INFO  22:07:27,195 - #40 ;
-INFO  22:07:27,195 - #48 }
-INFO  22:07:27,195 - #10 do
-INFO  22:07:27,195 - #47 {
-INFO  22:07:27,195 - #20 niz
-INFO  22:07:27,195 - #45 [
-INFO  22:07:27,195 - #23 true
-INFO  22:07:27,195 - #46 ]
-INFO  22:07:27,195 - #37 =
-INFO  22:07:27,196 - #21 1
-INFO  22:07:27,196 - #40 ;
-INFO  22:07:27,196 - #48 }
-INFO  22:07:27,196 - #11 while
-INFO  22:07:27,196 - #43 (
-INFO  22:07:27,196 - #20 num
-INFO  22:07:27,196 - #44 )
-INFO  22:07:27,196 - #40 ;
-INFO  22:07:27,196 - #20 num
-INFO  22:07:27,196 - #37 =
-INFO  22:07:27,196 - #20 num
-INFO  22:07:27,196 - #24 +
-INFO  22:07:27,196 - #22 a
-INFO  22:07:27,196 - #40 ;
-INFO  22:07:27,196 - #20 num
-INFO  22:07:27,196 - #37 =
-INFO  22:07:27,196 - #20 num
-INFO  22:07:27,196 - #26 *
-INFO  22:07:27,196 - #22 a
-INFO  22:07:27,197 - #40 ;
-INFO  22:07:27,197 - #20 num
-INFO  22:07:27,197 - #37 =
-INFO  22:07:27,197 - #20 boolean
-INFO  22:07:27,197 - #49 ?
-INFO  22:07:27,197 - #21 1
-INFO  22:07:27,197 - #50 :
-INFO  22:07:27,197 - #22 a
-INFO  22:07:27,197 - #40 ;
-INFO  22:07:27,197 - #48 }
-INFO  22:07:27,197 - #48 }
-INFO  22:07:27,198 - 
+INFO  00:00:19,525 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\syntax.mj
+INFO  00:00:19,555 - #2 program
+INFO  00:00:19,555 - #20 MJProgram
+INFO  00:00:19,555 - #20 int
+INFO  00:00:19,555 - #40 ;
+ERROR 00:00:19,556 - 
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+INFO  00:00:19,556 - #20 int
+INFO  00:00:19,556 - #20 a
+INFO  00:00:19,556 - #40 ;
+ERROR 00:00:19,556 - Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+INFO  00:00:19,557 - #20 int
+INFO  00:00:19,557 - #21 4
+ERROR 00:00:19,557 - 
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+ERROR 00:00:19,557 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+INFO  00:04:45,101 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\syntax.mj
+INFO  00:04:45,129 - #2 program
+INFO  00:04:45,129 - #20 MJProgram
+INFO  00:04:45,129 - #20 int
+INFO  00:04:45,130 - #40 ;
+ERROR 00:04:45,130 - 
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+INFO  00:04:45,131 - #20 int
+INFO  00:04:45,131 - #20 a
+INFO  00:04:45,131 - #40 ;
+ERROR 00:04:45,131 - Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+INFO  00:04:45,132 - #20 int
+INFO  00:04:45,132 - #21 4
+ERROR 00:04:45,132 - 
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+ERROR 00:04:45,132 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+ERROR 00:04:45,136 - [Line #4 ]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 4, koloni 5 za simbol ";"!
+ERROR 00:04:45,136 - [Line #4 ]  SYNTAX_ERROR: Oporavak od greske u deklaraciji globalne promenljive na liniji 4, koloni 5 za simbol ";"!
+ERROR 00:04:45,137 - [Line #6 ]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 6, koloni 5 za simbol "4"!
+ERROR 00:04:45,137 - [Line #6 ]  SYNTAX_ERROR: Fatalna greska, parsiranje se ne moze nastaviti na liniji 6, koloni 5 za simbol "4"!
+INFO  00:07:12,369 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\semantic.mj
+INFO  00:07:12,398 - #2 program
+INFO  00:07:12,398 - #20 MJProgram
+INFO  00:07:12,398 - #20 abc
+INFO  00:07:12,398 - #20 a
+INFO  00:07:12,399 - #40 ;
+INFO  00:07:12,399 - #7 const
+INFO  00:07:12,399 - #20 int
+INFO  00:07:12,399 - #20 cnst
+INFO  00:07:12,399 - #37 =
+INFO  00:07:12,399 - #21 1
+INFO  00:07:12,399 - #40 ;
+INFO  00:07:12,400 - #47 {
+INFO  00:07:12,400 - #20 int
+INFO  00:07:12,400 - #20 fun
+INFO  00:07:12,400 - #43 (
+INFO  00:07:12,400 - #20 int
+INFO  00:07:12,400 - #20 x
+INFO  00:07:12,400 - #44 )
+INFO  00:07:12,400 - #47 {
+INFO  00:07:12,400 - #48 }
+INFO  00:07:12,400 - #16 void
+INFO  00:07:12,400 - #20 main
+INFO  00:07:12,401 - #43 (
+INFO  00:07:12,401 - #44 )
+INFO  00:07:12,401 - #20 int
+INFO  00:07:12,401 - #20 b
+INFO  00:07:12,401 - #40 ;
+INFO  00:07:12,401 - #20 char
+INFO  00:07:12,401 - #20 b
+INFO  00:07:12,401 - #40 ;
+INFO  00:07:12,401 - #20 int
+INFO  00:07:12,401 - #20 num
+INFO  00:07:12,401 - #40 ;
+INFO  00:07:12,401 - #20 char
+INFO  00:07:12,401 - #20 character
+INFO  00:07:12,401 - #40 ;
+INFO  00:07:12,402 - #20 bool
+INFO  00:07:12,402 - #20 boolean
+INFO  00:07:12,402 - #40 ;
+INFO  00:07:12,402 - #20 int
+INFO  00:07:12,402 - #20 niz
+INFO  00:07:12,402 - #45 [
+INFO  00:07:12,402 - #46 ]
+INFO  00:07:12,402 - #41 ,
+INFO  00:07:12,402 - #20 niz1
+INFO  00:07:12,402 - #45 [
+INFO  00:07:12,402 - #46 ]
+INFO  00:07:12,402 - #40 ;
+INFO  00:07:12,402 - #47 {
+INFO  00:07:12,402 - #20 num
+INFO  00:07:12,402 - #37 =
+INFO  00:07:12,402 - #22 a
+INFO  00:07:12,403 - #40 ;
+INFO  00:07:12,403 - #20 num
+INFO  00:07:12,403 - #37 =
+INFO  00:07:12,403 - #23 true
+INFO  00:07:12,403 - #40 ;
+INFO  00:07:12,403 - #20 character
+INFO  00:07:12,403 - #37 =
+INFO  00:07:12,403 - #21 1
+INFO  00:07:12,403 - #40 ;
+INFO  00:07:12,403 - #20 character
+INFO  00:07:12,403 - #37 =
+INFO  00:07:12,403 - #23 true
+INFO  00:07:12,404 - #40 ;
+INFO  00:07:12,404 - #20 boolean
+INFO  00:07:12,404 - #37 =
+INFO  00:07:12,404 - #21 1
+INFO  00:07:12,404 - #40 ;
+INFO  00:07:12,404 - #20 boolean
+INFO  00:07:12,404 - #37 =
+INFO  00:07:12,404 - #22 a
+INFO  00:07:12,404 - #40 ;
+INFO  00:07:12,404 - #20 cnst
+INFO  00:07:12,404 - #37 =
+INFO  00:07:12,404 - #21 2
+INFO  00:07:12,404 - #40 ;
+INFO  00:07:12,404 - #20 character
+INFO  00:07:12,404 - #38 ++
+INFO  00:07:12,404 - #40 ;
+INFO  00:07:12,404 - #20 boolean
+INFO  00:07:12,404 - #39 --
+INFO  00:07:12,404 - #40 ;
+INFO  00:07:12,405 - #20 fun
+INFO  00:07:12,405 - #43 (
+INFO  00:07:12,405 - #21 1
+INFO  00:07:12,405 - #41 ,
+INFO  00:07:12,405 - #21 2
+INFO  00:07:12,405 - #44 )
+INFO  00:07:12,405 - #40 ;
+INFO  00:07:12,405 - #20 fun
+INFO  00:07:12,405 - #43 (
+INFO  00:07:12,405 - #23 true
+INFO  00:07:12,405 - #44 )
+INFO  00:07:12,405 - #40 ;
+INFO  00:07:12,405 - #20 character
+INFO  00:07:12,405 - #37 =
+INFO  00:07:12,405 - #25 -
+INFO  00:07:12,405 - #22 a
+INFO  00:07:12,405 - #40 ;
+INFO  00:07:12,405 - #20 niz
+INFO  00:07:12,406 - #37 =
+INFO  00:07:12,406 - #12 new
+INFO  00:07:12,406 - #20 int
+INFO  00:07:12,406 - #45 [
+INFO  00:07:12,406 - #22 a
+INFO  00:07:12,406 - #46 ]
+INFO  00:07:12,406 - #40 ;
+INFO  00:07:12,406 - #10 do
+INFO  00:07:12,406 - #47 {
+INFO  00:07:12,406 - #20 num
+INFO  00:07:12,406 - #38 ++
+INFO  00:07:12,406 - #40 ;
+INFO  00:07:12,406 - #3 break
+INFO  00:07:12,407 - #40 ;
+INFO  00:07:12,407 - #18 continue
+INFO  00:07:12,407 - #40 ;
+INFO  00:07:12,407 - #48 }
+INFO  00:07:12,407 - #11 while
+INFO  00:07:12,407 - #43 (
+INFO  00:07:12,407 - #20 num
+INFO  00:07:12,407 - #33 <
+INFO  00:07:12,408 - #21 10
+INFO  00:07:12,408 - #44 )
+INFO  00:07:12,408 - #40 ;
+INFO  00:07:12,408 - #3 break
+INFO  00:07:12,408 - #40 ;
+INFO  00:07:12,408 - #18 continue
+INFO  00:07:12,408 - #40 ;
+INFO  00:07:12,408 - #8 if
+INFO  00:07:12,408 - #43 (
+INFO  00:07:12,409 - #20 niz
+INFO  00:07:12,409 - #33 <
+INFO  00:07:12,409 - #20 niz1
+INFO  00:07:12,409 - #44 )
+INFO  00:07:12,409 - #47 {
+INFO  00:07:12,409 - #20 num
+INFO  00:07:12,409 - #37 =
+INFO  00:07:12,409 - #21 1
+INFO  00:07:12,409 - #40 ;
+INFO  00:07:12,409 - #48 }
+INFO  00:07:12,409 - #8 if
+INFO  00:07:12,409 - #43 (
+INFO  00:07:12,409 - #20 num
+INFO  00:07:12,409 - #44 )
+INFO  00:07:12,409 - #47 {
+INFO  00:07:12,409 - #20 num
+INFO  00:07:12,409 - #37 =
+INFO  00:07:12,409 - #21 2
+INFO  00:07:12,409 - #40 ;
+INFO  00:07:12,410 - #48 }
+INFO  00:07:12,410 - #10 do
+INFO  00:07:12,410 - #47 {
+INFO  00:07:12,410 - #20 niz
+INFO  00:07:12,410 - #45 [
+INFO  00:07:12,410 - #23 true
+INFO  00:07:12,410 - #46 ]
+INFO  00:07:12,410 - #37 =
+INFO  00:07:12,410 - #21 1
+INFO  00:07:12,410 - #40 ;
+INFO  00:07:12,410 - #48 }
+INFO  00:07:12,410 - #11 while
+INFO  00:07:12,410 - #43 (
+INFO  00:07:12,410 - #20 num
+INFO  00:07:12,410 - #44 )
+INFO  00:07:12,410 - #40 ;
+INFO  00:07:12,410 - #20 num
+INFO  00:07:12,410 - #37 =
+INFO  00:07:12,410 - #20 num
+INFO  00:07:12,410 - #24 +
+INFO  00:07:12,410 - #22 a
+INFO  00:07:12,410 - #40 ;
+INFO  00:07:12,410 - #20 num
+INFO  00:07:12,410 - #37 =
+INFO  00:07:12,411 - #20 num
+INFO  00:07:12,411 - #26 *
+INFO  00:07:12,411 - #22 a
+INFO  00:07:12,411 - #40 ;
+INFO  00:07:12,411 - #20 num
+INFO  00:07:12,411 - #37 =
+INFO  00:07:12,411 - #20 boolean
+INFO  00:07:12,411 - #49 ?
+INFO  00:07:12,411 - #21 1
+INFO  00:07:12,411 - #50 :
+INFO  00:07:12,411 - #22 a
+INFO  00:07:12,411 - #40 ;
+INFO  00:07:12,411 - #48 }
+INFO  00:07:12,411 - #48 }
+INFO  00:07:12,412 - 
 
 ================SINTAKSNO STABLO====================
 
 
-INFO  22:07:27,199 - Program(
+INFO  00:07:12,413 - Program(
   ProgName(
    MJProgram
   ) [ProgName]
@@ -930,72 +968,72 @@ INFO  22:07:27,199 - Program(
     ) [MethodVoidDeclaration]
   ) [MethodDecMulti]
 ) [Program]
-INFO  22:07:27,200 - 
+INFO  00:07:12,414 - 
 
 ================SEMANTICKA OBRADA====================
 
 
-ERROR 22:07:27,203 - Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
-INFO  22:07:27,204 - Deklarisana globalna promenljiva 'a' na liniji 4
-INFO  22:07:27,204 - Deklarisana konstanta 'cnst' na liniji 5
-INFO  22:07:27,205 - Formalni parametar funkcije fun: 'x' na liniji 7
-INFO  22:07:27,205 - Deklarisana promenljiva 'b' na liniji 16
-ERROR 22:07:27,205 - Semanticka greska - 'b' je vec deklarisano na liniji 16
-INFO  22:07:27,205 - Deklarisana promenljiva 'num' na liniji 17
-INFO  22:07:27,205 - Deklarisana promenljiva 'character' na liniji 17
-INFO  22:07:27,205 - Deklarisana promenljiva 'boolean' na liniji 17
-INFO  22:07:27,205 - Deklarisan niz 'niz' na liniji 18
-INFO  22:07:27,205 - Deklarisan niz 'niz1' na liniji 18
-ERROR 22:07:27,205 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 23
-ERROR 22:07:27,205 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 24
-ERROR 22:07:27,205 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 25
-ERROR 22:07:27,205 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 26
-ERROR 22:07:27,205 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 27
-ERROR 22:07:27,205 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 28
-ERROR 22:07:27,205 - Semanticka greska - vrednost moze da se dodeli samo promenljivoj, elementu niza ili polju objekta na liniji 31
-ERROR 22:07:27,205 - Semanticka greska - tip za inkrement moze biti jedino int na liniji 34
-ERROR 22:07:27,205 - Semanticka greska - tip za dekrement moze biti jedino int na liniji 35
-INFO  22:07:27,205 - Pronadjen poziv funkcije 'fun' na liniji 38
-ERROR 22:07:27,205 - Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 38
-INFO  22:07:27,205 - Pronadjen poziv funkcije 'fun' na liniji 39
-ERROR 22:07:27,205 - Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 39
-ERROR 22:07:27,205 - Semanticka greska - tip mora da bude int na liniji 42
-ERROR 22:07:27,205 - Semanticka greska - tip za alociranje niza moze biti jedino int na liniji 45
-ERROR 22:07:27,205 - Semanticka greska - break iskaz van petlje
-ERROR 22:07:27,205 - Semanticka greska - continue iskaz van petlje
-ERROR 22:07:27,206 - Semanticka greska - relacioni izraz sa referentnim tipovima moze koristiti samo '==' i '!=' operatore na liniji 56
-ERROR 22:07:27,206 - Semanticka greska - if uslov nije tipa bool na liniji 60
-ERROR 22:07:27,206 - Semanticka greska - nevalidan pristup elementu niza na liniji 65
-INFO  22:07:27,206 - Pristup elementu niza 'niz' na liniji 65
-ERROR 22:07:27,206 - Semanticka greska - while uslov nije tipa bool na liniji 64
-ERROR 22:07:27,206 - Semanticka greska - clanovi izraza nisu tipa int na liniji 68
-ERROR 22:07:27,206 - Semanticka greska - clanovi izraza nisu kompatibilni na liniji 68
-ERROR 22:07:27,206 - Semanticka greska - clanovi izraza nisu tipa int na liniji 69
-ERROR 22:07:27,206 - Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
-INFO  22:07:27,207 - ===================================
-ERROR 22:07:27,207 - Parsiranje nije uspesno zavrseno!
-ERROR 22:07:27,211 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
-ERROR 22:07:27,211 - [Line #16]  SEMANTIC_ERROR: Semanticka greska - 'b' je vec deklarisano na liniji 16
-ERROR 22:07:27,211 - [Line #23]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 23
-ERROR 22:07:27,211 - [Line #24]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 24
-ERROR 22:07:27,211 - [Line #25]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 25
-ERROR 22:07:27,211 - [Line #26]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 26
-ERROR 22:07:27,211 - [Line #27]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 27
-ERROR 22:07:27,211 - [Line #28]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 28
-ERROR 22:07:27,212 - [Line #31]  SEMANTIC_ERROR: Semanticka greska - vrednost moze da se dodeli samo promenljivoj, elementu niza ili polju objekta na liniji 31
-ERROR 22:07:27,212 - [Line #34]  SEMANTIC_ERROR: Semanticka greska - tip za inkrement moze biti jedino int na liniji 34
-ERROR 22:07:27,212 - [Line #35]  SEMANTIC_ERROR: Semanticka greska - tip za dekrement moze biti jedino int na liniji 35
-ERROR 22:07:27,212 - [Line #38]  SEMANTIC_ERROR: Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 38
-ERROR 22:07:27,212 - [Line #39]  SEMANTIC_ERROR: Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 39
-ERROR 22:07:27,212 - [Line #42]  SEMANTIC_ERROR: Semanticka greska - tip mora da bude int na liniji 42
-ERROR 22:07:27,212 - [Line #45]  SEMANTIC_ERROR: Semanticka greska - tip za alociranje niza moze biti jedino int na liniji 45
-ERROR 22:07:27,212 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - break iskaz van petlje
-ERROR 22:07:27,212 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - continue iskaz van petlje
-ERROR 22:07:27,212 - [Line #56]  SEMANTIC_ERROR: Semanticka greska - relacioni izraz sa referentnim tipovima moze koristiti samo '==' i '!=' operatore na liniji 56
-ERROR 22:07:27,212 - [Line #60]  SEMANTIC_ERROR: Semanticka greska - if uslov nije tipa bool na liniji 60
-ERROR 22:07:27,212 - [Line #65]  SEMANTIC_ERROR: Semanticka greska - nevalidan pristup elementu niza na liniji 65
-ERROR 22:07:27,212 - [Line #64]  SEMANTIC_ERROR: Semanticka greska - while uslov nije tipa bool na liniji 64
-ERROR 22:07:27,212 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu tipa int na liniji 68
-ERROR 22:07:27,212 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu kompatibilni na liniji 68
-ERROR 22:07:27,213 - [Line #69]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu tipa int na liniji 69
-ERROR 22:07:27,213 - [Line #71]  SEMANTIC_ERROR: Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
+ERROR 00:07:12,417 - Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+INFO  00:07:12,418 - Deklarisana globalna promenljiva 'a' na liniji 4
+INFO  00:07:12,418 - Deklarisana konstanta 'cnst' na liniji 5
+INFO  00:07:12,418 - Formalni parametar funkcije fun: 'x' na liniji 7
+INFO  00:07:12,418 - Deklarisana promenljiva 'b' na liniji 16
+ERROR 00:07:12,418 - Semanticka greska - 'b' je vec deklarisano na liniji 16
+INFO  00:07:12,419 - Deklarisana promenljiva 'num' na liniji 17
+INFO  00:07:12,419 - Deklarisana promenljiva 'character' na liniji 17
+INFO  00:07:12,419 - Deklarisana promenljiva 'boolean' na liniji 17
+INFO  00:07:12,419 - Deklarisan niz 'niz' na liniji 18
+INFO  00:07:12,419 - Deklarisan niz 'niz1' na liniji 18
+ERROR 00:07:12,419 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 23
+ERROR 00:07:12,419 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 24
+ERROR 00:07:12,419 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 25
+ERROR 00:07:12,419 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 26
+ERROR 00:07:12,419 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 27
+ERROR 00:07:12,419 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 28
+ERROR 00:07:12,419 - Semanticka greska - vrednost moze da se dodeli samo promenljivoj, elementu niza ili polju objekta na liniji 31
+ERROR 00:07:12,419 - Semanticka greska - tip za inkrement moze biti jedino int na liniji 34
+ERROR 00:07:12,419 - Semanticka greska - tip za dekrement moze biti jedino int na liniji 35
+INFO  00:07:12,419 - Pronadjen poziv funkcije 'fun' na liniji 38
+ERROR 00:07:12,419 - Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 38
+INFO  00:07:12,419 - Pronadjen poziv funkcije 'fun' na liniji 39
+ERROR 00:07:12,419 - Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 39
+ERROR 00:07:12,419 - Semanticka greska - tip mora da bude int na liniji 42
+ERROR 00:07:12,419 - Semanticka greska - tip za alociranje niza moze biti jedino int na liniji 45
+ERROR 00:07:12,419 - Semanticka greska - break iskaz van petlje
+ERROR 00:07:12,419 - Semanticka greska - continue iskaz van petlje
+ERROR 00:07:12,420 - Semanticka greska - relacioni izraz sa referentnim tipovima moze koristiti samo '==' i '!=' operatore na liniji 56
+ERROR 00:07:12,420 - Semanticka greska - if uslov nije tipa bool na liniji 60
+ERROR 00:07:12,420 - Semanticka greska - nevalidan pristup elementu niza na liniji 65
+INFO  00:07:12,420 - Pristup elementu niza 'niz' na liniji 65
+ERROR 00:07:12,420 - Semanticka greska - while uslov nije tipa bool na liniji 64
+ERROR 00:07:12,420 - Semanticka greska - clanovi izraza nisu tipa int na liniji 68
+ERROR 00:07:12,420 - Semanticka greska - clanovi izraza nisu kompatibilni na liniji 68
+ERROR 00:07:12,420 - Semanticka greska - clanovi izraza nisu tipa int na liniji 69
+ERROR 00:07:12,420 - Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71
+INFO  00:07:12,420 - ===================================
+ERROR 00:07:12,420 - Parsiranje nije uspesno zavrseno!
+ERROR 00:07:12,424 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - nije pronadjen tip 'abc' u tabeli simbola!
+ERROR 00:07:12,424 - [Line #16]  SEMANTIC_ERROR: Semanticka greska - 'b' je vec deklarisano na liniji 16
+ERROR 00:07:12,424 - [Line #23]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 23
+ERROR 00:07:12,425 - [Line #24]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 24
+ERROR 00:07:12,425 - [Line #25]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 25
+ERROR 00:07:12,425 - [Line #26]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 26
+ERROR 00:07:12,425 - [Line #27]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 27
+ERROR 00:07:12,425 - [Line #28]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 28
+ERROR 00:07:12,425 - [Line #31]  SEMANTIC_ERROR: Semanticka greska - vrednost moze da se dodeli samo promenljivoj, elementu niza ili polju objekta na liniji 31
+ERROR 00:07:12,425 - [Line #34]  SEMANTIC_ERROR: Semanticka greska - tip za inkrement moze biti jedino int na liniji 34
+ERROR 00:07:12,425 - [Line #35]  SEMANTIC_ERROR: Semanticka greska - tip za dekrement moze biti jedino int na liniji 35
+ERROR 00:07:12,425 - [Line #38]  SEMANTIC_ERROR: Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 38
+ERROR 00:07:12,425 - [Line #39]  SEMANTIC_ERROR: Semanticka greska - argumenti funkcije nisu odgovarajuci na liniji 39
+ERROR 00:07:12,425 - [Line #42]  SEMANTIC_ERROR: Semanticka greska - tip mora da bude int na liniji 42
+ERROR 00:07:12,425 - [Line #45]  SEMANTIC_ERROR: Semanticka greska - tip za alociranje niza moze biti jedino int na liniji 45
+ERROR 00:07:12,425 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - break iskaz van petlje
+ERROR 00:07:12,425 - [Line #0 ]  SEMANTIC_ERROR: Semanticka greska - continue iskaz van petlje
+ERROR 00:07:12,426 - [Line #56]  SEMANTIC_ERROR: Semanticka greska - relacioni izraz sa referentnim tipovima moze koristiti samo '==' i '!=' operatore na liniji 56
+ERROR 00:07:12,426 - [Line #60]  SEMANTIC_ERROR: Semanticka greska - if uslov nije tipa bool na liniji 60
+ERROR 00:07:12,426 - [Line #65]  SEMANTIC_ERROR: Semanticka greska - nevalidan pristup elementu niza na liniji 65
+ERROR 00:07:12,426 - [Line #64]  SEMANTIC_ERROR: Semanticka greska - while uslov nije tipa bool na liniji 64
+ERROR 00:07:12,426 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu tipa int na liniji 68
+ERROR 00:07:12,426 - [Line #68]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu kompatibilni na liniji 68
+ERROR 00:07:12,426 - [Line #69]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu tipa int na liniji 69
+ERROR 00:07:12,426 - [Line #71]  SEMANTIC_ERROR: Semanticka greska - drugi i treci izraz moraju biti istog tipa na liniji 71

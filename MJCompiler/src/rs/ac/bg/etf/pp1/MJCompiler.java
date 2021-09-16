@@ -75,7 +75,7 @@ public class MJCompiler implements Compiler {
 		log.info("Kompajliranje ulaznog fajla " + sourceCode.getAbsolutePath());
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(sourceCode))) {
-			Yylex lexer = new Yylex(br);			
+			Yylex lexer = new Yylex(br);
 			MJParser p = new MJParser(lexer);
 			
 	        if (p.isErrorDetected()) {
