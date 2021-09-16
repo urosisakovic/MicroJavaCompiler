@@ -90,7 +90,7 @@ terminal Integer NUM_CONST;
 terminal Character CHAR_CONST;
 terminal Boolean BOOL_CONST;
 terminal PLUS, MINUS, MUL, DIV, MOD;
-terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESSER, LESSER_EQUAL;
+terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESS, LESS_EQUAL;
 terminal AND, OR, ASSIGNMENT, INC, DEC, SEMICOLON, COMMA, FULL_STOP;
 terminal LPAREN, RPAREN, LSQUARE, RSQUARE, LBRACE, RBRACE;
 terminal COLON;
@@ -248,7 +248,8 @@ MethTypeName ::= (MethodTypeName) Type:T1 IDENT:methodName {: RESULT=new MethodT
 FormParams ::= (ParamMulti) FormParams:F1 COMMA FormParam:F2 {: RESULT=new ParamMulti(F1, F2); RESULT.setLine(F1left); :}
 			   |
 			   (ParamSingle) FormParam:F1 {: RESULT=new ParamSingle(F1); RESULT.setLine(F1left); :};
-			   
+
+// Ovo je komentar   
 FormParam ::= (ParamNormal) Type:T1 IDENT:paramName {: RESULT=new ParamNormal(T1, paramName); RESULT.setLine(T1left); :}
 		      |
 		      (ParamArray) Type:T1 IDENT:paramName LSQUARE RSQUARE {: RESULT=new ParamArray(T1, paramName); RESULT.setLine(T1left); :}
@@ -375,6 +376,18 @@ Designator ::= (DesignatorArray) IDENT:designatorName LSQUARE Expr:E1 RSQUARE {:
 			   |
 			   (DesignatorSimple) IDENT:designatorName {: RESULT=new DesignatorSimple(designatorName); RESULT.setLine(designatorNameleft); :};
 			   
+			   
+// Aritmeticke i logicke operacije   
+Addop ::= (AddopPlus) PLUS {: RESULT=new AddopPlus(); :} 
+		  | 
+		  (AddopMinus) MINUS {: RESULT=new AddopMinus(); :};
+
+Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :} 
+		  | 
+		  (MulopDiv) DIV {: RESULT=new MulopDiv(); :} 
+		  | 
+		  (MulopMod) MOD {: RESULT=new MulopMod(); :};
+		  
 Assignop ::= (Assignop) ASSIGNMENT {: RESULT=new Assignop(); :};
 
 Relop ::= (RelopEQ) EQUAL {: RESULT=new RelopEQ(); :}
@@ -385,17 +398,7 @@ Relop ::= (RelopEQ) EQUAL {: RESULT=new RelopEQ(); :}
 		  |
 		  (RelopGE) GREATER_EQUAL {: RESULT=new RelopGE(); :}
 		  |
-		  (RelopLT) LESSER {: RESULT=new RelopLT(); :}
+		  (RelopLT) LESS {: RESULT=new RelopLT(); :}
 		  |
-		  (RelopLE) LESSER_EQUAL {: RESULT=new RelopLE(); :};
-
-Addop ::= (AddopPlus) PLUS {: RESULT=new AddopPlus(); :} 
-		  | 
-		  (AddopMinus) MINUS {: RESULT=new AddopMinus(); :};
-
-Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :} 
-		  | 
-		  (MulopDiv) DIV {: RESULT=new MulopDiv(); :} 
-		  | 
-		  (MulopMod) MOD {: RESULT=new MulopMod(); :};
+		  (RelopLE) LESS_EQUAL {: RESULT=new RelopLE(); :};
 		   

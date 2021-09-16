@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/8/2021 22:54:41
+// 16/8/2021 23:5:47
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -51,11 +51,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(GlobalVarList GlobalVarList) { }
     public void visit(FormParam FormParam) { }
     public void visit(MethVoidName MethVoidName) { }
-    public void visit(MulopMod MulopMod) { visit(); }
-    public void visit(MulopDiv MulopDiv) { visit(); }
-    public void visit(MulopMul MulopMul) { visit(); }
-    public void visit(AddopMinus AddopMinus) { visit(); }
-    public void visit(AddopPlus AddopPlus) { visit(); }
     public void visit(RelopLE RelopLE) { visit(); }
     public void visit(RelopLT RelopLT) { visit(); }
     public void visit(RelopGE RelopGE) { visit(); }
@@ -63,6 +58,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(RelopNE RelopNE) { visit(); }
     public void visit(RelopEQ RelopEQ) { visit(); }
     public void visit(Assignop Assignop) { visit(); }
+    public void visit(MulopMod MulopMod) { visit(); }
+    public void visit(MulopDiv MulopDiv) { visit(); }
+    public void visit(MulopMul MulopMul) { visit(); }
+    public void visit(AddopMinus AddopMinus) { visit(); }
+    public void visit(AddopPlus AddopPlus) { visit(); }
     public void visit(DesignatorSimple DesignatorSimple) { visit(); }
     public void visit(DesignatorArray DesignatorArray) { visit(); }
     public void visit(FactorExpr FactorExpr) { visit(); }

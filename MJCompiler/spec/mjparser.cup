@@ -90,7 +90,7 @@ terminal Integer NUM_CONST;
 terminal Character CHAR_CONST;
 terminal Boolean BOOL_CONST;
 terminal PLUS, MINUS, MUL, DIV, MOD;
-terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESSER, LESSER_EQUAL;
+terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESS, LESS_EQUAL;
 terminal AND, OR, ASSIGNMENT, INC, DEC, SEMICOLON, COMMA, FULL_STOP;
 terminal LPAREN, RPAREN, LSQUARE, RSQUARE, LBRACE, RBRACE;
 terminal COLON;
@@ -219,7 +219,8 @@ MethTypeName ::= (MethodTypeName) Type IDENT:methodName;
 FormParams ::= (ParamMulti) FormParams COMMA FormParam
 			   |
 			   (ParamSingle) FormParam;
-			   
+
+// Ovo je komentar   
 FormParam ::= (ParamNormal) Type IDENT:paramName
 		      |
 		      (ParamArray) Type IDENT:paramName LSQUARE RSQUARE
@@ -346,6 +347,18 @@ Designator ::= (DesignatorArray) IDENT:designatorName LSQUARE Expr RSQUARE
 			   |
 			   (DesignatorSimple) IDENT:designatorName;
 			   
+			   
+// Aritmeticke i logicke operacije   
+Addop ::= (AddopPlus) PLUS 
+		  | 
+		  (AddopMinus) MINUS;
+
+Mulop ::= (MulopMul) MUL 
+		  | 
+		  (MulopDiv) DIV 
+		  | 
+		  (MulopMod) MOD;
+		  
 Assignop ::= (Assignop) ASSIGNMENT;
 
 Relop ::= (RelopEQ) EQUAL
@@ -356,17 +369,7 @@ Relop ::= (RelopEQ) EQUAL
 		  |
 		  (RelopGE) GREATER_EQUAL
 		  |
-		  (RelopLT) LESSER
+		  (RelopLT) LESS
 		  |
-		  (RelopLE) LESSER_EQUAL;
-
-Addop ::= (AddopPlus) PLUS 
-		  | 
-		  (AddopMinus) MINUS;
-
-Mulop ::= (MulopMul) MUL 
-		  | 
-		  (MulopDiv) DIV 
-		  | 
-		  (MulopMod) MOD;
+		  (RelopLE) LESS_EQUAL;
 		   
