@@ -748,3 +748,25 @@ Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
 Sintaksna greska na liniji 64, koloni 3 za simbol "if"!
 Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
 Fatalna greska, parsiranje se ne moze nastaviti na liniji 81, koloni 1!
+Semanticka greska - 'Debagovanje' nije deklarisano na liniji 17
+Semanticka greska - 'Debagovanje' nije deklarisano na liniji 17
+Semanticka greska - izraz print naredbe nije int, char ili bool tipa na liniji 17
+Semanticka greska - izraz print naredbe nije int, char ili bool tipa na liniji 17
+
+Sintaksna greska na liniji 49, koloni 2!
+
+Sintaksna greska na liniji 49, koloni 2!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 49, koloni 2!
+Oporavak od greske u definiciji formalnih parametara funkcije na liniji 49, koloni 2!
+
+Sintaksna greska na liniji 55, koloni 4!
+
+Sintaksna greska na liniji 55, koloni 4!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 59, koloni 1!
+Fatalna greska, parsiranje se ne moze nastaviti na liniji 59, koloni 1!
+Semanticka greska - clanovi izraza nisu tipa int na liniji 83
+Semanticka greska - clanovi izraza nisu tipa int na liniji 83
+Semanticka greska - clanovi izraza nisu tipa int na liniji 89
+Semanticka greska - clanovi izraza nisu tipa int na liniji 89
+Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 89
+Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 89

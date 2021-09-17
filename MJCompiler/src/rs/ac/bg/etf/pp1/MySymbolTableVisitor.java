@@ -7,17 +7,18 @@ import rs.etf.pp1.symboltable.visitors.SymbolTableVisitor;
 
 public class MySymbolTableVisitor extends SymbolTableVisitor {
 	
+	protected final String INDENT = "   ";
+	
 	protected StringBuilder output = new StringBuilder();
-	protected final String indent = "   ";
 	protected StringBuilder currentIndent = new StringBuilder();
 	
 	protected void nextIndentationLevel() {
-		currentIndent.append(indent);
+		currentIndent.append(INDENT);
 	}
 	
 	protected void previousIndentationLevel() {
 		if (currentIndent.length() > 0)
-			currentIndent.setLength(currentIndent.length()-indent.length());
+			currentIndent.setLength(currentIndent.length() - INDENT.length());
 	}
 	
 	@Override

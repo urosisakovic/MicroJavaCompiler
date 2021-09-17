@@ -134,9 +134,8 @@ public class MJCompiler implements Compiler {
 		return this.errorList;
 	}
 	
-	public static void tsdump() {
-		SymbolTableVisitor stv = new MySymbolTableVisitor();
-        Tab.dump(stv);
+	public static void tsdump() { 
+        Tab.dump(new MySymbolTableVisitor());
 	}
 	
 }

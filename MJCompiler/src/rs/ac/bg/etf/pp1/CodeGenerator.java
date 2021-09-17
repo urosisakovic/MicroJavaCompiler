@@ -22,7 +22,6 @@ public class CodeGenerator extends VisitorAdaptor {
 	private Variable variable = null;
 	private Obj currentMethod = null;
 	private ArrayList<Variable> variables = new ArrayList<Variable>();
-	private int jmpAfterExpr1Pc, jmpAfterExpr2Pc;
 	private int condCnt = 0;
 	
 	private LinkedList<ArrayList<CondJcc>> ifCondsStack = new LinkedList<ArrayList<CondJcc>>();
