@@ -40,13 +40,8 @@ public class MJCompiler implements Compiler {
 	private MJCompiler() {
 		errorList = new ArrayList<>();
 	}
-	
-	public void clearErrors() {
-		errorList = new ArrayList<>();
-	}
-	
+
 	public void reportError(CompilerError compilerError) {
-		System.err.println("----------Dodavanje greske----------");
 		errorList.add(compilerError);
 	}
 	
@@ -64,8 +59,30 @@ public class MJCompiler implements Compiler {
 		logError.addAppender(fileAppenderError);
 	}
 	
+	private void checkForLexicalErrors(File sourceCode) {		
+
+		try (BufferedReader reader = new BufferedReader(new FileReader(sourceCode))) {
+			Yylex lexer = new Yylex(reader);
+
+			Symbol currToken = null;
+			while ((currToken = lexer.next_token()).sym != sym.EOF) {
+				if (currToken != null && currToken.value != null)
+					log.info(currToken.toString() + " " + currToken.value.toString());
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
 	@Override
 	public List<CompilerError> compile(String sourceFilePath, String outputFilePath) {
+		errorList = new ArrayList<>();
+		
 		File sourceCode = new File(sourceFilePath);
 		if (!sourceCode.exists()) {
 			log.error("Ulazni fajl [" + sourceCode.getAbsolutePath() + "] nije pronadjen!");
@@ -73,6 +90,11 @@ public class MJCompiler implements Compiler {
 		}
 			
 		log.info("Kompajliranje ulaznog fajla " + sourceCode.getAbsolutePath());
+		
+		checkForLexicalErrors(sourceCode);
+		if (errorList.size() > 0) {
+			return errorList;
+		}
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(sourceCode))) {
 			MJParser p = new MJParser(new Yylex(br));
@@ -85,11 +107,10 @@ public class MJCompiler implements Compiler {
 	        Symbol s;
 	        s = p.parse();
 			Program prog = (Program)(s.value); 
-
-			log.info("\n\n ------------------------------- SINTAKSNO STABLO ------------------------------- \n\n");
+			log.info("=====================SINTAKSNO STABLO===================== \n");
 			log.info(prog.toString(""));
 			
-			log.info("\n\n ------------------------------- SEMANTICKA ANALIZA ------------------------------- \n\n");			
+			log.info("=====================SEMANTICKA ANALIZA=====================\n");			
 			Tab.init();
 
             SemanticAnalyzer semanticAnalyzer = new SemanticAnalyzer();
@@ -116,20 +137,18 @@ public class MJCompiler implements Compiler {
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
 				}
-	        	log.info("Parsiranje uspesno zavrseno!");
 	        }
 	        else {
 	        	log.error("Parsiranje nije uspesno zavrseno!");
 	        }
-		} catch (FileNotFoundException e2) {
-			e2.printStackTrace();
-		} catch (IOException e2) {
-			e2.printStackTrace();
-		} catch (Exception e1) {
-			e1.printStackTrace();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
-		System.out.println("Broj gresaka: " + this.errorList.size());
 		return this.errorList;
 	}
 	

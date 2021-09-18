@@ -11,7 +11,7 @@ import java_cup.runtime.Symbol;
 	private Symbol new_symbol(int type) {
 		return new Symbol(type, yyline + 1, yycolumn);
 	}
-	
+
 	// Ukljucivanje informacije o poziciji tokena
 	private Symbol new_symbol(int type, Object value) {
 		return new Symbol(type, yyline + 1, yycolumn, value);

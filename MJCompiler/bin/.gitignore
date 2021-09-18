@@ -5,3 +5,4 @@
 /test_semantic_errors.mj
 /test_syntax_error.mj
 /program.obj
+/mjparser_astbuild.cup

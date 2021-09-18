@@ -118,7 +118,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		int oldPc = Code.pc;
 		Code.pc = condition.getPc() - 1;
 
-		if (condition.getRelop() == -1) { 
+		if (condition.getRelop() == -1) {
 			Code.put(Code.jcc + Code.ne);
 		}
 		else {
@@ -130,18 +130,34 @@ public class CodeGenerator extends VisitorAdaptor {
 		condition.setModified(true);
 	}
 	
+	public void fixedJumpConditionWhile(JumpCondition condition, int jumpPc) {
+		int oldPc = Code.pc;
+		Code.pc = condition.getPc() - 1;
+		if (condition.getRelop() == -1) {
+			Code.put(Code.jcc + Code.eq);
+		}
+		else {
+			Code.put(Code.jcc + Code.inverse[condition.getRelop()]);
+		}
+		Code.pc = oldPc;
+		Code.put2(condition.getPc(), jumpPc - condition.getPc() + 3);
+		condition.setModified(true);
+	}
+	
 	private void jumpAndSavePc(boolean isDoWhile, int ordNum, int relOp) {
-		if (!isDoWhile) {
-			if (relOp == - 1) {
+		if (!isDoWhile) {  // if condition. Jump when the condition is not met
+			if (relOp == - 1) {  // boolean condition
+				// if false jump, otherwise don't
 				Code.loadConst(0);
 				Code.put(Code.jcc + Code.eq);
 			} else {
+				// jump if condition is not met
 				Code.put(Code.jcc + Code.inverse[relOp]);
 			}
 			ArrayList<JumpCondition> markedConds = ifConditionsStack.getLast();
-			markedConds.add(new JumpCondition(Code.pc, ordNum, relOp));
+			markedConds.add(new JumpCondition(Code.pc, ordNum, relOp));  // jump address in unknown and will be added later
 			Code.pc += 2;
-		} else {
+		} else { // do-while condition. Jump when the condition is met
 			if (relOp == - 1) {
 				Code.loadConst(0);
 				Code.put(Code.jcc + Code.ne);
@@ -150,7 +166,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			}	
 			ArrayList<JumpCondition> whileConds = whileCondsStack.getLast();
 			whileConds.add(new JumpCondition(Code.pc, ordNum, relOp));
-			Code.put2(retWhilePcStack.getLast() - Code.pc + 1);	
+			Code.put2(retWhilePcStack.getLast() - Code.pc + 1);	  // jump address is known
 		}
 	}
 	
@@ -472,20 +488,6 @@ public class CodeGenerator extends VisitorAdaptor {
 			}
 		}
 	}		
-	
-	public void fixedJumpConditionWhile(JumpCondition condition, int jumpPc) {
-		int oldPc = Code.pc;
-		Code.pc = condition.getPc() - 1;
-		if (condition.getRelop() == -1) {
-			Code.put(Code.jcc + Code.eq);
-		}
-		else {
-			Code.put(Code.jcc + Code.inverse[condition.getRelop()]);
-		}
-		Code.pc = oldPc;
-		Code.put2(condition.getPc(), jumpPc - condition.getPc() + 3);
-		condition.setModified(true);
-	}
 	
 	public void visit(CondSingle condSingle) {
 		condCnt = 0;

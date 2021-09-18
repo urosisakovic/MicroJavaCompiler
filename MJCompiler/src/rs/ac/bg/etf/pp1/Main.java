@@ -33,18 +33,17 @@ public class Main {
 		}
 
 		MJCompiler mjCompiler = MJCompiler.getInstance();
-		mjCompiler.clearErrors();
 		
 		List<CompilerError> compilerErrorList = mjCompiler.compile(args[0], args[1]);
 		
-		System.out.println("########### Ispis kompajlerovih gresaka! ##############");
 		if (compilerErrorList == null) {
 			
 		}
 		else if (compilerErrorList.size() == 0) {
-			
+        	log.info("Prevodjenje uspesno zavrseno!");
 		}
 		else {
+			log.info("Broj gresaka: " + compilerErrorList.size());
 			for (var compilerError: compilerErrorList) {
 				log.error(compilerError.toString());
 			}

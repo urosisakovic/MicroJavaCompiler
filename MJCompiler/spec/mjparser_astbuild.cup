@@ -32,7 +32,7 @@ parser code {:
     }
   
     public void syntax_error(Symbol cur_token) {
-        report_error("\nSintaksna greska", cur_token);
+        report_error("Sintaksna greska", cur_token);
     }
   
     public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
@@ -187,7 +187,7 @@ GlobalVarList ::= (GlobalVarMulti) GlobalVarList:G1 COMMA GlobalVarPart:G2 {: RE
 				  (GlobalVarSingle) GlobalVarPart:G1 {: RESULT=new GlobalVarSingle(G1); RESULT.setLine(G1left); :};
 GlobalVarPart ::= (GlobalVar) VarPart:V1 {: RESULT=new GlobalVar(V1); RESULT.setLine(V1left); :} 
 				  |
-				  (VarError) error {: :} {: RESULT=new VarError(); :};
+				  (VarError) error {: parser.report_error("Oporavak od greske tokom deklaraciji globalne promenljive", parser.getCurrentSymbol()); :} {: RESULT=new VarError(); :};
 				  /* A1 definicija globalne promenljive */ 
 
 // Deklaracija klasa
