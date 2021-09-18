@@ -1,17 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 16:2:28
+// 18/8/2021 16:44:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ClassDecl0 extends ClassDecl {
+public class ClassDeclDerived1 extends ClassDecl {
 
     private String I1;
     private VarDeclList VarDeclList;
     private MethodDeclList MethodDeclList;
 
-    public ClassDecl0 (String I1, VarDeclList VarDeclList, MethodDeclList MethodDeclList) {
+    public ClassDeclDerived1 (String I1, VarDeclList VarDeclList, MethodDeclList MethodDeclList) {
         this.I1=I1;
         this.VarDeclList=VarDeclList;
         if(VarDeclList!=null) VarDeclList.setParent(this);
@@ -67,7 +67,7 @@ public class ClassDecl0 extends ClassDecl {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ClassDecl0(\n");
+        buffer.append("ClassDeclDerived1(\n");
 
         buffer.append(" "+tab+I1);
         buffer.append("\n");
@@ -85,7 +85,7 @@ public class ClassDecl0 extends ClassDecl {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ClassDecl0]");
+        buffer.append(") [ClassDeclDerived1]");
         return buffer.toString();
     }
 }

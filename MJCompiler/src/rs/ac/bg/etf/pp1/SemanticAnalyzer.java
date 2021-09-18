@@ -68,9 +68,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		return false;
 	}
 	
-	// *** VISIT METODE ***
 	
-	// Program
+
 	public void visit(Program program) { 
 		nVars = Tab.currentScope.getnVars();
 		outerScopeObj = program.getProgName().obj;
@@ -81,13 +80,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
 	}
 	
-	// ProgName
 	public void visit(ProgName progName){
     	progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
     	Tab.openScope();
     }
 	
-	// GlobalVarDecl
     public void visit(GlobalVarDeclaration globalVarDeclaration) {
 		Struct type = globalVarDeclaration.getType().struct;
 		for (var declVar : declarationVariables) {
@@ -102,7 +99,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	declarationVariables.clear();
 	}
     
-	// ConstDecl
     public void visit(ConstDeclaration constDeclaration) {	
 		Struct type = constDeclaration.getType().struct;
 		for (var declVar : declarationVariables) {
@@ -112,7 +108,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		declarationVariables.clear();
 	}	
 
-    // ConstPart
 	public void visit(ConstPart constPart) { 
 		if (Tab.find(constPart.getConstName()) == Tab.noObj) {
 			String varName = constPart.getConstName();
@@ -128,7 +123,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	// MethVoidName
 	public void visit(MethodVoidName methodVoidName) { 
 		currentMethod = Tab.insert(Obj.Meth, methodVoidName.getMethodName(), Tab.noType);
 		methods.add(new Method(methodVoidName.getMethodName()));		
@@ -138,28 +132,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	// MethTypeName
-		public void visit(MethodTypeName methodTypeName) { 
-			currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethodName(), methodTypeName.getType().struct);
-			 methods.add(new Method(methodTypeName.getMethodName()));		
-			Tab.openScope();
-		}
+	public void visit(MethodTypeName methodTypeName) { 
+		currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethodName(), methodTypeName.getType().struct);
+		 methods.add(new Method(methodTypeName.getMethodName()));		
+		Tab.openScope();
+	}
 	
-	// MethodDec
 	public void visit(MethodVoidDeclaration methodVoidDeclaration) { 
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
 		currentMethod = null;
 	}
 	
-	// MethodTypeDecl
 	public void visit(MethodTypeDeclaration methodTypeDeclaration) { 
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
 		currentMethod = null;
 	}
 	
-	// Type
 	public void visit(Type type) {
     	Obj typeNode = Tab.find(type.getTypeName());
 		if (typeNode == Tab.noObj) {
@@ -177,7 +167,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
     }
 	
-	// VarDecl
 	public void visit(VarDeclaration varDeclaration) {
 		Struct type = varDeclaration.getType().struct;
 		for (var declVar : declarationVariables) {
@@ -192,7 +181,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	declarationVariables.clear();
 	}
 	
-	// VarPart
 	public void visit(VarNormal varNormal) {
 		if (Tab.find(varNormal.getVarName()) == Tab.noObj) {
 			String varName = varNormal.getVarName();
@@ -223,7 +211,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
     }
 		
-	// FormParam
 	public void visit(ParamNormal paramNormal) {
 		if (Tab.find(paramNormal.getParamName()) == Tab.noObj || !methodContains(paramNormal.getParamName())) {
 	    	Obj obj = Tab.insert(Obj.Var, paramNormal.getParamName(), paramNormal.getType().struct);
@@ -256,12 +243,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	// DoHeader
 	public void visit(DoKeyword doKeyword) {
 		 doWhileDepth++;
 	}
     
-    // DesignatorStatement
   	public void visit(DesignatorMethodCallParams designatorMethodCallParams){
     	Obj func = designatorMethodCallParams.getDesignator().obj;
     	if (Obj.Meth == func.getKind()) {
@@ -323,12 +308,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
  		assignmentRight = null;
  	}
  	
- 	// Assignment
  	public void visit(AssignmentExpr assignmentExpr) { 
  		assignmentRight = assignmentExpr.getExpr().struct;
  	}
   	
- 	// ActPars
  	public void visit(ActParsSingle actParsSingle) {
  		currentMethodParams.add(actParsSingle.getExpr().struct);
  	}
@@ -337,14 +320,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
  		currentMethodParams.add(actParsMulti.getExpr().struct);
  	}
  	
-  	// IfCondition
   	public void visit(IfCond ifCond) {
   		if (!ifCond.getCondition().struct.equals(boolType)) {
             report_error("Semanticka greska - if uslov nije tipa bool", ifCond);
         }
   	}
   	
-  	// Condition
    	public void visit(CondSingle condSingle) {
    		condSingle.struct = condSingle.getCondTerm().struct;
    	}
@@ -353,7 +334,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    		condOr.struct = condOr.getCondTerm().struct;
    	}
    	
-   	// CondTerm
    	public void visit(CondTermSingle condTermSingle) {
    		condTermSingle.struct = condTermSingle.getCondFact().struct;
    	}
@@ -362,7 +342,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    		condTermAnd.struct = condTermAnd.getCondFact().struct;
    	}
    	
-   	// CondFact
    	public void visit(CondFactSingle condFactSingle) {
    		condFactSingle.struct = condFactSingle.getExpr().struct;
    	}
@@ -383,7 +362,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    		condFactRelop.struct = boolType;
    	}
 	
-	// Expr1
 	public void visit(ExprNeg exprNeg) { 
 		if (exprNeg.getTerm().struct.getKind() != Struct.Int) {
 			report_error("Semanticka greska - tip mora da bude int", exprNeg);
@@ -405,7 +383,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		exprAddop.struct = exprAddop.getExpr().struct;
 	}
 	
-	// Term
 	public void visit(TermMulop termMulop) {
 		if (!termMulop.getTerm().struct.equals(Tab.intType) || !termMulop.getFactor().struct.equals(Tab.intType)) {
             report_error("Semanticka greska - clanovi izraza nisu tipa int", termMulop);
@@ -417,7 +394,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		termSingle.struct = termSingle.getFactor().struct;
 	}
 	
-	// Factor
 	public void visit(FuncCallParams funcCallParams){
     	Obj func = funcCallParams.getDesignator().obj;
     	if (Obj.Meth == func.getKind()) {
@@ -490,7 +466,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		factorExpr.struct = factorExpr.getExpr().struct;
 	}
 	
-	// Designator
 	public void visit(DesignatorArray designatorArray) {
 		Obj obj = Tab.find(designatorArray.getDesignatorName());
 		if (obj == Tab.noObj) { 
@@ -513,7 +488,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		designatorSimple.obj = obj;
 	}
 	
-	// Value
 	public void visit(NumConst numConst) {
 		numConst.struct = Tab.intType;
 	}
@@ -526,7 +500,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		charConst.struct = Tab.charType;
 	}
 	
-	// Statement
 	public void visit(StmtDoWhile stmtDoWhile) {
 		 if (!stmtDoWhile.getCondition().struct.equals(boolType)) {
              report_error("Semanticka greska - while uslov nije tipa bool", stmtDoWhile);

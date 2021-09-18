@@ -1,12 +1,10 @@
 program testMul
-	int x, y, z;
+	int niz1[];
+	int niz2[];
 {
 	void main()
 	{
-		x = 3;
-		y = 5;
-		z = x * y;
-
-		print(z);
+		niz1 = new int[3];
+		niz2 = 2 * niz1;
 	}
 }

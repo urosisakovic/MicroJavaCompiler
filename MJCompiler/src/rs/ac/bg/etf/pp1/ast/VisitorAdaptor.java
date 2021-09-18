@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 16:2:28
+// 18/8/2021 16:44:4
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -130,8 +130,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ParamError ParamError) { visit(); }
     public void visit(ParamArray ParamArray) { visit(); }
     public void visit(ParamNormal ParamNormal) { visit(); }
-    public void visit(ParamSingle ParamSingle) { visit(); }
-    public void visit(ParamMulti ParamMulti) { visit(); }
+    public void visit(FormParamSingle FormParamSingle) { visit(); }
+    public void visit(FormParamMulti FormParamMulti) { visit(); }
     public void visit(MethodTypeName MethodTypeName) { visit(); }
     public void visit(MethodTypeDeclDerived8 MethodTypeDeclDerived8) { visit(); }
     public void visit(MethodTypeDeclDerived7 MethodTypeDeclDerived7) { visit(); }
@@ -154,10 +154,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodVoidDeclaration MethodVoidDeclaration) { visit(); }
     public void visit(MethodDeclSingle MethodDeclSingle) { visit(); }
     public void visit(MethodDecMulti MethodDecMulti) { visit(); }
-    public void visit(ClassDecl3 ClassDecl3) { visit(); }
-    public void visit(ClassDecl2 ClassDecl2) { visit(); }
-    public void visit(ClassDecl1 ClassDecl1) { visit(); }
-    public void visit(ClassDecl0 ClassDecl0) { visit(); }
+    public void visit(ClassDeclDerived4 ClassDeclDerived4) { visit(); }
+    public void visit(ClassDeclDerived3 ClassDeclDerived3) { visit(); }
+    public void visit(ClassDeclDerived2 ClassDeclDerived2) { visit(); }
+    public void visit(ClassDeclDerived1 ClassDeclDerived1) { visit(); }
     public void visit(VarError VarError) { visit(); }
     public void visit(GlobalVar GlobalVar) { visit(); }
     public void visit(GlobalVarSingle GlobalVarSingle) { visit(); }

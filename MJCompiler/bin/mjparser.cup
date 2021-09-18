@@ -162,13 +162,13 @@ GlobalVarPart ::= (GlobalVar) VarPart
 				  /* A1 definicija globalne promenljive */ 
 
 // Deklaracija klasa
-ClassDecl ::= (ClassDecl0) CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
+ClassDecl ::= CLASS IDENT LBRACE VarDeclList LBRACE MethodDeclList RBRACE RBRACE
 			  |
-			  (ClassDecl1) CLASS IDENT LBRACE VarDeclList RBRACE
+			  CLASS IDENT LBRACE VarDeclList RBRACE
 			  |
-			  (ClassDecl2) CLASS IDENT LBRACE LBRACE MethodDeclList RBRACE RBRACE
+			  CLASS IDENT LBRACE LBRACE MethodDeclList RBRACE RBRACE
 			  |
-			  (ClassDecl3) CLASS IDENT LBRACE RBRACE;
+			  CLASS IDENT LBRACE RBRACE;
 
 // Deklaracija metoda
 MethodDeclList ::= (MethodDecMulti) MethodDeclList MethodDec
@@ -212,9 +212,9 @@ MethodTypeDecl ::= MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE Stat
 MethTypeName ::= (MethodTypeName) Type IDENT:methodName;
 
 // Argumenti metoda
-FormParams ::= (ParamMulti) FormParams COMMA FormParam
+FormParams ::= (FormParamMulti) FormParams COMMA FormParam
 			   |
-			   (ParamSingle) FormParam;
+			   (FormParamSingle) FormParam;
 FormParam ::= (ParamNormal) Type IDENT:paramName
 		      |
 		      (ParamArray) Type IDENT:paramName LSQUARE RSQUARE

@@ -1,17 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 16:2:28
+// 18/8/2021 16:44:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ParamSingle extends FormParams {
+public class FormParamMulti extends FormParams {
 
+    private FormParams FormParams;
     private FormParam FormParam;
 
-    public ParamSingle (FormParam FormParam) {
+    public FormParamMulti (FormParams FormParams, FormParam FormParam) {
+        this.FormParams=FormParams;
+        if(FormParams!=null) FormParams.setParent(this);
         this.FormParam=FormParam;
         if(FormParam!=null) FormParam.setParent(this);
+    }
+
+    public FormParams getFormParams() {
+        return FormParams;
+    }
+
+    public void setFormParams(FormParams FormParams) {
+        this.FormParams=FormParams;
     }
 
     public FormParam getFormParam() {
@@ -27,15 +38,18 @@ public class ParamSingle extends FormParams {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(FormParams!=null) FormParams.accept(visitor);
         if(FormParam!=null) FormParam.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(FormParams!=null) FormParams.traverseTopDown(visitor);
         if(FormParam!=null) FormParam.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(FormParams!=null) FormParams.traverseBottomUp(visitor);
         if(FormParam!=null) FormParam.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -43,7 +57,13 @@ public class ParamSingle extends FormParams {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ParamSingle(\n");
+        buffer.append("FormParamMulti(\n");
+
+        if(FormParams!=null)
+            buffer.append(FormParams.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(FormParam!=null)
             buffer.append(FormParam.toString("  "+tab));
@@ -52,7 +72,7 @@ public class ParamSingle extends FormParams {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ParamSingle]");
+        buffer.append(") [FormParamMulti]");
         return buffer.toString();
     }
 }

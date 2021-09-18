@@ -6201,3 +6201,533 @@ INFO  15:53:29,344 - Deklarisana globalna promenljiva 'y' na liniji 2
 INFO  15:53:29,344 - Deklarisana globalna promenljiva 'z' na liniji 2
 INFO  15:53:29,345 - Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
 INFO  15:53:29,346 - Parsiranje uspesno zavrseno!
+INFO  16:44:17,375 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:44:17,402 - #45 testMul
+INFO  16:44:17,402 - #45 int
+INFO  16:44:17,402 - #45 x
+INFO  16:44:17,402 - #45 y
+INFO  16:44:17,402 - #45 z
+INFO  16:44:17,403 - #45 main
+INFO  16:44:17,403 - #45 x
+INFO  16:44:17,403 - #46 3
+INFO  16:44:17,403 - #45 y
+INFO  16:44:17,403 - #46 5
+INFO  16:44:17,403 - #45 z
+INFO  16:44:17,403 - #45 x
+INFO  16:44:17,403 - #45 y
+INFO  16:44:17,404 - #45 z
+INFO  16:44:17,404 - 
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+INFO  16:44:17,404 - Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclEps(
+    ) [ProgramDeclEps]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarMulti(
+          GlobalVarMulti(
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+            GlobalVar(
+              VarNormal(
+               y
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarMulti]
+          GlobalVar(
+            VarNormal(
+             z
+            ) [VarNormal]
+          ) [GlobalVar]
+        ) [GlobalVarMulti]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     x
+                    ) [DesignatorSimple]
+                    AssignmentExpr(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [AssignmentExpr]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   y
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 z
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermMulop(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           x
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMulop]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   z
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+INFO  16:44:17,405 - 
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+INFO  16:44:17,409 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  16:44:17,409 - Deklarisana globalna promenljiva 'y' na liniji 2
+INFO  16:44:17,409 - Deklarisana globalna promenljiva 'z' na liniji 2
+INFO  16:44:17,409 - Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+INFO  16:44:17,411 - Parsiranje uspesno zavrseno!
+INFO  16:44:19,560 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:44:19,586 - #45 testMul
+INFO  16:44:19,586 - #45 int
+INFO  16:44:19,587 - #45 x
+INFO  16:44:19,587 - #45 y
+INFO  16:44:19,587 - #45 z
+INFO  16:44:19,587 - #45 main
+INFO  16:44:19,587 - #45 x
+INFO  16:44:19,588 - #46 3
+INFO  16:44:19,588 - #45 y
+INFO  16:44:19,588 - #46 5
+INFO  16:44:19,588 - #45 z
+INFO  16:44:19,588 - #45 x
+INFO  16:44:19,588 - #45 y
+INFO  16:44:19,589 - #45 z
+INFO  16:44:19,589 - 
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+INFO  16:44:19,589 - Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclEps(
+    ) [ProgramDeclEps]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarMulti(
+          GlobalVarMulti(
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+            GlobalVar(
+              VarNormal(
+               y
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarMulti]
+          GlobalVar(
+            VarNormal(
+             z
+            ) [VarNormal]
+          ) [GlobalVar]
+        ) [GlobalVarMulti]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     x
+                    ) [DesignatorSimple]
+                    AssignmentExpr(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [AssignmentExpr]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   y
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 z
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermMulop(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           x
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMulop]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   z
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+INFO  16:44:19,590 - 
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+INFO  16:44:19,593 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  16:44:19,593 - Deklarisana globalna promenljiva 'y' na liniji 2
+INFO  16:44:19,593 - Deklarisana globalna promenljiva 'z' na liniji 2
+INFO  16:44:19,594 - Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+INFO  16:44:19,595 - Parsiranje uspesno zavrseno!
+INFO  16:45:09,378 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:45:09,405 - #45 testMul
+INFO  16:45:09,405 - #45 int
+INFO  16:45:09,405 - #45 x
+INFO  16:45:09,406 - #45 int
+INFO  16:45:09,406 - #45 niz1
+INFO  16:45:09,406 - #46 3
+ERROR 16:45:09,406 - 
+Sintaksna greska na liniji 3 na koloni 10
+INFO  16:45:09,406 - #45 int
+INFO  16:45:09,407 - #45 niz2
+INFO  16:45:09,407 - #46 2
+ERROR 16:45:09,407 - 
+Sintaksna greska na liniji 4 na koloni 10
+INFO  16:45:09,407 - #45 main
+INFO  16:45:09,408 - 
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+INFO  16:45:09,408 - Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclMulti(
+      ProgramDeclMulti(
+        ProgramDeclEps(
+        ) [ProgramDeclEps]
+        PartVarDeclaration(
+          GlobalVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+          ) [GlobalVarDeclaration]
+        ) [PartVarDeclaration]
+      ) [ProgramDeclMulti]
+      PartVarDeclaration(
+        GlobalVarDeclaration(
+          Type(
+           int
+          ) [Type]
+          GlobalVarSingle(
+            VarError(
+            ) [VarError]
+          ) [GlobalVarSingle]
+        ) [GlobalVarDeclaration]
+      ) [PartVarDeclaration]
+    ) [ProgramDeclMulti]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarSingle(
+          VarError(
+          ) [VarError]
+        ) [GlobalVarSingle]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived8(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+      ) [MethodVoidDeclDerived8]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+INFO  16:45:09,408 - 
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+INFO  16:45:09,411 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  16:45:09,412 - Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+INFO  16:45:09,413 - Parsiranje uspesno zavrseno!
+ERROR 16:45:09,418 - [Line #3 ]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 3 na koloni 10
+ERROR 16:45:09,418 - [Line #4 ]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 4 na koloni 10
+INFO  16:46:06,092 - Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+INFO  16:46:06,119 - #45 testMul
+INFO  16:46:06,119 - #45 int
+INFO  16:46:06,120 - #45 niz1
+INFO  16:46:06,120 - #45 int
+INFO  16:46:06,120 - #45 niz2
+INFO  16:46:06,120 - #45 main
+INFO  16:46:06,120 - #45 niz1
+INFO  16:46:06,120 - #45 int
+INFO  16:46:06,120 - #46 3
+INFO  16:46:06,121 - #45 niz2
+INFO  16:46:06,121 - #46 2
+INFO  16:46:06,121 - #45 niz1
+INFO  16:46:06,122 - 
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+INFO  16:46:06,122 - Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclMulti(
+      ProgramDeclEps(
+      ) [ProgramDeclEps]
+      PartVarDeclaration(
+        GlobalVarDeclaration(
+          Type(
+           int
+          ) [Type]
+          GlobalVarSingle(
+            GlobalVar(
+              VarArray(
+               niz1
+              ) [VarArray]
+            ) [GlobalVar]
+          ) [GlobalVarSingle]
+        ) [GlobalVarDeclaration]
+      ) [PartVarDeclaration]
+    ) [ProgramDeclMulti]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarSingle(
+          GlobalVar(
+            VarArray(
+             niz2
+            ) [VarArray]
+          ) [GlobalVar]
+        ) [GlobalVarSingle]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementSingle(
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 niz1
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermSingle(
+                      FactorNewArray(
+                        Type(
+                         int
+                        ) [Type]
+                        ExprSingle(
+                          TermSingle(
+                            FactorNumConst(
+                             3
+                            ) [FactorNumConst]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [FactorNewArray]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementSingle]
+          StmtDesign(
+            DesignatorAssignment(
+              DesignatorSimple(
+               niz2
+              ) [DesignatorSimple]
+              AssignmentExpr(
+                ExprSingle(
+                  TermMulop(
+                    TermSingle(
+                      FactorNumConst(
+                       2
+                      ) [FactorNumConst]
+                    ) [TermSingle]
+                    MulopMul(
+                    ) [MulopMul]
+                    FactorDesignator(
+                      DesignatorSimple(
+                       niz1
+                      ) [DesignatorSimple]
+                    ) [FactorDesignator]
+                  ) [TermMulop]
+                ) [ExprSingle]
+              ) [AssignmentExpr]
+            ) [DesignatorAssignment]
+          ) [StmtDesign]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+INFO  16:46:06,122 - 
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+INFO  16:46:06,126 - Deklarisan globalni niz 'niz1' na liniji 2
+INFO  16:46:06,126 - Deklarisan globalni niz 'niz2' na liniji 3
+ERROR 16:46:06,126 - Semanticka greska - clanovi izraza nisu tipa int na liniji 8
+ERROR 16:46:06,127 - Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 8
+ERROR 16:46:06,127 - Parsiranje nije uspesno zavrseno!
+ERROR 16:46:06,131 - [Line #8 ]  SEMANTIC_ERROR: Semanticka greska - clanovi izraza nisu tipa int na liniji 8
+ERROR 16:46:06,131 - [Line #8 ]  SEMANTIC_ERROR: Semanticka greska - nekompatibilni tipovi za dodelu vrednosti na liniji 8

@@ -1,15 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 16:2:28
+// 18/8/2021 16:44:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ClassDecl3 extends ClassDecl {
+public class ClassDeclDerived4 extends ClassDecl {
 
     private String I1;
 
-    public ClassDecl3 (String I1) {
+    public ClassDeclDerived4 (String I1) {
         this.I1=I1;
     }
 
@@ -39,13 +39,13 @@ public class ClassDecl3 extends ClassDecl {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ClassDecl3(\n");
+        buffer.append("ClassDeclDerived4(\n");
 
         buffer.append(" "+tab+I1);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ClassDecl3]");
+        buffer.append(") [ClassDeclDerived4]");
         return buffer.toString();
     }
 }

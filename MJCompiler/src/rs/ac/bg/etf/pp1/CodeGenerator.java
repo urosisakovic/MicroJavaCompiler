@@ -14,8 +14,7 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class CodeGenerator extends VisitorAdaptor {
 	
-	private static Logger log = Logger.getLogger("info");
-	private static Logger logError = Logger.getLogger("error");
+	Logger log = Logger.getLogger(getClass());
 	
 	private int mainPc;
 	private Obj outerScope = null;
@@ -50,7 +49,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		if (line != 0) {
 			msg.append(" na liniji ").append(line).append("!");
 		}
-		logError.error(msg.toString());
+		log.error(msg.toString());
 	}
 
 	public void report_info(String message, SyntaxNode info) {

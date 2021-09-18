@@ -1,19 +1,19 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 16:2:28
+// 18/8/2021 16:44:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ClassDecl2 extends ClassDecl {
+public class ClassDeclDerived2 extends ClassDecl {
 
     private String I1;
-    private MethodDeclList MethodDeclList;
+    private VarDeclList VarDeclList;
 
-    public ClassDecl2 (String I1, MethodDeclList MethodDeclList) {
+    public ClassDeclDerived2 (String I1, VarDeclList VarDeclList) {
         this.I1=I1;
-        this.MethodDeclList=MethodDeclList;
-        if(MethodDeclList!=null) MethodDeclList.setParent(this);
+        this.VarDeclList=VarDeclList;
+        if(VarDeclList!=null) VarDeclList.setParent(this);
     }
 
     public String getI1() {
@@ -24,12 +24,12 @@ public class ClassDecl2 extends ClassDecl {
         this.I1=I1;
     }
 
-    public MethodDeclList getMethodDeclList() {
-        return MethodDeclList;
+    public VarDeclList getVarDeclList() {
+        return VarDeclList;
     }
 
-    public void setMethodDeclList(MethodDeclList MethodDeclList) {
-        this.MethodDeclList=MethodDeclList;
+    public void setVarDeclList(VarDeclList VarDeclList) {
+        this.VarDeclList=VarDeclList;
     }
 
     public void accept(Visitor visitor) {
@@ -37,35 +37,35 @@ public class ClassDecl2 extends ClassDecl {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(MethodDeclList!=null) MethodDeclList.accept(visitor);
+        if(VarDeclList!=null) VarDeclList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(MethodDeclList!=null) MethodDeclList.traverseTopDown(visitor);
+        if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(MethodDeclList!=null) MethodDeclList.traverseBottomUp(visitor);
+        if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ClassDecl2(\n");
+        buffer.append("ClassDeclDerived2(\n");
 
         buffer.append(" "+tab+I1);
         buffer.append("\n");
 
-        if(MethodDeclList!=null)
-            buffer.append(MethodDeclList.toString("  "+tab));
+        if(VarDeclList!=null)
+            buffer.append(VarDeclList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ClassDecl2]");
+        buffer.append(") [ClassDeclDerived2]");
         return buffer.toString();
     }
 }

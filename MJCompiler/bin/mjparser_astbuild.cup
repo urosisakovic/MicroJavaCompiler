@@ -191,13 +191,13 @@ GlobalVarPart ::= (GlobalVar) VarPart:V1 {: RESULT=new GlobalVar(V1); RESULT.set
 				  /* A1 definicija globalne promenljive */ 
 
 // Deklaracija klasa
-ClassDecl ::= (ClassDecl0) CLASS IDENT:I1 LBRACE VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE RBRACE {: RESULT=new ClassDecl0(I1, V2, M3); RESULT.setLine(I1left); :}
+ClassDecl ::= CLASS IDENT:I1 LBRACE VarDeclList:V2 LBRACE MethodDeclList:M3 RBRACE RBRACE {: RESULT=new ClassDeclDerived1(I1, V2, M3); RESULT.setLine(I1left); :}
 			  |
-			  (ClassDecl1) CLASS IDENT:I1 LBRACE VarDeclList:V2 RBRACE {: RESULT=new ClassDecl1(I1, V2); RESULT.setLine(I1left); :}
+			  CLASS IDENT:I1 LBRACE VarDeclList:V2 RBRACE {: RESULT=new ClassDeclDerived2(I1, V2); RESULT.setLine(I1left); :}
 			  |
-			  (ClassDecl2) CLASS IDENT:I1 LBRACE LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new ClassDecl2(I1, M2); RESULT.setLine(I1left); :}
+			  CLASS IDENT:I1 LBRACE LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new ClassDeclDerived3(I1, M2); RESULT.setLine(I1left); :}
 			  |
-			  (ClassDecl3) CLASS IDENT:I1 LBRACE RBRACE {: RESULT=new ClassDecl3(I1); RESULT.setLine(I1left); :};
+			  CLASS IDENT:I1 LBRACE RBRACE {: RESULT=new ClassDeclDerived4(I1); RESULT.setLine(I1left); :};
 
 // Deklaracija metoda
 MethodDeclList ::= (MethodDecMulti) MethodDeclList:M1 MethodDec:M2 {: RESULT=new MethodDecMulti(M1, M2); RESULT.setLine(M1left); :}
@@ -241,9 +241,9 @@ MethodTypeDecl ::= MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LB
 MethTypeName ::= (MethodTypeName) Type:T1 IDENT:methodName {: RESULT=new MethodTypeName(T1, methodName); RESULT.setLine(T1left); :};
 
 // Argumenti metoda
-FormParams ::= (ParamMulti) FormParams:F1 COMMA FormParam:F2 {: RESULT=new ParamMulti(F1, F2); RESULT.setLine(F1left); :}
+FormParams ::= (FormParamMulti) FormParams:F1 COMMA FormParam:F2 {: RESULT=new FormParamMulti(F1, F2); RESULT.setLine(F1left); :}
 			   |
-			   (ParamSingle) FormParam:F1 {: RESULT=new ParamSingle(F1); RESULT.setLine(F1left); :};
+			   (FormParamSingle) FormParam:F1 {: RESULT=new FormParamSingle(F1); RESULT.setLine(F1left); :};
 FormParam ::= (ParamNormal) Type:T1 IDENT:paramName {: RESULT=new ParamNormal(T1, paramName); RESULT.setLine(T1left); :}
 		      |
 		      (ParamArray) Type:T1 IDENT:paramName LSQUARE RSQUARE {: RESULT=new ParamArray(T1, paramName); RESULT.setLine(T1left); :}
