@@ -2154,3 +2154,591 @@ Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\pro
 Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
 Parsiranje uspesno zavrseno!
 Parsiranje uspesno zavrseno!
+Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+#45 testMul
+#45 testMul
+#45 int
+#45 int
+#45 x
+#45 x
+#45 y
+#45 y
+#45 z
+#45 z
+#45 main
+#45 main
+#45 x
+#45 x
+#46 3
+#46 3
+#45 y
+#45 y
+#46 5
+#46 5
+#45 z
+#45 z
+#45 x
+#45 x
+#45 y
+#45 y
+#45 z
+#45 z
+
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclEps(
+    ) [ProgramDeclEps]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarMulti(
+          GlobalVarMulti(
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+            GlobalVar(
+              VarNormal(
+               y
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarMulti]
+          GlobalVar(
+            VarNormal(
+             z
+            ) [VarNormal]
+          ) [GlobalVar]
+        ) [GlobalVarMulti]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     x
+                    ) [DesignatorSimple]
+                    AssignmentExpr(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [AssignmentExpr]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   y
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 z
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermMulop(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           x
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMulop]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   z
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclEps(
+    ) [ProgramDeclEps]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarMulti(
+          GlobalVarMulti(
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+            GlobalVar(
+              VarNormal(
+               y
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarMulti]
+          GlobalVar(
+            VarNormal(
+             z
+            ) [VarNormal]
+          ) [GlobalVar]
+        ) [GlobalVarMulti]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     x
+                    ) [DesignatorSimple]
+                    AssignmentExpr(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [AssignmentExpr]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   y
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 z
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermMulop(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           x
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMulop]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   z
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+Deklarisana globalna promenljiva 'x' na liniji 2
+Deklarisana globalna promenljiva 'x' na liniji 2
+Deklarisana globalna promenljiva 'y' na liniji 2
+Deklarisana globalna promenljiva 'y' na liniji 2
+Deklarisana globalna promenljiva 'z' na liniji 2
+Deklarisana globalna promenljiva 'z' na liniji 2
+Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+Parsiranje uspesno zavrseno!
+Parsiranje uspesno zavrseno!
+Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+Kompajliranje ulaznog fajla C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.mj
+
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+
+
+ ------------------------------- SINTAKSNO STABLO ------------------------------- 
+
+
+Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclEps(
+    ) [ProgramDeclEps]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarMulti(
+          GlobalVarMulti(
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+            GlobalVar(
+              VarNormal(
+               y
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarMulti]
+          GlobalVar(
+            VarNormal(
+             z
+            ) [VarNormal]
+          ) [GlobalVar]
+        ) [GlobalVarMulti]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     x
+                    ) [DesignatorSimple]
+                    AssignmentExpr(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [AssignmentExpr]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   y
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 z
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermMulop(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           x
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMulop]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   z
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+Program(
+  ProgName(
+   testMul
+  ) [ProgName]
+  ProgramDeclMulti(
+    ProgramDeclEps(
+    ) [ProgramDeclEps]
+    PartVarDeclaration(
+      GlobalVarDeclaration(
+        Type(
+         int
+        ) [Type]
+        GlobalVarMulti(
+          GlobalVarMulti(
+            GlobalVarSingle(
+              GlobalVar(
+                VarNormal(
+                 x
+                ) [VarNormal]
+              ) [GlobalVar]
+            ) [GlobalVarSingle]
+            GlobalVar(
+              VarNormal(
+               y
+              ) [VarNormal]
+            ) [GlobalVar]
+          ) [GlobalVarMulti]
+          GlobalVar(
+            VarNormal(
+             z
+            ) [VarNormal]
+          ) [GlobalVar]
+        ) [GlobalVarMulti]
+      ) [GlobalVarDeclaration]
+    ) [PartVarDeclaration]
+  ) [ProgramDeclMulti]
+  MethodDeclSingle(
+    MethodVoidDeclaration(
+      MethodVoidDeclDerived7(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        StatementMulti(
+          StatementMulti(
+            StatementMulti(
+              StatementSingle(
+                StmtDesign(
+                  DesignatorAssignment(
+                    DesignatorSimple(
+                     x
+                    ) [DesignatorSimple]
+                    AssignmentExpr(
+                      ExprSingle(
+                        TermSingle(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [AssignmentExpr]
+                  ) [DesignatorAssignment]
+                ) [StmtDesign]
+              ) [StatementSingle]
+              StmtDesign(
+                DesignatorAssignment(
+                  DesignatorSimple(
+                   y
+                  ) [DesignatorSimple]
+                  AssignmentExpr(
+                    ExprSingle(
+                      TermSingle(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [AssignmentExpr]
+                ) [DesignatorAssignment]
+              ) [StmtDesign]
+            ) [StatementMulti]
+            StmtDesign(
+              DesignatorAssignment(
+                DesignatorSimple(
+                 z
+                ) [DesignatorSimple]
+                AssignmentExpr(
+                  ExprSingle(
+                    TermMulop(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           x
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMulop]
+                  ) [ExprSingle]
+                ) [AssignmentExpr]
+              ) [DesignatorAssignment]
+            ) [StmtDesign]
+          ) [StatementMulti]
+          StmtPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   z
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StmtPrint]
+        ) [StatementMulti]
+      ) [MethodVoidDeclDerived7]
+    ) [MethodVoidDeclaration]
+  ) [MethodDeclSingle]
+) [Program]
+
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+
+
+ ------------------------------- SEMANTICKA ANALIZA ------------------------------- 
+
+
+Deklarisana globalna promenljiva 'x' na liniji 2
+Deklarisana globalna promenljiva 'x' na liniji 2
+Deklarisana globalna promenljiva 'y' na liniji 2
+Deklarisana globalna promenljiva 'y' na liniji 2
+Deklarisana globalna promenljiva 'z' na liniji 2
+Deklarisana globalna promenljiva 'z' na liniji 2
+Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+Generisanje MJ bajtkoda: C:\Users\User\src\MicroJavaCompiler\MJCompiler\test\program.obj
+Parsiranje uspesno zavrseno!
+Parsiranje uspesno zavrseno!

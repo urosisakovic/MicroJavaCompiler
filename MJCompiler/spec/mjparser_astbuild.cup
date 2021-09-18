@@ -6,29 +6,22 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
-	private Symbol currSymbol = null;		
-	private Symbol errorSymbol = null;
-	private boolean errorDetected = false;
+	Symbol currSymbol = null;		
+	boolean errorDetected = false;
 	
-	private static Logger log = Logger.getLogger("info");
-	private static Logger logError = Logger.getLogger("error");
+	Logger log = Logger.getLogger(getClass());
      
     public void report_error(String message, Object info) {
     	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol) {			
-			errorSymbol = (Symbol) info;
-            msg.append(" na liniji ").append(errorSymbol.left);
-			msg.append(", koloni ").append(errorSymbol.right);
-			if (errorSymbol.value != null) {
-				msg.append(" za simbol \"").append(errorSymbol.value.toString()).append("\"");
-			}			
-			msg.append("!");
+            msg.append (" na liniji ").append(((Symbol)info).left);
+            msg.append (" na koloni ").append(((Symbol)info).right);
 		}
-        logError.error(msg.toString());
+        log.error(msg.toString());
         
         MJCompiler.getInstance().reportError(new CompilerError(
-        	errorSymbol.left,
+        	((Symbol)info).left,
         	msg.toString(),
         	CompilerError.CompilerErrorType.SYNTAX_ERROR));
     }
@@ -45,29 +38,13 @@ parser code {:
     public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
         report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
     }
-    
-    public void report_info(String message, Object info) {
-    	StringBuilder msg = new StringBuilder(message); 
-    	if (info instanceof Symbol) {
-            msg.append(" na liniji ").append(((Symbol)info).left);
-			msg.append(", koloni ").append(((Symbol)info).right);
-			if (errorSymbol.value != null) {
-				msg.append(" za simbol \"").append(((Symbol)info).value.toString()).append("\"");
-			}
-		}
-        log.info(msg.toString());
-    }
 	
 	public boolean isErrorDetected() {
 		return errorDetected;
 	}
     
-	public Symbol getCurrSymbol() {
+	public Symbol getCurrentSymbol() {
 		return currSymbol;
-	}
-	
-	public Symbol getErrorSymbol() {
-		return errorSymbol;
 	}
 :}
 
@@ -210,7 +187,7 @@ GlobalVarList ::= (GlobalVarMulti) GlobalVarList:G1 COMMA GlobalVarPart:G2 {: RE
 				  (GlobalVarSingle) GlobalVarPart:G1 {: RESULT=new GlobalVarSingle(G1); RESULT.setLine(G1left); :};
 GlobalVarPart ::= (GlobalVar) VarPart:V1 {: RESULT=new GlobalVar(V1); RESULT.setLine(V1left); :} 
 				  |
-				  (VarError) error {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive", parser.getErrorSymbol()); :} {: RESULT=new VarError(); :};
+				  (VarError) error {: :} {: RESULT=new VarError(); :};
 				  /* A1 definicija globalne promenljive */ 
 
 // Deklaracija klasa
@@ -272,7 +249,7 @@ FormParam ::= (ParamNormal) Type:T1 IDENT:paramName {: RESULT=new ParamNormal(T1
 		      (ParamArray) Type:T1 IDENT:paramName LSQUARE RSQUARE {: RESULT=new ParamArray(T1, paramName); RESULT.setLine(T1left); :}
 		      |
 		      (ParamError) error 
-		      {: this.parser.report_error("Oporavak od greske u definiciji formalnih parametara funkcije", this.parser.getErrorSymbol()); :} {: RESULT=new ParamError(); :};
+		      {: this.parser.report_error("Oporavak od greske u definiciji formalnih parametara funkcije", this.parser.getCurrentSymbol()); :} {: RESULT=new ParamError(); :};
 		      /* B1 definicija formalnih parametara */
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
 
@@ -331,7 +308,7 @@ StatementWhileBody ::= (StmtWhileBody) Statement:S1 {: RESULT=new StmtWhileBody(
 IfCondition ::= (IfCond) LPAREN Condition:C1 RPAREN {: RESULT=new IfCond(C1); RESULT.setLine(C1left); :}
 				|
 				(IfCondError) LPAREN error RPAREN
-                {: this.parser.report_error("Oporavak od greske u logickom izrazu if konstrukcije", this.parser.getErrorSymbol()); :} {: RESULT=new IfCondError(); :};
+                {: this.parser.report_error("Oporavak od greske u logickom izrazu if konstrukcije", this.parser.getCurrentSymbol()); :} {: RESULT=new IfCondError(); :};
 				/* B2 greska logickog izraza unutar if konstrukcije */
 				
 CaseList ::= (CaseMulti) CaseList:C1 CasePart:C2 {: RESULT=new CaseMulti(C1, C2); RESULT.setLine(C1left); :}
@@ -353,7 +330,7 @@ DesignatorStatement ::= (DesignatorAssignment) Designator:D1 Assignment:A2 {: RE
 Assignment ::= (AssignmentExpr) ASSIGNMENT Expr:E1 {: RESULT=new AssignmentExpr(E1); RESULT.setLine(E1left); :}
                |
                (AssignmentError) ASSIGNMENT error
-               {: this.parser.report_error("Oporavak od greske u konstrukciji iskaza dodele", this.parser.getErrorSymbol()); :} {: RESULT=new AssignmentError(); :};
+               {: this.parser.report_error("Oporavak od greske u konstrukciji iskaza dodele", this.parser.getCurrentSymbol()); :} {: RESULT=new AssignmentError(); :};
 			   /* A2 konstrukcija iskaza dodele */
 		 
 ActPars ::= (ActParsMulti) ActPars:A1 COMMA Expr:E2 {: RESULT=new ActParsMulti(A1, E2); RESULT.setLine(A1left); :}

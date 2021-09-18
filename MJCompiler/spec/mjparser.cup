@@ -6,29 +6,22 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
-	private Symbol currSymbol = null;		
-	private Symbol errorSymbol = null;
-	private boolean errorDetected = false;
+	Symbol currSymbol = null;		
+	boolean errorDetected = false;
 	
-	private static Logger log = Logger.getLogger("info");
-	private static Logger logError = Logger.getLogger("error");
+	Logger log = Logger.getLogger(getClass());
      
     public void report_error(String message, Object info) {
     	errorDetected = true;
     	StringBuilder msg = new StringBuilder(message); 
     	if (info instanceof Symbol) {			
-			errorSymbol = (Symbol) info;
-            msg.append(" na liniji ").append(errorSymbol.left);
-			msg.append(", koloni ").append(errorSymbol.right);
-			if (errorSymbol.value != null) {
-				msg.append(" za simbol \"").append(errorSymbol.value.toString()).append("\"");
-			}			
-			msg.append("!");
+            msg.append (" na liniji ").append(((Symbol)info).left);
+            msg.append (" na koloni ").append(((Symbol)info).right);
 		}
-        logError.error(msg.toString());
+        log.error(msg.toString());
         
         MJCompiler.getInstance().reportError(new CompilerError(
-        	errorSymbol.left,
+        	((Symbol)info).left,
         	msg.toString(),
         	CompilerError.CompilerErrorType.SYNTAX_ERROR));
     }
@@ -45,29 +38,13 @@ parser code {:
     public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
         report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
     }
-    
-    public void report_info(String message, Object info) {
-    	StringBuilder msg = new StringBuilder(message); 
-    	if (info instanceof Symbol) {
-            msg.append(" na liniji ").append(((Symbol)info).left);
-			msg.append(", koloni ").append(((Symbol)info).right);
-			if (errorSymbol.value != null) {
-				msg.append(" za simbol \"").append(((Symbol)info).value.toString()).append("\"");
-			}
-		}
-        log.info(msg.toString());
-    }
 	
 	public boolean isErrorDetected() {
 		return errorDetected;
 	}
     
-	public Symbol getCurrSymbol() {
+	public Symbol getCurrentSymbol() {
 		return currSymbol;
-	}
-	
-	public Symbol getErrorSymbol() {
-		return errorSymbol;
 	}
 :}
 
@@ -181,7 +158,7 @@ GlobalVarList ::= (GlobalVarMulti) GlobalVarList COMMA GlobalVarPart
 				  (GlobalVarSingle) GlobalVarPart;
 GlobalVarPart ::= (GlobalVar) VarPart 
 				  |
-				  (VarError) error {: parser.report_error("Oporavak od greske u deklaraciji globalne promenljive", parser.getErrorSymbol()); :};
+				  (VarError) error {: :};
 				  /* A1 definicija globalne promenljive */ 
 
 // Deklaracija klasa
@@ -243,7 +220,7 @@ FormParam ::= (ParamNormal) Type IDENT:paramName
 		      (ParamArray) Type IDENT:paramName LSQUARE RSQUARE
 		      |
 		      (ParamError) error 
-		      {: this.parser.report_error("Oporavak od greske u definiciji formalnih parametara funkcije", this.parser.getErrorSymbol()); :};
+		      {: this.parser.report_error("Oporavak od greske u definiciji formalnih parametara funkcije", this.parser.getCurrentSymbol()); :};
 		      /* B1 definicija formalnih parametara */
 Type ::= (Type) IDENT:typeName;
 
@@ -302,7 +279,7 @@ StatementWhileBody ::= (StmtWhileBody) Statement;
 IfCondition ::= (IfCond) LPAREN Condition RPAREN
 				|
 				(IfCondError) LPAREN error RPAREN
-                {: this.parser.report_error("Oporavak od greske u logickom izrazu if konstrukcije", this.parser.getErrorSymbol()); :};
+                {: this.parser.report_error("Oporavak od greske u logickom izrazu if konstrukcije", this.parser.getCurrentSymbol()); :};
 				/* B2 greska logickog izraza unutar if konstrukcije */
 				
 CaseList ::= (CaseMulti) CaseList CasePart
@@ -324,7 +301,7 @@ DesignatorStatement ::= (DesignatorAssignment) Designator Assignment
 Assignment ::= (AssignmentExpr) ASSIGNMENT Expr
                |
                (AssignmentError) ASSIGNMENT error
-               {: this.parser.report_error("Oporavak od greske u konstrukciji iskaza dodele", this.parser.getErrorSymbol()); :};
+               {: this.parser.report_error("Oporavak od greske u konstrukciji iskaza dodele", this.parser.getCurrentSymbol()); :};
 			   /* A2 konstrukcija iskaza dodele */
 		 
 ActPars ::= (ActParsMulti) ActPars COMMA Expr
