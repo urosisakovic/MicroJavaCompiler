@@ -1,11 +1,12 @@
 package rs.ac.bg.etf.pp1;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Stack;
 
 import org.apache.log4j.Logger;
+
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
@@ -18,25 +19,35 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	private int mainPc;
 	private Obj outerScope = null;
-	private Variable variable = null;
+	
 	private Obj currentMethod = null;
-	private ArrayList<Variable> variables = new ArrayList<Variable>();
+	
+	private Variable currentVariable = null;
+	private List<Variable> declaredVariables = new ArrayList<Variable>();
+
 	private int condCnt = 0;
 	
-	private LinkedList<ArrayList<CondJcc>> ifCondsStack = new LinkedList<ArrayList<CondJcc>>();
+	private static final int INTEGER_PRINT_WIDTH = 5;
+	private static final int CHAR_PRINT_WIDTH = 1;
+	
+	private Stack<Integer> relopOperationStack;
+	private Stack<Integer> addopOperationStack;
+	private Stack<Integer> mulopOperationStack;
+	
+	private LinkedList<ArrayList<JumpCondition>> ifConditionsStack = new LinkedList<ArrayList<JumpCondition>>();
 	private LinkedList<Integer> ifPcStack = new LinkedList<Integer>(); 
 	private LinkedList<Integer> retWhilePcStack = new LinkedList<Integer>();
 	private LinkedList<ArrayList<Integer>> breakPcStack = new LinkedList<ArrayList<Integer>>();
 	private LinkedList<ArrayList<Integer>> continuePcStack = new LinkedList<ArrayList<Integer>>();
-	private LinkedList<ArrayList<CondJcc>> whileCondsStack = new LinkedList<ArrayList<CondJcc>>();
-	
-	private Stack<Integer> relopStack = new Stack<>();
-	private Stack<Integer> addopStack = new Stack<>();
-	private Stack<Integer> mulopStack = new Stack<>();
+	private LinkedList<ArrayList<JumpCondition>> whileCondsStack = new LinkedList<ArrayList<JumpCondition>>();
 
 	public CodeGenerator(Obj outerScope) {
 		super();
 		this.outerScope = outerScope;
+		
+		relopOperationStack = new Stack<>();
+		addopOperationStack = new Stack<>();
+		mulopOperationStack = new Stack<>();
 	}
 	
 	public int getMainPc() {
@@ -45,89 +56,91 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void report_error(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message);
-		int line = (info == null) ? 0 : info.getLine();
-		if (line != 0) {
-			msg.append(" na liniji ").append(line).append("!");
+		if (info != null && info.getLine() != 0) {
+			msg.append(" na liniji ").append(info.getLine());
 		}
 		log.error(msg.toString());
 	}
 
 	public void report_info(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message);
-		int line = (info == null) ? 0 : info.getLine();
-		if (line != 0) {
-			msg.append(" na liniji ").append(line);
+		if (info != null && info.getLine() != 0) {
+			msg.append(" na liniji ").append(info.getLine());
 		}
 		log.info(msg.toString());
 	}
 	
-	public Obj getMethObj(String methName) {
-		Obj obj = Tab.find(methName);
-		if (obj == Tab.noObj) {
-			Collection<Obj> localSymbols = outerScope.getLocalSymbols();
-			for (Obj o : localSymbols) {
-				if (o.getKind() == Obj.Meth && o.getName().equals(methName)) {
-					return o;
+	public Obj getMethodByName(String methodName) {
+		var methodObject = Tab.find(methodName);
+		
+		if (methodObject != Tab.noObj) {
+			return methodObject;
+		}
+
+		for (var localSymbol : outerScope.getLocalSymbols()) {
+			if (localSymbol.getKind() == Obj.Meth && localSymbol.getName().equals(methodName)) {
+				return localSymbol;
+			}
+		}
+
+		return null;
+	}
+	
+	public Obj getVarOrConstByName(String varName) {
+		var varObject = Tab.find(varName);
+
+		if (varObject != Tab.noObj) {
+			return varObject;
+		}
+		
+		for (var localSymbol : outerScope.getLocalSymbols()) {				
+			if (localSymbol.getKind() != Obj.Meth && localSymbol.getName().equals(varName)) {
+				return localSymbol;
+			}
+		}			
+		if (currentMethod != null) {
+			for (var localSymbol: currentMethod.getLocalSymbols()) {		
+				if (localSymbol.getName().equals(varName)) {
+					return localSymbol;
 				}
 			}
-		} else {
-			return obj;
-		}
+		}		
+
 		return null;
 	}
 	
-	public Obj getVarConst(String objName) {		 
-		Obj obj = Tab.find(objName);
-		if (obj == Tab.noObj) {
-			Collection<Obj> localSymbols = outerScope.getLocalSymbols();
-			for (Obj o : localSymbols) {				
-				if (o.getKind() != Obj.Meth && o.getName().equals(objName)) {
-					return o;
-				}
-			}			
-			if (currentMethod != null) {
-				localSymbols = currentMethod.getLocalSymbols();
-				for (Obj o: localSymbols) {		
-					if (o.getName().equals(objName)) {
-						return o;
-					}
-				}
-			}		
-		} else {
-			return obj;
-		}
-		return null;
+	public void fixedAddressJump(JumpCondition condition, int jumpAddress) {
+		Code.put2(condition.getPc(), jumpAddress - condition.getPc() + 3);
+		condition.setModified(true);
 	}
 	
-	public void fixJmpAdr(CondJcc cond, int jmpPc) {
-		Code.put2(cond.getPc(), jmpPc - cond.getPc() + 3);
-		cond.setModified(true);
-	}
-	
-	public void fixJmpCond(CondJcc cond) {
+	public void fixedJumpCondition(JumpCondition condition) {
 		int oldPc = Code.pc;
-		Code.pc = cond.getPc() - 1;
-		if (cond.getRelop() == -1) 
+		Code.pc = condition.getPc() - 1;
+
+		if (condition.getRelop() == -1) { 
 			Code.put(Code.jcc + Code.ne);
-		else
-			Code.put(Code.jcc + cond.getRelop());
+		}
+		else {
+			Code.put(Code.jcc + condition.getRelop());
+		}
 		
 		Code.pc = oldPc;
-		Code.put2(cond.getPc(), Code.pc - cond.getPc() + 1);
-		cond.setModified(true);
+		Code.put2(condition.getPc(), Code.pc - condition.getPc() + 1);
+		condition.setModified(true);
 	}
 	
-	private void jmpAndSavePc(boolean isDoWhile, int ordNum, int relOp) { // postavljanje skoka i cuvanje uslova na koje treba dodati adresu skoka
+	private void jumpAndSavePc(boolean isDoWhile, int ordNum, int relOp) {
 		if (!isDoWhile) {
-			if (relOp == - 1) { // ako je relop == - 1 nema relacionih operatora, poslato je true ili false
+			if (relOp == - 1) {
 				Code.loadConst(0);
-				Code.put(Code.jcc + Code.eq); // skace ako je false
+				Code.put(Code.jcc + Code.eq);
 			} else {
-				Code.put(Code.jcc + Code.inverse[relOp]); // skace se ako je suprotno od relopa
+				Code.put(Code.jcc + Code.inverse[relOp]);
 			}
-			ArrayList<CondJcc> markedConds = ifCondsStack.getLast();
-			markedConds.add(new CondJcc(Code.pc, ordNum, relOp)); // ne znamo adresu skoka pa ne mozemo ni da je stavimo ali je stavljamo na spisak za dodati
-			Code.pc += 2; // preskacemo 2 adrese na koje treba da se doda adresa skoka
+			ArrayList<JumpCondition> markedConds = ifConditionsStack.getLast();
+			markedConds.add(new JumpCondition(Code.pc, ordNum, relOp));
+			Code.pc += 2;
 		} else {
 			if (relOp == - 1) {
 				Code.loadConst(0);
@@ -135,8 +148,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			} else {
 				Code.put(Code.jcc + relOp);
 			}	
-			ArrayList<CondJcc> whileConds = whileCondsStack.getLast();
-			whileConds.add(new CondJcc(Code.pc, ordNum, relOp));
+			ArrayList<JumpCondition> whileConds = whileCondsStack.getLast();
+			whileConds.add(new JumpCondition(Code.pc, ordNum, relOp));
 			Code.put2(retWhilePcStack.getLast() - Code.pc + 1);	
 		}
 	}
@@ -151,19 +164,15 @@ public class CodeGenerator extends VisitorAdaptor {
 		return syntaxNode;
 	}	
 	
-	// *** VISIT METODE *** 
-	
-	// Program
 	public void visit(Program program) {		
 		Code.dataSize = outerScope.getLocalSymbols().size();
 	}
 	
-	// ConstDecl
-	public void visit(ConstDeclaration constDeclaration) { // uzima konstante iz liste i postavlja za adresu vrednost konstante, i load-uje tu vrednost
-		for (int i = 0; i < variables.size(); i++) {
-			Obj o = getVarConst(variables.get(i).getName());			
+	public void visit(ConstDeclaration constDeclaration) {
+		for (var variable: declaredVariables) {
+			Obj o = getVarOrConstByName(variable.getName());			
 			if (o != null) {
-				Object val = variables.get(i).getValue();
+				Object val = variable.getValue();
 				if (val instanceof Integer) {
 					o.setAdr((Integer) val);
 				} else if (val instanceof Character) {
@@ -176,76 +185,71 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.load(o);
 			}
 		}
-		variables.clear();
+		declaredVariables.clear();
 	}	
 	
-	// ConstPart
-	public void visit(ConstPart constPart) { // dodaje konstantu u listu
-		variable.setName(constPart.getConstName());
-		variables.add(variable);
-		variable = null;
+	public void visit(ConstPart constPart) {
+		currentVariable.setName(constPart.getConstName());
+		declaredVariables.add(currentVariable);
+		currentVariable = null;
 	}
 	
-	// MethodVoid
 	public void visit(MethodVoidDeclaration methodVoidDeclaration) {
 		Code.put(Code.exit); 
 		Code.put(Code.return_);
 		currentMethod = null;
 	}
 	
-	// MethodVoidName
-	public void visit(MethodVoidName methodVoidName) { // postavlja mainPc ako je main funkcija, postavlja joj adresu i generise enter instrukciju
-		currentMethod = getMethObj(methodVoidName.getMethodName());	
+	public void visit(MethodVoidName methodVoidName) {
+		currentMethod = getMethodByName(methodVoidName.getMethodName());	
+
 		if (methodVoidName.getMethodName().equals("main")) {
 			mainPc = Code.pc;			
 		}
+
 		currentMethod.setAdr(Code.pc);
         Code.put(Code.enter);
         Code.put(currentMethod.getLevel());
         Code.put(currentMethod.getLocalSymbols().size());               
 	}
 	
-	// MethodTypeDecl
-	public void visit(MethodTypeDeclaration methodTypeDeclaration) { // izaziva Runtime gresku jer nema return
+	public void visit(MethodTypeDeclaration methodTypeDeclaration) {
 		Code.put(Code.trap); 
 		Code.put(1);
 		currentMethod = null;
 	}
 	
-	// MethodTypeName
 	public void visit(MethodTypeName methodTypeName) { 		
-		currentMethod = getMethObj(methodTypeName.getMethodName());
+		currentMethod = getMethodByName(methodTypeName.getMethodName());
 		currentMethod.setAdr(Code.pc);
         Code.put(Code.enter);
         Code.put(currentMethod.getLevel());
         Code.put(currentMethod.getLocalSymbols().size());
 	}
 	
-	// Value	
-	public void visit(NumConst numConst) { // kreira promenljivu
-		variable = new Variable("", false, numConst.getN1());
+	public void visit(NumConst numConst) {
+		currentVariable = new Variable("", false, numConst.getN1());
 	}
 	
 	public void visit(BoolConst boolConst) { 
-		variable = new Variable("", false, boolConst.getB1());
+		currentVariable = new Variable("", false, boolConst.getB1());
 	}    
 	
 	public void visit(CharConst charConst) { 
-		variable = new Variable("", false, charConst.getC1());
+		currentVariable = new Variable("", false, charConst.getC1());
 	}	
 	
-	// Statement
-	public void visit(DesignatorAssignment designatorAssignment) { // storuje vrednost sa expr steka u designator
+	public void visit(DesignatorAssignment designatorAssignment) {
 		Code.store(designatorAssignment.getDesignator().obj);	
 	}
 	
 	public void visit(StmtPrint stmtPrint) {
 		Struct struct = stmtPrint.getExpr().struct;
 		if (struct.equals(Tab.intType) || struct.equals(SemanticAnalyzer.boolType)) {
-			Code.loadConst(5);
+			Code.loadConst(INTEGER_PRINT_WIDTH);
 			Code.put(Code.print);
 		} else if (struct.equals(Tab.charType)) {
-			Code.loadConst(1);
+			Code.loadConst(CHAR_PRINT_WIDTH);
 			Code.put(Code.bprint);
 		}	
 	}
@@ -263,10 +267,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(StmtRead stmtRead) {		
 		Obj obj = stmtRead.getDesignator().obj;
-        if (obj.getType().equals(Tab.charType))
+        if (obj.getType().equals(Tab.charType)) {
             Code.put(Code.bread);
-        else
+        }
+        else { 
             Code.put(Code.read);
+        }
         Code.store(obj);
 	}
 	
@@ -280,39 +286,38 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.return_);
 	}  
 	
-	public void visit(StmtIf stmtIf) { // izlazna tacka iz if
-		ArrayList<CondJcc> ifConds = ifCondsStack.removeLast();
-		for (CondJcc ifCond : ifConds) {
+	public void visit(StmtIf stmtIf) {
+		ArrayList<JumpCondition> ifConds = ifConditionsStack.removeLast();
+		for (JumpCondition ifCond : ifConds) {
 			if (!ifCond.isModified()) {
-				Code.put2(ifCond.getPc(), Code.pc - ifCond.getPc() + 1); // postavljamo adresu skoka na prvu posle ifa
+				Code.put2(ifCond.getPc(), Code.pc - ifCond.getPc() + 1);
 			}
 		}
 		ifConds.clear();
 	}	
 	
-	public void visit(StmtIfElse stmtIfElse) { // postavlja adresu skoka na else granu
-		ArrayList<CondJcc> ifConds = ifCondsStack.removeLast();
-		int elsePc = ifPcStack.removeLast(); // LIFO
+	public void visit(StmtIfElse stmtIfElse) {
+		ArrayList<JumpCondition> ifConds = ifConditionsStack.removeLast();
+		// Last in first out
+		int elsePc = ifPcStack.removeLast();
 		for (int i = 0; i < ifConds.size(); i++) {
 			if (!ifConds.get(i).isModified()) {
 				Code.put2(ifConds.get(i).getPc(),  elsePc - ifConds.get(i).getPc() + 3);
 			}
 		}						
 		ifConds.clear();
-		Code.put2(elsePc, Code.pc - elsePc + 1); // popunjavamo adresu skoka na prvu posle else grane
+		Code.put2(elsePc, Code.pc - elsePc + 1);
 	}	
 	
-	// IfKw
-	public void visit(IfKeyword ifKeyword) { // pravi se nova lista sa uslovima za svaki ugnezdjeni if
-		ifCondsStack.add(new ArrayList<CondJcc>());
+	public void visit(IfKeyword ifKeyword) {
+		ifConditionsStack.add(new ArrayList<JumpCondition>());
 	}	
 	
-	// StatementIfBody
-	public void visit(StmtIfBody stmtIfBody) { // dodajemo adresu skoka na prvu posle else grane ako ona postoji			
+	public void visit(StmtIfBody stmtIfBody) {		
 		if (stmtIfBody.getParent().getClass() == StmtIfElse.class) {
 			Code.put(Code.jmp);
 			ifPcStack.addLast(Code.pc);
-			Code.pc += 2; // ostavimo dva prazna mesta jer je adresa skoka dva bajta;
+			Code.pc += 2;
 		}
 	}
 	
@@ -320,9 +325,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		retWhilePcStack.removeLast();
 		ArrayList<Integer> breakPcs = breakPcStack.removeLast();
 		for (int i = 0; i < breakPcs.size(); i++) {			
-			Code.put2(breakPcs.get(i), Code.pc - breakPcs.get(i) + 1); //POPRAVITI ADRESU							
-		}	
-		ArrayList<CondJcc> whileConds = whileCondsStack.removeLast(); // POPRAVI ADRESE ZA POSLEDNJI CondTerm
+			// TODO: Fix address
+			Code.put2(breakPcs.get(i), Code.pc - breakPcs.get(i) + 1);							
+		}
+		// TODO: Fix address for the last CondTerm
+		ArrayList<JumpCondition> whileConds = whileCondsStack.removeLast();
 		int lastCondTerm = 0;
 		for (int i = 0; i < whileConds.size() - 1; i++) {
 			if (whileConds.get(i).getOrdNum() == 0 && !whileConds.get(i).isModified()) {
@@ -330,19 +337,17 @@ public class CodeGenerator extends VisitorAdaptor {
 			}
 		}
 		for (int i = lastCondTerm; i < whileConds.size() - 1; i++) {
-			fixJmpCondWhile(whileConds.get(i), Code.pc - 2);
+			fixedJumpConditionWhile(whileConds.get(i), Code.pc - 2);
 		}
 	}
 	
-	// DoKw
 	public void visit(DoKeyword doKeyword) {
 		retWhilePcStack.addLast(Code.pc);
 		breakPcStack.add(new ArrayList<Integer>());
 		continuePcStack.add(new ArrayList<Integer>());
-		whileCondsStack.add(new ArrayList<CondJcc>());
+		whileCondsStack.add(new ArrayList<JumpCondition>());
 	}
 	
-	// StmtWhileBody
 	public void visit(StmtWhileBody stmtWhileBody) {
 		ArrayList<Integer> continuePcs = continuePcStack.removeLast();
 		for (int i = 0; i < continuePcs.size(); i++) {			
@@ -362,7 +367,6 @@ public class CodeGenerator extends VisitorAdaptor {
     	Code.pc += 2;
     }
 	
-	// Designator statement
 	public void visit(DesignatorIncrement designatorIncrement) {
 		if (designatorIncrement.getDesignator().obj.getKind() == Obj.Elem) {
 			Code.put(Code.dup2);
@@ -405,9 +409,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
-	// IfCondition
 	public void visit(IfCond ifCond) {
-		ArrayList<CondJcc> markedConds = ifCondsStack.getLast();
+		ArrayList<JumpCondition> markedConds = ifConditionsStack.getLast();
 		int startOfLastCondTerm = 0;
 		for (int i = markedConds.size() - 1; i >= 0; i--) {
 			if (markedConds.get(i).getOrdNum() == 0) {
@@ -417,37 +420,38 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 		for (int i=0; i<startOfLastCondTerm; i++) {
 			if (markedConds.get(i).isModified() == false) {
-				fixJmpCond(markedConds.get(i));
+				fixedJumpCondition(markedConds.get(i));
 			}
 		}
 	}
 	
-	// Condition
 	public void visit(CondOr condOr) {	
 		condCnt = 0;
+
 		SyntaxNode stmt = prepare(condOr);
+
 		if (stmt.getClass() != StmtDoWhile.class) {
-			ArrayList<CondJcc> markedConds = ifCondsStack.getLast();
+			ArrayList<JumpCondition> markedConditions = ifConditionsStack.getLast();
 			int startOfLastCondTerm = 0;
 			int startOfCurrentCondTerm = 0;
 			
-			for (int i = markedConds.size() - 1; i >= 0; i--) {
-				if (markedConds.get(i).getOrdNum() == 0) {
+			for (int i = markedConditions.size() - 1; i >= 0; i--) {
+				if (markedConditions.get(i).getOrdNum() == 0) {
 					startOfLastCondTerm = i;
 					break;
 				}
 			}
 			for (int i = 0; i < startOfLastCondTerm; i++) {
-				if (markedConds.get(i).getOrdNum() == 0 && markedConds.get(i).isModified() == false) {
+				if (markedConditions.get(i).getOrdNum() == 0 && markedConditions.get(i).isModified() == false) {
 					startOfCurrentCondTerm = i;
 					break;
 				}
 			}
 			for (int j = startOfCurrentCondTerm; j < startOfLastCondTerm - 1; j++) {
-				fixJmpAdr(markedConds.get(j), markedConds.get(startOfLastCondTerm - 1).getPc());
+				fixedAddressJump(markedConditions.get(j), markedConditions.get(startOfLastCondTerm - 1).getPc());
 			}
 		} else {
-			ArrayList<CondJcc> markedConds = whileCondsStack.getLast();
+			ArrayList<JumpCondition> markedConds = whileCondsStack.getLast();
 			int startOfLastCondTerm = 0;
 			int startOfCurrentCondTerm = 0;
 			
@@ -464,21 +468,23 @@ public class CodeGenerator extends VisitorAdaptor {
 				}
 			}
 			for (int j = startOfCurrentCondTerm; j < startOfLastCondTerm - 1; j++) {
-				fixJmpCondWhile(markedConds.get(j), markedConds.get(startOfLastCondTerm - 1).getPc());
+				fixedJumpConditionWhile(markedConds.get(j), markedConds.get(startOfLastCondTerm - 1).getPc());
 			}
 		}
 	}		
 	
-	public void fixJmpCondWhile(CondJcc cond, int jmpPc) {
+	public void fixedJumpConditionWhile(JumpCondition condition, int jumpPc) {
 		int oldPc = Code.pc;
-		Code.pc = cond.getPc() - 1;
-		if (cond.getRelop() == -1) 
+		Code.pc = condition.getPc() - 1;
+		if (condition.getRelop() == -1) {
 			Code.put(Code.jcc + Code.eq);
-		else
-			Code.put(Code.jcc + Code.inverse[cond.getRelop()]);		
+		}
+		else {
+			Code.put(Code.jcc + Code.inverse[condition.getRelop()]);
+		}
 		Code.pc = oldPc;
-		Code.put2(cond.getPc(), jmpPc - cond.getPc() + 3);
-		cond.setModified(true);
+		Code.put2(condition.getPc(), jumpPc - condition.getPc() + 3);
+		condition.setModified(true);
 	}
 	
 	public void visit(CondSingle condSingle) {
@@ -495,29 +501,26 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(CondFactRelop condFactRelop) {	
 		SyntaxNode stmt = prepare(condFactRelop);
-		jmpAndSavePc(stmt.getClass() == StmtDoWhile.class, condCnt, relopStack.pop());
+		jumpAndSavePc(stmt.getClass() == StmtDoWhile.class, condCnt, relopOperationStack.pop());
 	}
 	
 	public void visit(CondFactSingle condFactSingle) {		
 		SyntaxNode stmt = prepare(condFactSingle);
-		jmpAndSavePc(stmt.getClass() == StmtDoWhile.class, condCnt, -1);
+		jumpAndSavePc(stmt.getClass() == StmtDoWhile.class, condCnt, -1);
 	}
 	
-	// Expr1
 	public void visit(ExprAddop exprAddop) {
-        Code.put(addopStack.pop());
+        Code.put(addopOperationStack.pop());
     }
 	
 	public void visit(ExprNeg exprNeg) {
         Code.put(Code.neg);
     }
 	
-	// Term
 	public void visit(TermMulop termMulop) {
-		Code.put(mulopStack.pop());
+		Code.put(mulopOperationStack.pop());
 	}
 	
-	// Factor
 	public void visit(FactorNumConst factorNumConst) {
 		Code.loadConst(factorNumConst.getN1());
 	}
@@ -540,7 +543,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(FactorDesignator factorDesignator) {
-		Obj o = getVarConst(factorDesignator.getDesignator().obj.getName());
+		Obj o = getVarOrConstByName(factorDesignator.getDesignator().obj.getName());
 		if (o != null) {
 			Code.load(factorDesignator.getDesignator().obj);
 		}
@@ -568,61 +571,56 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
-	// Designator	
-	public void visit(DesignatorArray designatorArray) { // prvo je stavljen index, pa onda desigName, pa se rotiraju
-		Obj o = null;
-		o = getVarConst(designatorArray.getDesignatorName());	
-		if (o != null) {
-			Code.load(o);
+	public void visit(DesignatorArray designatorArray) {
+		var varObject = getVarOrConstByName(designatorArray.getDesignatorName());	
+		if (varObject != null) {
+			Code.load(varObject);
 			Code.put(Code.dup_x1);
 			Code.put(Code.pop);
 		}	
 	}
 	
-	//Relop
-	public void visit(RelopEQ relopEQ) { 
-		relopStack.push(Code.eq); 		
-	}
-	
-	public void visit(RelopNE relopNE) { 
-		relopStack.push(Code.ne); 	
-	}
-	
-	public void visit(RelopGT relopGT) { 
-		relopStack.push(Code.gt); 	
-	}
-	
-	public void visit(RelopGE relopGE) {
-		relopStack.push(Code.ge); 	
-	}
-	
-	public void visit(RelopLT relopLT) { 
-		relopStack.push(Code.lt); 	
-	}
-	
-    public void visit(RelopLE relopLE) { 
-    	relopStack.push(Code.le);
-    } 	
-	
-	// Addop
 	public void visit(AddopPlus addopPlus) {
-		addopStack.push(Code.add);
+		addopOperationStack.push(Code.add);
 	}
 	
 	public void visit(AddopMinus addopMinus) {
-		addopStack.push(Code.sub);
+		addopOperationStack.push(Code.sub);
 	}
 	
-	// Mulop
 	public void visit(MulopMul mulopMul) {		
-		mulopStack.push(Code.mul);
+		mulopOperationStack.push(Code.mul);
 	}
 
 	public void visit(MulopDiv mulopDiv) {
-		mulopStack.push(Code.div);
+		mulopOperationStack.push(Code.div);
 	}
 	
 	public void visit(MulopMod mulopMod) {
-		mulopStack.push(Code.rem);
+		mulopOperationStack.push(Code.rem);
 	}
+	
+	public void visit(RelopEQ relopEQ) { 
+		relopOperationStack.push(Code.eq); 		
+	}
+	
+	public void visit(RelopNE relopNE) { 
+		relopOperationStack.push(Code.ne); 	
+	}
+	
+	public void visit(RelopGT relopGT) { 
+		relopOperationStack.push(Code.gt); 	
+	}
+	
+	public void visit(RelopGE relopGE) {
+		relopOperationStack.push(Code.ge); 	
+	}
+	
+	public void visit(RelopLT relopLT) { 
+		relopOperationStack.push(Code.lt); 	
+	}
+	
+    public void visit(RelopLE relopLE) { 
+    	relopOperationStack.push(Code.le);
+    }
 }

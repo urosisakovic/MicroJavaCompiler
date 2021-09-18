@@ -11,10 +11,10 @@
 				<exclude name="MJCompiler.java"/>
 				<exclude name="CompilerError.java"/>
 				<exclude name="SemanticAnalyzer.java"/>
+				<exclude name="CodeGenerator.java"/>
 				<exclude name="Variable.java"/>
 				<exclude name="Method.java"/>
-				<exclude name="CodeGenerator.java"/>
-				<exclude name="CondJcc.java"/>	
+				<exclude name="JumpCondition.java"/>
 				<exclude name="TableDumpVisitor.java"/>
 				<exclude name="Main.java"/>
 			</fileset>
