@@ -13,20 +13,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public static Struct boolType = Tab.insert(Obj.Type, "bool", new Struct(5)).getType();
 	
-	private int nVars;
-	private boolean errorDetected = false;
-	private boolean mainMethodDefined = false;
-	private int doWhileDepth = 0;
-	private Obj outerScopeObj = null;
+	int nVars;
+	boolean errorDetected = false;
+	boolean mainMethodDefined = false;
+	int doWhileDepth = 0;
+	Obj outerScopeObj = null;
 	
-	private ArrayList<Variable> declarationVariables = new ArrayList<Variable>();
-	private ArrayList<Method> methods = new ArrayList<Method>();
-	private ArrayList<Struct> currentMethodParams = new ArrayList<Struct>();
-	private Obj currentMethod = null;
-	private Struct assignmentRight = null;
+	ArrayList<Variable> declarationVariables = new ArrayList<Variable>();
+	ArrayList<Method> methods = new ArrayList<Method>();
+	ArrayList<Struct> currentMethodParams = new ArrayList<Struct>();
+	Obj currentMethod = null;
+	Struct assignmentRight = null;
 	 
-	private static Logger log = Logger.getLogger("info");
-	private static Logger logError = Logger.getLogger("error");
+	Logger log = Logger.getLogger(getClass());
 	
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -34,7 +33,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		int line = (info == null) ? 0: info.getLine();
 		if (line != 0)
 			msg.append (" na liniji ").append(line);
-		logError.error(msg.toString());
+		log.error(msg.toString());
 		
 		MJCompiler.getInstance().reportError(new CompilerError(
 			line,
@@ -63,8 +62,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public boolean methodContains(String paramName) {
-		for(Obj o : currentMethod.getLocalSymbols()) {
-			if (o.getName() == paramName) return true;
+		for(var localSymbol : currentMethod.getLocalSymbols()) {
+			if (localSymbol.getName() == paramName) return true;
 		}
 		return false;
 	}
@@ -88,6 +87,78 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	Tab.openScope();
     }
 	
+	// GlobalVarDecl
+    public void visit(GlobalVarDeclaration globalVarDeclaration) {
+		Struct type = globalVarDeclaration.getType().struct;
+		for (var declVar : declarationVariables) {
+	    	if (declVar.getArray()) {
+	    		report_info("Deklarisan globalni niz '" + declVar.getName() + "'", globalVarDeclaration); 
+	    		Tab.insert(Obj.Var, declVar.getName(), new Struct(Struct.Array, type));
+	    	} else {
+	    		report_info("Deklarisana globalna promenljiva '" + declVar.getName() + "'", globalVarDeclaration);
+	    		Tab.insert(Obj.Var, declVar.getName(), type);
+	    	}    	
+    	}
+    	declarationVariables.clear();
+	}
+    
+	// ConstDecl
+    public void visit(ConstDeclaration constDeclaration) {	
+		Struct type = constDeclaration.getType().struct;
+		for (var declVar : declarationVariables) {
+			report_info("Deklarisana konstanta '" + declVar.getName() + "'", constDeclaration);
+			Tab.insert(Obj.Con, declVar.getName(), type);
+		}
+		declarationVariables.clear();
+	}	
+
+    // ConstPart
+	public void visit(ConstPart constPart) { 
+		if (Tab.find(constPart.getConstName()) == Tab.noObj) {
+			String varName = constPart.getConstName();
+			for (var declVar : declarationVariables) {
+				if(declVar.getName().equals(varName)) {
+					report_error("Semanticka greska - '" + constPart.getConstName() + "' je vec deklarisano", constPart);
+					return;
+				}
+			}
+			declarationVariables.add(new Variable(constPart.getConstName(), false, null));
+		} else {			
+			report_error("Semanticka greska - '" + constPart.getConstName() + "' je vec deklarisano", constPart);
+		}
+	}
+	
+	// MethVoidName
+	public void visit(MethodVoidName methodVoidName) { 
+		currentMethod = Tab.insert(Obj.Meth, methodVoidName.getMethodName(), Tab.noType);
+		methods.add(new Method(methodVoidName.getMethodName()));		
+		Tab.openScope();
+		if (methodVoidName.getMethodName().equals("main")) {
+			mainMethodDefined = true;
+		}
+	}
+	
+	// MethTypeName
+		public void visit(MethodTypeName methodTypeName) { 
+			currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethodName(), methodTypeName.getType().struct);
+			 methods.add(new Method(methodTypeName.getMethodName()));		
+			Tab.openScope();
+		}
+	
+	// MethodDec
+	public void visit(MethodVoidDeclaration methodVoidDeclaration) { 
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		currentMethod = null;
+	}
+	
+	// MethodTypeDecl
+	public void visit(MethodTypeDeclaration methodTypeDeclaration) { 
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		currentMethod = null;
+	}
+	
 	// Type
 	public void visit(Type type) {
     	Obj typeNode = Tab.find(type.getTypeName());
@@ -109,13 +180,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	// VarDecl
 	public void visit(VarDeclaration varDeclaration) {
 		Struct type = varDeclaration.getType().struct;
-		for (Variable var : declarationVariables) {
-	    	if (var.getArray()) {
-	    		report_info("Deklarisan niz '" + var.getName() + "'", varDeclaration); 
-	    		Tab.insert(Obj.Var, var.getName(), new Struct(Struct.Array, type));
+		for (var declVar : declarationVariables) {
+	    	if (declVar.getArray()) {
+	    		report_info("Deklarisan niz '" + declVar.getName() + "'", varDeclaration); 
+	    		Tab.insert(Obj.Var, declVar.getName(), new Struct(Struct.Array, type));
 	    	} else {
-	    		report_info("Deklarisana promenljiva '" + var.getName() + "'", varDeclaration);
-	    		Tab.insert(Obj.Var, var.getName(), type);
+	    		report_info("Deklarisana promenljiva '" + declVar.getName() + "'", varDeclaration);
+	    		Tab.insert(Obj.Var, declVar.getName(), type);
 	    	}    	
     	}
     	declarationVariables.clear();
@@ -125,8 +196,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(VarNormal varNormal) {
 		if (Tab.find(varNormal.getVarName()) == Tab.noObj) {
 			String varName = varNormal.getVarName();
-			for (Variable var : declarationVariables) {
-				if(var.getName().equals(varName)) {
+			for (var declVar : declarationVariables) {
+				if(declVar.getName().equals(varName)) {
 					report_error("Semanticka greska - '" + varNormal.getVarName() + "' je vec deklarisano", varNormal);
 					return;
 				}
@@ -140,8 +211,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(VarArray varArray) { 
 		if (Tab.find(varArray.getVarName()) == Tab.noObj) {
 			String varName = varArray.getVarName();
-			for (Variable var : declarationVariables) {
-				if(var.getName().equals(varName)) {
+			for (var declVar : declarationVariables) {
+				if(declVar.getName().equals(varName)) {
 					report_error("Semanticka greska - '" + varArray.getVarName() + "' je vec deklarisano", varArray);
 					return;
 				}
@@ -151,91 +222,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Semanticka greska - '" + varArray.getVarName() + "' je vec deklarisano", varArray);
 		}
     }
-	
-	// GlobalVarDecl
-    public void visit(GlobalVarDeclaration globalVarDeclaration) {
-		Struct type = globalVarDeclaration.getType().struct;
-		for (Variable var : declarationVariables) {
-	    	if (var.getArray()) {
-	    		report_info("Deklarisan globalni niz '" + var.getName() + "'", globalVarDeclaration); 
-	    		Tab.insert(Obj.Var, var.getName(), new Struct(Struct.Array, type));
-	    	} else {
-	    		report_info("Deklarisana globalna promenljiva '" + var.getName() + "'", globalVarDeclaration);
-	    		Tab.insert(Obj.Var, var.getName(), type);
-	    	}    	
-    	}
-    	declarationVariables.clear();
-	}
-    
-	// ConstDecl
-    public void visit(ConstDeclaration constDeclaration) {	
-		Struct type = constDeclaration.getType().struct;
-		for (Variable var : declarationVariables) {
-			report_info("Deklarisana konstanta '" + var.getName() + "'", constDeclaration);
-			Tab.insert(Obj.Con, var.getName(), type);
-		}
-		declarationVariables.clear();
-	}	
-
-    // ConstPart
-	public void visit(ConstPart constPart) { 
-		if (Tab.find(constPart.getConstName()) == Tab.noObj) {
-			String varName = constPart.getConstName();
-			for (Variable var : declarationVariables) {
-				if(var.getName().equals(varName)) {
-					report_error("Semanticka greska - '" + constPart.getConstName() + "' je vec deklarisano", constPart);
-					return;
-				}
-			}
-			declarationVariables.add(new Variable(constPart.getConstName(), false, null));
-		} else {			
-			report_error("Semanticka greska - '" + constPart.getConstName() + "' je vec deklarisano", constPart);
-		}
-	}
-	
-	// Value
-	public void visit(NumConst numConst) {
-		numConst.struct = Tab.intType;
-	}
-	
-	public void visit(BoolConst boolConst) { 
-		boolConst.struct = boolType;
-	}
-	
-	public void visit(CharConst charConst) { 
-		charConst.struct = Tab.charType;
-	}  
-	
-	// MethVoidName
-	public void visit(MethodVoidName methodVoidName) { 
-		currentMethod = Tab.insert(Obj.Meth, methodVoidName.getMethodName(), Tab.noType);
-		methods.add(new Method(methodVoidName.getMethodName()));		
-		Tab.openScope();
-		if (methodVoidName.getMethodName().equals("main")) {
-			mainMethodDefined = true;
-		}
-	}
-	
-	// MethodDec
-	public void visit(MethodVoidDeclaration methodVoidDeclaration) { 
-		Tab.chainLocalSymbols(currentMethod);
-		Tab.closeScope();
-		currentMethod = null;
-	}
-	
-	// MethTypeName
-	public void visit(MethodTypeName methodTypeName) { 
-		currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethodName(), methodTypeName.getType().struct);
-		 methods.add(new Method(methodTypeName.getMethodName()));		
-		Tab.openScope();
-	}
-	
-	// MethodTypeDecl
-	public void visit(MethodTypeDeclaration methodTypeDeclaration) { 
-		Tab.chainLocalSymbols(currentMethod);
-		Tab.closeScope();
-		currentMethod = null;
-	}
 		
 	// FormParam
 	public void visit(ParamNormal paramNormal) {
@@ -274,63 +260,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(DoKeyword doKeyword) {
 		 doWhileDepth++;
 	}
-	
-	// Statement
-	public void visit(StmtDoWhile stmtDoWhile) {
-		 if (!stmtDoWhile.getCondition().struct.equals(boolType)) {
-             report_error("Semanticka greska - while uslov nije tipa bool", stmtDoWhile);
-         }
-         doWhileDepth--;
-	}
-	
-	public void visit(StmtBreak stmtBreak) {
-		 if (doWhileDepth == 0) {
-             report_error("Semanticka greska - break iskaz van petlje", stmtBreak);
-         }
-    }
-	
-	public void visit(StmtContinue stmtContinue) {
-		 if (doWhileDepth == 0) {
-            report_error("Semanticka greska - continue iskaz van petlje", stmtContinue);
-        }
-   }
-	
-    public void visit(StmtReturnExpr stmtReturnExpr) {
-    	if (currentMethod.getType() == Tab.noType) {
-    		report_error("Semanticka greska - return naredba u funkciji koja nema povratnu vrednost", stmtReturnExpr);
-    		return;
-    	}
-    	if (!currentMethod.getType().compatibleWith(stmtReturnExpr.getExpr().struct)) {
-    		report_error("Semanticka greska - tip povratne vrednosti metode i tip vrednosti izraza u return naredbi se ne slazu", stmtReturnExpr);
-    		return;
-    	}
-    }
-    
-    public void visit(StmtRead stmtRead) {
-		Obj obj = stmtRead.getDesignator().obj;
-		if (obj.getKind() == Obj.Var || obj.getKind() == Obj.Elem) {
-			Struct type = obj.getType();
-			if (!type.equals(Tab.intType) && !type.equals(Tab.charType) && !type.equals(boolType)) {
-				report_error("Semanticka greska - izraz u read naredbi mora biti int, char ili bool tipa", stmtRead);
-			}
-		} else {
-			report_error("Semanticka greska - argument read naredbe nije promenljiva ili element niza", stmtRead);
-		}
-	}
-
-  	public void visit(StmtPrintNumConst stmtPrintNumConst) {
-  		Struct expr = stmtPrintNumConst.getExpr().struct;
-  		if (expr != null && !expr.equals(Tab.intType) && !expr.equals(Tab.charType) && !expr.equals(boolType)) {
-  			report_error("Semanticka greska - izraz print naredbe nije int, char ili bool tipa", stmtPrintNumConst);
-  		}
-  	}
-
-  	public void visit(StmtPrint stmtPrint) {	
-  		Struct expr = stmtPrint.getExpr().struct;
-  		if (expr != null && !expr.equals(Tab.intType) && !expr.equals(Tab.charType) && !expr.equals(boolType)) {
-  			report_error("Semanticka greska - izraz print naredbe nije int, char ili bool tipa", stmtPrint);
-  		}
-  	} 
     
     // DesignatorStatement
   	public void visit(DesignatorMethodCallParams designatorMethodCallParams){
@@ -338,7 +267,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if (Obj.Meth == func.getKind()) {
     		report_info("Pronadjen poziv funkcije '" + func.getName() + "'", designatorMethodCallParams);
     		Method method = null;
-			for (Method m : methods) {
+			for (var m : methods) {
 				if (m.getName().equals(func.getName()))
 					method = m;
 			}
@@ -356,7 +285,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if (Obj.Meth == func.getKind()) {
 			report_info("Pronadjen poziv funkcije '" + func.getName() + "'", designatorMethodCall);
 			Method method = null;
-			for (Method m : methods) {
+			for (var m : methods) {
 				if (m.getName().equals(func.getName()))
 					method = m;
 			}
@@ -495,7 +424,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_info("Pronadjen poziv funkcije '" + func.getName() + "'", funcCallParams);
     		funcCallParams.struct = func.getType();
     		Method method = null;
-			for (Method m : methods) {
+			for (var m : methods) {
 				if (m.getName().equals(func.getName()))
 					method = m;
 			}
@@ -515,7 +444,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_info("Pronadjen poziv funkcije '" + func.getName() + "'", funcCall);
 			funcCall.struct = func.getType();
 			Method method = null;
-			for (Method m : methods) {
+			for (var m : methods) {
 				if (m.getName().equals(func.getName()))
 					method = m;
 			}
@@ -583,4 +512,74 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}		
 		designatorSimple.obj = obj;
 	}
+	
+	// Value
+	public void visit(NumConst numConst) {
+		numConst.struct = Tab.intType;
+	}
+	
+	public void visit(BoolConst boolConst) { 
+		boolConst.struct = boolType;
+	}
+	
+	public void visit(CharConst charConst) { 
+		charConst.struct = Tab.charType;
+	}
+	
+	// Statement
+	public void visit(StmtDoWhile stmtDoWhile) {
+		 if (!stmtDoWhile.getCondition().struct.equals(boolType)) {
+             report_error("Semanticka greska - while uslov nije tipa bool", stmtDoWhile);
+         }
+         doWhileDepth--;
+	}
+	
+	public void visit(StmtBreak stmtBreak) {
+		 if (doWhileDepth == 0) {
+             report_error("Semanticka greska - break iskaz van petlje", stmtBreak);
+         }
+    }
+	
+	public void visit(StmtContinue stmtContinue) {
+		 if (doWhileDepth == 0) {
+            report_error("Semanticka greska - continue iskaz van petlje", stmtContinue);
+        }
+	}
+	
+    public void visit(StmtReturnExpr stmtReturnExpr) {
+    	if (currentMethod.getType() == Tab.noType) {
+    		report_error("Semanticka greska - return naredba u funkciji koja nema povratnu vrednost", stmtReturnExpr);
+    		return;
+    	}
+    	if (!currentMethod.getType().compatibleWith(stmtReturnExpr.getExpr().struct)) {
+    		report_error("Semanticka greska - tip povratne vrednosti metode i tip vrednosti izraza u return naredbi se ne slazu", stmtReturnExpr);
+    		return;
+    	}
+    }
+    
+    public void visit(StmtRead stmtRead) {
+		Obj obj = stmtRead.getDesignator().obj;
+		if (obj.getKind() == Obj.Var || obj.getKind() == Obj.Elem) {
+			Struct type = obj.getType();
+			if (!type.equals(Tab.intType) && !type.equals(Tab.charType) && !type.equals(boolType)) {
+				report_error("Semanticka greska - izraz u read naredbi mora biti int, char ili bool tipa", stmtRead);
+			}
+		} else {
+			report_error("Semanticka greska - argument read naredbe nije promenljiva ili element niza", stmtRead);
+		}
+	}
+
+  	public void visit(StmtPrintNumConst stmtPrintNumConst) {
+  		Struct expr = stmtPrintNumConst.getExpr().struct;
+  		if (expr != null && !expr.equals(Tab.intType) && !expr.equals(Tab.charType) && !expr.equals(boolType)) {
+  			report_error("Semanticka greska - izraz print naredbe nije int, char ili bool tipa", stmtPrintNumConst);
+  		}
+  	}
+
+  	public void visit(StmtPrint stmtPrint) {	
+  		Struct expr = stmtPrint.getExpr().struct;
+  		if (expr != null && !expr.equals(Tab.intType) && !expr.equals(Tab.charType) && !expr.equals(boolType)) {
+  			report_error("Semanticka greska - izraz print naredbe nije int, char ili bool tipa", stmtPrint);
+  		}
+  	} 
 }
