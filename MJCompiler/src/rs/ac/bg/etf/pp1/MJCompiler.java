@@ -75,8 +75,7 @@ public class MJCompiler implements Compiler {
 		log.info("Kompajliranje ulaznog fajla " + sourceCode.getAbsolutePath());
 		
 		try (BufferedReader br = new BufferedReader(new FileReader(sourceCode))) {
-			Yylex lexer = new Yylex(br);
-			MJParser p = new MJParser(lexer);
+			MJParser p = new MJParser(new Yylex(br));
 			
 	        if (p.isErrorDetected()) {
 				log.info("Ulazni fajl ima sintaksnih gresaka!");
@@ -87,23 +86,24 @@ public class MJCompiler implements Compiler {
 	        s = p.parse();
 			Program prog = (Program)(s.value); 
 
-			log.info("\n\n================SINTAKSNO STABLO====================\n\n");
+			log.info("\n\n ------------------------------- SINTAKSNO STABLO ------------------------------- \n\n");
 			log.info(prog.toString(""));
 			
-			log.info("\n\n================SEMANTICKA OBRADA====================\n\n");			
-			Tab.init(); // pocetni opseg
+			log.info("\n\n ------------------------------- SEMANTICKA ANALIZA ------------------------------- \n\n");			
+			Tab.init();
 
             SemanticAnalyzer semanticAnalyzer = new SemanticAnalyzer();
             prog.traverseBottomUp(semanticAnalyzer);
             
             tsdump();
-			log.info("===================================");
 			
 			if (!semanticAnalyzer.isErrorDetected()) {
 	        	File objFile = new File(outputFilePath);
 	        	log.info("Generisanje MJ bajtkoda: " + objFile.getAbsolutePath());
-	        	if (objFile.exists())
+
+	        	if (objFile.exists()) {
 	        		objFile.delete();
+	        	}
 
 	        	CodeGenerator codeGenerator = new CodeGenerator(semanticAnalyzer.getOuterScope());
                 prog.traverseBottomUp(codeGenerator);
@@ -114,7 +114,6 @@ public class MJCompiler implements Compiler {
 	        	try {
 					Code.write(new FileOutputStream(objFile));
 				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 	        	log.info("Parsiranje uspesno zavrseno!");
@@ -135,7 +134,7 @@ public class MJCompiler implements Compiler {
 	}
 	
 	public static void tsdump() { 
-        Tab.dump(new MySymbolTableVisitor());
+        Tab.dump(new TableDumpVisitor());
 	}
 	
 }

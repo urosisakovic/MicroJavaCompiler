@@ -6,14 +6,12 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
-	private boolean errorDetected = false;
 	private Symbol currSymbol = null;		
 	private Symbol errorSymbol = null;
+	private boolean errorDetected = false;
 	
 	private static Logger log = Logger.getLogger("info");
 	private static Logger logError = Logger.getLogger("error");
-   
-    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_error(String message, Object info) {
     	errorDetected = true;
@@ -29,7 +27,6 @@ parser code {:
 		}
         logError.error(msg.toString());
         
-        System.out.println("-----------------------------------Tokom prijavljivanja greske--------------------------------------");
         MJCompiler.getInstance().reportError(new CompilerError(
         	errorSymbol.left,
         	msg.toString(),
