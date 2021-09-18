@@ -6,14 +6,12 @@ import rs.ac.bg.etf.pp1.ast.*;
 
 parser code {:
 
-	private boolean errorDetected = false;
 	private Symbol currSymbol = null;		
 	private Symbol errorSymbol = null;
+	private boolean errorDetected = false;
 	
 	private static Logger log = Logger.getLogger("info");
 	private static Logger logError = Logger.getLogger("error");
-   
-    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
      
     public void report_error(String message, Object info) {
     	errorDetected = true;
@@ -29,7 +27,6 @@ parser code {:
 		}
         logError.error(msg.toString());
         
-        System.out.println("-----------------------------------Tokom prijavljivanja greske--------------------------------------");
         MJCompiler.getInstance().reportError(new CompilerError(
         	errorSymbol.left,
         	msg.toString(),
@@ -82,18 +79,58 @@ scan with {:
 	return currSymbol;
 :}
 
-terminal PROGRAM, BREAK, CLASS, ENUM, ELSE, CONST, IF;
-terminal SWITCH, DO, WHILE, NEW, PRINT, READ, RETURN;
-terminal VOID, CONTINUE, CASE;
+/* Terminal keywords */
+terminal PROGRAM,
+	BREAK,
+	CLASS,
+	ENUM,
+	ELSE, 
+	CONST,
+	IF,
+	SWITCH,
+	DO, 
+	WHILE,
+	NEW,
+	PRINT,
+	READ,
+	RETURN,
+	VOID,
+	CONTINUE,
+	CASE;
+
+/* Terminal signs */
+terminal PLUS,
+	MINUS,
+	MUL,
+	DIV,
+	MOD, 
+	EQUAL,
+	NOT_EQUAL,
+	GREATER,
+	GREATER_EQUAL,
+	LESS,
+	LESS_EQUAL,
+	AND,
+	OR,
+	ASSIGNMENT,
+	INC,
+	DEC,
+	SEMICOLON,
+	COMMA,
+	FULL_STOP,
+	LPAREN,
+	RPAREN,
+	LSQUARE,
+	RSQUARE,
+	LBRACE,
+	RBRACE,
+	COLON;
+ 
+/* Terminal literals */
 terminal String IDENT;
 terminal Integer NUM_CONST;
 terminal Character CHAR_CONST;
 terminal Boolean BOOL_CONST;
-terminal PLUS, MINUS, MUL, DIV, MOD;
-terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESS, LESS_EQUAL;
-terminal AND, OR, ASSIGNMENT, INC, DEC, SEMICOLON, COMMA, FULL_STOP;
-terminal LPAREN, RPAREN, LSQUARE, RSQUARE, LBRACE, RBRACE;
-terminal COLON;
 
 nonterminal ProgramDeclarations, ProgramDeclaration;
 nonterminal ConstDecl, ConstList, ConstPart, ClassDecl;
@@ -163,37 +200,38 @@ MethodDeclList ::= (MethodDecMulti) MethodDeclList MethodDec
 MethodDec ::= (MethodVoidDeclaration) MethodVoidDecl
 			  |
 			  (MethodTypeDeclaration) MethodTypeDecl;
-MethodVoidDecl ::= (MethodVoid0) MethVoidName LPAREN FormParams RPAREN VarDeclList LBRACE StatementList RBRACE
+MethodVoidDecl ::= MethVoidName LPAREN FormParams RPAREN VarDeclList LBRACE StatementList RBRACE
 				   |
-				   (MethodVoid1) MethVoidName LPAREN FormParams RPAREN VarDeclList LBRACE RBRACE
+				   MethVoidName LPAREN FormParams RPAREN VarDeclList LBRACE RBRACE
 				   |
-				   (MethodVoid2) MethVoidName LPAREN FormParams RPAREN LBRACE StatementList RBRACE
+				   MethVoidName LPAREN FormParams RPAREN LBRACE StatementList RBRACE
 				   |
-				   (MethodVoid3) MethVoidName LPAREN FormParams RPAREN LBRACE RBRACE
+				   MethVoidName LPAREN FormParams RPAREN LBRACE RBRACE
 				   |
-				   (MethodVoid4) MethVoidName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE
+				   MethVoidName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE
 				   |
-				   (MethodVoid5) MethVoidName LPAREN RPAREN VarDeclList LBRACE RBRACE
+				   MethVoidName LPAREN RPAREN VarDeclList LBRACE RBRACE
 				   |
-				   (MethodVoid6) MethVoidName LPAREN RPAREN LBRACE StatementList RBRACE
+				   MethVoidName LPAREN RPAREN LBRACE StatementList RBRACE
 				   |
-				   (MethodVoid7) MethVoidName LPAREN RPAREN LBRACE RBRACE;
+				   MethVoidName LPAREN RPAREN LBRACE RBRACE;
 MethVoidName ::= (MethodVoidName) VOID IDENT:methodName;
-MethodTypeDecl ::= (MethodType0) MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE StatementList RBRACE
+
+MethodTypeDecl ::= MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE StatementList RBRACE
 				   |
-				   (MethodType1) MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE RBRACE
+				   MethTypeName LPAREN FormParams RPAREN VarDeclList LBRACE RBRACE
 				   |
-				   (MethodType2) MethTypeName LPAREN FormParams RPAREN LBRACE StatementList RBRACE
+				   MethTypeName LPAREN FormParams RPAREN LBRACE StatementList RBRACE
 				   |
-				   (MethodType3) MethTypeName LPAREN FormParams RPAREN LBRACE RBRACE
+				   MethTypeName LPAREN FormParams RPAREN LBRACE RBRACE
 				   |
-				   (MethodType4) MethTypeName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE
+				   MethTypeName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE
 				   |
-				   (MethodType5) MethTypeName LPAREN RPAREN VarDeclList LBRACE RBRACE
+				   MethTypeName LPAREN RPAREN VarDeclList LBRACE RBRACE
 				   |
-				   (MethodType6) MethTypeName LPAREN RPAREN LBRACE StatementList RBRACE
+				   MethTypeName LPAREN RPAREN LBRACE StatementList RBRACE
 				   |
-				   (MethodType7) MethTypeName LPAREN RPAREN LBRACE RBRACE;
+				   MethTypeName LPAREN RPAREN LBRACE RBRACE;
 MethTypeName ::= (MethodTypeName) Type IDENT:methodName;
 
 // Argumenti metoda

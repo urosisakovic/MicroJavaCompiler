@@ -82,18 +82,58 @@ scan with {:
 	return currSymbol;
 :}
 
-terminal PROGRAM, BREAK, CLASS, ENUM, ELSE, CONST, IF;
-terminal SWITCH, DO, WHILE, NEW, PRINT, READ, RETURN;
-terminal VOID, CONTINUE, CASE;
+/* Terminal keywords */
+terminal PROGRAM,
+	BREAK,
+	CLASS,
+	ENUM,
+	ELSE, 
+	CONST,
+	IF,
+	SWITCH,
+	DO, 
+	WHILE,
+	NEW,
+	PRINT,
+	READ,
+	RETURN,
+	VOID,
+	CONTINUE,
+	CASE;
+
+/* Terminal signs */
+terminal PLUS,
+	MINUS,
+	MUL,
+	DIV,
+	MOD, 
+	EQUAL,
+	NOT_EQUAL,
+	GREATER,
+	GREATER_EQUAL,
+	LESS,
+	LESS_EQUAL,
+	AND,
+	OR,
+	ASSIGNMENT,
+	INC,
+	DEC,
+	SEMICOLON,
+	COMMA,
+	FULL_STOP,
+	LPAREN,
+	RPAREN,
+	LSQUARE,
+	RSQUARE,
+	LBRACE,
+	RBRACE,
+	COLON;
+ 
+/* Terminal literals */
 terminal String IDENT;
 terminal Integer NUM_CONST;
 terminal Character CHAR_CONST;
 terminal Boolean BOOL_CONST;
-terminal PLUS, MINUS, MUL, DIV, MOD;
-terminal EQUAL, NOT_EQUAL, GREATER, GREATER_EQUAL, LESS, LESS_EQUAL;
-terminal AND, OR, ASSIGNMENT, INC, DEC, SEMICOLON, COMMA, FULL_STOP;
-terminal LPAREN, RPAREN, LSQUARE, RSQUARE, LBRACE, RBRACE;
-terminal COLON;
 
 nonterminal ProgramDeclarations ProgramDeclarations;
 nonterminal ProgramDeclaration ProgramDeclaration;
@@ -192,37 +232,38 @@ MethodDeclList ::= (MethodDecMulti) MethodDeclList:M1 MethodDec:M2 {: RESULT=new
 MethodDec ::= (MethodVoidDeclaration) MethodVoidDecl:M1 {: RESULT=new MethodVoidDeclaration(M1); RESULT.setLine(M1left); :}
 			  |
 			  (MethodTypeDeclaration) MethodTypeDecl:M1 {: RESULT=new MethodTypeDeclaration(M1); RESULT.setLine(M1left); :};
-MethodVoidDecl ::= (MethodVoid0) MethVoidName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodVoid0(M1, F2, V3, S4); RESULT.setLine(M1left); :}
+MethodVoidDecl ::= MethVoidName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodVoidDeclDerived1(M1, F2, V3, S4); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid1) MethVoidName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE RBRACE {: RESULT=new MethodVoid1(M1, F2, V3); RESULT.setLine(M1left); :}
+				   MethVoidName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE RBRACE {: RESULT=new MethodVoidDeclDerived2(M1, F2, V3); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid2) MethVoidName:M1 LPAREN FormParams:F2 RPAREN LBRACE StatementList:S3 RBRACE {: RESULT=new MethodVoid2(M1, F2, S3); RESULT.setLine(M1left); :}
+				   MethVoidName:M1 LPAREN FormParams:F2 RPAREN LBRACE StatementList:S3 RBRACE {: RESULT=new MethodVoidDeclDerived3(M1, F2, S3); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid3) MethVoidName:M1 LPAREN FormParams:F2 RPAREN LBRACE RBRACE {: RESULT=new MethodVoid3(M1, F2); RESULT.setLine(M1left); :}
+				   MethVoidName:M1 LPAREN FormParams:F2 RPAREN LBRACE RBRACE {: RESULT=new MethodVoidDeclDerived4(M1, F2); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid4) MethVoidName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodVoid4(M1, V2, S3); RESULT.setLine(M1left); :}
+				   MethVoidName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodVoidDeclDerived5(M1, V2, S3); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid5) MethVoidName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE RBRACE {: RESULT=new MethodVoid5(M1, V2); RESULT.setLine(M1left); :}
+				   MethVoidName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE RBRACE {: RESULT=new MethodVoidDeclDerived6(M1, V2); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid6) MethVoidName:M1 LPAREN RPAREN LBRACE StatementList:S2 RBRACE {: RESULT=new MethodVoid6(M1, S2); RESULT.setLine(M1left); :}
+				   MethVoidName:M1 LPAREN RPAREN LBRACE StatementList:S2 RBRACE {: RESULT=new MethodVoidDeclDerived7(M1, S2); RESULT.setLine(M1left); :}
 				   |
-				   (MethodVoid7) MethVoidName:M1 LPAREN RPAREN LBRACE RBRACE {: RESULT=new MethodVoid7(M1); RESULT.setLine(M1left); :};
+				   MethVoidName:M1 LPAREN RPAREN LBRACE RBRACE {: RESULT=new MethodVoidDeclDerived8(M1); RESULT.setLine(M1left); :};
 MethVoidName ::= (MethodVoidName) VOID IDENT:methodName {: RESULT=new MethodVoidName(methodName); RESULT.setLine(methodNameleft); :};
-MethodTypeDecl ::= (MethodType0) MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodType0(M1, F2, V3, S4); RESULT.setLine(M1left); :}
+
+MethodTypeDecl ::= MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodTypeDeclDerived1(M1, F2, V3, S4); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType1) MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE RBRACE {: RESULT=new MethodType1(M1, F2, V3); RESULT.setLine(M1left); :}
+				   MethTypeName:M1 LPAREN FormParams:F2 RPAREN VarDeclList:V3 LBRACE RBRACE {: RESULT=new MethodTypeDeclDerived2(M1, F2, V3); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType2) MethTypeName:M1 LPAREN FormParams:F2 RPAREN LBRACE StatementList:S3 RBRACE {: RESULT=new MethodType2(M1, F2, S3); RESULT.setLine(M1left); :}
+				   MethTypeName:M1 LPAREN FormParams:F2 RPAREN LBRACE StatementList:S3 RBRACE {: RESULT=new MethodTypeDeclDerived3(M1, F2, S3); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType3) MethTypeName:M1 LPAREN FormParams:F2 RPAREN LBRACE RBRACE {: RESULT=new MethodType3(M1, F2); RESULT.setLine(M1left); :}
+				   MethTypeName:M1 LPAREN FormParams:F2 RPAREN LBRACE RBRACE {: RESULT=new MethodTypeDeclDerived4(M1, F2); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType4) MethTypeName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodType4(M1, V2, S3); RESULT.setLine(M1left); :}
+				   MethTypeName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodTypeDeclDerived5(M1, V2, S3); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType5) MethTypeName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE RBRACE {: RESULT=new MethodType5(M1, V2); RESULT.setLine(M1left); :}
+				   MethTypeName:M1 LPAREN RPAREN VarDeclList:V2 LBRACE RBRACE {: RESULT=new MethodTypeDeclDerived6(M1, V2); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType6) MethTypeName:M1 LPAREN RPAREN LBRACE StatementList:S2 RBRACE {: RESULT=new MethodType6(M1, S2); RESULT.setLine(M1left); :}
+				   MethTypeName:M1 LPAREN RPAREN LBRACE StatementList:S2 RBRACE {: RESULT=new MethodTypeDeclDerived7(M1, S2); RESULT.setLine(M1left); :}
 				   |
-				   (MethodType7) MethTypeName:M1 LPAREN RPAREN LBRACE RBRACE {: RESULT=new MethodType7(M1); RESULT.setLine(M1left); :};
+				   MethTypeName:M1 LPAREN RPAREN LBRACE RBRACE {: RESULT=new MethodTypeDeclDerived8(M1); RESULT.setLine(M1left); :};
 MethTypeName ::= (MethodTypeName) Type:T1 IDENT:methodName {: RESULT=new MethodTypeName(T1, methodName); RESULT.setLine(T1left); :};
 
 // Argumenti metoda

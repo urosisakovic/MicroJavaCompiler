@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 12:49:43
+// 18/8/2021 13:3:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -133,23 +133,23 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ParamSingle ParamSingle) { visit(); }
     public void visit(ParamMulti ParamMulti) { visit(); }
     public void visit(MethodTypeName MethodTypeName) { visit(); }
-    public void visit(MethodType7 MethodType7) { visit(); }
-    public void visit(MethodType6 MethodType6) { visit(); }
-    public void visit(MethodType5 MethodType5) { visit(); }
-    public void visit(MethodType4 MethodType4) { visit(); }
-    public void visit(MethodType3 MethodType3) { visit(); }
-    public void visit(MethodType2 MethodType2) { visit(); }
-    public void visit(MethodType1 MethodType1) { visit(); }
-    public void visit(MethodType0 MethodType0) { visit(); }
+    public void visit(MethodTypeDeclDerived8 MethodTypeDeclDerived8) { visit(); }
+    public void visit(MethodTypeDeclDerived7 MethodTypeDeclDerived7) { visit(); }
+    public void visit(MethodTypeDeclDerived6 MethodTypeDeclDerived6) { visit(); }
+    public void visit(MethodTypeDeclDerived5 MethodTypeDeclDerived5) { visit(); }
+    public void visit(MethodTypeDeclDerived4 MethodTypeDeclDerived4) { visit(); }
+    public void visit(MethodTypeDeclDerived3 MethodTypeDeclDerived3) { visit(); }
+    public void visit(MethodTypeDeclDerived2 MethodTypeDeclDerived2) { visit(); }
+    public void visit(MethodTypeDeclDerived1 MethodTypeDeclDerived1) { visit(); }
     public void visit(MethodVoidName MethodVoidName) { visit(); }
-    public void visit(MethodVoid7 MethodVoid7) { visit(); }
-    public void visit(MethodVoid6 MethodVoid6) { visit(); }
-    public void visit(MethodVoid5 MethodVoid5) { visit(); }
-    public void visit(MethodVoid4 MethodVoid4) { visit(); }
-    public void visit(MethodVoid3 MethodVoid3) { visit(); }
-    public void visit(MethodVoid2 MethodVoid2) { visit(); }
-    public void visit(MethodVoid1 MethodVoid1) { visit(); }
-    public void visit(MethodVoid0 MethodVoid0) { visit(); }
+    public void visit(MethodVoidDeclDerived8 MethodVoidDeclDerived8) { visit(); }
+    public void visit(MethodVoidDeclDerived7 MethodVoidDeclDerived7) { visit(); }
+    public void visit(MethodVoidDeclDerived6 MethodVoidDeclDerived6) { visit(); }
+    public void visit(MethodVoidDeclDerived5 MethodVoidDeclDerived5) { visit(); }
+    public void visit(MethodVoidDeclDerived4 MethodVoidDeclDerived4) { visit(); }
+    public void visit(MethodVoidDeclDerived3 MethodVoidDeclDerived3) { visit(); }
+    public void visit(MethodVoidDeclDerived2 MethodVoidDeclDerived2) { visit(); }
+    public void visit(MethodVoidDeclDerived1 MethodVoidDeclDerived1) { visit(); }
     public void visit(MethodTypeDeclaration MethodTypeDeclaration) { visit(); }
     public void visit(MethodVoidDeclaration MethodVoidDeclaration) { visit(); }
     public void visit(MethodDeclSingle MethodDeclSingle) { visit(); }

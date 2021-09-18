@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/8/2021 12:49:43
+// 18/8/2021 13:3:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -133,23 +133,23 @@ public interface Visitor {
     public void visit(ParamSingle ParamSingle);
     public void visit(ParamMulti ParamMulti);
     public void visit(MethodTypeName MethodTypeName);
-    public void visit(MethodType7 MethodType7);
-    public void visit(MethodType6 MethodType6);
-    public void visit(MethodType5 MethodType5);
-    public void visit(MethodType4 MethodType4);
-    public void visit(MethodType3 MethodType3);
-    public void visit(MethodType2 MethodType2);
-    public void visit(MethodType1 MethodType1);
-    public void visit(MethodType0 MethodType0);
+    public void visit(MethodTypeDeclDerived8 MethodTypeDeclDerived8);
+    public void visit(MethodTypeDeclDerived7 MethodTypeDeclDerived7);
+    public void visit(MethodTypeDeclDerived6 MethodTypeDeclDerived6);
+    public void visit(MethodTypeDeclDerived5 MethodTypeDeclDerived5);
+    public void visit(MethodTypeDeclDerived4 MethodTypeDeclDerived4);
+    public void visit(MethodTypeDeclDerived3 MethodTypeDeclDerived3);
+    public void visit(MethodTypeDeclDerived2 MethodTypeDeclDerived2);
+    public void visit(MethodTypeDeclDerived1 MethodTypeDeclDerived1);
     public void visit(MethodVoidName MethodVoidName);
-    public void visit(MethodVoid7 MethodVoid7);
-    public void visit(MethodVoid6 MethodVoid6);
-    public void visit(MethodVoid5 MethodVoid5);
-    public void visit(MethodVoid4 MethodVoid4);
-    public void visit(MethodVoid3 MethodVoid3);
-    public void visit(MethodVoid2 MethodVoid2);
-    public void visit(MethodVoid1 MethodVoid1);
-    public void visit(MethodVoid0 MethodVoid0);
+    public void visit(MethodVoidDeclDerived8 MethodVoidDeclDerived8);
+    public void visit(MethodVoidDeclDerived7 MethodVoidDeclDerived7);
+    public void visit(MethodVoidDeclDerived6 MethodVoidDeclDerived6);
+    public void visit(MethodVoidDeclDerived5 MethodVoidDeclDerived5);
+    public void visit(MethodVoidDeclDerived4 MethodVoidDeclDerived4);
+    public void visit(MethodVoidDeclDerived3 MethodVoidDeclDerived3);
+    public void visit(MethodVoidDeclDerived2 MethodVoidDeclDerived2);
+    public void visit(MethodVoidDeclDerived1 MethodVoidDeclDerived1);
     public void visit(MethodTypeDeclaration MethodTypeDeclaration);
     public void visit(MethodVoidDeclaration MethodVoidDeclaration);
     public void visit(MethodDeclSingle MethodDeclSingle);
