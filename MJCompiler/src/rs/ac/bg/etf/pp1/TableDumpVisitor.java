@@ -90,52 +90,52 @@ public class TableDumpVisitor extends SymbolTableVisitor {
 			addNewLine();
 		}
 	}
+	
+	private String structKindToString(Struct struct) {
+		switch (struct.getKind()) {
+			case Struct.None: {
+				return "notype";
+			}
+			case Struct.Int: {
+				return "int";
+			}
+			case Struct.Bool: {
+				return "bool";
+			}
+			case Struct.Char: {
+				return "char";
+			}
+			case Struct.Class: {
+				output.append("Class [");
+				for (var member: struct.getMembers()) {
+					member.accept(this);
+				}
+				output.append("]");
+				break;
+			}
+			case Struct.Array: {
+				String retVal = "Arr of ";
+				
+				switch (struct.getElemType().getKind()) {
+					case Struct.None:
+						return retVal + "notype";
+					case Struct.Int:
+						return retVal + "int";
+					case Struct.Bool:
+						return retVal + "bool";
+					case Struct.Char:
+						return retVal + "char";
+					case Struct.Class:
+						return retVal + "class";
+				}
+			}
+		}
+		return "";
+	}
 
 	@Override
-	public void visitStructNode(Struct structToVisit) {
-		switch (structToVisit.getKind()) {
-		case Struct.None:
-			output.append("notype");
-			break;
-		case Struct.Int:
-			output.append("int");
-			break;
-		case Struct.Bool:
-			output.append("bool");
-			break;
-		case Struct.Char:
-			output.append("char");
-			break;
-		case Struct.Array:
-			output.append("Arr of ");
-			
-			switch (structToVisit.getElemType().getKind()) {
-			case Struct.None:
-				output.append("notype");
-				break;
-			case Struct.Int:
-				output.append("int");
-				break;
-			case Struct.Bool:
-				output.append("bool");
-				break;
-			case Struct.Char:
-				output.append("char");
-				break;
-			case Struct.Class:
-				output.append("Class");
-				break;
-			}
-			break;
-		case Struct.Class:
-			output.append("Class [");
-			for (Obj obj : structToVisit.getMembers()) {
-				obj.accept(this);
-			}
-			output.append("]");
-			break;
-		}
-
+	public void visitStructNode(Struct currentStruct) {
+		output.append(structKindToString(currentStruct));
 	}
 
 	public String getOutput() {
