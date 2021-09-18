@@ -14,7 +14,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 
-public class MJParserTest {
+public class ParserTest {
 
 	static {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
@@ -25,24 +25,22 @@ public class MJParserTest {
 		
 		Logger log = Logger.getLogger("info");
 		
-		Reader br = null;
+		Reader reader = null;
 		try {
-			File sourceCode = new File("test/test301.mj");
-			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
+			File sourceCode = new File("test/program.mj");
+			log.info("Testing parser on file " + sourceCode.getAbsolutePath());
 			
-			br = new BufferedReader(new FileReader(sourceCode));
-			Yylex lexer = new Yylex(br);
-			
+			reader = new BufferedReader(new FileReader(sourceCode));
+
+			Yylex lexer = new Yylex(reader);			
 			MJParser p = new MJParser(lexer);
-	        Symbol s = p.parse();  //pocetak parsiranja
-	        
-	        Program prog = (Program)(s.value); 
-			// ispis sintaksnog stabla
+	        Symbol s = p.parse();
+	        Program prog = (Program)(s.value);
+
 			log.info(prog.toString(""));
-			log.info("===================================");
 		} 
 		finally {
-			if (br != null) try { br.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }
+			if (reader != null) try { reader.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }
 		}
 	}
 		
